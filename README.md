@@ -1,1 +1,1 @@
-# cloud-design-patterns
+# distributed-system-design-pattern
