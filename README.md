@@ -1,6 +1,9 @@
 # distributed-system-design-pattern
 
 ## Overview
+Collect modern distributed system design patterns.
+
+## Categories
 - **Data Management Patterns**
    - Command and Query Responsibility Segregation (CQRS)
 - **Message Queue Patterns**
