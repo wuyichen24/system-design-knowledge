@@ -17,7 +17,7 @@ Collect modern distributed system design patterns.
    - Multi-node patterns
       - Leader Election
       - Work Queue
-      - Scatter/gather
+      - Scatter/Gather
 - **Resiliency Patterns**
    - Circuit Breaker
    - Fallback
