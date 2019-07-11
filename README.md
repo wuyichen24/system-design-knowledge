@@ -15,8 +15,8 @@ Collect modern distributed system design patterns.
       - Ambassador
       - Adapter
    - Multi-node patterns
-      - Leader election
-      - Work queue
+      - Leader Election
+      - Work Queue
       - Scatter/gather
 - **Resiliency Patterns**
    - Circuit Breaker
