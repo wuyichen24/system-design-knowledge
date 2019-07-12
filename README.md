@@ -34,6 +34,6 @@ Collect modern distributed system design patterns.
 
 | Pattern Name | Diagram | Description |
 |----|----|----|
-| Ambassador |  | Place an ambassador container between the main application container and the external system for simplifying the view of the external system. |
-| Adapter |  | Place an adapter container between the main application container and the external system for standardizing the view of the internal application. |
-| Sidecar |  | Place an independent sidecar container next to the main application container for providing supportive works to the main application container. |
+| Ambassador | ![](./diagrams/png/ambassador_small.png) | Place an ambassador container between the main application container and the external system for simplifying the view of the external system. |
+| Adapter | ![](./diagrams/png/adapter_small.png) | Place an adapter container between the main application container and the external system for standardizing the view of the internal application. |
+| Sidecar | ![](./diagrams/png/sidecar_small.png) | Place an independent sidecar container next to the main application container for providing supportive works to the main application container. |
