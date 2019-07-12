@@ -15,9 +15,9 @@ Collect modern distributed system design patterns.
       - Ambassador
       - Adapter
    - Multi-node patterns
-      - Leader election
-      - Work queue
-      - Scatter/gather
+      - Leader Election
+      - Work Queue
+      - Scatter/Gather
 - **Resiliency Patterns**
    - Circuit Breaker
    - Fallback
@@ -29,3 +29,11 @@ Collect modern distributed system design patterns.
 - **Security Patterns**
    - Valet Key
 
+## Brief Introduction
+### Container Patterns
+
+| Pattern Name | Diagram | Description |
+|----|----|----|
+| Ambassador |  | Place an ambassador container between the main application container and the external system for simplifying the view of the external system. |
+| Adapter |  | Place an adapter container between the main application container and the external system for standardizing the view of the internal application. |
+| Sidecar |  | Place an independent sidecar container next to the main application container for providing supportive works to the main application container. |
