@@ -38,7 +38,4 @@ Collect modern distributed system design patterns.
 | *Adapter* | ![](./diagrams/png/adapter_small.png) | Place an adapter container between the main application container and the external system for standardizing the view of the internal application. |
 | *Sidecar* | ![](./diagrams/png/sidecar_small.png) | Place an independent sidecar container next to the main application container for providing supportive works to the main application container. |
 | *Leader Election* |  | Elect one instance as the leader for coordinating and monitoring the other instances. |
-
-- Work Queue
-    - Group a work queue manager container with a work queue source container as a coordinator for managing the work queue and dispatch work items to workers.
-    - Each worker consists of a worker manager container (for integrating with the generic work queue framework) and an application implementation container (for application-specific logic)
+| *Work Queue* |  | <ul><li>Group a work queue manager container and a work queue source container as a coordinator for managing the work queue and dispatch work items to workers.<li>Each worker consists of a worker manager container (for integrating with the generic work queue framework) and an application implementation container (for application-specific logic).</ul> |
