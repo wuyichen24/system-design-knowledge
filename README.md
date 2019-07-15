@@ -34,8 +34,8 @@ Collect modern distributed system design patterns.
 
 | Pattern Name | Diagram | Description |
 |----|----|----|
-| *Ambassador* | ![](./diagrams/png/ambassador_small.png) | Place an ambassador container between the main application container and the external system for simplifying the view of the external system. |
-| *Adapter* | ![](./diagrams/png/adapter_small.png) | Place an adapter container between the main application container and the external system for standardizing the view of the internal application. |
-| *Sidecar* | ![](./diagrams/png/sidecar_small.png) | Place an independent sidecar container next to the main application container for providing supportive works to the main application container. |
-| *Leader Election* |  | Elect one instance as the leader for coordinating and monitoring the other instances. |
+| *Ambassador* | ![](./diagrams/png/ambassador_small.png) | <ul><li>Place an ambassador container between the main application container and the external system for simplifying the view of the external system.</ul> |
+| *Adapter* | ![](./diagrams/png/adapter_small.png) | <ul><li>Place an adapter container between the main application container and the external system for standardizing the view of the internal application.</ul> |
+| *Sidecar* | ![](./diagrams/png/sidecar_small.png) | <ul><li>Place an independent sidecar container next to the main application container for providing supportive works to the main application container.</ul> |
+| *Leader Election* |  | <ul><li>Elect one instance as the leader for coordinating and monitoring the other instances.</ul> |
 | *Work Queue* |  | <ul><li>Group a work queue manager container and a work queue source container as a coordinator for managing the work queue and dispatch work items to workers.<li>Each worker consists of a worker manager container (for integrating with the generic work queue framework) and an application implementation container (for application-specific logic).</ul> |
