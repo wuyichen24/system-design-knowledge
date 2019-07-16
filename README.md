@@ -40,3 +40,12 @@ Collect modern distributed system design patterns.
 | *Leader Election* | ![](./diagrams/png/leader_election_small.png) | <ul><li>Elect one instance as the leader for coordinating and monitoring the other instances.</ul> |
 | *Work Queue* | ![](./diagrams/png/work_queue_small.png) | <ul><li>Group a work queue manager container and a work queue source container as a coordinator for managing the work queue and dispatch work items to workers.<li>Each worker consists of a worker manager container (for integrating with the generic work queue framework) and an application implementation container (for application-specific logic).</ul> |
 | *Scatter/Gather* | ![](./diagrams/png/scatter_gather_small.png) | <ul><li>The root node scatters out the original request to a group of servers to perform a set of tasks in parallel.<li>The root node gathers the partial data from each server and return a single response to the original request.</ul>
+
+### Resiliency Patterns
+
+| Pattern Name | Diagram | Description |
+| ---- | ------ | ---- |
+| *Circuit Breaker* |  | Prevents an application from performing an operation that is likely to fail based on a certain criteria. |
+| *Bulkhead* |  | Isolate the misbehaving service and avoid it taking down the entire application. |
+| *Fallback* |  |  |
+| *Retry* |  |  |
