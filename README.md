@@ -46,6 +46,6 @@ Collect modern distributed system design patterns.
 | Pattern Name | Diagram | Description |
 | ---- | ------ | ---- |
 | *Circuit Breaker* |  | Prevents an application from performing an operation that is likely to fail based on a certain criteria. |
-| *Bulkhead* |  | Isolate the misbehaving service and avoid it taking down the entire application. |
-| *Fallback* |  |  |
+| *Bulkhead* |  | Isolate the misbehaving service and avoid to take down the entire application by exhausting all the resources. |
+| *Fallback* |  | When a service call fails, execute the alternative action. |
 | *Retry* |  |  |
