@@ -7,9 +7,15 @@ Collect modern distributed system design patterns.
 - **Architecture Pattern**
    - Anti-Corruption Layer
    - Backends for Frontends (BFF)
+- **Cache Pattern**
+   - Cache-Aside
+   - Cache-As-SOR (System Of Record)
+      - Read-Through (Read)
+      - Write-Through (Write)
+      - Write-Behind (Write)
+      - Refresh-Ahead (Read)
 - **Data Management Patterns**
    - Command and Query Responsibility Segregation (CQRS)
-   - Cache-Aside
 - **Message Queue Patterns**
    - Competing Consumer
    - Priority Queue
