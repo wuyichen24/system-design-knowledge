@@ -4,8 +4,12 @@
 Collect modern distributed system design patterns.
 
 ## Categories
+- **Architecture Pattern**
+   - Anti-Corruption Layer
+   - Backends for Frontends (BFF)
 - **Data Management Patterns**
    - Command and Query Responsibility Segregation (CQRS)
+   - Cache-Aside
 - **Message Queue Patterns**
    - Competing Consumer
    - Priority Queue
