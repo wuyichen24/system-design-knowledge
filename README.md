@@ -41,12 +41,21 @@ Collect modern distributed system design patterns.
 
 ## Brief Introduction
 ### Cache Patterns
+#### Cache Pattern Categories
+
 | Category Name | Diagram | Description | Patterns |
-| ---- | ---- | ---- | ---- |
-| Cache-Aside |  | Application interacts and manages both cache and database. |  |
-| Cache-As-SOR |  | Application only interact and manage cache. | <ul><li>Read-Through<li>Write-Through<li>Write-Behind<li>Refresh-Ahead</ul> |
+|----|----|----|----|
+| *Cache-Aside* |  | Application interacts and manages both cache and database. |  |
+| *Cache-As-SOR* |  | Application only interact and manage cache. | <ul><li>Read-Through<li>Write-Through<li>Write-Behind<li>Refresh-Ahead</ul> |
+
+#### Cache-As-SOR Patterns
 
 | Pattern Name | Diagram | Description | 
+|----|----|----|
+| *Read-Through* |  |  |
+| *Write-Through* |  | After application writes data to cache, cache **synchronously** write the same data to database. |
+| *Write-Behind* |  | After application writes data to cache, cache **asynchronously** write the same data to database (When satisfy a certain criteria). |
+| *Refresh-Ahead* |  | Cache automatically and asynchronously reloads (refreshs) any recently accessed cache entry from database before its expiration. |
 
 ### Container Patterns
 
