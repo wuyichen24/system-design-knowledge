@@ -45,8 +45,8 @@ Collect modern distributed system design patterns.
 
 | Category Name | Diagram | Description | Patterns |
 |----|----|----|----|
-| *Cache-Aside* |  | Application interacts and manages both cache and database. |  |
-| *Cache-As-SOR* |  | Application only interact and manage cache. | <ul><li>Read-Through<li>Write-Through<li>Write-Behind<li>Refresh-Ahead</ul> |
+| *Cache-Aside* | ![](./diagrams/png/cache_aside_small.png) | Application interacts and manages both cache and database. |  |
+| *Cache-As-SOR* | ![](./diagrams/png/cache_as_sor_small.png) | Application only interact and manage cache. | <ul><li>Read-Through<li>Write-Through<li>Write-Behind<li>Refresh-Ahead</ul> |
 
 #### Cache-As-SOR Patterns
 
