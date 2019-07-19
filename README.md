@@ -9,11 +9,11 @@ Collect modern distributed system design patterns.
    - Backends for Frontends (BFF)
 - **Cache Pattern**
    - Cache-Aside
-   - Cache-As-SOR (System Of Record)
-      - Read-Through (Read)
-      - Write-Through (Write)
-      - Write-Behind (Write)
-      - Refresh-Ahead (Read)
+   - Cache-As-SOR
+      - Read-Through
+      - Write-Through
+      - Write-Behind
+      - Refresh-Ahead
 - **Data Management Patterns**
    - Command and Query Responsibility Segregation (CQRS)
 - **Message Queue Patterns**
@@ -40,6 +40,14 @@ Collect modern distributed system design patterns.
    - Valet Key
 
 ## Brief Introduction
+### Cache Patterns
+| Category Name | Diagram | Description | Patterns |
+| ---- | ---- | ---- | ---- |
+| Cache-Aside |  | Application interacts and manages both cache and database. |  |
+| Cache-As-SOR |  | Application only interact and manage cache. | <ul><li>Read-Through<li>Write-Through<li>Write-Behind<li>Refresh-Ahead</ul> |
+
+| Pattern Name | Diagram | Description | 
+
 ### Container Patterns
 
 | Pattern Name | Diagram | Description |
