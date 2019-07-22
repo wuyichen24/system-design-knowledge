@@ -76,3 +76,10 @@ Collect modern distributed system design patterns.
 | *Bulkhead* |  | Isolate the misbehaving service and avoid to take down the entire application by exhausting all the resources. |
 | *Fallback* |  | When a service call fails, execute the alternative action. |
 | *Retry* |  | Retry a failed operation. |
+
+- Anti-Corruption Layer
+   - Place an adapter layer between a modern system and a legacy system.
+- Backends For Frontends
+   - Separate backend services for different frontend applications or interfaces.
+- Claim Check
+   - When sending a large message from one service to another, store the large message into a storage service, only send the reference as the claim check to the receiver service for retrieving the large message from the storage service.
