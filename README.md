@@ -79,7 +79,7 @@ Collect modern distributed system design patterns.
 ### Architecture Patterns
 | Pattern Name | Diagram | Description |
 | ---- | ------ | ---- |
-| *Anti-Corruption Layer* |  | Place an adapter layer between a modern system and a legacy system. | 
+| *Anti-Corruption Layer* |  | Place an adapter layer between 2 domain models. | 
 | *Backends For Frontends* |  | Separate backend services for different frontend applications or interfaces. |
 
 ### Messaging Patterns
