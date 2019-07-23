@@ -79,8 +79,8 @@ Collect modern distributed system design patterns.
 ### Architecture Patterns
 | Pattern Name | Diagram | Description |
 | ---- | ------ | ---- |
-| *Anti-Corruption Layer* | ![](./diagrams/png/anti_corruption_layer_small.png) | Place an adapter layer between 2 domain models and translate communications between them. | 
-| *Backends For Frontends* | ![](./diagrams/png/backends_for_frontends_small.png) | Separate backend services for different frontend applications or interfaces. |
+| *Anti-Corruption Layer* (ACL) | ![](./diagrams/png/anti_corruption_layer_small.png) | Place an adapter layer between 2 domain models and translate communications between them. | 
+| *Backends For Frontends* (BFF) | ![](./diagrams/png/backends_for_frontends_small.png) | Separate backend services for different frontend applications or interfaces. |
 
 ### Messaging Patterns
 | Pattern Name | Diagram | Description |
