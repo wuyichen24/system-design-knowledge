@@ -85,4 +85,4 @@ Collect modern distributed system design patterns.
 ### Messaging Patterns
 | Pattern Name | Diagram | Description |
 | ---- | ------ | ---- |
-| *Claim Check* |  | When sending a large message from one service to another, store the large message into a data store, only send the reference as the claim check to the receiver service for retrieving the large message from the data store. |
+| *Claim Check* | ![](./diagrams/png/claim_check_small.png) | When sending a large message from one service to another, store the large message into a data store, only send the reference as the claim check to the receiver service for retrieving the large message from the data store. |
