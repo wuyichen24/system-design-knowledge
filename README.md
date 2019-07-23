@@ -16,9 +16,8 @@ Collect modern distributed system design patterns.
       - Refresh-Ahead
 - **Data Management Patterns**
    - Command and Query Responsibility Segregation (CQRS)
-- **Message Queue Patterns**
-   - Competing Consumer
-   - Priority Queue
+- **Messaging Patterns**
+   - Claim Check
 - **Container Patterns**
    - Single-node, multi-container patterns
       - Sidecar
@@ -76,3 +75,14 @@ Collect modern distributed system design patterns.
 | *Bulkhead* |  | Isolate the misbehaving service and avoid to take down the entire application by exhausting all the resources. |
 | *Fallback* |  | When a service call fails, execute the alternative action. |
 | *Retry* |  | Retry a failed operation. |
+
+### Architecture Patterns
+| Pattern Name | Diagram | Description |
+| ---- | ------ | ---- |
+| *Anti-Corruption Layer* |  | Place an adapter layer between 2 domain models and translate communications between them. | 
+| *Backends For Frontends* |  | Separate backend services for different frontend applications or interfaces. |
+
+### Messaging Patterns
+| Pattern Name | Diagram | Description |
+| ---- | ------ | ---- |
+| *Claim Check* |  | When sending a large message from one service to another, store the large message into a data store, only send the reference as the claim check to the receiver service for retrieving the large message from the data store. |
