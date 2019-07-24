@@ -88,7 +88,7 @@ Collect modern distributed system design patterns.
 
 | Pattern Name | Diagram | Description |
 | ---- | ------ | ---- |
-| *Command Query Responsibility Segregation* (CQRS) |  | Use separated models for different types of operations: Command (update data) and Query (read data). |
+| *Command Query Responsibility Segregation* (CQRS) | ![](./diagrams/png/command_query_responsibility_segregation_small.png) | Use separated models for different types of operations: Command (update data) and Query (read data). |
 | *Event Sourcing* |  |  |
 | *Saga* |  |  |
 | *API Composition* |  |  |
