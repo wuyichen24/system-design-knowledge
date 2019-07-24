@@ -27,7 +27,7 @@ Collect modern distributed system design patterns.
       - Work Queue
       - Scatter/Gather
 - **Data Management Patterns**
-   - Command and Query Responsibility Segregation (CQRS)
+   - Command Query Responsibility Segregation (CQRS)
    - Event Sourcing
    - Saga
    - API Composition
