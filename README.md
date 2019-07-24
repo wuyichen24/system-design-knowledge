@@ -7,7 +7,7 @@ Collect modern distributed system design patterns.
 - **Architecture Pattern**
    - Anti-Corruption Layer (ACL)
    - Backends for Frontends (BFF)
-- **Cache Pattern**
+- [**Cache Pattern**](#cache-patterns)
    - Cache-Aside
    - Cache-As-SOR
       - Read-Through
