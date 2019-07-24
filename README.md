@@ -4,7 +4,7 @@
 Collect modern distributed system design patterns.
 
 ## Categories
-- **Architecture Pattern**
+- [**Architecture Pattern**](Architecture Patterns)
    - Anti-Corruption Layer (ACL)
    - Backends for Frontends (BFF)
 - [**Cache Pattern**](#cache-patterns)
@@ -21,9 +21,9 @@ Collect modern distributed system design patterns.
    - API Composition
    - Database Per Service
    - Shared Database
-- **Messaging Patterns**
+- [**Messaging Patterns**](#messaging-patterns)
    - Claim Check
-- **Container Patterns**
+- [**Container Patterns**](#container-patterns)
    - Single-node, multi-container patterns
       - Sidecar
       - Ambassador
@@ -32,7 +32,7 @@ Collect modern distributed system design patterns.
       - Leader Election
       - Work Queue
       - Scatter/Gather
-- **Resiliency Patterns**
+- [**Resiliency Patterns**](#resiliency-patterns)
    - Circuit Breaker
    - Fallback
    - Bulkhead
