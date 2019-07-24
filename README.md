@@ -5,7 +5,7 @@ Collect modern distributed system design patterns.
 
 ## Categories
 - **Architecture Pattern**
-   - Anti-Corruption Layer
+   - Anti-Corruption Layer (ACL)
    - Backends for Frontends (BFF)
 - **Cache Pattern**
    - Cache-Aside
@@ -16,6 +16,11 @@ Collect modern distributed system design patterns.
       - Refresh-Ahead
 - **Data Management Patterns**
    - Command and Query Responsibility Segregation (CQRS)
+   - Event Sourcing
+   - Saga
+   - API Composition
+   - Database Per Service
+   - Shared Database
 - **Messaging Patterns**
    - Claim Check
 - **Container Patterns**
