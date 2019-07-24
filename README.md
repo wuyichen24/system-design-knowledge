@@ -49,19 +49,23 @@ Collect modern distributed system design patterns.
 ## Brief Introduction
 
 ### Architecture Patterns
+
 | Pattern Name | Diagram | Description |
 | ---- | ------ | ---- |
 | *Anti-Corruption Layer* (ACL) | ![](./diagrams/png/anti_corruption_layer_small.png) | Place an adapter layer between 2 domain models and translate communications between them. | 
 | *Backends For Frontends* (BFF) | ![](./diagrams/png/backends_for_frontends_small.png) | Separate backend services for different frontend applications or interfaces. |
 
 ### Cache Patterns
+
 #### Cache Pattern Categories
+
 | Category Name | Diagram | Description | Patterns |
 |----|----|----|----|
 | *Cache-Aside* | ![](./diagrams/png/cache_aside_small.png) | Application interacts with both cache and database (No interaction between cache and database). |  |
 | *Cache-As-SOR* | ![](./diagrams/png/cache_as_sor_small.png) | Application only interacts with cache. | <ul><li>Read-Through<li>Write-Through<li>Write-Behind<li>Refresh-Ahead</ul> |
 
 #### Cache-As-SOR Patterns
+
 | Pattern Name | Diagram | Description | 
 |----|----|----|
 | *Read-Through* | ![](./diagrams/png/read_through_small.png) | If requested data is not in cache, cache will load the data from database and let application read **synchronously**. |
@@ -70,6 +74,7 @@ Collect modern distributed system design patterns.
 | *Refresh-Ahead* | ![](./diagrams/png/refresh_ahead_small.png) | Cache automatically and **asynchronously** reloads (refreshs) any recently accessed cache entry from database before its expiration. |
 
 ### Container Patterns
+
 | Pattern Name | Diagram | Description |
 |----|-------|----|
 | *Ambassador* | ![](./diagrams/png/ambassador_small.png) | <ul><li>Place an ambassador container between the main application container and the external system for simplifying the view of the external system.</ul> |
@@ -79,12 +84,25 @@ Collect modern distributed system design patterns.
 | *Work Queue* | ![](./diagrams/png/work_queue_small.png) | <ul><li>Group a work queue manager container and a work queue source container as a coordinator for managing the work queue and dispatch work items to workers.<li>Each worker consists of a worker manager container (for integrating with the generic work queue framework) and an application implementation container (for application-specific logic).</ul> |
 | *Scatter/Gather* | ![](./diagrams/png/scatter_gather_small.png) | <ul><li>The root node scatters out the original request to a group of servers to perform a set of tasks in parallel.<li>The root node gathers the partial data from each server and return a single response to the original request.</ul>
 
+### Data Management Patterns
+
+| Pattern Name | Diagram | Description |
+| ---- | ------ | ---- |
+| *Command Query Responsibility Segregation* (CQRS) |  | Use separated models for different types of operations: Command (update data) and Query (read data). |
+| *Event Sourcing* |  |  |
+| *Saga* |  |  |
+| *API Composition* |  |  |
+| *Database Per Service* |  |  |
+| *Shared Database* |  |  |
+
 ### Messaging Patterns
+
 | Pattern Name | Diagram | Description |
 | ---- | ------ | ---- |
 | *Claim Check* | ![](./diagrams/png/claim_check_small.png) | When sending a large message from one service to another, store the large message into a data store, only send the reference as the claim check to the receiver service for retrieving the large message from the data store. |
 
 ### Resiliency Patterns
+
 | Pattern Name | Diagram | Description |
 | ---- | ------ | ---- |
 | *Circuit Breaker* |  | Prevent an application from performing an operation that is likely to fail based on a certain criteria. |
