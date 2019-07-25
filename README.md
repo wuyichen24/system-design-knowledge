@@ -29,7 +29,6 @@ Collect modern distributed system design patterns.
 - **Data Management Patterns**
    - Command Query Responsibility Segregation (CQRS)
    - Event Sourcing
-   - Saga
    - API Composition
    - Database Per Service
    - Shared Database
