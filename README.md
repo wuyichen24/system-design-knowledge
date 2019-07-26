@@ -116,4 +116,4 @@ Collect modern distributed system design patterns.
 | ---- | ------ | ---- |
 | Two-Phase Commit (2PC) |  |  |
 | Three-Phase Commit (3PC) |  |  |
-| Saga |  |  |
+| Saga |  | <ul><li>A sequence of asynchronous local transactions.<li>Each service<ul><li>Starts its action by getting a event/message from the previous service.<li>Sends a event/message to the next service when it completes its action.</ul></ul> |
