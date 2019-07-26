@@ -34,7 +34,6 @@ Collect modern distributed system design patterns.
    - Shared Database
 - [**Messaging Patterns**](#messaging-patterns)
    - Claim Check
-
 - [**Resiliency Patterns**](#resiliency-patterns)
    - Circuit Breaker
    - Fallback
@@ -93,7 +92,6 @@ Collect modern distributed system design patterns.
 | ---- | ------ | ---- |
 | *Command Query Responsibility Segregation* (CQRS) | ![](./diagrams/png/command_query_responsibility_segregation_small.png) | Use separated models for different types of operations: Command (update data) and Query (read data). |
 | *Event Sourcing* | ![](./diagrams/png/event_sourcing_small.png) | Use a sequence of events to capture a series of changes to data. |
-| *Saga* |  |  |
 | *API Composition* |  |  |
 | *Database Per Service* |  |  |
 | *Shared Database* |  |  |
