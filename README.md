@@ -110,3 +110,10 @@ Collect modern distributed system design patterns.
 | *Bulkhead* |  | Isolate the misbehaving service and avoid to take down the entire application by exhausting all the resources. |
 | *Fallback* |  | When a service call fails, execute the alternative action. |
 | *Retry* |  | Retry a failed operation. |
+
+### Transaction Patterns
+| Pattern Name | Diagram | Description |
+| ---- | ------ | ---- |
+| Two-Phase Commit (2PC) |  |  |
+| Three-Phase Commit (3PC) |  |  |
+| Saga |  |  |
