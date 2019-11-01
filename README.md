@@ -15,13 +15,13 @@ Collect modern distributed system design patterns.
       - Write-Behind
       - Refresh-Ahead
 - **Configuration Patterns**
-   - External Configuration Store
-   - Runtime Reconfiguration
+   - [External Configuration Store](patterns/configuration_patterns/External_Configuration_Store.md)
+   - [Runtime Reconfiguration](patterns/configuration_patterns/Runtime_Reconfiguration.md)
 - [**Container Patterns**](#container-patterns)
    - Single-node, multi-container patterns
-      - Sidecar
-      - Ambassador
-      - Adapter
+      - [Sidecar](patterns/container_patterns/Sidecar.md)
+      - [Ambassador](patterns/container_patterns/Ambassador.md)
+      - [Adapter](patterns/container_patterns/Adapter.md)
    - Multi-node patterns
       - Leader Election
       - Work Queue
@@ -29,13 +29,11 @@ Collect modern distributed system design patterns.
 - **Data Management Patterns**
    - Command Query Responsibility Segregation (CQRS)
    - Event Sourcing
-   - Saga
    - API Composition
    - Database Per Service
    - Shared Database
 - [**Messaging Patterns**](#messaging-patterns)
    - Claim Check
-
 - [**Resiliency Patterns**](#resiliency-patterns)
    - Circuit Breaker
    - Fallback
@@ -43,6 +41,10 @@ Collect modern distributed system design patterns.
    - Retry
 - **Security Patterns**
    - Valet Key
+- **Transaction Patterns**
+   - Two-Phase Commit (2PC)
+   - Three-Phase Commit (3PC)
+   - Saga
 
 ----
 
@@ -90,7 +92,6 @@ Collect modern distributed system design patterns.
 | ---- | ------ | ---- |
 | *Command Query Responsibility Segregation* (CQRS) | ![](./diagrams/png/command_query_responsibility_segregation_small.png) | Use separated models for different types of operations: Command (update data) and Query (read data). |
 | *Event Sourcing* | ![](./diagrams/png/event_sourcing_small.png) | Use a sequence of events to capture a series of changes to data. |
-| *Saga* |  |  |
 | *API Composition* |  |  |
 | *Database Per Service* |  |  |
 | *Shared Database* |  |  |
@@ -109,3 +110,10 @@ Collect modern distributed system design patterns.
 | *Bulkhead* |  | Isolate the misbehaving service and avoid to take down the entire application by exhausting all the resources. |
 | *Fallback* |  | When a service call fails, execute the alternative action. |
 | *Retry* |  | Retry a failed operation. |
+
+### Transaction Patterns
+| Pattern Name | Diagram | Description |
+| ---- | ------ | ---- |
+| Two-Phase Commit (2PC) |  |  |
+| Three-Phase Commit (3PC) |  |  |
+| Saga |  | <ul><li>A sequence of asynchronous local transactions.<li>Each service<ul><li>Starts its action by getting a event/message from the previous service.<li>Sends a event/message to the next service when it completes its action.</ul></ul> |
