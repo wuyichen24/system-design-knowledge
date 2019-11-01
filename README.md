@@ -15,7 +15,7 @@ Collect modern distributed system design patterns.
       - Write-Behind
       - Refresh-Ahead
 - **Configuration Patterns**
-   - External Configuration Store
+   - [External Configuration Store](patterns/configuration_patterns/External_Configuration_Store.md)
    - Runtime Reconfiguration
 - [**Container Patterns**](#container-patterns)
    - Single-node, multi-container patterns
