@@ -15,13 +15,13 @@ Collect modern distributed system design patterns.
       - Write-Behind
       - Refresh-Ahead
 - **Configuration Patterns**
-   - External Configuration Store
-   - Runtime Reconfiguration
+   - [External Configuration Store](patterns/configuration_patterns/External_Configuration_Store.md)
+   - [Runtime Reconfiguration](patterns/configuration_patterns/Runtime_Reconfiguration.md)
 - [**Container Patterns**](#container-patterns)
    - Single-node, multi-container patterns
-      - Sidecar
-      - Ambassador
-      - Adapter
+      - [Sidecar](patterns/container_patterns/Sidecar.md)
+      - [Ambassador](patterns/container_patterns/Ambassador.md)
+      - [Adapter](patterns/container_patterns/Adapter.md)
    - Multi-node patterns
       - Leader Election
       - Work Queue
