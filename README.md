@@ -114,6 +114,6 @@ Collect modern distributed system design patterns.
 ### Transaction Patterns
 | Pattern Name | Diagram | Description |
 | ---- | ------ | ---- |
-| Two-Phase Commit (2PC) |  |  |
+| Two-Phase Commit (2PC) |  | <ul><li>**Commit-Request/Voting Phase**<ul><li>Each participants execute transactions and send back the aggreement message (success) or the abort message (fail) to the the coordinator.</ul><li>**Commit/Completion Phase**<ul><li>**Success**: If the coordinator received an agreement message (success) from all participants:<li>**Failure**: If any participant sent a abort message to the coordinator:</ul></ul> |
 | Three-Phase Commit (3PC) |  |  |
 | Saga |  | <ul><li>A sequence of asynchronous local transactions.<li>Each service<ul><li>Starts its action by getting a event/message from the previous service.<li>Sends a event/message to the next service when it completes its action.</ul></ul> |
