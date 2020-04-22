@@ -5,15 +5,15 @@ Collect modern distributed system design patterns.
 
 ## Categories
 - [**Architecture Pattern**](#architecture-patterns)
-   - Anti-Corruption Layer (ACL)
-   - Backends for Frontends (BFF)
+   - [Anti-Corruption Layer (ACL)](patterns/architecture_patterns/Anti_Corruption_Layer.md)
+   - [Backends for Frontends (BFF)](patterns/architecture_patterns/Backends_For_Frontends.md)
 - [**Cache Pattern**](#cache-patterns)
-   - Cache-Aside
+   - [Cache-Aside](patterns/cache_patterns/Cache_Aside.md)
    - Cache-As-SOR
-      - Read-Through
-      - Write-Through
-      - Write-Behind
-      - Refresh-Ahead
+      - [Read-Through](patterns/cache_patterns/Read_Through.md)
+      - [Write-Through](patterns/cache_patterns/Write_Through.md)
+      - [Write-Behind](patterns/cache_patterns/Write_Behind.md)
+      - [Refresh-Ahead](patterns/cache_patterns/Refresh_Ahead.md)
 - **Configuration Patterns**
    - [External Configuration Store](patterns/configuration_patterns/External_Configuration_Store.md)
    - [Runtime Reconfiguration](patterns/configuration_patterns/Runtime_Reconfiguration.md)
