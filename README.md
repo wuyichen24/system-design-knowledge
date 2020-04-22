@@ -26,7 +26,7 @@ Collect modern distributed system design patterns.
       - Leader Election
       - Work Queue
       - Scatter/Gather
-- **Data Management Patterns**
+- [**Data Management Patterns**](#data-management-patterns)
    - Command Query Responsibility Segregation (CQRS)
    - Event Sourcing
    - API Composition
@@ -41,7 +41,7 @@ Collect modern distributed system design patterns.
    - Retry
 - **Security Patterns**
    - Valet Key
-- **Transaction Patterns**
+- [**Transaction Patterns**](#transaction-patterns)
    - Two-Phase Commit (2PC)
    - Three-Phase Commit (3PC)
    - Saga
