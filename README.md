@@ -23,28 +23,28 @@ Collect modern distributed system design patterns.
       - [Ambassador](patterns/container_patterns/Ambassador.md)
       - [Adapter](patterns/container_patterns/Adapter.md)
    - Multi-node patterns
-      - Leader Election
-      - Work Queue
-      - Scatter/Gather
+      - [Leader Election](patterns/container_patterns/Leader_Election.md)
+      - [Work Queue](patterns/container_patterns/Work_Queue.md)
+      - [Scatter/Gather](patterns/container_patterns/Scatter_Gather.md)
 - [**Data Management Patterns**](#data-management-patterns)
-   - Command Query Responsibility Segregation (CQRS)
-   - Event Sourcing
-   - API Composition
-   - Database Per Service
-   - Shared Database
+   - [Command Query Responsibility Segregation (CQRS)](patterns/data_management_patterns/Command_Query_Responsibility_Segregation.md)
+   - [Event Sourcing](patterns/data_management_patterns/Event_Sourcing.md)
+   - [API Composition](patterns/data_management_patterns/API_Composition.md)
+   - [Database Per Service](patterns/data_management_patterns/Database_Per_Service.md)
+   - [Shared Database](patterns/data_management_patterns/Shared_Database.md)
 - [**Messaging Patterns**](#messaging-patterns)
-   - Claim Check
+   - [Claim Check](patterns/messaging_patterns/Claim_Check.md)
 - [**Resiliency Patterns**](#resiliency-patterns)
-   - Circuit Breaker
-   - Fallback
-   - Bulkhead
-   - Retry
+   - [Circuit Breaker](patterns/resiliency_patterns/Circuit_Breaker.md)
+   - [Fallback](patterns/resiliency_patterns/Fallback.md)
+   - [Bulkhead](patterns/resiliency_patterns/Bulkhead.md)
+   - [Retry](patterns/resiliency_patterns/Retry.md)
 - **Security Patterns**
-   - Valet Key
+   - [Valet Key](patterns/security_patterns/Valet_Key.md)
 - [**Transaction Patterns**](#transaction-patterns)
-   - Two-Phase Commit (2PC)
-   - Three-Phase Commit (3PC)
-   - Saga
+   - [Two-Phase Commit (2PC)](patterns/transaction_patterns/Two_Phase_Commit.md)
+   - [Three-Phase Commit (3PC)](patterns/transaction_patterns/Three_Phase_Commit.md)
+   - [Saga](patterns/transaction_patterns/Saga.md)
 
 ----
 
