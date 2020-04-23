@@ -34,4 +34,4 @@
 ## Consideration
 ## When To Use
 ## References
-- Chris R.(2018). Chapter 6 Developing business logic with event sourcing, *Microservices Patterns*. Manning Publications
+- Chris R.(2018). Chapter 6 Developing business logic with event sourcing, *Microservices Patterns* (pp. 183-219). Manning Publications
