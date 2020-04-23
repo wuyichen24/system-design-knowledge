@@ -12,9 +12,9 @@
 - [**When To Use**](#when-to-use)
 - [**References**](#references)
    
-
 ## Motivation
 - Only store the current state of an entity is not enough.
+- CRUD is not an ideal fit for distributed systems.
 
 ## Solution
 ### Concepts
