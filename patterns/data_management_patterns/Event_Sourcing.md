@@ -50,6 +50,7 @@
  
 ## Pros & Cons
 ### Pros
+- Stateless - Decouple from the dependency on the state representation.
 - Reliably publishes domain events.
 - Preserves the history of entities.
    - Provides an audit log of entities.
