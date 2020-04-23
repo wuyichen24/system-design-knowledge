@@ -17,6 +17,20 @@
       - The current state of an entity will be reconstructed by loading the most recent snapshot and only the fewer events that have occurred since the snapshot was created.
 
 ## Pros & Cons
+### Pros
+- Reliably publishes domain events.
+- Preserves the history of entities.
+   - Provides an audit log of entities.
+- Avoids the object‑relational impedance mismatch problem.
+
+
+### Cons
+- Has a learning curve.
+- Increases the complexity of an application.
+- Deleting data is tricky.
+- Evolving events can be tricky.
+- Querying the event store is challenging.
+
 ## Consideration
 ## When To Use
 ## References
