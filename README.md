@@ -90,30 +90,30 @@ Collect modern distributed system design patterns.
 
 | Pattern Name | Diagram | Description |
 | ---- | ------ | ---- |
-| *Command Query Responsibility Segregation* (CQRS) | ![](./diagrams/png/command_query_responsibility_segregation_small.png) | Use separated models for different types of operations: Command (update data) and Query (read data). |
-| *Event Sourcing* | ![](./diagrams/png/event_sourcing_small.png) | Use a sequence of events to capture a series of changes to data. |
-| *API Composition* |  |  |
-| *Database Per Service* |  |  |
-| *Shared Database* |  |  |
+| [*Command Query Responsibility Segregation (CQRS)*](patterns/data_management_patterns/Command_Query_Responsibility_Segregation.md) | ![](./diagrams/png/command_query_responsibility_segregation_small.png) | Use separated models for different types of operations: Command (update data) and Query (read data). |
+| [*Event Sourcing*](patterns/data_management_patterns/Event_Sourcing.md) | ![](./diagrams/png/event_sourcing_small.png) | Use a sequence of events to capture a series of changes to data. |
+| [*API Composition*](patterns/data_management_patterns/API_Composition.md) |  |  |
+| [*Database Per Service*](patterns/data_management_patterns/Database_Per_Service.md) |  |  |
+| [*Shared Database*](patterns/data_management_patterns/Shared_Database.md) |  |  |
 
 ### Messaging Patterns
 
 | Pattern Name | Diagram | Description |
 | ---- | ------ | ---- |
-| *Claim Check* | ![](./diagrams/png/claim_check_small.png) | When sending a large message from one service to another, store the large message into a data store, only send the reference as the claim check to the receiver service for retrieving the large message from the data store. |
+| [*Claim Check*](patterns/messaging_patterns/Claim_Check.md) | ![](./diagrams/png/claim_check_small.png) | When sending a large message from one service to another, store the large message into a data store, only send the reference as the claim check to the receiver service for retrieving the large message from the data store. |
 
 ### Resiliency Patterns
 
 | Pattern Name | Diagram | Description |
 | ---- | ------ | ---- |
-| *Circuit Breaker* |  | Prevent an application from performing an operation that is likely to fail based on a certain criteria. |
-| *Bulkhead* |  | Isolate the misbehaving service and avoid to take down the entire application by exhausting all the resources. |
-| *Fallback* |  | When a service call fails, execute the alternative action. |
-| *Retry* |  | Retry a failed operation. |
+| [*Circuit Breaker*](patterns/resiliency_patterns/Circuit_Breaker.md) |  | Prevent an application from performing an operation that is likely to fail based on a certain criteria. |
+| [*Bulkhead*](patterns/resiliency_patterns/Bulkhead.md) |  | Isolate the misbehaving service and avoid to take down the entire application by exhausting all the resources. |
+| [*Fallback*](patterns/resiliency_patterns/Fallback.md) |  | When a service call fails, execute the alternative action. |
+| [*Retry*](patterns/resiliency_patterns/Retry.md) |  | Retry a failed operation. |
 
 ### Transaction Patterns
 | Pattern Name | Diagram | Description |
 | ---- | ------ | ---- |
-| [Two-Phase Commit (2PC)](patterns/transaction_patterns/Two_Phase_Commit.md) | ![](./diagrams/png/2pc_small.png) | The coordinator uses 2 phases to coordinates participants on whether to commit or abort (roll back) the distributed atomic transaction: <ul><li>**Commit-Request/Voting Phase**<ul><li>The coordinator sends a request-to-prepare message to all participants.<li>Each participant prepare the transaction and send back the aggreement message (success) or the abort message (fail) to the the coordinator.</ul><li>**Commit/Completion Phase**<ul><li>**Success**: If the coordinator received an agreement message from all participants:<ul><li>The coordinator sends a commit message to all the participants.<li>Each participant commits the transcation and releases all the locks.<li>Each participant sends an acknowledgement to the coordinator.</ul><li>**Failure**: If any participant sent a abort message to the coordinator:<ul><li>The coordinator sends a rollback message to all the participants.<li>Each participant undos the transaction and release all the locks.<li>Each participant sends an acknowledgement to the coordinator.</ul></ul></ul> |
-| [Three-Phase Commit (3PC)](patterns/transaction_patterns/Three_Phase_Commit.md) |  |  |
-| [Saga](patterns/transaction_patterns/Saga.md) | ![](./diagrams/png/saga_small.png) | <ul><li>A sequence of asynchronous local transactions.<li>Each service<ul><li>Starts its action by getting a event/message from the previous service.<li>Sends a event/message to the next service when it completes its action.</ul><li>If one action fails, executes compensating transactions to rollback the changes.</ul> |
+| [*Two-Phase Commit (2PC)*](patterns/transaction_patterns/Two_Phase_Commit.md) | ![](./diagrams/png/2pc_small.png) | The coordinator uses 2 phases to coordinates participants on whether to commit or abort (roll back) the distributed atomic transaction: <ul><li>**Commit-Request/Voting Phase**<ul><li>The coordinator sends a request-to-prepare message to all participants.<li>Each participant prepare the transaction and send back the aggreement message (success) or the abort message (fail) to the the coordinator.</ul><li>**Commit/Completion Phase**<ul><li>**Success**: If the coordinator received an agreement message from all participants:<ul><li>The coordinator sends a commit message to all the participants.<li>Each participant commits the transcation and releases all the locks.<li>Each participant sends an acknowledgement to the coordinator.</ul><li>**Failure**: If any participant sent a abort message to the coordinator:<ul><li>The coordinator sends a rollback message to all the participants.<li>Each participant undos the transaction and release all the locks.<li>Each participant sends an acknowledgement to the coordinator.</ul></ul></ul> |
+| [*Three-Phase Commit (3PC)*](patterns/transaction_patterns/Three_Phase_Commit.md) |  |  |
+| [*Saga*](patterns/transaction_patterns/Saga.md) | ![](./diagrams/png/saga_small.png) | <ul><li>A sequence of asynchronous local transactions.<li>Each service<ul><li>Starts its action by getting a event/message from the previous service.<li>Sends a event/message to the next service when it completes its action.</ul><li>If one action fails, executes compensating transactions to rollback the changes.</ul> |
