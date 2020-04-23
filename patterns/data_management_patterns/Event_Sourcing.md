@@ -78,5 +78,6 @@
 ## References
 - Book: [Chris R.(2018). Chapter 6 Developing business logic with event sourcing, *Microservices Patterns* (pp. 183-219). Manning Publications](https://www.manning.com/books/microservices-patterns)
 - Web Article: [Pattern: Event sourcing | https://microservices.io/patterns/data/event-sourcing.html](https://microservices.io/patterns/data/event-sourcing.html)
+- Web Article: [Event Sourcing pattern | https://docs.microsoft.com/en-us/azure/architecture/patterns/event-sourcing](https://docs.microsoft.com/en-us/azure/architecture/patterns/event-sourcing)
 - Web Video: [Event Sourcing for Enterprise, 2019 (updated) | https://www.youtube.com/watch?v=xQ5YkMBPe0o](https://www.youtube.com/watch?v=xQ5YkMBPe0o)
 - Web Video: [From CRUD to Event Sourcing Why CRUD is the wrong approach for microservices | https://www.youtube.com/watch?v=holjbuSbv3k](https://www.youtube.com/watch?v=holjbuSbv3k)
