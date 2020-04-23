@@ -54,8 +54,8 @@
 - Reliably publishes domain events.
 - Preserves the history of entities.
    - Easy to debug an issue.
-   - Some regulations (HIPPA, GLBA, SOX) or industries need audit log/trail.
-- Avoids the object‑relational impedance mismatch problem.
+   - Some regulations ([HIPPA](https://en.wikipedia.org/wiki/Health_Insurance_Portability_and_Accountability_Act), [GLBA](https://en.wikipedia.org/wiki/Gramm%E2%80%93Leach%E2%80%93Bliley_Act), [SOX](https://en.wikipedia.org/wiki/Sarbanes%E2%80%93Oxley_Act)) or industries need audit log/trail.
+- Avoids [the object‑relational impedance mismatch problem](https://en.wikipedia.org/wiki/Object-relational_impedance_mismatch).
 
 ### Cons
 - It has a learning curve.
