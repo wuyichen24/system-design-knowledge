@@ -58,8 +58,9 @@
 - Avoids the object‑relational impedance mismatch problem.
 
 ### Cons
-- Has a learning curve.
-- Increases the complexity of an application.
+- It has a learning curve.
+- It increases the complexity of an application.
+- It is not mainstream.
 - Deleting data is tricky.
 - Evolving events can be tricky.
 - Querying the event store is challenging.
