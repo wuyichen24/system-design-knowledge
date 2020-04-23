@@ -66,15 +66,12 @@
 - Querying the event store is challenging.
 
 ## Consideration
-- Data storage
-   - It takes a large amount of space to store every event.
-- Performance
-   - It takes a long time to replay all the events for reconstructing the current state of an entity.
-   - Consider to use snapshots to improve performance.
-   - Consider to use cache (in-memory key-value store) to improve performance.
-- Query data
-   - Query multiple entities in one time.
-   - Consider to use CQRS with Elasticsearch.
+
+| Topic | Consideration | Possible Solution Options |
+|----|-----|-----|
+| Data storage | It takes a large amount of space to store every event. | |
+| Performance | It takes a long time to replay all the events for reconstructing the current state of an entity. | <li>Consider to use snapshots to improve performance.<li>Consider to use cache (in-memory key-value store) to improve performance. |
+| Query data | Query multiple entities in one time. | <li>Consider to use CQRS with Elasticsearch.|
 
 ## When To Use
 ## References
