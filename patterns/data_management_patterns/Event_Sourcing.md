@@ -63,6 +63,13 @@
 - Querying the event store is challenging.
 
 ## Consideration
+- Data storage
+   - It takes a large amount of space to store every event.
+- Performance
+   - It takes a long time to replay all the events for reconstructing the current state of an entity.
+   - Consider to use snapshots to improve performance.
+   - Consider to use cache (in-memory key-value store) to improve performance.
+
 ## When To Use
 ## References
 - Book: [Chris R.(2018). Chapter 6 Developing business logic with event sourcing, *Microservices Patterns* (pp. 183-219). Manning Publications](https://www.manning.com/books/microservices-patterns)
