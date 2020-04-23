@@ -72,6 +72,9 @@
    - It takes a long time to replay all the events for reconstructing the current state of an entity.
    - Consider to use snapshots to improve performance.
    - Consider to use cache (in-memory key-value store) to improve performance.
+- Query data
+   - Query multiple entities in one time.
+   - Consider to use CQRS with Elasticsearch.
 
 ## When To Use
 ## References
