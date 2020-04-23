@@ -53,7 +53,8 @@
 - Stateless - Decouple from the dependency on the state representation.
 - Reliably publishes domain events.
 - Preserves the history of entities.
-   - Provides an audit log of entities.
+   - Easy to debug an issue.
+   - Some regulations (HIPPA, GLBA, SOX) or industries need audit log/trail.
 - Avoids the object‑relational impedance mismatch problem.
 
 ### Cons
