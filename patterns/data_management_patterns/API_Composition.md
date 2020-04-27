@@ -24,9 +24,9 @@
 - Decide who plays the role of the API composer
   | Decision | Situation |
   |----|----|
-  | Not a client | <li>Clients that are outside of the firewall and access services via a slower network. |
-  | A standalone service | <li>The data combination logic is too complex. <li>The query operation is also used internally by other services. |
-  | API gateway | <li>The data combination logic is simple. <li>The query operation is for external calls. |
+  | Not a client | <ul><li>Clients that are outside of the firewall and access services via a slower network.</ul> |
+  | A standalone service | <ul><li>The data combination logic is too complex. <li>The query operation is also used internally by other services.</ul> |
+  | API gateway | <ul><li>The data combination logic is simple. <li>The query operation is for external calls.</ul> |
    
 ## Pros & Cons
 ### Pros
@@ -41,9 +41,9 @@
 | Topic | Consideration | Possible Solution Options |
 |----|-----|-----|
 | Scalability | The data needs to be combined can be large. | |
-| Complexity | The data combination logic can be complex. | <li>Consider to put the API composer as a standalone service (The logic is too complex to be part of an API gateway). |
-| Availability | One service may be unavailable during a query operation. | <li>Consider to let the API composer return previously cached data from the unavailable service.<li>Consider to let the API composer return incomplete data. |
-| Performance | The latency can be increased by calling multiple services. | <li>Consider to let the API composer call multiple services in parallel if possible (Sometime it may be impossible, an API composer needs the result of one service in order to invoke another service). |
+| Complexity | The data combination logic can be complex. | <ul><li>Consider to put the API composer as a standalone service (The logic is too complex to be part of an API gateway).</ul> |
+| Availability | One service may be unavailable during a query operation. | <ul><li>Consider to let the API composer return previously cached data from the unavailable service.<li>Consider to let the API composer return incomplete data.</ul> |
+| Performance | The latency can be increased by calling multiple services. | <ul><li>Consider to let the API composer call multiple services in parallel if possible (Sometime it may be impossible, an API composer needs the result of one service in order to invoke another service).</ul> |
 
 ## When To Use
 ## References
