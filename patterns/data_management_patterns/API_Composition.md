@@ -12,7 +12,7 @@
 - [**References**](#references)
 
 ## Motivation
-- Need to retrieve data from multiple services in a microservice architecture.
+- Problem of retrieving data from multiple services in a microservice architecture.
 
 ## Solution
 ### Concepts
