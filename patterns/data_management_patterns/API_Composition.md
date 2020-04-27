@@ -22,6 +22,7 @@
    
 ### Implementation
 - Decide who plays the role of the API composer
+
   | Decision | Situation |
   |----|----|
   | Not a client | <ul><li>Clients that are outside of the firewall and access services via a slower network.</ul> |
