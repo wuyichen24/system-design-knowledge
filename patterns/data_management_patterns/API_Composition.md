@@ -2,6 +2,8 @@
 
 - [**Motivation**](#motivation)
 - [**Solution**](#solution)
+   - [Concepts](#concepts)
+   - [Implementation](#implementation)
 - [**Pros & Cons**](#pros--cons)
    - [Pros](#pros)
    - [Cons](#cons)
@@ -17,6 +19,14 @@
 - Uses an API composer to retrieve data from multiple services and combine the results.
 - An API composer can be a client or a service.
    - A service can a API gateway or a standalone service.
+   
+### Implementation
+- Decide who plays the role of the API composer
+  | Decision | Situation |
+  |----|----|
+  | Not a client | <li>Clients that are outside of the firewall and access services via a slower network. |
+  | A standalone service | <li>The data combination logic is too complex. <li>The query operation is also used internally by other services. |
+  | API gateway | <li>The data combination logic is simple. <li>The query operation is for external calls. |
    
 ## Pros & Cons
 ### Pros
