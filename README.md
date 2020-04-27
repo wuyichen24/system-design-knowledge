@@ -92,7 +92,7 @@ Collect modern distributed system design patterns.
 | ---- | ------ | ---- |
 | [*Command Query Responsibility Segregation (CQRS)*](patterns/data_management_patterns/Command_Query_Responsibility_Segregation.md) | ![](./diagrams/png/command_query_responsibility_segregation_small.png) | Use separated models for different types of operations: Command (update data) and Query (read data). |
 | [*Event Sourcing*](patterns/data_management_patterns/Event_Sourcing.md) | ![](./diagrams/png/event_sourcing_small.png) | Use a sequence of events to capture a series of changes to data. |
-| [*API Composition*](patterns/data_management_patterns/API_Composition.md) |  | Use an API composer to retrieve data from multiple services and combine the results for query operations. |
+| [*API Composition*](patterns/data_management_patterns/API_Composition.md) | ![](./diagrams/png/api_composition_small.png) | Use an API composer to retrieve data from multiple services and combine the results for query operations. |
 | [*Database Per Service*](patterns/data_management_patterns/Database_Per_Service.md) |  |  |
 | [*Shared Database*](patterns/data_management_patterns/Shared_Database.md) |  |  |
 
