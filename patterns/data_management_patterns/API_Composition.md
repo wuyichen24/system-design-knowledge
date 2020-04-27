@@ -25,7 +25,7 @@
   | Decision | Situation |
   |----|----|
   | Not a client | <ul><li>Clients that are outside of the firewall and access services via a slower network.</ul> |
-  | A standalone service | <ul><li>The data combination logic is too complex. <li>The query operation is also used internally by other services.</ul> |
+  | A standalone service | <ul><li>The data combination logic is complex. <li>The query operation is also used internally by other services.</ul> |
   | API gateway | <ul><li>The data combination logic is simple. <li>The query operation is for external calls.</ul> |
    
 ## Pros & Cons
