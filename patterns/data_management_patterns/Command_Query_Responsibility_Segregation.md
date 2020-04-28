@@ -39,3 +39,5 @@
 ## When To Use
 
 ## References
+- Book: [Chris R.(2018). Chapter 7 Implementing queries in a microservice architecture, *Microservices Patterns* (pp. 220-252). Manning Publications](https://www.manning.com/books/microservices-patterns)
+- Web Article: [Pattern: Command Query Responsibility Segregation (CQRS) | https://microservices.io/patterns/data/cqrs.html](https://microservices.io/patterns/data/cqrs.html)
