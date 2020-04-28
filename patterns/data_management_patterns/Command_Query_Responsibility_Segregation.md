@@ -34,10 +34,7 @@ Dealing with the replication lag  between the command-side and the query-side.
 |----|-----|-----|
 | Concurrency | Multiple concurrent updates to the same database record. | <li>Consider to use pessimistic or optimistic locking. |
 | Idempotency | An event handler may be invoked with the same event more than once. | <li>Consider to record the IDs of events that it has processed in the view datastore. |
-| Data consistency | A client that updates the command side and then immediately executes a query might not see its own update. |
-<li>Consider to use this approach to let the client detect an inconsistency: A command-side operation returns a token containing the ID of the published event to the client. The client then passes the token to a query operation, which returns an error if the view hasn’t been updated by that event. |
-
-
+| Data consistency | A client that updates the command side and then immediately executes a query might not see its own update. | <li>Consider to use this approach to let the client detect an inconsistency: A command-side operation returns a token containing the ID of the published event to the client. The client then passes the token to a query operation, which returns an error if the view hasn’t been updated by that event. |
 
 ## When To Use
 
