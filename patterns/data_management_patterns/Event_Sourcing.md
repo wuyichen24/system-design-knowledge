@@ -18,6 +18,7 @@
 
 ## Solution
 ### Concepts
+![](../../diagrams/png/event_sourcing_small.png)
 - Persists an entity as a sequence of events.
 - Each event represents a state change of the entity that has happened.
 - The current state of an entity will be reconstructed by replaying the events.
