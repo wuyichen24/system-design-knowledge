@@ -25,6 +25,7 @@
 ### Implementation
 #### Command Side
 #### Query Side
+![](../../diagrams/png/cqrs_query_side.png)
 - Participants and their responsibilities
    - View database
       - Persists multiple views of data.
