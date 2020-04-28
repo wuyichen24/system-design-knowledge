@@ -3,6 +3,9 @@
 - [**Motivation**](#motivation)
 - [**Solution**](#solution)
    - [Concepts](#concepts)
+   - [Implementation](#implementation)
+      - [Command Side](#command-side)
+      - [Query Side](#query-side)
 - [**Pros & Cons**](#pros--cons)
    - [Pros](#pros)
    - [Cons](#cons)
@@ -18,6 +21,22 @@
 - The command side modules and data model implement create, update, and delete operations (CUD).
 - The query-side modules and data model implement queries (R).
 - The query side keeps its data model synchronized with the command-side data model by subscribing to the events published by the command side.
+
+### Implementation
+#### Command Side
+#### Query Side
+- Participants and their responsibilities
+   - View database
+      - Persists multiple views of data.
+   - Data access
+      - Implements the database access logic.
+      - Implements the update operations invoked by the event handlers and the query operations invoked by the query API.
+      - Consists of a data access object (DAO) and its helper classes.
+   - Event handlers
+      - Subscribes to events published by the command side.
+      - Updates or deletes data in the view database using primary keys or foreign keys.
+   - Query API
+      - Implements the query API.
 
 ## Pros & Cons
 ### Pros
