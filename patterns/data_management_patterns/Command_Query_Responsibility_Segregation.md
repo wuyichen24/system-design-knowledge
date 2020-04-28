@@ -26,8 +26,8 @@
 - Supports multiple denormalized views of data.
 
 ### Cons
-Increased complexity.
-Dealing with the replication lag  between the command-side and the query-side.
+- Increased complexity.
+- Dealing with the replication lag  between the command-side and the query-side.
 
 ## Consideration
 | Topic | Consideration | Possible Solution Options |
