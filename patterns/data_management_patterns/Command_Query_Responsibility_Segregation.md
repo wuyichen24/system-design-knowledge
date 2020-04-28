@@ -14,6 +14,7 @@
 - [**References**](#references)
 
 ## Motivation
+- Read and write workloads are often asymmetrical, with very different performance and scale requirements.
 
 ## Solution
 ### Concepts
