@@ -66,7 +66,6 @@
 - Querying the event store is challenging.
 
 ## Consideration
-
 | Topic | Consideration | Possible Solution Options |
 |----|-----|-----|
 | Data storage | It takes a large amount of space to store every event. | |
