@@ -25,6 +25,7 @@
 
 ### Implementation
 #### Database
+![](../../diagrams/png/command_query_responsibility_segregation_small_1db.png)![](../../diagrams/png/command_query_responsibility_segregation_small_2db.png)
 - Command-side database and query-side database can use one database or separated databases.
 - If separate command-side and query-side databases are used:
    - They can use different types of database. For example, one database might be SQL, another one might be No-SQL.
