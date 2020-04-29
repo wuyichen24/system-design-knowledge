@@ -4,8 +4,8 @@
 - [**Solution**](#solution)
    - [Concepts](#concepts)
    - [Implementation](#implementation)
-      - [Command Side](#command-side)
-      - [Query Side](#query-side)
+      - [Database](#database)
+      - [Synchronization](#synchronization)
 - [**Pros & Cons**](#pros--cons)
    - [Pros](#pros)
    - [Cons](#cons)
@@ -25,7 +25,6 @@
 
 ### Implementation
 #### Database
-
 - Command-side database and query-side database can use one database or separated databases.
    - One database.
       - ![](../../diagrams/png/command_query_responsibility_segregation_small_1db.png)
@@ -43,22 +42,6 @@
       - ![](../../diagrams/png/command_query_responsibility_segregation_small_event.png)
    - **By read-only replica**: The query-side uses the read-only replica of the command-side database.
       - ![](../../diagrams/png/command_query_responsibility_segregation_small_replica.png)
-   
-#### Command Side
-#### Query Side
-![](../../diagrams/png/cqrs_query_side.png)
-- Participants and their responsibilities
-   - View database
-      - Persists multiple views of data.
-   - Data access
-      - Implements the database access logic.
-      - Implements the update operations invoked by the event handlers and the query operations invoked by the query API.
-      - Consists of a data access object (DAO) and its helper classes.
-   - Event handlers
-      - Subscribes to events published by the command side.
-      - Updates or deletes data in the view database using primary keys or foreign keys.
-   - Query API
-      - Implements the query API.
 
 ## Pros & Cons
 ### Pros
