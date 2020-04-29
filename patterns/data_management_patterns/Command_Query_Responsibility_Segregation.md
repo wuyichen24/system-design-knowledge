@@ -14,17 +14,32 @@
 - [**References**](#references)
 
 ## Motivation
+- Read and write workloads are often asymmetrical, with very different performance and scale requirements.
 
 ## Solution
 ### Concepts
 - Separate a service into two parts: the command side and the query side.
 - The command side modules and data model implement create, update, and delete operations (CUD).
 - The query-side modules and data model implement queries (R).
-- The query side keeps its data model synchronized with the command-side data model by subscribing to the events published by the command side.
+- The query side keeps its data model synchronized with the command-side data model.
 
 ### Implementation
+#### Database
+- Command-side database and query-side database can use one database or separated databases.
+- If separate command-side and query-side databases are used:
+   - They can use different types of database. For example, one database might be SQL, another one might be No-SQL.
+   - They can use different data schema. For example, the schema of query-side database can be optimized for queries.
+   - They can be scaled differently.
+   
+#### Synchronization
+- If separate command-side and query-side databases are used, they must be kept in sync.
+- There are several options for synchronization:
+   - **By event**: The query-side subscribes to the events published by the command-side.
+   - **By read-only replica**: The query-side uses the read-only replica of the command-side database.
+   
 #### Command Side
 #### Query Side
+![](../../diagrams/png/cqrs_query_side.png)
 - Participants and their responsibilities
    - View database
       - Persists multiple views of data.
