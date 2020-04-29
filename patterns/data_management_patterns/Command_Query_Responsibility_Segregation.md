@@ -24,6 +24,19 @@
 - The query side keeps its data model synchronized with the command-side data model.
 
 ### Implementation
+#### Database
+- Command-side database and query-side database can use one database or separated databases.
+- If separate command-side and query-side databases are used:
+   - They can use different types of database. For example, one database might be SQL, another one might be No-SQL.
+   - They can use different data schema. For example, the schema of query-side database can be optimized for queries.
+   - They can be scaled differently.
+   
+#### Synchronization
+- If separate command-side and query-side databases are used, they must be kept in sync.
+- There are several options for synchronization:
+   - The query-side subscribes to the events published by the command-side.
+   - The query-side uses the read-only replica of the command-side database.
+   
 #### Command Side
 #### Query Side
 ![](../../diagrams/png/cqrs_query_side.png)
