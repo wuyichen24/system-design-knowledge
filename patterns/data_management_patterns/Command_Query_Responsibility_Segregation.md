@@ -34,8 +34,8 @@
 #### Synchronization
 - If separate command-side and query-side databases are used, they must be kept in sync.
 - There are several options for synchronization:
-   - The query-side subscribes to the events published by the command-side.
-   - The query-side uses the read-only replica of the command-side database.
+   - **By event**: The query-side subscribes to the events published by the command-side.
+   - **By read-only replica**: The query-side uses the read-only replica of the command-side database.
    
 #### Command Side
 #### Query Side
