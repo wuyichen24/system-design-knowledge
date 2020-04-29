@@ -21,7 +21,7 @@
 - Separate a service into two parts: the command side and the query side.
 - The command side modules and data model implement create, update, and delete operations (CUD).
 - The query-side modules and data model implement queries (R).
-- The query side keeps its data model synchronized with the command-side data model by subscribing to the events published by the command side.
+- The query side keeps its data model synchronized with the command-side data model.
 
 ### Implementation
 #### Command Side
