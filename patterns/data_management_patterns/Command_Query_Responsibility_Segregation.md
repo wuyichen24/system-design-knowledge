@@ -47,7 +47,7 @@
 ### Pros
 - The command-side and the query-side can be designed and tuned differently.
    - The command-side and the query-side may have difference requirements in performance, scalability (workload), security, etc.
-- Simplify the command-side and the query-side.
+- Simplify the command-side and the query-side in design and implementation.
 - Supports multiple denormalized views of data.
 
 ### Cons
