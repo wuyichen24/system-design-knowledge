@@ -45,6 +45,7 @@
       - ![](../../diagrams/png/command_query_responsibility_segregation_small_replica.png)
       
 #### CQRS + Event Sourcing
+![](../../diagrams/png/command_query_responsibility_segregation_event_sourcing.png)
 - CQRS is often used along with Event Sourcing.
 - The command-side uses event sourcing. 
    - The command-side persists application state by storing sequence of events in the event store. 
