@@ -42,6 +42,13 @@
       - ![](../../diagrams/png/command_query_responsibility_segregation_small_event.png)
    - **By read-only replica**: The query-side uses the read-only replica of the command-side database.
       - ![](../../diagrams/png/command_query_responsibility_segregation_small_replica.png)
+      
+#### CQRS + Event Sourcing
+- CQRS is often used along with Event Sourcing.
+- The command-side uses event sourcing. 
+   - The command-side persists application state by storing sequence of events in the event store. 
+   - The event store is the official source of information.
+- The same event in the command-side can be used to notify other components, in particular, to notify the query-side.
 
 ## Pros & Cons
 ### Pros
