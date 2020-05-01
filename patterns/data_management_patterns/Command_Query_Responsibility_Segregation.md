@@ -6,6 +6,7 @@
    - [Implementation](#implementation)
       - [Database](#database)
       - [Synchronization](#synchronization)
+      - [CQRS + Event Sourcing](#cqrs--event-sourcing)
 - [**Pros & Cons**](#pros--cons)
    - [Pros](#pros)
    - [Cons](#cons)
