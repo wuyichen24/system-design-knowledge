@@ -59,7 +59,7 @@
 |----|-----|-----|
 | Concurrency | Multiple concurrent updates to the same database record. | <li>Consider to use pessimistic or optimistic locking. |
 | Messaging | If the query-side keep synchronized with the command-side by events, the event handler in the query-side must be able to handle duplicated events and event message failures. | <li>Consider to record the IDs of events that it has processed in the query-side database. |
-| Eventual consistency | A client that updates the command side and then immediately executes a query might not see its own update. | <li>Consider to use this approach to let the client detect an inconsistency: A command-side operation returns a token containing the ID of the published event to the client. The client then passes the token to a query operation, which returns an error if the view hasn’t been updated by that event. |
+| Eventual consistency | A client that updates the command side and then immediately executes a query might not see its own update. The client needs to detect the query data is stale or not. | <li>Consider to use this approach: A command-side operation returns a token containing the ID of the published event to the client. The client then passes the token to a query operation, which returns an error if the view hasn’t been updated by that event. |
 
 ## When To Use
 
