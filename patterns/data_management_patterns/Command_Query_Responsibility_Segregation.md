@@ -4,8 +4,9 @@
 - [**Solution**](#solution)
    - [Concepts](#concepts)
    - [Implementation](#implementation)
-      - [Command Side](#command-side)
-      - [Query Side](#query-side)
+      - [Database](#database)
+      - [Synchronization](#synchronization)
+      - [CQRS + Event Sourcing](#cqrs--event-sourcing)
 - [**Pros & Cons**](#pros--cons)
    - [Pros](#pros)
    - [Cons](#cons)
@@ -25,12 +26,11 @@
 
 ### Implementation
 #### Database
-
 - Command-side database and query-side database can use one database or separated databases.
    - One database.
-     ![](../../diagrams/png/command_query_responsibility_segregation_small_1db.png)
+      - ![](../../diagrams/png/command_query_responsibility_segregation_small_1db.png)
    - Separated database.
-     ![](../../diagrams/png/command_query_responsibility_segregation_small_2db.png)
+      - ![](../../diagrams/png/command_query_responsibility_segregation_small_2db.png)
 - If separate command-side and query-side databases are used:
    - They can use different types of database. For example, one database might be SQL, another one might be No-SQL.
    - They can use different data schema. For example, the schema of query-side database can be optimized for queries.
@@ -40,28 +40,22 @@
 - If separate command-side and query-side databases are used, they must be kept in sync.
 - There are several options for synchronization:
    - **By event**: The query-side subscribes to the events published by the command-side.
+      - ![](../../diagrams/png/command_query_responsibility_segregation_small_event.png)
    - **By read-only replica**: The query-side uses the read-only replica of the command-side database.
-   
-#### Command Side
-#### Query Side
-![](../../diagrams/png/cqrs_query_side.png)
-- Participants and their responsibilities
-   - View database
-      - Persists multiple views of data.
-   - Data access
-      - Implements the database access logic.
-      - Implements the update operations invoked by the event handlers and the query operations invoked by the query API.
-      - Consists of a data access object (DAO) and its helper classes.
-   - Event handlers
-      - Subscribes to events published by the command side.
-      - Updates or deletes data in the view database using primary keys or foreign keys.
-   - Query API
-      - Implements the query API.
+      - ![](../../diagrams/png/command_query_responsibility_segregation_small_replica.png)
+      
+#### CQRS + Event Sourcing
+- CQRS is often used along with Event Sourcing.
+- The command-side uses event sourcing. 
+   - The command-side persists application state by storing sequence of events in the event store. 
+   - The event store is the official source of information.
+- The same event in the command-side can be used to notify other components, in particular, to notify the query-side.
 
 ## Pros & Cons
 ### Pros
-- Improve the efficiency of query operations. 
-- Simplify the query model and the command model.
+- The command-side and the query-side can be designed and tuned differently.
+   - The command-side and the query-side may have difference requirements in performance, scalability (workload), security, etc.
+- Simplify the command-side and the query-side in design and implementation.
 - Supports multiple denormalized views of data.
 
 ### Cons
@@ -72,8 +66,8 @@
 | Topic | Consideration | Possible Solution Options |
 |----|-----|-----|
 | Concurrency | Multiple concurrent updates to the same database record. | <li>Consider to use pessimistic or optimistic locking. |
-| Idempotency | An event handler may be invoked with the same event more than once. | <li>Consider to record the IDs of events that it has processed in the view datastore. |
-| Data consistency | A client that updates the command side and then immediately executes a query might not see its own update. | <li>Consider to use this approach to let the client detect an inconsistency: A command-side operation returns a token containing the ID of the published event to the client. The client then passes the token to a query operation, which returns an error if the view hasn’t been updated by that event. |
+| Messaging | If the query-side keep synchronized with the command-side by events, the event handler in the query-side must be able to handle duplicated events and event message failures. | <li>Consider to record the IDs of events that it has processed in the query-side database. |
+| Eventual consistency | A client that updates the command side and then immediately executes a query might not see its own update. The client needs to detect the query data is stale or not. | <li>Consider to use this approach: A command-side operation returns a token containing the ID of the published event to the client. The client then passes the token to a query operation, which returns an error if the view hasn’t been updated by that event. |
 
 ## When To Use
 
