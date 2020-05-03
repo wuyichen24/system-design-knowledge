@@ -43,7 +43,7 @@
 | Scalability | The data needs to be combined can be large. | |
 | Complexity | The data combination logic can be complex. | <ul><li>Consider to put the API composer as a standalone service (The logic is too complex to be part of an API gateway).</ul> |
 | Availability | One service may be unavailable during a query operation. | <ul><li>Consider to let the API composer return previously cached data from the unavailable service.<li>Consider to let the API composer return incomplete data.</ul> |
-| Performance | The latency can be increased by calling multiple services. | <ul><li>Consider to let the API composer call multiple services in parallel if possible (Sometime it may be impossible, an API composer needs the result of one service in order to invoke another service).</ul> |
+| Performance | The latency can be increased by calling multiple services. | <ul><li>Consider to let the API composer call multiple services in parallel if there are no dependencies between the service calls (Sometime it may be impossible, an API composer needs the result of one service in order to invoke another service).</ul> |
 
 ## When To Use
 ## References
