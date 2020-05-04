@@ -29,6 +29,7 @@
 - Each backend is isolated from others.
    - Each backend can have different processes.
    - Each backend is independently scalable.
+   - Each backend can be released independently.
 
 ### Cons
 
