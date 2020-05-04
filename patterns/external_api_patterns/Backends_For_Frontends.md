@@ -23,7 +23,7 @@
 
 ## Pros & Cons
 ### Pros
-- Each backend is smaller, less complex and faster than one general backend.
+- Each backend is smaller, less complex and faster than one generic backend.
 - Each backend is isolated from others.
    - Each backend can have different processes.
    - Each backend is independently scalable.
