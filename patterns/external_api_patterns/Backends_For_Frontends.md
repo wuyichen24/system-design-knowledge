@@ -21,13 +21,14 @@
 - Restricts the use of backends (BFFs) to one specific user interface or application.
 
 ### Implementation
-- BFFs should only contain client-specific logic and behavior. General business logic and other global features should be managed elsewhere in your application.
+- A single call in to a BFF results in multiple downstream calls to microservices.
 - Number of BFFs
    - Options
       - One BFF per type of client. For example, Android and iOS will have different BFFs.
       - One BFF per type of user interface. For example, Android and iOS will have the single mobile BFF.
    - Recommendation
       - BFFs should align around team boundaries. Team structure should drive how many BFFs you have.
+- BFFs should only contain client-specific logic and behavior. General business logic and other global features should be managed elsewhere in your application.
 
 ## Pros & Cons
 ### Pros
