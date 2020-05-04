@@ -26,7 +26,7 @@
    - One BFF per type of client.
       - For example, Android and iOS will have different BFFs.
    - One BFF per type of user interface.
-      - For example, Android and iOS will have the same mobile BFF.
+      - For example, Android and iOS will have the single mobile BFF.
 
 ## Pros & Cons
 ### Pros
