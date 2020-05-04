@@ -46,8 +46,11 @@
 | Code Reusability | Code duplication across BFFs is highly likely | <li>Consider to use the same technology stack for all BFFs. <li>Consider to extract common functionalities into a shared library so that all the BFFs can use them.<li>Consider to extract common functionalities into a new standalone service. |
 
 ## When To Use
+The application needs to provide specific functionality for a mobile UI or third party.
+
 ## References
 - Book: [Chris R.(2018). Chapter 8 External API patterns, *Microservices Patterns* (pp. 253-291). Manning Publications](https://www.manning.com/books/microservices-patterns)
 - Book: [Sam N.(2015). CHAPTER 4 Integration, *Building Microservices* (pp. 39-78). O'Reilly Media](http://shop.oreilly.com/product/0636920033158.do)
 - Web Article: [The Back-end for Front-end Pattern (BFF) | https://philcalcado.com/2015/09/18/the_back_end_for_front_end_pattern_bff.html](https://philcalcado.com/2015/09/18/the_back_end_for_front_end_pattern_bff.html)
 - Web Article: [Backends for Frontends pattern | https://docs.microsoft.com/en-us/azure/architecture/patterns/backends-for-frontends](https://docs.microsoft.com/en-us/azure/architecture/patterns/backends-for-frontends)
+- Web Artible: [Pattern: Backends For Frontends | https://samnewman.io/patterns/architectural/bff/#](https://samnewman.io/patterns/architectural/bff/#)
