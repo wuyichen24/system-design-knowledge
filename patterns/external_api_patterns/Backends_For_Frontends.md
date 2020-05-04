@@ -12,6 +12,7 @@
 - [**References**](#references)
 
 ## Motivation
+- The requirements are different significantly for serving different frontends.
 
 ## Solution
 ### Concepts
