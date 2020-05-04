@@ -18,6 +18,7 @@
 
 ## Solution
 ### Concepts
+![](../../diagrams/png/backends_for_frontends_large.png)
 - Restricts the use of backends (BFFs) to one specific user interface or application.
 
 ### Implementation
