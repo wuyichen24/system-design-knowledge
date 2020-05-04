@@ -43,7 +43,7 @@
 ## Consideration
 | Topic | Consideration | Possible Solution Options |
 |----|-----|-----|
-| Code Reusability | Code duplication across BFFs is highly likely | <li>Consider to use the same technology stack for all BFFs. <li>Consider to put common functionalities into a shared library so that all the BFFs can use them.<li>Consider to put common functionalities into a new standalone service. |
+| Code Reusability | Code duplication across BFFs is highly likely | <li>Consider to use the same technology stack for all BFFs. <li>Consider to extract common functionalities into a shared library so that all the BFFs can use them.<li>Consider to extract common functionalities into a new standalone service. |
 
 ## When To Use
 ## References
