@@ -18,7 +18,7 @@
 
 ## Solution
 ### Concepts
-- Uses different backends for different types of frontends.
+- Restricts the use of backends to one specific user interface or application.
 
 ### Implementation
 - Frontend-focused backend services should only contain client-specific logic and behavior. General business logic and other global features should be managed elsewhere in your application.
