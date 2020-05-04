@@ -6,7 +6,6 @@ Collect modern distributed system design patterns.
 ## Categories
 - [**Architecture Pattern**](#architecture-patterns)
    - [Anti-Corruption Layer (ACL)](patterns/architecture_patterns/Anti_Corruption_Layer.md)
-   - [Backends for Frontends (BFF)](patterns/architecture_patterns/Backends_For_Frontends.md)
 - [**Cache Pattern**](#cache-patterns)
    - [Cache-Aside](patterns/cache_patterns/Cache_Aside.md)
    - Cache-As-SOR
@@ -45,6 +44,9 @@ Collect modern distributed system design patterns.
    - [Two-Phase Commit (2PC)](patterns/transaction_patterns/Two_Phase_Commit.md)
    - [Three-Phase Commit (3PC)](patterns/transaction_patterns/Three_Phase_Commit.md)
    - [Saga](patterns/transaction_patterns/Saga.md)
+- [**External API Patterns**](#external-api-patterns)
+   - [API Gateway](patterns/external_api_patterns/API_Gateway.md)
+   - [Backends for Frontends (BFF)](patterns/external_api_patterns/Backends_For_Frontends.md)
 
 ----
 
@@ -55,7 +57,6 @@ Collect modern distributed system design patterns.
 | Pattern Name | Diagram | Description |
 | ---- | ------ | ---- |
 | [*Anti-Corruption Layer (ACL)*](patterns/architecture_patterns/Anti_Corruption_Layer.md) | ![](./diagrams/png/anti_corruption_layer_small.png) | Place an adapter layer between 2 domain models and translate communications between them. | 
-| [*Backends for Frontends (BFF)*](patterns/architecture_patterns/Backends_For_Frontends.md) | ![](./diagrams/png/backends_for_frontends_small.png) | Separate backend services for different frontend applications or interfaces. |
 
 ### Cache Patterns
 
@@ -117,3 +118,9 @@ Collect modern distributed system design patterns.
 | [*Two-Phase Commit (2PC)*](patterns/transaction_patterns/Two_Phase_Commit.md) | ![](./diagrams/png/2pc_small.png) | The coordinator uses 2 phases to coordinates participants on whether to commit or abort (roll back) the distributed atomic transaction: <ul><li>**Commit-Request/Voting Phase**<ul><li>The coordinator sends a request-to-prepare message to all participants.<li>Each participant prepare the transaction and send back the aggreement message (success) or the abort message (fail) to the the coordinator.</ul><li>**Commit/Completion Phase**<ul><li>**Success**: If the coordinator received an agreement message from all participants:<ul><li>The coordinator sends a commit message to all the participants.<li>Each participant commits the transcation and releases all the locks.<li>Each participant sends an acknowledgement to the coordinator.</ul><li>**Failure**: If any participant sent a abort message to the coordinator:<ul><li>The coordinator sends a rollback message to all the participants.<li>Each participant undos the transaction and release all the locks.<li>Each participant sends an acknowledgement to the coordinator.</ul></ul></ul> |
 | [*Three-Phase Commit (3PC)*](patterns/transaction_patterns/Three_Phase_Commit.md) |  |  |
 | [*Saga*](patterns/transaction_patterns/Saga.md) | ![](./diagrams/png/saga_small.png) | <ul><li>A sequence of asynchronous local transactions.<li>Each service<ul><li>Starts its action by getting a event/message from the previous service.<li>Sends a event/message to the next service when it completes its action.</ul><li>If one action fails, executes compensating transactions to rollback the changes.</ul> |
+
+### External API Patterns
+| Pattern Name | Diagram | Description |
+| ---- | ------ | ---- |
+| [*API Gateway*](patterns/external_api_patterns/API_Gateway.md) | | Implement a service that’s the entry point into the microservices-based application for external API clients. |
+| [*Backends for Frontends (BFF)*](patterns/external_api_patterns/Backends_For_Frontends.md) | ![](./diagrams/png/backends_for_frontends_small.png) | Separate backend services for different frontend applications or interfaces. |
