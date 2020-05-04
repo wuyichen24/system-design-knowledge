@@ -19,11 +19,12 @@
 - Uses different backends for different types of frontends.
 
 ### Implementation
+- Frontend-focused backend services should only contain client-specific logic and behavior. General business logic and other global features should be managed elsewhere in your application.
 
 ## Pros & Cons
 ### Pros
 - Each backend is smaller, less complex and faster than one general backend.
-- Each Abackend is isolated from others.
+- Each backend is isolated from others.
    - Each backend can have different processes.
    - Each backend is independently scalable.
 
