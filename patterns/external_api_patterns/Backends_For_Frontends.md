@@ -15,7 +15,7 @@
 
 ## Solution
 ### Concepts
-- Uses differents API gateways for different types of clients.
+- Has different API gateways (backends) for different types of clients (frontends).
 
 ### Implementation
 
