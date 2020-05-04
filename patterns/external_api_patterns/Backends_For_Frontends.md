@@ -16,23 +16,23 @@
 
 ## Solution
 ### Concepts
-- Has different API gateways (backends) for different types of clients (frontends).
+- Uses different backends for different types of frontends.
 
 ### Implementation
 
 ## Pros & Cons
 ### Pros
-- Improves reliability - Each API gateway is isolated from others.
-- Improves observability - Different API gateways can have different processes.
-- Each API gateway is independently scalable.
-- Reduces startup time for each API gateway.
+- Each backend is smaller, less complex and faster than one general backend.
+- Each Abackend is isolated from others.
+   - Each backend can have different processes.
+   - Each backend is independently scalable.
 
 ### Cons
 
 ## Consideration
 | Topic | Consideration | Possible Solution Options |
 |----|-----|-----|
-| Code Reusability | Code might be duplicated for common functionalities among API gateways. | <li>Consider to use the same technology stack for all API gateways. <li>Consider to put common functionalities into a shared library so that all the API gateways can use them.<li>Consider to put common functionalities into a new standalone service. |
+| Code Reusability | Code duplication across backends is highly likely | <li>Consider to use the same technology stack for all backends. <li>Consider to put common functionalities into a shared library so that all the backends can use them.<li>Consider to put common functionalities into a new standalone service. |
 
 ## When To Use
 ## References
