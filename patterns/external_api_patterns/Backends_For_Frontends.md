@@ -18,10 +18,10 @@
 
 ## Solution
 ### Concepts
-- Restricts the use of backends to one specific user interface or application.
+- Restricts the use of backends (BFFs) to one specific user interface or application.
 
 ### Implementation
-- Frontend-focused backend services should only contain client-specific logic and behavior. General business logic and other global features should be managed elsewhere in your application.
+- BFFs should only contain client-specific logic and behavior. General business logic and other global features should be managed elsewhere in your application.
 - Number of BFFs
    - Options
       - One BFF per type of client. For example, Android and iOS will have different BFFs.
@@ -31,18 +31,18 @@
 
 ## Pros & Cons
 ### Pros
-- Each backend is smaller, less complex and faster than one generic backend.
-- Each backend is isolated from others.
-   - Each backend can have different processes.
-   - Each backend is independently scalable.
-   - Each backend can be released independently.
+- Each BFF is smaller, less complex and faster than one generic backend.
+- Each BFF is isolated from others.
+   - Each BFF can have different processes.
+   - Each BFF is independently scalable.
+   - Each BFF can be released independently.
 
 ### Cons
 
 ## Consideration
 | Topic | Consideration | Possible Solution Options |
 |----|-----|-----|
-| Code Reusability | Code duplication across backends is highly likely | <li>Consider to use the same technology stack for all backends. <li>Consider to put common functionalities into a shared library so that all the backends can use them.<li>Consider to put common functionalities into a new standalone service. |
+| Code Reusability | Code duplication across BFFs is highly likely | <li>Consider to use the same technology stack for all BFFs. <li>Consider to put common functionalities into a shared library so that all the BFFs can use them.<li>Consider to put common functionalities into a new standalone service. |
 
 ## When To Use
 ## References
