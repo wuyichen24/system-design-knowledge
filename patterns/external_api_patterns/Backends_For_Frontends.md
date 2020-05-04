@@ -31,7 +31,7 @@
 ## Consideration
 | Topic | Consideration | Possible Solution Options |
 |----|-----|-----|
-| Code Reusability | Code might be duplicated for common functionalities among API gateways. | <li>Consider to use the same technology stack for all API gateways. <li>Consider to put common functionalities into a shared library so that all the API gateways can use them. |
+| Code Reusability | Code might be duplicated for common functionalities among API gateways. | <li>Consider to use the same technology stack for all API gateways. <li>Consider to put common functionalities into a shared library so that all the API gateways can use them.<li>Consider to put common functionalities into a new standalone service. |
 
 ## When To Use
 ## References
