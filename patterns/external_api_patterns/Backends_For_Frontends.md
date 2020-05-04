@@ -13,6 +13,8 @@
 
 ## Motivation
 - The requirements are significantly different for serving different frontends.
+- One generic backend has too much logic.
+- One generic backend needs to be managed by separate teams.
 
 ## Solution
 ### Concepts
