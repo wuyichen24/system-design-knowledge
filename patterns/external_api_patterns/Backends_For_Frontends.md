@@ -23,10 +23,11 @@
 ### Implementation
 - Frontend-focused backend services should only contain client-specific logic and behavior. General business logic and other global features should be managed elsewhere in your application.
 - Number of BFFs
-   - One BFF per type of client.
-      - For example, Android and iOS will have different BFFs.
-   - One BFF per type of user interface.
-      - For example, Android and iOS will have the single mobile BFF.
+   - Options
+      - One BFF per type of client. For example, Android and iOS will have different BFFs.
+      - One BFF per type of user interface. For example, Android and iOS will have the single mobile BFF.
+   - Recommendation
+      - BFFs should align around team boundaries. Team structure should drive how many BFFs you have.
 
 ## Pros & Cons
 ### Pros
