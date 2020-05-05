@@ -54,4 +54,5 @@ The application needs to provide specific functionality for a mobile UI or third
 - Book: [Sam N.(2015). CHAPTER 4 Integration, *Building Microservices* (pp. 39-78). O'Reilly Media](http://shop.oreilly.com/product/0636920033158.do)
 - Web Article: [The Back-end for Front-end Pattern (BFF) | https://philcalcado.com/2015/09/18/the_back_end_for_front_end_pattern_bff.html](https://philcalcado.com/2015/09/18/the_back_end_for_front_end_pattern_bff.html)
 - Web Article: [Backends for Frontends pattern | https://docs.microsoft.com/en-us/azure/architecture/patterns/backends-for-frontends](https://docs.microsoft.com/en-us/azure/architecture/patterns/backends-for-frontends)
-- Web Artible: [Pattern: Backends For Frontends | https://samnewman.io/patterns/architectural/bff/#](https://samnewman.io/patterns/architectural/bff/#)
+- Web Article: [Pattern: Backends For Frontends | https://samnewman.io/patterns/architectural/bff/#](https://samnewman.io/patterns/architectural/bff/#)
+- Web Article: [BFF @ SoundCloud | https://www.thoughtworks.com/insights/blog/bff-soundcloud](https://www.thoughtworks.com/insights/blog/bff-soundcloud)
