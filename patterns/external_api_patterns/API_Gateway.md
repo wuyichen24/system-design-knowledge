@@ -22,16 +22,16 @@
 - **API Composition/Aggregation**: Aggregate multiple individual requests into a single request.
 - **Monitoring**
    - Metrics collection: Collect metrics on API usage
-	- Logging: Log requests.
+   - Logging: Log requests.
 - **Security**
    - Authentication: Verifying the identity of the client making the request.
-	- Authorization: Verifying that the client is authorized to perform that particular operation.
-	- Certificate management
+   - Authorization: Verifying that the client is authorized to perform that particular operation.
+   - Certificate management
 - **Proxy**
    - Protocol translation: Translate external requests in one protocol to internal requests in another protocol.
 - **Throttling**
    - Rate limiting: Limiting how many requests per second from either a specific client and/or from all clients.
-	- User quota
+   - User quota
 - **Resiliency**: The mechanisms to detect failures and recover quickly from failures
 - **Caching**: Cache responses to reduce the number of requests made to the services.
 
