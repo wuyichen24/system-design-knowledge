@@ -18,11 +18,11 @@
 
 ## Solution
 ### Concepts
-- Implements a service that’s the entry point into the microservices-based application from external clients
-- Decoupling clients from services.
+- Implements a service that’s the single entry point into the backend services from external clients.
+- Offloads cross-cutting functionalities from individual services to the API gateway.
 
 ### Functions
-- **Routing**: Routes requests to one or more backend services
+- **Request Routing**: Routes requests to one or more backend services, using layer 7 routing.
 - **API Composition/Aggregation**: Aggregates multiple individual requests into a single request.
 - **Monitoring**
    - Metrics collection: Collects metrics on API usage
@@ -38,7 +38,10 @@
    - Rate limiting: Limits how many requests per second from either a specific client and/or from all clients.
    - User quota
 - **Resiliency**: The mechanisms to detect failures and recover quickly from failures
-- **Caching**: Caches responses to reduce the number of requests made to the internal services.
+- **Response Caching**: Caches responses to reduce the number of requests made to the internal services.
+- **Filtering**: 
+   - IP whitelisting
+   - IP blacklisting
 
 ### Solution Options
 - Use an API gateway or API management product.
