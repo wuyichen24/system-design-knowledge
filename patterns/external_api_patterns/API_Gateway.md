@@ -27,7 +27,11 @@
    - **Request logging**: Log requests.
 
 ### Solution Options
-- Use API gateway product
+- Use an API gateway product
+   - [AWS API Gateway](https://aws.amazon.com/api-gateway/)
+   - [Tyk API Gateway](https://github.com/TykTechnologies/tyk)
+   - [Kong Gateway](https://konghq.com/kong/)
+   - [Traefik](https://docs.traefik.io/)
 - Develop an API gateway based on API gateway framework
 
 
