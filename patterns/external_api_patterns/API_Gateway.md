@@ -58,3 +58,4 @@
 ## When To Use
 ## References
 - Book: [Chris R.(2018). Chapter 8 External API patterns, *Microservices Patterns* (pp. 253-291). Manning Publications](https://www.manning.com/books/microservices-patterns)
+- Web Article: [Pattern: API Gateway / Backends for Frontends | https://microservices.io/patterns/apigateway.html](https://microservices.io/patterns/apigateway.html)
