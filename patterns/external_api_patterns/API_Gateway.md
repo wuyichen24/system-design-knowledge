@@ -24,6 +24,7 @@
 ### Functions
 - **Core functions**
    - **Request Routing**: Routes requests to one or more backend services, using layer 7 routing.
+      - It can be based on method (GET, POST, etc.), IP, port, header, or URL.
    - **API Composition/Aggregation**: Aggregates multiple individual requests into a single request.
 - **Cross-cutting functions**
    - **Monitoring**
