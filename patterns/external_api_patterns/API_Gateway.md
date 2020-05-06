@@ -15,6 +15,17 @@
 
 ## Solution
 ### Concepts
+- Implement a service that’s the entry point into the microservices-based application from external API clients
+- Functions
+   - **Request routing**: Routes some requests to the corresponding service.
+   - **API composition/aggregation**: Aggregate multiple individual requests into a single request.
+   - **Authentication**: Verifying the identity of the client making the request.
+   - **Authorization**: Verifying that the client is authorized to perform that particular operation.
+   - **Rate limiting**: Limiting how many requests per second from either a specific client and/or from all clients.
+   - **Caching**: Cache responses to reduce the number of requests made to the services.
+   - **Metrics collection**: Collect metrics on API usage for billing analytics purposes.
+   - **Request logging**: Log requests.
+
 
 ### Implementation
 
