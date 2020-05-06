@@ -16,7 +16,7 @@
 
 ## Solution
 ### Concepts
-- Implement a service that’s the entry point into the microservices-based application from external API clients
+- Implements a service that’s the entry point into the microservices-based application from external API clients
 
 ### Functions
 - **Routing**: Routes some requests to the corresponding service.
