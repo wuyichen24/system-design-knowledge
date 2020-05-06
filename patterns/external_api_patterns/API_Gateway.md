@@ -13,29 +13,32 @@
 - [**References**](#references)
 
 ## Motivation
+- The client must keep track of multiple services.
+- Each service must handle some cross-cutting tasks, like authentication, authorization, etc.
 
 ## Solution
 ### Concepts
-- Implements a service that’s the entry point into the microservices-based application from external API clients
+- Implements a service that’s the entry point into the microservices-based application from external clients
+- Decoupling clients from services.
 
 ### Functions
-- **Routing**: Routes some requests to the corresponding service.
-- **API Composition/Aggregation**: Aggregate multiple individual requests into a single request.
+- **Routing**: Routes requests to one or more backend services
+- **API Composition/Aggregation**: Aggregates multiple individual requests into a single request.
 - **Monitoring**
-   - Metrics collection: Collect metrics on API usage
+   - Metrics collection: Collects metrics on API usage
    - Logging: Log requests.
 - **Security**
-   - Authentication: Verifying the identity of the client making the request.
-   - Authorization: Verifying that the client is authorized to perform that particular operation.
-   - SSL termination: Decrypt the SSL-encrypted requests from clients and pass on unencrypted requests to the internal services.
+   - Authentication: Verifies the identity of the client making the request.
+   - Authorization: Verifies that the client is authorized to perform that particular operation.
+   - SSL termination: Decrypts the SSL-encrypted requests from clients and pass on unencrypted requests to the internal services.
    - Certificate management
 - **Proxy**
-   - Protocol translation: Translate external requests in one protocol to internal requests in another protocol.
+   - Protocol translation: Translates external requests in one protocol to internal requests in another protocol.
 - **Throttling**
-   - Rate limiting: Limiting how many requests per second from either a specific client and/or from all clients.
+   - Rate limiting: Limits how many requests per second from either a specific client and/or from all clients.
    - User quota
 - **Resiliency**: The mechanisms to detect failures and recover quickly from failures
-- **Caching**: Cache responses to reduce the number of requests made to the internal services.
+- **Caching**: Caches responses to reduce the number of requests made to the internal services.
 
 ### Solution Options
 - Use an API gateway or API management product.
