@@ -60,7 +60,8 @@
 - Reduces the number of requests/roundtrips by API Composition/Aggregation.
 
 ### Cons
-- Introduce single point of failure
+- May introduce single point of failure.
+- May introduct performance bottleneck.
 - Must update the API gateway in order to expose a new services’s API.
 
 ## Consideration
