@@ -22,10 +22,10 @@
 - Offloads cross-cutting functionalities from individual services to the API gateway.
 
 ### Functions
-- **Core Functions**
+- **Core functions**
    - **Request Routing**: Routes requests to one or more backend services, using layer 7 routing.
    - **API Composition/Aggregation**: Aggregates multiple individual requests into a single request.
-- **Cross-cutting Functions**
+- **Cross-cutting functions**
    - **Monitoring**
       - Metrics collection: Collects metrics on API usage
       - Logging: Log requests.
