@@ -56,3 +56,4 @@
 
 ## When To Use
 ## References
+- Book: [Chris R.(2018). Chapter 8 External API patterns, *Microservices Patterns* (pp. 253-291). Manning Publications](https://www.manning.com/books/microservices-patterns)
