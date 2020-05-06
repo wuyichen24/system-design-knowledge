@@ -11,8 +11,6 @@
 - [**Consideration**](#consideration)
 - [**When To Use**](#when-to-use)
 - [**References**](#references)
-- [**Appendix**](#appendix)
-   - [API Management Products](#api-management-products)
 
 ## Motivation
 
@@ -40,11 +38,7 @@
 
 ### Solution Options
 - Use an API gateway or API management product.
-   - [AWS API Gateway](https://aws.amazon.com/api-gateway/)
-   - [Tyk API Gateway](https://github.com/TykTechnologies/tyk)
-   - [Kong Gateway](https://konghq.com/kong/)
-   - [Traefik](https://docs.traefik.io/)
-   - More products
+   - See [API Management Products]() for more information.
 - Develop an API gateway based on an API gateway framework.
    - [Netflix Zuul](https://github.com/Netflix/zuul)
    - [Spring Cloud Gateway](https://spring.io/projects/spring-cloud-gateway)
@@ -62,5 +56,3 @@
 
 ## When To Use
 ## References
-## Appendix
-### API Management Products
