@@ -22,29 +22,28 @@
 - Offloads cross-cutting functionalities from individual services to the API gateway.
 
 ### Functions
-#### Core Functions
-- **Request Routing**: Routes requests to one or more backend services, using layer 7 routing.
-- **API Composition/Aggregation**: Aggregates multiple individual requests into a single request.
-
-#### Cross-cutting Functions
-- **Monitoring**
-   - Metrics collection: Collects metrics on API usage
-   - Logging: Log requests.
-- **Security**
-   - Authentication: Verifies the identity of the client making the request.
-   - Authorization: Verifies that the client is authorized to perform that particular operation.
-   - SSL termination: Decrypts the SSL-encrypted requests from clients and pass on unencrypted requests to the internal services.
-   - Certificate management
-- **Proxy**
-   - Protocol translation: Translates external requests in one protocol to internal requests in another protocol.
-- **Throttling**
-   - Rate limiting: Limits how many requests per second from either a specific client and/or from all clients.
-   - User quota
-- **Resiliency**: The mechanisms to detect failures and recover quickly from failures
-- **Response Caching**: Caches responses to reduce the number of requests made to the internal services.
-- **Filtering**: 
-   - IP whitelisting
-   - IP blacklisting
+- **Core Functions**
+   - **Request Routing**: Routes requests to one or more backend services, using layer 7 routing.
+   - **API Composition/Aggregation**: Aggregates multiple individual requests into a single request.
+- **Cross-cutting Functions**
+   - **Monitoring**
+      - Metrics collection: Collects metrics on API usage
+      - Logging: Log requests.
+   - **Security**
+      - Authentication: Verifies the identity of the client making the request.
+      - Authorization: Verifies that the client is authorized to perform that particular operation.
+      - SSL termination: Decrypts the SSL-encrypted requests from clients and pass on unencrypted requests to the internal services.
+      - Certificate management
+   - **Proxy**
+      - Protocol translation: Translates external requests in one protocol to internal requests in another protocol.
+   - **Throttling**
+      - Rate limiting: Limits how many requests per second from either a specific client and/or from all clients.
+      - User quota
+   - **Resiliency**: The mechanisms to detect failures and recover quickly from failures
+   - **Response Caching**: Caches responses to reduce the number of requests made to the internal services.
+   - **Filtering**: 
+      - IP whitelisting
+      - IP blacklisting
 
 ### Solution Options
 - Use an API gateway or API management product.
