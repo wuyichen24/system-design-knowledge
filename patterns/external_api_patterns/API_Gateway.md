@@ -56,9 +56,8 @@
 ## Pros & Cons
 ### Pros
 - Encapsulates internal structure of the application.
-- Centralize the common functions like authentication and authorization.
+- Centralize the cross-cutting functionalities (authentication, authorization, etc.) into one place.
 - Reduces the number of requests/roundtrips by API Composition/Aggregation.
-- Consolidates the cross-cutting functionalities into one place.
 
 ### Cons
 - Introduce single point of failure
