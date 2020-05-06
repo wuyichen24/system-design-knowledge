@@ -55,6 +55,7 @@
 - Encapsulates internal structure of the application.
 - Centralize the common functions like authentication and authorization.
 - Reduces the number of requests/roundtrips by API Composition/Aggregation.
+- Consolidates the cross-cutting functionalities into one place.
 
 ### Cons
 - Introduce single point of failure
