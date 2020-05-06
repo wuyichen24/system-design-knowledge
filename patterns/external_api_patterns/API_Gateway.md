@@ -26,13 +26,19 @@
    - **Metrics collection**: Collect metrics on API usage for billing analytics purposes.
    - **Request logging**: Log requests.
 
+### Solution Options
+- Use API gateway product
+- Develop an API gateway based on API gateway framework
 
-### Implementation
 
 ## Pros & Cons
 ### Pros
+- Encapsulates internal structure of the application.
+- Centralize the common functions like authentication and authorization.
 
 ### Cons
+- Introduce single point of failure
+- Must update the API gateway in order to expose a new services’s API.
 
 ## Consideration
 
