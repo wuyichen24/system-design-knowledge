@@ -27,6 +27,7 @@
 - **Security**
    - Authentication: Verifying the identity of the client making the request.
    - Authorization: Verifying that the client is authorized to perform that particular operation.
+   - SSL termination: Decrypt the SSL-encrypted requests from clients and pass on unencrypted requests to the internal services.
    - Certificate management
 - **Proxy**
    - Protocol translation: Translate external requests in one protocol to internal requests in another protocol.
@@ -34,7 +35,7 @@
    - Rate limiting: Limiting how many requests per second from either a specific client and/or from all clients.
    - User quota
 - **Resiliency**: The mechanisms to detect failures and recover quickly from failures
-- **Caching**: Cache responses to reduce the number of requests made to the services.
+- **Caching**: Cache responses to reduce the number of requests made to the internal services.
 
 ### Solution Options
 - Use an API gateway or API management product.
