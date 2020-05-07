@@ -111,6 +111,7 @@ Collect modern distributed system design patterns.
 | [*Bulkhead*](patterns/resiliency_patterns/Bulkhead.md) |  | Isolate the misbehaving service and avoid to take down the entire application by exhausting all the resources. |
 | [*Fallback*](patterns/resiliency_patterns/Fallback.md) |  | When a service call fails, execute the alternative action. |
 | [*Retry*](patterns/resiliency_patterns/Retry.md) |  | Retry a failed operation. |
+| Timeout | | |
 
 ### Transaction Patterns
 | Pattern Name | Diagram | Description |
