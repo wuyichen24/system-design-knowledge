@@ -123,5 +123,5 @@ Collect modern distributed system design patterns.
 ### External API Patterns
 | Pattern Name | Diagram | Description |
 | ---- | ------ | ---- |
-| [*API Gateway*](patterns/external_api_patterns/API_Gateway.md) | | Implement a service that’s the entry point into the microservices-based application for external API clients. |
+| [*API Gateway*](patterns/external_api_patterns/API_Gateway.md) | ![](./diagrams/png/api_gateway_small.png) | Implement a service that’s the entry point into the microservices-based application for external API clients. |
 | [*Backends for Frontends (BFF)*](patterns/external_api_patterns/Backends_For_Frontends.md) | ![](./diagrams/png/backends_for_frontends_small.png) | Separate backend services for different frontend applications or interfaces. |
