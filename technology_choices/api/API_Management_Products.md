@@ -6,7 +6,7 @@
 |----|----|----|----|----|
 | **Express Gateway** | Apache-2.0 | Yes | Express.js | [![](https://www.express-gateway.io/favicon.ico)](https://www.express-gateway.io/)[![](https://github.com/favicon.ico)](https://github.com/ExpressGateway/express-gateway) |
 | **Kong Gateway** | Apache-2.0 | Yes | NGINX, Lua | [![](https://2tjosk2rxzc21medji3nfn1g-wpengine.netdna-ssl.com/wp-content/themes/konghq/assets/img/favicon.ico)](https://konghq.com/kong/)[![](https://github.com/favicon.ico)](https://github.com/kong/kong) |
-| [KrakenD](https://www.krakend.io/) | Apache-2.0 | Yes | Golang | [Github](https://github.com/devopsfaith/krakend) |
+| [KrakenD](https://www.krakend.io/) | Apache-2.0 | Yes | Golang | [![](https://www.krakend.io/favicon/favicon-32x32.png)](https://www.krakend.io/)[![](https://github.com/favicon.ico)](https://github.com/devopsfaith/krakend) |
 | [Tyk](https://github.com/TykTechnologies/tyk) | MPL-2.0 | Yes | Golang | [Github](https://github.com/TykTechnologies/tyk) |
 
 ## References
