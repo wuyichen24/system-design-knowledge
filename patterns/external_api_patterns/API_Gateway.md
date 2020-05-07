@@ -61,7 +61,7 @@
 
 ### Cons
 - May introduce single point of failure.
-- May introduct performance bottleneck.
+- May introduce performance bottleneck.
 - Must update the API gateway in order to expose a new services’s API.
 
 ## Consideration
