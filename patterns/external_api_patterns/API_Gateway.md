@@ -39,7 +39,6 @@
       - Protocol translation: Translates external requests in one protocol to internal requests in another protocol.
    - **Throttling**
       - Rate limiting: Limits how many requests per second from either a specific client and/or from all clients.
-      - User quota
    - **Resiliency**: The mechanisms to detect failures and recover quickly from failures
    - **Response Caching**: Caches responses to reduce the number of requests made to the internal services.
    - **Filtering**: 
