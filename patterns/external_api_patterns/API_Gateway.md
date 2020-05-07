@@ -52,6 +52,10 @@
 - Develop an API gateway based on an API gateway framework.
    - [Netflix Zuul](https://github.com/Netflix/zuul)
    - [Spring Cloud Gateway](https://spring.io/projects/spring-cloud-gateway)
+   
+### Implementation
+- Business logic should never be offloaded from the backend services to the API gateway.
+- Generates and injects correlation IDs into the requests for logging purposes and distributed tracing.
 
 ## Pros & Cons
 ### Pros
@@ -65,9 +69,16 @@
 - Must update the API gateway in order to expose a new services’s API.
 
 ## Consideration
+| Topic | Consideration | Possible Solution Options |
+|----|-----|-----|
+| Reliability | The API gateway may introduce single point of failure. | <li>Consider to run multiple instances of API gateway. |
+| Performance | The API gateway may introduce performance bottleneck. | <li>Make sure the API gateway is sufficiently scalable. |
 
 ## When To Use
 ## References
 - Book: [Chris R.(2018). Chapter 8 External API patterns, *Microservices Patterns* (pp. 253-291). Manning Publications](https://www.manning.com/books/microservices-patterns)
 - Web Article: [Pattern: API Gateway / Backends for Frontends | https://microservices.io/patterns/apigateway.html](https://microservices.io/patterns/apigateway.html)
 - Web Article: [Using API gateways in microservices | https://docs.microsoft.com/en-us/azure/architecture/microservices/design/gateway](https://docs.microsoft.com/en-us/azure/architecture/microservices/design/gateway)
+- Web Article: [Gateway Routing pattern | https://docs.microsoft.com/en-us/azure/architecture/patterns/gateway-routing](https://docs.microsoft.com/en-us/azure/architecture/patterns/gateway-routing)
+- Web Article: [Gateway Aggregation pattern | https://docs.microsoft.com/en-us/azure/architecture/patterns/gateway-aggregation](https://docs.microsoft.com/en-us/azure/architecture/patterns/gateway-aggregation)
+- Web Article: [Gateway Offloading pattern | https://docs.microsoft.com/en-us/azure/architecture/patterns/gateway-offloading](https://docs.microsoft.com/en-us/azure/architecture/patterns/gateway-offloading)
