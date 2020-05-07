@@ -46,6 +46,9 @@
 | Performance | The latency can be increased by calling multiple services. | <ul><li>Consider to let the API composer call multiple services in parallel if there is no dependency between the service calls (Sometime it may be impossible, an API composer needs the result of one service in order to invoke another service).</ul> |
 
 ## When To Use
+- A client needs to communicate with multiple backend services to perform an operation.
+- The client may use networks with significant latency
+
 ## References
 - Book: [Chris R.(2018). Chapter 7 Implementing queries in a microservice architecture, *Microservices Patterns* (pp. 220-252). Manning Publications](https://www.manning.com/books/microservices-patterns)
 - Book: [Sam N.(2015). CHAPTER 4 Integration, *Building Microservices* (pp. 39-78). O'Reilly Media](http://shop.oreilly.com/product/0636920033158.do)
