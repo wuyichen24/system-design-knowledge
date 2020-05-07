@@ -53,3 +53,4 @@
 - Book: [Chris R.(2018). Chapter 7 Implementing queries in a microservice architecture, *Microservices Patterns* (pp. 220-252). Manning Publications](https://www.manning.com/books/microservices-patterns)
 - Book: [Sam N.(2015). CHAPTER 4 Integration, *Building Microservices* (pp. 39-78). O'Reilly Media](http://shop.oreilly.com/product/0636920033158.do)
 - Web Article: [Pattern: API Composition | https://microservices.io/patterns/data/api-composition.html](https://microservices.io/patterns/data/api-composition.html)
+- Web Article: [Gateway Aggregation pattern | https://docs.microsoft.com/en-us/azure/architecture/patterns/gateway-aggregation](https://docs.microsoft.com/en-us/azure/architecture/patterns/gateway-aggregation)
