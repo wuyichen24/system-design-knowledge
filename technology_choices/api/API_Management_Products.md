@@ -2,7 +2,7 @@
 
 ## Overview
 ### Open Source
-| Product | License | On Premise | Core Technology | Website |
+| Product | License | On Premise | Core Technology | Websites |
 |----|----|----|----|----|
 | **Express Gateway** | Apache-2.0 | Yes | Express.js | [![](https://www.express-gateway.io/favicon.ico)](https://www.express-gateway.io/)[![](https://github.com/favicon.ico)](https://github.com/ExpressGateway/express-gateway) |
 | [Kong Gateway](https://konghq.com/kong/) | Apache-2.0 | Yes | NGINX, Lua | [Github](https://github.com/kong/kong) |
