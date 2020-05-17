@@ -1,10 +1,17 @@
 # API Specification Formats
 
-- [OpenAPI (Swagger)](https://www.openapis.org/)
-- [RAML](https://raml.org/)
-- [API Blueprint](https://apiblueprint.org/)
-- [WADL]()
-- [Slate]()
+OpenAPI/Swagger
+RAML
+API Blueprint
+Postman Collection
+Insomnia Export Format
+HAR
+WSDL
+WADL
+Google Discovery
+I/O Docs - Mashery
+APIMATIC Format
+Slate
 
 ## References
 - https://nordicapis.com/top-specification-formats-for-rest-apis/
