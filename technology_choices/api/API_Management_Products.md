@@ -9,6 +9,10 @@
 | **KrakenD** | Apache-2.0 | Yes | Golang | <li>[Official](https://www.krakend.io/)<li>[Github](https://github.com/devopsfaith/krakend) |
 | **Tyk** | MPL-2.0 | Yes | Golang | <li>[Github](https://github.com/TykTechnologies/tyk) |
 
+### Proprietary
+| Product | License | On Premise | Core Technology | Websites |
+|----|----|----|----|----|
+
 ## References
 - https://en.wikipedia.org/wiki/API_management
 - https://www.softwaretestinghelp.com/api-management-tools/
