@@ -1,0 +1,2 @@
+- https://www.comparitech.com/net-admin/log-management-tools/
+- https://stackify.com/best-log-management-tools/
