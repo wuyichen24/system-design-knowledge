@@ -1,1 +1,49 @@
 # External Configuration Store
+
+- [**Motivation**](#motivation)
+- [**Solution**](#solution)
+   - [Concepts](#concepts)
+   - [Implementation](#implementation)
+   - [**Pros & Cons**](#pros--cons)
+   - [Pros](#pros)
+   - [Cons](#cons)
+- [**Consideration**](#consideration)
+- [**When To Use**](#when-to-use)
+- [**References**](#references)
+
+## Motivation
+
+## Solution
+### Concepts
+- Externalize all application configuration property values to an external source.
+
+### Implementation
+#### Approaches
+- **Push model**: The deployment infrastructure passes the configuration properties to the service instance using.
+- **Pull model**: The service instance reads its configuration properties from a configuration server.
+
+#### Push Model External Configuration
+- Solution options for passing configuration properties
+   - Command-line arguments.
+   - Operating system environment variables.
+   - A configuration file in the current directory.
+
+#### Pull Model External Configuration
+- Solution options for storing configuration properties
+   - Version control system such as Git
+   - Databases
+   - Specialized configuration servers
+      - Spring Cloud Config Server
+      - Hashicorp Vault
+      - AWS Parameter Store
+
+## Pros & Cons
+### Pros
+- Centralize all the configuration properties to one place.
+- Hot reload: The configuration properties can be refreshed without restarting the application.
+
+### Cons
+
+## Consideration
+## When To Use
+## References
