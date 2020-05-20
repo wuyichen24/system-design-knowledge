@@ -15,6 +15,13 @@
 
 ## Solution
 ### Concepts
+- A service exposes a health check API endpoint which returns the health of the service.
+- A health check client periodically invokes the endpoint to check the health of the service instance.
+- A health check client can be
+   - Monitoring service
+   - Service registry
+   - Load balancer
+
 ### Implementation
 
 ## Pros & Cons
@@ -26,3 +33,5 @@
 ## When To Use
 
 ## References
+- Book: [Chris R.(2018). Chapter 11 Developing production-ready services, *Microservices Patterns* (pp. 348-382). Manning Publications](https://www.manning.com/books/microservices-patterns)
+- Web Article: [Pattern: Health Check API | https://microservices.io/patterns/observability/health-check-api.html](https://microservices.io/patterns/observability/health-check-api.html)
