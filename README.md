@@ -13,7 +13,7 @@ Collect modern distributed system design patterns.
       - [Write-Through](patterns/cache_patterns/Write_Through.md)
       - [Write-Behind](patterns/cache_patterns/Write_Behind.md)
       - [Refresh-Ahead](patterns/cache_patterns/Refresh_Ahead.md)
-- **Configuration Patterns**
+- [**Configuration Patterns**](#configuration-patterns)
    - [External Configuration Store](patterns/configuration_patterns/External_Configuration_Store.md)
 - [**Container Patterns**](#container-patterns)
    - Single-node, multi-container patterns
@@ -74,6 +74,11 @@ Collect modern distributed system design patterns.
 | [*Write-Through*](patterns/cache_patterns/Write_Through.md) | ![](./diagrams/png/write_through_small.png) | After application writes data to cache, cache **synchronously** write the same data to database. |
 | [*Write-Behind*](patterns/cache_patterns/Write_Behind.md) | ![](./diagrams/png/write_behind_small.png) | After application writes data to cache, cache **asynchronously** write the same data to database (When satisfy a certain criteria). |
 | [*Refresh-Ahead*](patterns/cache_patterns/Refresh_Ahead.md) | ![](./diagrams/png/refresh_ahead_small.png) | Cache automatically and **asynchronously** reloads (refreshs) any recently accessed cache entry from database before its expiration. |
+
+### Configuration Patterns
+| Pattern Name | Diagram | Description |
+|----|-------|----|
+| [*External Configuration Store*](patterns/configuration_patterns/External_Configuration_Store.md) | | Externalize all application configuration properties to a centralized location. |
 
 ### Container Patterns
 
