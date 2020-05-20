@@ -56,7 +56,7 @@
 | Topic | Consideration | Possible Solution Options |
 |----|-----|-----|
 | Security | Protect the configuration data | <li>Authorize users’ or applications' access to the configuration data.<li>Encrypts some or all of the configuration data. |
-| Feasibility | Be flexible enough to store multiple versions of the configuration (development, staging and production, etc.) | |
+| Feasibility | Be flexible enough to store multiple versions of the configuration data (development, staging and production, etc.). | |
 
 ## When To Use
 ## References
