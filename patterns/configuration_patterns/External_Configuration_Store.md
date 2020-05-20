@@ -4,7 +4,7 @@
 - [**Solution**](#solution)
    - [Concepts](#concepts)
    - [Implementation](#implementation)
-   - [**Pros & Cons**](#pros--cons)
+- [**Pros & Cons**](#pros--cons)
    - [Pros](#pros)
    - [Cons](#cons)
 - [**Consideration**](#consideration)
