@@ -18,7 +18,7 @@
 
 ## Solution
 ### Concepts
-- Externalize all application configuration property values to a centralized location.
+- Externalize all application configuration properties to a centralized location.
 
 ### Implementation
 #### Approaches
@@ -42,8 +42,9 @@
 
 ## Pros & Cons
 ### Pros
-- Centralize all the configuration properties to one place.
+- Centralizes all the configuration properties to one place.
    - Easier management.
+- The configuration properties can be shared across applications and application instances.
 - Hot reload: The configuration properties can be refreshed without restarting the application.
 
 ### Cons
