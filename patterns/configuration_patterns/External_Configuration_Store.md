@@ -62,3 +62,4 @@
 ## References
 - Book: [Chris R.(2018). Chapter 11 Developing production-ready services, *Microservices Patterns* (pp. 348-382). Manning Publications](https://www.manning.com/books/microservices-patterns)
 - Web Article: [Pattern: Externalized configuration | https://microservices.io/patterns/externalized-configuration.html](https://microservices.io/patterns/externalized-configuration.html)
+- Web Article: [External Configuration Store pattern | https://docs.microsoft.com/en-us/azure/architecture/patterns/external-configuration-store](https://docs.microsoft.com/en-us/azure/architecture/patterns/external-configuration-store)
