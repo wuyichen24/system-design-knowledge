@@ -18,7 +18,7 @@
 
 ## Solution
 ### Concepts
-- Externalize all application configuration property values to an external source.
+- Externalize all application configuration property values to a centralized location.
 
 ### Implementation
 #### Approaches
