@@ -43,6 +43,7 @@
 ## Pros & Cons
 ### Pros
 - Centralize all the configuration properties to one place.
+   - Easier management.
 - Hot reload: The configuration properties can be refreshed without restarting the application.
 
 ### Cons
