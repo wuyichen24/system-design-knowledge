@@ -46,6 +46,8 @@ Collect modern distributed system design patterns.
    - [Backends for Frontends (BFF)](patterns/external_api_patterns/Backends_For_Frontends.md)
 - [**Configuration Patterns**](#configuration-patterns)
    - [External Configuration Store](patterns/configuration_patterns/External_Configuration_Store.md)
+- [**Other Patterns**](#other-patterns)
+   - [Health Check API](patterns/other_patterns/Health_Check_API.md)
 
 ----
 
@@ -121,3 +123,8 @@ Collect modern distributed system design patterns.
 | Pattern Name | Diagram | Description |
 |----|-------|----|
 | [*External Configuration Store*](patterns/configuration_patterns/External_Configuration_Store.md) | | Externalize all application configuration properties to a centralized location. |
+
+### Other Patterns
+| Pattern Name | Diagram | Description |
+|----|-------|----|
+| [*Health Check API*](patterns/other_patterns/Health_Check_API.md) | | |
