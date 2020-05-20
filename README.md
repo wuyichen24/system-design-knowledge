@@ -15,7 +15,6 @@ Collect modern distributed system design patterns.
       - [Refresh-Ahead](patterns/cache_patterns/Refresh_Ahead.md)
 - **Configuration Patterns**
    - [External Configuration Store](patterns/configuration_patterns/External_Configuration_Store.md)
-   - [Runtime Reconfiguration](patterns/configuration_patterns/Runtime_Reconfiguration.md)
 - [**Container Patterns**](#container-patterns)
    - Single-node, multi-container patterns
       - [Sidecar](patterns/container_patterns/Sidecar.md)
