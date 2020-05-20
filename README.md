@@ -13,8 +13,6 @@ Collect modern distributed system design patterns.
       - [Write-Through](patterns/cache_patterns/Write_Through.md)
       - [Write-Behind](patterns/cache_patterns/Write_Behind.md)
       - [Refresh-Ahead](patterns/cache_patterns/Refresh_Ahead.md)
-- [**Configuration Patterns**](#configuration-patterns)
-   - [External Configuration Store](patterns/configuration_patterns/External_Configuration_Store.md)
 - [**Container Patterns**](#container-patterns)
    - Single-node, multi-container patterns
       - [Sidecar](patterns/container_patterns/Sidecar.md)
@@ -46,11 +44,12 @@ Collect modern distributed system design patterns.
 - [**External API Patterns**](#external-api-patterns)
    - [API Gateway](patterns/external_api_patterns/API_Gateway.md)
    - [Backends for Frontends (BFF)](patterns/external_api_patterns/Backends_For_Frontends.md)
+- [**Configuration Patterns**](#configuration-patterns)
+   - [External Configuration Store](patterns/configuration_patterns/External_Configuration_Store.md)
 
 ----
 
 ## Brief Introduction
-
 ### Architecture Patterns
 
 | Pattern Name | Diagram | Description |
@@ -58,16 +57,13 @@ Collect modern distributed system design patterns.
 | [*Anti-Corruption Layer (ACL)*](patterns/architecture_patterns/Anti_Corruption_Layer.md) | ![](./diagrams/png/anti_corruption_layer_small.png) | Place an adapter layer between 2 domain models and translate communications between them. | 
 
 ### Cache Patterns
-
 #### Cache Pattern Categories
-
 | Category Name | Diagram | Description | Patterns |
 |----|----|----|----|
 | [*Cache-Aside*](patterns/cache_patterns/Cache_Aside.md) | ![](./diagrams/png/cache_aside_small.png) | Application interacts with both cache and database (No interaction between cache and database). |  |
 | *Cache-As-SOR* | ![](./diagrams/png/cache_as_sor_small.png) | Application only interacts with cache. | <ul><li>Read-Through<li>Write-Through<li>Write-Behind<li>Refresh-Ahead</ul> |
 
 #### Cache-As-SOR Patterns
-
 | Pattern Name | Diagram | Description | 
 |----|----|----|
 | [*Read-Through*](patterns/cache_patterns/Read_Through.md) | ![](./diagrams/png/read_through_small.png) | If requested data is not in cache, cache will load the data from database and let application read **synchronously**. |
@@ -75,13 +71,7 @@ Collect modern distributed system design patterns.
 | [*Write-Behind*](patterns/cache_patterns/Write_Behind.md) | ![](./diagrams/png/write_behind_small.png) | After application writes data to cache, cache **asynchronously** write the same data to database (When satisfy a certain criteria). |
 | [*Refresh-Ahead*](patterns/cache_patterns/Refresh_Ahead.md) | ![](./diagrams/png/refresh_ahead_small.png) | Cache automatically and **asynchronously** reloads (refreshs) any recently accessed cache entry from database before its expiration. |
 
-### Configuration Patterns
-| Pattern Name | Diagram | Description |
-|----|-------|----|
-| [*External Configuration Store*](patterns/configuration_patterns/External_Configuration_Store.md) | | Externalize all application configuration properties to a centralized location. |
-
 ### Container Patterns
-
 | Pattern Name | Diagram | Description |
 |----|-------|----|
 | [*Ambassador*](patterns/container_patterns/Ambassador.md) | ![](./diagrams/png/ambassador_small.png) | <ul><li>Place an ambassador container between the main application container and the external system for simplifying the view of the external system.</ul> |
@@ -92,7 +82,6 @@ Collect modern distributed system design patterns.
 | [*Scatter/Gather*](patterns/container_patterns/Scatter_Gather.md) | ![](./diagrams/png/scatter_gather_small.png) | <ul><li>The root node scatters out the original request to a group of servers to perform a set of tasks in parallel.<li>The root node gathers the partial data from each server and return a single response to the original request.</ul>
 
 ### Data Management Patterns
-
 | Pattern Name | Diagram | Description |
 | ---- | ------ | ---- |
 | [*Command Query Responsibility Segregation (CQRS)*](patterns/data_management_patterns/Command_Query_Responsibility_Segregation.md) | ![](./diagrams/png/command_query_responsibility_segregation_small.png) | Use separated models for different types of operations: Command (update data) and Query (read data). |
@@ -102,13 +91,11 @@ Collect modern distributed system design patterns.
 | [*Shared Database*](patterns/data_management_patterns/Shared_Database.md) |  |  |
 
 ### Messaging Patterns
-
 | Pattern Name | Diagram | Description |
 | ---- | ------ | ---- |
 | [*Claim Check*](patterns/messaging_patterns/Claim_Check.md) | ![](./diagrams/png/claim_check_small.png) | When sending a large message from one service to another, store the large message into a data store, only send the reference as the claim check to the receiver service for retrieving the large message from the data store. |
 
 ### Resiliency Patterns
-
 | Pattern Name | Diagram | Description |
 | ---- | ------ | ---- |
 | [*Circuit Breaker*](patterns/resiliency_patterns/Circuit_Breaker.md) |  | Prevent an application from performing an operation that is likely to fail based on a certain criteria. |
@@ -129,3 +116,8 @@ Collect modern distributed system design patterns.
 | ---- | ------ | ---- |
 | [*API Gateway*](patterns/external_api_patterns/API_Gateway.md) | ![](./diagrams/png/api_gateway_small.png) | Implement a service that’s the entry point into the microservices-based application for external API clients. |
 | [*Backends for Frontends (BFF)*](patterns/external_api_patterns/Backends_For_Frontends.md) | ![](./diagrams/png/backends_for_frontends_small.png) | Separate backend services for different frontend applications or interfaces. |
+
+### Configuration Patterns
+| Pattern Name | Diagram | Description |
+|----|-------|----|
+| [*External Configuration Store*](patterns/configuration_patterns/External_Configuration_Store.md) | | Externalize all application configuration properties to a centralized location. |
