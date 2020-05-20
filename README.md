@@ -127,4 +127,4 @@ Collect modern distributed system design patterns.
 ### Other Patterns
 | Pattern Name | Diagram | Description |
 |----|-------|----|
-| [*Health Check API*](patterns/other_patterns/Health_Check_API.md) | | |
+| [*Health Check API*](patterns/other_patterns/Health_Check_API.md) | | A service exposes a health check API endpoint which returns the health of the service. |
