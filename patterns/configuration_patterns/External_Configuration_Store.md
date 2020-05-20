@@ -53,6 +53,11 @@
 ### Cons
 
 ## Consideration
+| Topic | Consideration | Possible Solution Options |
+|----|-----|-----|
+| Security | Protect the configuration data | <li>Authorize users’ or applications' access to the configuration data.<li>Encrypts some or all of the configuration data. |
+| Feasibility | Be flexible enough to store multiple versions of the configuration (development, staging and production, etc.) | |
+
 ## When To Use
 ## References
 - Book: [Chris R.(2018). Chapter 11 Developing production-ready services, *Microservices Patterns* (pp. 348-382). Manning Publications](https://www.manning.com/books/microservices-patterns)
