@@ -15,6 +15,9 @@
 - [**References**](#references)
 
 ## Motivation
+- The configuration properties need to be refreshed when the application is running.
+   - The only way to do that is to restart or redeploy the application.
+- The multiple applications or application instances may use the same configuration properties.
 
 ## Solution
 ### Concepts
