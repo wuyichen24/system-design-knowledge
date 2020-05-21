@@ -7,6 +7,10 @@
 | Apache Flume |
 | Graylog |
 | Nagios |
+| Splunk |
+| XpoLog |
+| Loggly |
+| Papertrail | 
 
 ## References
 - https://www.comparitech.com/net-admin/log-management-tools/
