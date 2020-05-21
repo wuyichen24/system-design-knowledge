@@ -35,7 +35,7 @@
 ## Consideration
 | Topic | Consideration | Possible Solution Options |
 |----|-----|-----|
-| Security | Protect the health check API from public access | <li>Eable authentication for accessing the health check API.<li>Expose the health check API on a different IP address.<li>Configure the health check API on a non-standard HTTP port. |
+| Security | Protect the health check endpoint from public access | <li>Eable authentication for accessing the health check endpoint.<li>Expose the health check endpoint on a different IP address.<li>Configure the health check endpoint on a non-standard HTTP port. |
 
 ## When To Use
 
