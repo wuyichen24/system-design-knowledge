@@ -1,4 +1,4 @@
-# Configuration_Server
+# Configuration Server
 
 | Product | 
 |----|
