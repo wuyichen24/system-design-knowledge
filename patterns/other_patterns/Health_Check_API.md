@@ -23,6 +23,10 @@
    - Load balancer
 
 ### Implementation
+- Basic measurements of the application's availability and performance:
+   - The response code.
+   - The content of response.
+   - The response time (network latency + request processing time).
 
 ## Pros & Cons
 ### Pros
