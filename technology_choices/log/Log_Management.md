@@ -1,16 +1,17 @@
 # Log Management
 
-| Product |
-|----|
-| ELK Stack (Elasticsearch + Logstash + Kibana) |
-| Fluentd |
-| Apache Flume |
-| Graylog |
-| Nagios |
-| Splunk |
-| XpoLog |
-| Loggly |
-| Papertrail | 
+| Product | Cloud-based/On-promise |
+|----|---|
+| ELK Stack (Elasticsearch + Logstash + Kibana) | |
+| Fluentd | |
+| Apache Flume | |
+| Graylog | |
+| Nagios | |
+| Splunk | |
+| XpoLog | |
+| Loggly | |
+| Papertrail | Cloud-based |
+| Logz.io | |
 
 ## References
 - https://www.comparitech.com/net-admin/log-management-tools/
