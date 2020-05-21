@@ -58,7 +58,7 @@ Collect modern distributed system design patterns.
 | Pattern Name | Diagram | Description |
 | ---- | ------ | ---- |
 | [*Anti-Corruption Layer (ACL)*](patterns/legacy_system_patterns/Anti_Corruption_Layer.md) | ![](./diagrams/png/anti_corruption_layer_small.png) | Place an adapter layer between 2 domain models and translate communications between them. | 
-| [*Strangler*](patterns/legacy_system_patterns/Strangler.md) | | |
+| [*Strangler*](patterns/legacy_system_patterns/Strangler.md) | | Incrementally refactor the legacy application to the new application and services. |
 
 ### Cache Patterns
 #### Cache Pattern Categories
