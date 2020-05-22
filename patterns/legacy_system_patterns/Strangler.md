@@ -25,7 +25,7 @@
 
 ## Pros & Cons
 ### Pros
-- Avoid the risk of the cut-over / big-bang rewrite of the legacy application.
+- Reduce the risk of the cut-over / big-bang rewrite of the legacy application.
 - Demonstrate the value of refactoring the legacy application early and often.
 
 ### Cons
