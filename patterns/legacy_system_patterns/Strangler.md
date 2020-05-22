@@ -21,10 +21,11 @@
 - General advices
    - Migrate the high-value areas of the legacy application to the new application first.
    - Avoid making widespread changes to the legacy applicaton when migrating to the new application.
+   - Design the new application in such a way as to make it easier for it to be strangled (refactored) in the future.
 
 ## Pros & Cons
 ### Pros
-- Avoid the risk of the big bang rewrite (cut-over rewrite) of the legacy application.
+- Avoid the risk of the cut-over rewrite of the legacy application.
 - Demonstrate the value of refactoring the legacy application early and often.
 
 ### Cons
