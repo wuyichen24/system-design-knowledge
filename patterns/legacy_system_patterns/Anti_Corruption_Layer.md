@@ -33,8 +33,6 @@
 - May add latency to calls made between the 2 domain models.
 
 ## Consideration
-| Topic | Consideration | Possible Solution Options |
-|----|-----|-----|
 
 ## When To Use
 Two or more domain models have different semantics, but still need to communicate.
