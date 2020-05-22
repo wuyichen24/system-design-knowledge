@@ -12,6 +12,7 @@
 - [**References**](#references)
 
 ## Motivation
+- Prevent a legacy domain model from polluting the domain model of a new service.
 
 ## Solution
 ### Concepts
@@ -32,6 +33,7 @@
 |----|-----|-----|
 
 ## When To Use
+Two or more domain models have different semantics, but still need to communicate.
 
 ## References
 - Book: [Chris R.(2018). Chapter 13 Refactoring to microservices, *Microservices Patterns* (pp. 428-471). Manning Publications](https://www.manning.com/books/microservices-patterns)
