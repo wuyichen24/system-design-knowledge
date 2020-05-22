@@ -20,8 +20,9 @@
 - Place an adapter layer between 2 domain models and translate communications between them.
 
 ### Implementation
-- The anti-corruption layer can be implemented as a component within the application or as an independent service.
-- The anti-corruption layer can be bidirectional.
+- General advices
+   - The anti-corruption layer can be implemented as a component within the application or as an independent service.
+   - The anti-corruption layer can be bidirectional.
 
 ## Pros & Cons
 ### Pros
