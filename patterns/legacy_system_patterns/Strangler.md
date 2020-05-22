@@ -12,6 +12,7 @@
 - [**References**](#references)
 
 ## Motivation
+- the big-bang (cut-over) rewrite of the legacy application is extremely risky and will likely end in failure.
 
 ## Solution
 ### Concepts
@@ -25,7 +26,7 @@
 
 ## Pros & Cons
 ### Pros
-- Reduce the risk of the cut-over / big-bang rewrite of the legacy application.
+- Reduce the risk of the big-bang (cut-over) rewrite of the legacy application.
 - Demonstrate the value of refactoring the legacy application early and often.
 
 ### Cons
