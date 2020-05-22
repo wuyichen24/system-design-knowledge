@@ -16,6 +16,7 @@
 
 ## Solution
 ### Concepts
+![](../../diagrams/png/anti_corruption_layer_small.png)
 - Place an adapter layer between 2 domain models and translate communications between them.
 
 ### Implementation
