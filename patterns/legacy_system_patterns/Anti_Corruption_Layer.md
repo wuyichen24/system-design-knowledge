@@ -22,6 +22,8 @@
 
 ## Pros & Cons
 ### Pros
+- Improve the isolation of 2 domain models.
+
 ### Cons
 
 ## Consideration
