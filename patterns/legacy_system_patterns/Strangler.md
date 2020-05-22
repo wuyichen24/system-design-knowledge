@@ -16,6 +16,7 @@
 
 ## Solution
 ### Concepts
+![](../../diagrams/png/strangler_small.png)
 - Incrementally refactor the legacy application to the new application and services.
 
 ### Implementation
