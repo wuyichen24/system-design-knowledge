@@ -12,6 +12,7 @@
 - [**References**](#references)
 
 ## Motivation
+- When systems based on different models are combined, the need for the new system to adapt to the semantics of the other system can lead to a corruption of the new system’s own model.
 
 ## Solution
 ### Concepts
