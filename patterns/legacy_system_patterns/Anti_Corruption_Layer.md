@@ -21,6 +21,7 @@
 
 ### Implementation
 - The anti-corruption layer can be implemented as a component within the application or as an independent service.
+- The anti-corruption layer can be bidirectional.
 
 ## Pros & Cons
 ### Pros
