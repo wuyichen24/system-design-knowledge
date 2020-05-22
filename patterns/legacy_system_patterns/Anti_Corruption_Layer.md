@@ -12,7 +12,6 @@
 - [**References**](#references)
 
 ## Motivation
-- Prevent a legacy domain model from polluting the domain model of a new service.
 
 ## Solution
 ### Concepts
