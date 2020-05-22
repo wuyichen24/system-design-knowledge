@@ -40,4 +40,5 @@
 - Book: [Chris R.(2018). Chapter 13 Refactoring to microservices, *Microservices Patterns* (pp. 428-471). Manning Publications](https://www.manning.com/books/microservices-patterns)
 - Web Article: [Pattern: Strangler application | https://microservices.io/patterns/refactoring/strangler-application.html](https://microservices.io/patterns/refactoring/strangler-application.html)
 - Web Article: [StranglerFigApplication | https://martinfowler.com/bliki/StranglerFigApplication.html](https://martinfowler.com/bliki/StranglerFigApplication.html)
+- Web Article: [Legacy Application Strangulation : Case Studies | https://paulhammant.com/2013/07/14/legacy-application-strangulation-case-studies/](https://paulhammant.com/2013/07/14/legacy-application-strangulation-case-studies/)
 - https://docs.microsoft.com/en-us/azure/architecture/patterns/strangler
