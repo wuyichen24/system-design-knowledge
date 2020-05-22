@@ -22,9 +22,10 @@
 
 ## Pros & Cons
 ### Pros
-- Improve the isolation of 2 domain models.
+- Improve the isolation between the 2 domain models.
 
 ### Cons
+- May add latency to calls made between the 2 domain models.
 
 ## Consideration
 | Topic | Consideration | Possible Solution Options |
