@@ -15,6 +15,8 @@
 
 ## Solution
 ### Concepts
+- Place an adapter layer between 2 domain models and translate communications between them.
+
 ### Implementation
 
 ## Pros & Cons
@@ -28,3 +30,4 @@
 ## When To Use
 
 ## References
+- Book: [Chris R.(2018). Chapter 13 Refactoring to microservices, *Microservices Patterns* (pp. 428-471). Manning Publications](https://www.manning.com/books/microservices-patterns)
