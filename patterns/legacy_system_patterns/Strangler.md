@@ -34,7 +34,7 @@
 ## Consideration
 | Topic | Consideration | Possible Solution Options |
 |----|-----|-----|
-| Collaboration | How to collaborate between the legacy application and the new application during the migration. | <li>Implementing an [Anti-Corruption Layer (ACL)](Anti_Corruption_Layer.md) between the legacy application and the new application.<li>Create a façade that route requests either to the legacy application or the new application. |
+| Collaboration | How to collaborate between the legacy application and the new application during the migration. | <li>Implementing an [Anti-Corruption Layer (ACL)](Anti_Corruption_Layer.md) between the legacy application and the new application.<li>Create a strangler façade that route requests either to the legacy application or the new application. |
 
 ## When To Use
 
