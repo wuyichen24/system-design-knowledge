@@ -35,6 +35,7 @@
 ## When To Use
 
 ## References
+- Book: [Chris R.(2018). Chapter 13 Refactoring to microservices, *Microservices Patterns* (pp. 428-471). Manning Publications](https://www.manning.com/books/microservices-patterns)
 - https://microservices.io/patterns/refactoring/strangler-application.html
 - https://docs.microsoft.com/en-us/azure/architecture/patterns/strangler
 - https://martinfowler.com/bliki/StranglerFigApplication.html
