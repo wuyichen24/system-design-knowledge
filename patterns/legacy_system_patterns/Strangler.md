@@ -34,6 +34,7 @@
 ## Consideration
 | Topic | Consideration | Possible Solution Options |
 |----|-----|-----|
+| Collaboration | How to collaborate between the legacy application and the new application during the migration. | <li>Implementing an anti-corruption layer (ACL) between the legacy application and the new application.<li>Create a façade that route requests either to the legacy application or the new application. |
 
 ## When To Use
 
@@ -42,4 +43,4 @@
 - Web Article: [Pattern: Strangler application | https://microservices.io/patterns/refactoring/strangler-application.html](https://microservices.io/patterns/refactoring/strangler-application.html)
 - Web Article: [StranglerFigApplication | https://martinfowler.com/bliki/StranglerFigApplication.html](https://martinfowler.com/bliki/StranglerFigApplication.html)
 - Web Article: [Legacy Application Strangulation : Case Studies | https://paulhammant.com/2013/07/14/legacy-application-strangulation-case-studies/](https://paulhammant.com/2013/07/14/legacy-application-strangulation-case-studies/)
-- https://docs.microsoft.com/en-us/azure/architecture/patterns/strangler
+- Web Article: [Strangler pattern | https://docs.microsoft.com/en-us/azure/architecture/patterns/strangler](https://docs.microsoft.com/en-us/azure/architecture/patterns/strangler)
