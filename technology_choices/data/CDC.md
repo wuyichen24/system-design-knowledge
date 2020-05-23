@@ -1,7 +1,7 @@
 # Change-Data-Capture (CDC)
 
 | Product | Open Source / Proprietary | Website | 
-|----|----|
+|----|----|----|
 | Debezium | Open Source | https://debezium.io/ |
 | LinkedIn Databus | Open Source | https://github.com/linkedin/databus |
 | Qlik Data Streaming | Proprietary | https://www.qlik.com/us/data-streaming/data-streaming-cdc | 
