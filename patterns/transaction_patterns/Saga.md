@@ -33,7 +33,10 @@
 
 ## Pros & Cons
 ### Pros
+- Maintains the data consistency of an application across multiple services.
+
 ### Cons
+- Increases the complexity of an application.
 
 ## Consideration
 | Topic | Consideration | Possible Solution Options |
