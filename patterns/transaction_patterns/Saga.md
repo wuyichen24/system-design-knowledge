@@ -28,6 +28,7 @@
 
 ### Implementation
 #### Types of Saga
+![](../../diagrams/png/saga_choreography.png)
 - **Choreography**
    - *Concepts*
       - Saga participants coordinate a saga operation by themselve.
@@ -49,6 +50,8 @@
    - *Cons*
       - Saga orchestrator has risk to become a single point of failure.
       - The risk of centralizing too much business logic in the orchestrator.
+      
+![](../../diagrams/png/saga_orchestration.png)
 
 ## Pros & Cons
 ### Pros
