@@ -22,6 +22,7 @@
 - Use compensating transactions to rollback changes
    - Each local transaction has a compensating transaction to undo the change.
    - If one transaction fails, the saga needs to execute the compensating transaction of preceding transactions in reverse order.
+![](../../diagrams/png/saga_compensation.png)
 
 ### Implementation
 #### Types of Saga
