@@ -28,12 +28,28 @@
 
 ### Implementation
 #### Types of Saga
-- Choreography
-   - Saga participants coordinate a saga operation by themselve.
-   - A saga participant sends a message to the next saga participant triggering its local transaction.
-- Orchestration
-   - A saga orchestrator coordinates a saga operation with saga participants.
-   - A saga orchestrator sends messages to saga participants telling them which transactions to perform.
+- **Choreography**
+   - *Concepts*
+      - Saga participants coordinate a saga operation by themselve.
+      - A saga participant sends a message to the next saga participant triggering its local transaction.
+   - *Pros*
+      - Easy to implement.
+      - Avoid the single point of failure of the saga orchestrator in the orchestration saga.
+   - *Cons*
+      - Risk of cyclic dependencies.
+      - More difficult to understand (There is no a single place in the code that defines the saga).
+   
+- **Orchestration**
+   - *Concepts*
+      - A saga orchestrator coordinates a saga operation with saga participants.
+      - A saga orchestrator sends messages to saga participants telling them which transactions to perform.
+   - *Pros*
+      - Easy to understand (The code in orchestrator defines the saga).
+      - Avoid the risk of cyclic dependencies.
+      - Improves separation of the saga coordination logic (in the saga orchestrator) and the business logic (in saga participants).
+   - *Cons*
+      - Saga orchestrator has risk to become a single point of failure.
+      - The risk of centralizing too much business logic in the orchestrator.
 
 ## Pros & Cons
 ### Pros
@@ -41,6 +57,7 @@
 
 ### Cons
 - Increases the complexity of an application.
+- Lack of isolation between transactions.
 
 ## Consideration
 | Topic | Consideration | Possible Solution Options |
