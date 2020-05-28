@@ -25,7 +25,11 @@
 ### Implementation
 #### Types of Saga
 - Choreography
+   - Saga participants coordinate a saga operation by themselve.
+   - A saga participant sends a message to the next saga participant triggering its local transaction.
 - Orchestration
+   - A saga orchestrator coordinates a saga operation with saga participants.
+   - A saga orchestrator sends messages to saga participants telling them which transactions to perform.
 
 ## Pros & Cons
 ### Pros
