@@ -39,6 +39,8 @@
    - *Cons*
       - Risk of cyclic dependencies.
       - More difficult to understand (There is no a single place in the code that defines the saga).
+
+![](../../diagrams/png/saga_orchestration.png)
 - **Orchestration**
    - *Concepts*
       - A saga orchestrator coordinates a saga operation with saga participants.
@@ -51,7 +53,7 @@
       - Saga orchestrator has risk to become a single point of failure.
       - The risk of centralizing too much business logic in the orchestrator.
       
-![](../../diagrams/png/saga_orchestration.png)
+
 
 ## Pros & Cons
 ### Pros
