@@ -29,6 +29,7 @@
 - The atomicity of updating the database and publishing a message (event) is guaranteed.
 
 ### Cons
+- Requires database specific solutions.
 
 ## Consideration
 | Topic | Consideration | Possible Solution Options |
