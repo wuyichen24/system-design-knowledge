@@ -98,6 +98,7 @@ Collect modern distributed system design patterns.
 | Pattern Name | Diagram | Description |
 | ---- | ------ | ---- |
 | [*Claim Check*](patterns/messaging_patterns/Claim_Check.md) | ![](./diagrams/png/claim_check_small.png) | When sending a large message from one service to another, store the large message into a data store, only send the reference as the claim check to the receiver service for retrieving the large message from the data store. |
+| Transaction Log Tailing | | |
 
 ### Resiliency Patterns
 | Pattern Name | Diagram | Description |
