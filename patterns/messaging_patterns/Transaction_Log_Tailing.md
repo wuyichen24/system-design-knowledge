@@ -18,10 +18,15 @@
 
 ## Solution
 ### Concepts
+- Publish messages by tailing the database’s transaction log.
+- A transaction log miner can read the transaction log and publish each change as a message to the message broker.
+
 ### Implementation
 
 ## Pros & Cons
 ### Pros
+- The atomicity of updating the database and publishing a message (event) is guaranteed.
+
 ### Cons
 
 ## Consideration
@@ -31,3 +36,5 @@
 ## When To Use
 
 ## References
+- Book: [Chris R.(2018). Chapter 3. Interprocess communication in a microservice architecture, *Microservices Patterns* (pp. 65-109). Manning Publications](https://www.manning.com/books/microservices-patterns)
+- Web Article: [Pattern: Transaction log tailing | https://microservices.io/patterns/data/transaction-log-tailing.html](https://microservices.io/patterns/data/transaction-log-tailing.html)
