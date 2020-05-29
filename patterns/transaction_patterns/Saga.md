@@ -64,7 +64,7 @@
 ## Consideration
 | Topic | Consideration | Possible Solution Options |
 |----|-----|-----|
-| Concurrency | Multiple Sagas can run concurrently and cause the following problems:<li><b>Lost updates</b>: One saga overwrites without reading changes made by another saga.<li><b>Dirty reads</b>: A transaction or a saga reads the updates made by another saga that has not completed those updates.<li><b>Fuzzy/non-repeatable reads</b>: Two different steps of a saga read the same data and get different results because another saga has made updates.| |
+| Concurrency | Multiple Sagas can run concurrently and cause the following problems:<li><b>Lost updates</b>: One saga overwrites without reading changes made by another saga.<li><b>Dirty reads</b>: A transaction or a saga reads the updates made by another saga that has not completed those updates.<li><b>Fuzzy/non-repeatable reads</b>: Two different steps of a saga read the same data and get different results because another saga has made updates.| <li><b>Semantic lock</b>: An application-level lock.<li><b>Commutative updates</b>: Design update operations to be executable in any order.<li><b>Pessimistic view</b>: Reorder the steps of a saga to minimize business risk.<li><b>Reread value</b>: Prevent dirty writes by rereading data to verify that it’s unchanged before overwriting it.<li><b>Version file</b>: Record the updates to a record so that they can be reordered.<li><b>By value</b>: Use each request’s business risk to dynamically select the concurrency mechanism. |
 
 ## When To Use
 
