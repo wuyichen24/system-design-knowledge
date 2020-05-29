@@ -14,7 +14,7 @@
 ## Motivation
 - How to update the database and publish a message (event) atomically (either all success, or all fail).
 - Cannot use distributed transaction pattens to solve this problem.
-   - Many modern brokers don’t support distributed transactions.
+   - Many modern message brokers don’t support distributed transactions.
 
 ## Solution
 ### Concepts
