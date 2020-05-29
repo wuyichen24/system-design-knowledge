@@ -22,7 +22,8 @@
 - A transaction log miner can read the transaction log and publish each change as a message to the message broker.
 
 ### Implementation
-- Requires database specific solutions
+- Requires database specific solutions.
+- It can be difficult to reverse engineer the high‑level business events from the low‑level updates recorded in the transaction log.
 
 ## Pros & Cons
 ### Pros
