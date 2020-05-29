@@ -42,6 +42,9 @@ Collect modern distributed system design patterns.
    - [Two-Phase Commit (2PC)](patterns/transaction_patterns/Two_Phase_Commit.md)
    - [Three-Phase Commit (3PC)](patterns/transaction_patterns/Three_Phase_Commit.md)
    - [Saga](patterns/transaction_patterns/Saga.md)
+   - Transactional Messaging
+      - [Publishing Events Using Local Transactions]()
+      - [Transaction Log Tailing]()
 - [**External API Patterns**](#external-api-patterns)
    - [API Gateway](patterns/external_api_patterns/API_Gateway.md)
    - [Backends for Frontends (BFF)](patterns/external_api_patterns/Backends_For_Frontends.md)
@@ -98,7 +101,6 @@ Collect modern distributed system design patterns.
 | Pattern Name | Diagram | Description |
 | ---- | ------ | ---- |
 | [*Claim Check*](patterns/messaging_patterns/Claim_Check.md) | ![](./diagrams/png/claim_check_small.png) | When sending a large message from one service to another, store the large message into a data store, only send the reference as the claim check to the receiver service for retrieving the large message from the data store. |
-| Transaction Log Tailing | | |
 
 ### Resiliency Patterns
 | Pattern Name | Diagram | Description |
