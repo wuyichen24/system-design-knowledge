@@ -64,6 +64,7 @@
 ## Consideration
 | Topic | Consideration | Possible Solution Options |
 |----|-----|-----|
+| Concurrency | Multiple Sagas can run concurrently and cause problems:<li>Lost updates: One saga overwrites without reading changes made by another saga.<li>Dirty reads: A transaction or a saga reads the updates made by another saga that has not completed those updates.<li>Fuzzy/non-repeatable reads: Two different steps of a saga read the same data and get different results because another saga has made updates.| |
 
 ## When To Use
 
