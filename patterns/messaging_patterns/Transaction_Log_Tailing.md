@@ -22,6 +22,7 @@
 - A transaction log miner can read the transaction log and publish each change as a message to the message broker.
 
 ### Implementation
+- Requires database specific solutions
 
 ## Pros & Cons
 ### Pros
