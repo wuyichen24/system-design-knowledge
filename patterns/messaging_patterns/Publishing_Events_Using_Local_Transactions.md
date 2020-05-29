@@ -30,6 +30,8 @@
 
 ### Cons
 - Frequently polling the database can be expensive.
+- Tricky to publish events in order.
+- Not all NoSQL databases support this pattern.
 
 ## Consideration
 | Topic | Consideration | Possible Solution Options |
