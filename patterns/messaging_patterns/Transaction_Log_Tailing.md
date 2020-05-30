@@ -19,7 +19,7 @@
 ## Solution
 ### Concepts
 - Publish messages by tailing the database’s transaction log.
-- A transaction log miner can read the transaction log and publish each change as a message to the message broker.
+- A transaction log miner reads the transaction log and publish each change as a message to the message broker.
 
 ### Implementation
 - Requires database specific solutions.
