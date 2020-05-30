@@ -31,6 +31,8 @@ Collect modern distributed system design patterns.
    - [Shared Database](patterns/data_management_patterns/Shared_Database.md)
 - [**Messaging Patterns**](#messaging-patterns)
    - [Claim Check](patterns/messaging_patterns/Claim_Check.md)
+   - [Publishing Events Using Local Transactions](patterns/messaging_patterns/Publishing_Events_Using_Local_Transactions.md)
+   - [Transaction Log Tailing](patterns/messaging_patterns/Transaction_Log_Tailing.md)
 - [**Resiliency Patterns**](#resiliency-patterns)
    - [Circuit Breaker](patterns/resiliency_patterns/Circuit_Breaker.md)
    - [Fallback](patterns/resiliency_patterns/Fallback.md)
@@ -98,6 +100,8 @@ Collect modern distributed system design patterns.
 | Pattern Name | Diagram | Description |
 | ---- | ------ | ---- |
 | [*Claim Check*](patterns/messaging_patterns/Claim_Check.md) | ![](./diagrams/png/claim_check_small.png) | When sending a large message from one service to another, store the large message into a data store, only send the reference as the claim check to the receiver service for retrieving the large message from the data store. |
+| [Publishing Events Using Local Transactions](patterns/messaging_patterns/Publishing_Events_Using_Local_Transactions.md) | | |
+| [Transaction Log Tailing](patterns/messaging_patterns/Transaction_Log_Tailing.md) | | |
 
 ### Resiliency Patterns
 | Pattern Name | Diagram | Description |
