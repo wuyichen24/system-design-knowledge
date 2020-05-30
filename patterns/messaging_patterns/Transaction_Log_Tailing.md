@@ -41,5 +41,6 @@
 
 ## References
 - Book: [Chris R.(2018). Chapter 3. Interprocess communication in a microservice architecture, *Microservices Patterns* (pp. 65-109). Manning Publications](https://www.manning.com/books/microservices-patterns)
+- Book: [Kasun I., Prabath S.(2018). Chapter 5: Data Management, *Microservices for the Enterprise* (pp. 125-150). Apress](https://www.apress.com/gp/book/9781484238578)
 - Web Article: [Pattern: Transaction log tailing | https://microservices.io/patterns/data/transaction-log-tailing.html](https://microservices.io/patterns/data/transaction-log-tailing.html)
 - Web Article: [Event-Driven Data Management for Microservices | https://www.nginx.com/blog/event-driven-data-management-microservices/](https://www.nginx.com/blog/event-driven-data-management-microservices/)
