@@ -100,8 +100,8 @@ Collect modern distributed system design patterns.
 | Pattern Name | Diagram | Description |
 | ---- | ------ | ---- |
 | [*Claim Check*](patterns/messaging_patterns/Claim_Check.md) | ![](./diagrams/png/claim_check_small.png) | When sending a large message from one service to another, store the large message into a data store, only send the reference as the claim check to the receiver service for retrieving the large message from the data store. |
-| [Publishing Events Using Local Transactions](patterns/messaging_patterns/Publishing_Events_Using_Local_Transactions.md) | | |
-| [Transaction Log Tailing](patterns/messaging_patterns/Transaction_Log_Tailing.md) | | |
+| [*Publishing Events Using Local Transactions*](patterns/messaging_patterns/Publishing_Events_Using_Local_Transactions.md) | ![](./diagrams/png/publishing_events_using_local_transactions_small.png) | <li>Uses the event table to store the events need to be published.<li>Bundles the operation of inserting new record into a business entity table and the operation of inserting a new event to the event table as a single local database transaction.<li>Event publisher publishes events by polling the event table periodically. |
+| [*Transaction Log Tailing*](patterns/messaging_patterns/Transaction_Log_Tailing.md) | ![](./diagrams/png/transaction_log_tailing_small.png) | <li>Publish messages by tailing the database’s transaction log.<li>A transaction log miner reads the transaction log and publish each change as a message to the message broker. |
 
 ### Resiliency Patterns
 | Pattern Name | Diagram | Description |
