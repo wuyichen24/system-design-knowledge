@@ -18,7 +18,7 @@
 
 ## Solution
 ### Concepts
-- ![](../../diagrams/png/transaction_log_tailing_small.png)
+![](../../diagrams/png/transaction_log_tailing_small.png)
 - Publish messages by tailing the database’s transaction log.
 - A transaction log miner reads the transaction log and publish each change as a message to the message broker.
 
