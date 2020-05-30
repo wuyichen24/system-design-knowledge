@@ -18,6 +18,7 @@
 
 ## Solution
 ### Concepts
+![](../../diagrams/png/publishing_events_using_local_transactions_small.png)
 - Uses the event table to store the events need to be published.
 - Bundles the operation of inserting new record into a business entity table and the operation of inserting a new event to the event table as a single local database transaction.
 - Event publisher publishes events by polling the event table periodically.
