@@ -26,5 +26,6 @@
 |----|-----|-----|
 
 ## When To Use
+- Reservation-style business models.
 
 ## References
