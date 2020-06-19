@@ -32,7 +32,7 @@
 ## Consideration
 | Topic | Consideration | Possible Solution Options |
 |----|-----|-----|
-| Interoperability risk | Two services need to communicate and both are out of your control. | |
+| Interoperability risk | Two services need to communicate and both are out of your control. | <li>Always control at least one service of each communication. |
 
 ## When To Use
 - Reservation-style business models.
