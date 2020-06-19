@@ -38,3 +38,5 @@
 - Reservation-style business models.
 
 ## References
+- Web Article: [Eventual Data Consistency Solution in ServiceComb - part 3 | https://servicecomb.apache.org/docs/distributed_saga_3/#:~:text=Try%2DConfirm%2FCancel%20(TCC),with%20reserved%20state%20into%20database](https://servicecomb.apache.org/docs/distributed_saga_3/#:~:text=Try%2DConfirm%2FCancel%20(TCC),with%20reserved%20state%20into%20database)
+- Web Article: [Transactions for the REST of Us | https://www.infoq.com/presentations/Transactions-HTTP-REST/](https://www.infoq.com/presentations/Transactions-HTTP-REST/)
