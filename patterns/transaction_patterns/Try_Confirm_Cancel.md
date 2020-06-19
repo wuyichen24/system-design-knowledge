@@ -15,7 +15,7 @@
 
 ## Solution
 ### Concepts
-![](../../diagrams/png/try_confirm_cancel.png)
+![](../diagrams/png/try_confirm_cancel.png)
 - Use 2 phases (try-phase and confirm-phase) to change a state.
 - Add an intermediate state (pending state or reserved state) in the middle of those 2 phases.
 
