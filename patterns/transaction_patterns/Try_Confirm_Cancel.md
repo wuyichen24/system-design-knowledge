@@ -16,18 +16,28 @@
 ## Solution
 ### Concepts
 ![](../../diagrams/png/try_confirm_cancel_small.png)
-- Use 2 phases (try-phase and confirm-phase) to change a state.
+- Use 2 phases (try phase and confirm phase) to change a state.
 - Add an intermediate state (pending state or reserved state) in the middle of those 2 phases.
 
 ### Implementation
+- 3 Phases
+   - Try
+      - Validate the transactional system.
+      - Reserve resources.
+   - Confirm
+      - Execute the transaction.
+      - Release resources.
+   - Cancel
+      - Rollback the transaction and release the resources.
 
 ## Pros & Cons
 ### Pros
-- Make cancellation trivial and put more focus on the happy path (try-phase).
+- Make cancellation trivial and put more focus on the happy path (try phase).
 - Participating services have increased autonomy.
 - No combinatorial explosion or error path complexity.
 
 ### Cons
+- Cost more efforts on development.
 
 ## Consideration
 | Topic | Consideration | Possible Solution Options |
