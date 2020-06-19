@@ -18,7 +18,8 @@
 
 ## Solution
 ### Concepts
-- Inserts the events which need to be published into a event table.
+![](../../diagrams/png/publishing_events_using_local_transactions_small.png)
+- Uses the event table to store the events need to be published.
 - Bundles the operation of inserting new record into a business entity table and the operation of inserting a new event to the event table as a single local database transaction.
 - Event publisher publishes events by polling the event table periodically.
 
@@ -42,5 +43,6 @@
 
 ## References
 - Book: [Chris R.(2018). Chapter 3. Interprocess communication in a microservice architecture, *Microservices Patterns* (pp. 65-109). Manning Publications](https://www.manning.com/books/microservices-patterns)
+- Book: [Kasun I., Prabath S.(2018). Chapter 5: Data Management, *Microservices for the Enterprise* (pp. 125-150). Apress](https://www.apress.com/gp/book/9781484238578)
 - Web Article: [Pattern: Transactional outbox | https://microservices.io/patterns/data/transactional-outbox.html](https://microservices.io/patterns/data/transactional-outbox.html)
 - Web Article: [Event-Driven Data Management for Microservices | https://www.nginx.com/blog/event-driven-data-management-microservices/](https://www.nginx.com/blog/event-driven-data-management-microservices/)

@@ -44,6 +44,7 @@ Collect modern distributed system design patterns.
    - [Two-Phase Commit (2PC)](patterns/transaction_patterns/Two_Phase_Commit.md)
    - [Three-Phase Commit (3PC)](patterns/transaction_patterns/Three_Phase_Commit.md)
    - [Saga](patterns/transaction_patterns/Saga.md)
+   - [Try-Confirm/Cancel (TCC)](patterns/transaction_patterns/Try_Confirm_Cancel.md)
 - [**External API Patterns**](#external-api-patterns)
    - [API Gateway](patterns/external_api_patterns/API_Gateway.md)
    - [Backends for Frontends (BFF)](patterns/external_api_patterns/Backends_For_Frontends.md)
@@ -100,8 +101,8 @@ Collect modern distributed system design patterns.
 | Pattern Name | Diagram | Description |
 | ---- | ------ | ---- |
 | [*Claim Check*](patterns/messaging_patterns/Claim_Check.md) | ![](./diagrams/png/claim_check_small.png) | When sending a large message from one service to another, store the large message into a data store, only send the reference as the claim check to the receiver service for retrieving the large message from the data store. |
-| [Publishing Events Using Local Transactions](patterns/messaging_patterns/Publishing_Events_Using_Local_Transactions.md) | | |
-| [Transaction Log Tailing](patterns/messaging_patterns/Transaction_Log_Tailing.md) | | |
+| [*Publishing Events Using Local Transactions*](patterns/messaging_patterns/Publishing_Events_Using_Local_Transactions.md) | ![](./diagrams/png/publishing_events_using_local_transactions_small.png) | <li>Uses the event table to store the events need to be published.<li>Bundles the operation of inserting new record into a business entity table and the operation of inserting a new event to the event table as a single local database transaction.<li>Event publisher publishes events by polling the event table periodically. |
+| [*Transaction Log Tailing*](patterns/messaging_patterns/Transaction_Log_Tailing.md) | ![](./diagrams/png/transaction_log_tailing_small.png) | <li>Publish messages by tailing the database’s transaction log.<li>A transaction log miner reads the transaction log and publish each change as a message to the message broker. |
 
 ### Resiliency Patterns
 | Pattern Name | Diagram | Description |
@@ -118,6 +119,7 @@ Collect modern distributed system design patterns.
 | [*Two-Phase Commit (2PC)*](patterns/transaction_patterns/Two_Phase_Commit.md) | ![](./diagrams/png/2pc_small.png) | The coordinator uses 2 phases to coordinates participants on whether to commit or abort (roll back) the distributed atomic transaction: <ul><li>**Commit-Request/Voting Phase**<ul><li>The coordinator sends a request-to-prepare message to all participants.<li>Each participant prepare the transaction and send back the aggreement message (success) or the abort message (fail) to the the coordinator.</ul><li>**Commit/Completion Phase**<ul><li>**Success**: If the coordinator received an agreement message from all participants:<ul><li>The coordinator sends a commit message to all the participants.<li>Each participant commits the transcation and releases all the locks.<li>Each participant sends an acknowledgement to the coordinator.</ul><li>**Failure**: If any participant sent a abort message to the coordinator:<ul><li>The coordinator sends a rollback message to all the participants.<li>Each participant undos the transaction and release all the locks.<li>Each participant sends an acknowledgement to the coordinator.</ul></ul></ul> |
 | [*Three-Phase Commit (3PC)*](patterns/transaction_patterns/Three_Phase_Commit.md) |  |  |
 | [*Saga*](patterns/transaction_patterns/Saga.md) | ![](./diagrams/png/saga_small.png) | <ul><li>A sequence of asynchronous local transactions.<li>Each service<ul><li>Starts its action by getting a event/message from the previous service.<li>Sends a event/message to the next service when it completes its action.</ul><li>If one action fails, executes compensating transactions to rollback the changes.</ul> |
+| [*Try-Confirm/Cancel (TCC)*](patterns/transaction_patterns/Try_Confirm_Cancel.md) | | <li>Use 2 phases (try-phase and confirm-phase) to change a state.<li>Add an intermediate state (pending state or reserved state) in the middle of those 2 phases. |
 
 ### External API Patterns
 | Pattern Name | Diagram | Description |
