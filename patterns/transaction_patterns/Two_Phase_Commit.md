@@ -38,10 +38,13 @@ The coordinator uses 2 phases to coordinates participants on whether to commit o
    - An assumption about the outcome of transactions, either commit, or abort, can save both messages and logging operations by the participants during the 2PC protocol's execution.
 - **Tree 2PC**:
    - The participants in a distributed transaction are typically invoked in an order which defines a tree structure, the invocation tree.
-   - Invocation tree
+   - Invocation tree:
       - Node: The participants
       - Edge: The invocations (communication links).
       - Root of sub-tree: The coordinator.
+   - One participant in the upper sub-tree (transaction) can become a coordinator in the lower sub-tree (transaction).
+   
+![](../../diagrams/png/tree_2pc.png)
 
 ## Pros & Cons
 ### Pros
