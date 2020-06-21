@@ -17,7 +17,7 @@
 ### Concepts
 ![](../../diagrams/png/saga_small.png)
 
-- A sequence of local transactions.
+- A sequence of asynchronous local transactions.
    - Each local transaction updates data within a single service.
    - A service publishes an asynchronous message when a local transaction completes. The message triggers the local transaction in the next service.
 - Use compensating transactions to rollback changes
@@ -56,9 +56,10 @@
 ## Pros & Cons
 ### Pros
 - Maintains the data consistency of an application across multiple services.
+- Supports for long-lived transactions (Other microservices are not blocked if a microservice is running for a long time).
 
 ### Cons
-- Increases the complexity of an application.
+- Increases the complexity of an application (difficult to design, debug, etc.).
 - Lack of isolation between transactions.
 
 ## Consideration
@@ -72,3 +73,4 @@
 - Book: [Chris R.(2018). Chapter 4. Managing transactions with sagas, *Microservices Patterns* (pp. 110-145). Manning Publications](https://www.manning.com/books/microservices-patterns)
 - Web Article: [Pattern: Saga | https://microservices.io/patterns/data/saga.html](https://microservices.io/patterns/data/saga.html)
 - Web Article: [分布式事务基本原理 | https://github.com/dunwu/blog/blob/master/source/_posts/distributed/distributed-transaction.md](https://github.com/dunwu/blog/blob/master/source/_posts/distributed/distributed-transaction.md)
+- Web Article: [Patterns for distributed transactions within a microservices architecture | https://developers.redhat.com/blog/2018/10/01/patterns-for-distributed-transactions-within-a-microservices-architecture/](https://developers.redhat.com/blog/2018/10/01/patterns-for-distributed-transactions-within-a-microservices-architecture/)
