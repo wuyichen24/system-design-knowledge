@@ -19,6 +19,8 @@
 
 ## Pros & Cons
 ### Pros
+- It is a non-blocking protocol.
+
 ### Cons
 
 ## Consideration
