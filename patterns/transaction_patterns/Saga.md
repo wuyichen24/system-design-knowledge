@@ -17,7 +17,7 @@
 ### Concepts
 ![](../../diagrams/png/saga_small.png)
 
-- A sequence of local transactions.
+- A sequence of asynchronous local transactions.
    - Each local transaction updates data within a single service.
    - A service publishes an asynchronous message when a local transaction completes. The message triggers the local transaction in the next service.
 - Use compensating transactions to rollback changes
