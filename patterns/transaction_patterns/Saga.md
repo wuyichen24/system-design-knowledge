@@ -59,7 +59,7 @@
 - Supports for long-lived transactions (Other microservices are not blocked if a microservice is running for a long time).
 
 ### Cons
-- Increases the complexity of an application.
+- Increases the complexity of an application (difficult to design, debug, etc.).
 - Lack of isolation between transactions.
 
 ## Consideration
