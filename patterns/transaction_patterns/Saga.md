@@ -56,6 +56,7 @@
 ## Pros & Cons
 ### Pros
 - Maintains the data consistency of an application across multiple services.
+- Supports for long-lived transactions (Other microservices are not blocked if a microservice is running for a long time).
 
 ### Cons
 - Increases the complexity of an application.
