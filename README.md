@@ -116,10 +116,10 @@ Collect modern distributed system design patterns.
 ### Transaction Patterns
 | Pattern Name | Diagram | Description |
 | ---- | ------ | ---- |
-| [*Two-Phase Commit (2PC)*](patterns/transaction_patterns/Two_Phase_Commit.md) | ![](./diagrams/png/2pc_small.png) | The coordinator uses 2 phases to coordinates participants on whether to commit or abort (roll back) a distributed transaction. |
-| [*Three-Phase Commit (3PC)*](patterns/transaction_patterns/Three_Phase_Commit.md) |  |  |
+| [*Two-Phase Commit (2PC)*](patterns/transaction_patterns/Two_Phase_Commit.md) | ![](./diagrams/png/2pc_small.png) | The coordinator uses 2 phases (prepare phase and commit phase) to coordinates participants on whether to commit or abort (roll back) a distributed transaction. |
+| [*Three-Phase Commit (3PC)*](patterns/transaction_patterns/Three_Phase_Commit.md) |  | <li>Add a new phase (prepared to commit phase) in the middle of the original 2 phases in 2PC.<li>Provide a dependable recovery solution if a participant failure or both coordinator and participant failure during commit phase. |
 | [*Saga*](patterns/transaction_patterns/Saga.md) | ![](./diagrams/png/saga_small.png) | <ul><li>A sequence of asynchronous local transactions.<li>Each service<ul><li>Starts its action by getting a event/message from the previous service.<li>Sends a event/message to the next service when it completes its action.</ul><li>If one action fails, executes compensating transactions to rollback the changes.</ul> |
-| [*Try-Confirm/Cancel (TCC)*](patterns/transaction_patterns/Try_Confirm_Cancel.md) | ![](./diagrams/png/try_confirm_cancel_small.png) | <li>Use 2 phases (try-phase and confirm-phase) to change a state.<li>Add an intermediate state (pending state or reserved state) in the middle of those 2 phases. |
+| [*Try-Confirm/Cancel (TCC)*](patterns/transaction_patterns/Try_Confirm_Cancel.md) | ![](./diagrams/png/try_confirm_cancel_small.png) | <li>Use 2 phases (try phase and confirm phase) to change a state.<li>Add an intermediate state (pending state or reserved state) in the middle of those 2 phases. |
 
 ### External API Patterns
 | Pattern Name | Diagram | Description |
