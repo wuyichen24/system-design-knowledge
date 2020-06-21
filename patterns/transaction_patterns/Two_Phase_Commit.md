@@ -35,6 +35,8 @@ The coordinator uses 2 phases to coordinates participants on whether to commit o
 
 ## Pros & Cons
 ### Pros
+- It is very strong consistency protocol.
+
 ### Cons
 - It is a blocking protocol (The protocol will need to lock the object that will be changed before the transaction completes).
 
