@@ -15,6 +15,7 @@
 
 ## Solution
 ### Concepts
+![](../../diagrams/png/2pc_small.png)
 The coordinator uses 2 phases to coordinates participants on whether to commit or abort (roll back) a distributed transaction: 
 - **Commit-Request/Voting Phase**
    - The coordinator sends a request-to-prepare message to all participants.
