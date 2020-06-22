@@ -18,7 +18,7 @@
    ![](../../diagrams/png/recovery_problem_in_2pc_1.png)
    - But after that, the coordinator and the first participant fail together. the rest of participant don't know the decision (commit or abort). 
    
-   ![](../../diagrams/png/recovery_problem_in_2pc_1.png)
+   ![](../../diagrams/png/recovery_problem_in_2pc_2.png)
 
 ## Solution
 ### Concepts
