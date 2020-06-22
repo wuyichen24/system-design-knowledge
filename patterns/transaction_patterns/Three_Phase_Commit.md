@@ -16,7 +16,7 @@
    - In the commit phase, the coordinator send "doCommit" to the first participant and the first participant does the commit. 
    
      ![](../../diagrams/png/recovery_problem_in_2pc_1.png)
-   - But after that, the coordinator and the first participant fail together. the rest of participant don't know the decision (commit or abort). 
+   - But after that, the coordinator and the first participant fail together. the rest of participants don't know the decision (commit or abort). 
    
      ![](../../diagrams/png/recovery_problem_in_2pc_2.png)
 
