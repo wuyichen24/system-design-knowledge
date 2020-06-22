@@ -53,6 +53,12 @@ The coordinator uses 2 phases to coordinates participants on whether to commit o
 ### Cons
 - It is a blocking protocol (The protocol will need to lock the object that will be changed before the transaction completes).
 - Cannot dependably recover from a failure of both the coordinator and a participant during the commit phase.
+   - In the commit phase, the coordinator send "doCommit" to the first participant and the first participant does the commit. 
+   
+   ![](../../diagrams/png/recovery_problem_in_2pc_1.png)
+   - But after that, the coordinator and the first participant fail together. the rest of participant don't know the decision (commit or abort). 
+   
+   ![](../../diagrams/png/recovery_problem_in_2pc_2.png)
 
 ## Consideration
 | Topic | Consideration | Possible Solution Options |
