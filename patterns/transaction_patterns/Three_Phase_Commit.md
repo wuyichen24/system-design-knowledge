@@ -22,6 +22,7 @@
 
 ## Solution
 ### Concepts
+![](../../diagrams/png/3pc_timeout.png)
 - Add a new phase (prepared to commit phase) in the middle of the original 2 phases in 2PC.
 - Provide a dependable recovery solution from a participant failure or both coordinator and participant failure during commit phase.
 
