@@ -15,6 +15,8 @@
 
 ## Solution
 ### Concepts
+- Detects failures and prevents a failure from constantly recurring.
+
 ### Implementation
 
 ## Pros & Cons
