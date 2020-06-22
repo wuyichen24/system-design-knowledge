@@ -21,7 +21,9 @@
 
 ## Pros & Cons
 ### Pros
+- Prevents a failure from constantly recurring.
 ### Cons
+- Negatively affects on performance.
 
 ## Consideration
 | Topic | Consideration | Possible Solution Options |
