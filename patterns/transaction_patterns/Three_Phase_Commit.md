@@ -33,6 +33,8 @@
 - It is a non-blocking protocol.
 
 ### Cons
+- Cannot guarantee atomicity.
+- Long latency to complete each transaction (Needing a minimum of three round trip times).
 
 ## Consideration
 | Topic | Consideration | Possible Solution Options |
