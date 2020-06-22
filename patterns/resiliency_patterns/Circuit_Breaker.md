@@ -16,12 +16,13 @@
 ## Solution
 ### Concepts
 - Detects failures and prevents a failure from constantly recurring.
-- Circuit breaker is added in the middle of a client and service.
-- Circuit breaker monitors failures by tracking the number of failures.
-- Once the error rate exceeds some threshold, the circuit breaker will trip so that all further calls fail immediately.
 
 ### Implementation
-- Self-resetting: Need an external intervention to reset the circuit breaker when things are well again.
+- Basic mechanism
+   - Adds circuit breaker in the middle of a client and service.
+   - Circuit breaker monitors failures by tracking the number of failures.
+   - Once the error rate exceeds some threshold, the circuit breaker will trip so that all further calls fail immediately.
+- Self-resetting: Needs an external intervention to reset the circuit breaker when things are well again.
 
 ## Pros & Cons
 ### Pros
