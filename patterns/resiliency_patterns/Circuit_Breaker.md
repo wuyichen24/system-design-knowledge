@@ -22,6 +22,10 @@
    - Adds circuit breaker in the middle of a client and service.
    - Circuit breaker monitors failures by tracking the number of failures.
    - Once the error rate exceeds some threshold, the circuit breaker will trip so that all further calls fail immediately.
+- Circuit breaker retains a state over a series of calls, there are 3 common value:
+   - Closed
+   - Open
+   - Half open
 - Self-resetting: Needs an external intervention to reset the circuit breaker when things are well again.
 
 ## Pros & Cons
