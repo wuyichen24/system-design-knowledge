@@ -34,8 +34,9 @@ The coordinator uses 2 phases to coordinates participants on whether to commit o
 
 ### Implementation
 ### Optimizations
-- **Presumed Abort and Presumed Commit**:
+- **Presumed Abort (2PC-PA) and Presumed Commit (2PC-PC)**:
    - An assumption about the outcome of transactions, either commit, or abort, can save both messages and logging operations by the participants during the 2PC protocol's execution.
+   - 2PC-PA and 2PC-PC will improve the performance of 2PC in a situation in which the abort rate of transactions can be estimated
 - **Tree 2PC**:
    - The participants in a distributed transaction are typically invoked in an order which defines a tree structure, the invocation tree.
    - Invocation tree:
