@@ -19,11 +19,13 @@
 
 ### Implementation
 #### Basic mechanism
+![](../../diagrams/png/circuit_breaker_concept.png)
 - Adds circuit breaker in the middle of a client and service.
 - Circuit breaker monitors failures by tracking the number of failures.
 - Once the error rate exceeds some threshold, the circuit breaker will trip so that all further calls fail immediately.
 
 #### States
+![](../../diagrams/png/circuit_breaker_states.png)
 - Circuit breaker retains a state over a series of calls, there are 3 common value:
    - *Closed*: This is the default value. Circuit breaker doesn't intervene calls except counting the number of failures.
    - *Open*: Once the error rate exceeds some threshold, the circuit breaker's state will be changed to this value and all further calls will be failed immediately. Internal timer will start for changing the state from "Open" to "Half open" when timeout.
