@@ -33,11 +33,13 @@
    - **Closed**
       - This is the default value. Circuit breaker doesn't intervene calls except counting the number of failures.
    - **Open** 
-      - Once the error rate exceeds some threshold, the circuit breaker's state will be changed to this value and all further calls will be failed immediately. Internal timer will start for changing the state from "Open" to "Half open" when timeout.
+      - Once the error rate exceeds some threshold, the circuit breaker's state will be changed to this value and all further calls will be failed immediately. 
+      - Timeout timer will be started for changing the state from "Open" to "Half open" when timeout.
+      - The calls from the client fail immediately.
    - **Half open** 
-      - Circuit breaker accepts part of calls: 
-         - If all those accepted calls are successful, the circuit breaker will change the state to "Closed" and will all the calls as normal. 
-         - If one of accepted calls fails, the circuit breaker will change the state to "Open" and block all the calls.
+      - Circuit breaker accepts a limited number of calls: 
+         - If all those calls are successful, the circuit breaker will change the state to "Closed" and will all the calls as normal. 
+         - If any call fails, the circuit breaker will reverts back the state to "Open" and block all the calls.
 
 #### More Sophisticated Approaches
 - Not all errors should trip the circuit breaker.
