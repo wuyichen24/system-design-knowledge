@@ -48,7 +48,7 @@
 - In the Closed state
   - Handle different types of errors more specifically.
   - Check frequency of errors rather than number of errors.
-  - Have different thresholds for different errors.
+  - Have different thresholds for different types of errors.
 - In the Open state
   - Rather than using a timer to determine when to switch to the Half-Open state, a circuit breaker can instead periodically ping the service to determine whether it's become available again.
   - Rather than simply failing quickly, a circuit breaker could also record the details of each call to a journal and arrange for these calls to be replayed when the service becomes available.
