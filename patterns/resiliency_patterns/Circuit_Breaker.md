@@ -43,8 +43,10 @@
 
 #### More Sophisticated Approaches
 - Handle different types of error more specifically.
-- Check frequency of errors rather than number of errors in the "Closed" state.
-- Have different thresholds for different errors  in the "Closed" state.
+- Check frequency of errors rather than number of errors.
+- Have different thresholds for different errors.
+- Log all failed calls to enable an administrator to monitor the health of the operation.
+- In the Open state, rather than using a timer to determine when to switch to the Half-Open state, a circuit breaker can instead periodically ping the remote service or resource to determine whether it's become available again.
 
 ## Pros & Cons
 ### Pros
