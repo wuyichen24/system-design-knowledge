@@ -42,12 +42,16 @@
          - If any call fails, the circuit breaker will reverts back the state to "Open" and block all the calls.
 
 #### More Sophisticated Approaches
-- Handle different types of error more specifically.
-- Check frequency of errors rather than number of errors.
-- Have different thresholds for different errors.
-- Log all failed calls to enable an administrator to monitor the health of the operation.
-- In the Open state, rather than using a timer to determine when to switch to the Half-Open state, a circuit breaker can instead periodically ping the remote service to determine whether it's become available again.
-- Provide a manual option for an administrator to close or open a circuit breaker.
+- General
+  - Log all failed calls to enable an administrator to monitor the health of the operation.
+  - Provide a manual option for an administrator to close or open a circuit breaker.
+- In the Closed state
+  - Handle different types of errors more specifically.
+  - Check frequency of errors rather than number of errors.
+  - Have different thresholds for different errors.
+- In the Open state
+  - Rather than using a timer to determine when to switch to the Half-Open state, a circuit breaker can instead periodically ping the service to determine whether it's become available again.
+  - Rather than simply failing quickly, a circuit breaker could also record the details of each call to a journal and arrange for these calls to be replayed when the service becomes available.
 
 ## Pros & Cons
 ### Pros
