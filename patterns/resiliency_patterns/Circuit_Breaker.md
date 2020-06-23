@@ -46,7 +46,8 @@
 - Check frequency of errors rather than number of errors.
 - Have different thresholds for different errors.
 - Log all failed calls to enable an administrator to monitor the health of the operation.
-- In the Open state, rather than using a timer to determine when to switch to the Half-Open state, a circuit breaker can instead periodically ping the remote service or resource to determine whether it's become available again.
+- In the Open state, rather than using a timer to determine when to switch to the Half-Open state, a circuit breaker can instead periodically ping the remote service to determine whether it's become available again.
+- Provide a manual option for an administrator to close or open a circuit breaker.
 
 ## Pros & Cons
 ### Pros
