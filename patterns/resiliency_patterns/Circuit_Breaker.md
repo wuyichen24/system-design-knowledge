@@ -7,6 +7,7 @@
       - [Basic mechanism](#basic-mechanism)
       - [States](#states)
       - [Self-resetting](#self-resetting)
+      - [More Sophisticated Approach](#more-sophisticated-approach)
 - [**Pros & Cons**](#pros--cons)
    - [Pros](#pros)
    - [Cons](#cons)
@@ -37,9 +38,18 @@
 #### Self-resetting
 - Needs an external intervention to reset the circuit breaker when things are well again.
 
+#### More Sophisticated Approach
+- Not all errors should trip the circuit breaker.
+- Check frequency of errors rather than number of errors.
+- Have different thresholds for different errors.
+
 ## Pros & Cons
 ### Pros
 - Prevents a failure from constantly recurring.
+   - Reduce resources tied up in operations which are likely to fail.
+   - Avoid waiting on timeouts for the client.
+   - Avoid putting load on a struggling server.
+
 ### Cons
 - Negatively affects on performance.
 
