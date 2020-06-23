@@ -107,7 +107,7 @@ Collect modern distributed system design patterns.
 ### Resiliency Patterns
 | Pattern Name | Diagram | Description |
 | ---- | ------ | ---- |
-| [*Circuit Breaker*](patterns/resiliency_patterns/Circuit_Breaker.md) |  | Prevent an application from performing an operation that is likely to fail based on a certain criteria. |
+| [*Circuit Breaker*](patterns/resiliency_patterns/Circuit_Breaker.md) |  | Detects failures and prevents a failure from constantly recurring. |
 | [*Bulkhead*](patterns/resiliency_patterns/Bulkhead.md) |  | Isolate the misbehaving service and avoid to take down the entire application by exhausting all the resources. |
 | [*Fallback*](patterns/resiliency_patterns/Fallback.md) |  | When a service call fails, execute the alternative action. |
 | [*Retry*](patterns/resiliency_patterns/Retry.md) |  | Retry a failed operation. |
