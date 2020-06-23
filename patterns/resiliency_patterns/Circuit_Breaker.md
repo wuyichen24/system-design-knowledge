@@ -42,9 +42,9 @@
          - If any call fails, the circuit breaker will reverts back the state to "Open" and block all the calls.
 
 #### More Sophisticated Approaches
-- Not all errors should trip the circuit breaker.
-- Check frequency of errors rather than number of errors.
-- Have different thresholds for different errors.
+- Not all errors should trip the circuit breaker in the "Closed" state.
+- Check frequency of errors rather than number of errors in the "Closed" state.
+- Have different thresholds for different errors  in the "Closed" state.
 
 ## Pros & Cons
 ### Pros
