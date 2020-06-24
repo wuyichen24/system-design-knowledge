@@ -20,15 +20,15 @@
 ### Implementation
 #### Partitioning Strategies
 - Types
-   - Partition service instances
-   - Partition consumers
-   - partition resources
+   - Partition service instances: Ensure that resources used to run one service instance don't affect the resources used to run another service instance.
+- Technologies
+   - Partition clients: Ensure that resources used to call one service don't affect the resources used to call another service.
 - Technologies
    - For partitioning services, consider to use:
       - Virtual machines
       - Containers
       - Processes
-   - For partitioning consumers, consider to use
+   - For partitioning clients, consider to use
       - Processes
       - Thread pools
       - Semaphores
