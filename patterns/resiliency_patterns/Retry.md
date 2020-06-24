@@ -4,6 +4,9 @@
 - [**Solution**](#solution)
    - [Concepts](#concepts)
    - [Implementation](#implementation)
+      - [Retry Strategies](#retry-strategies)
+      - [Retry Policies](#retry-policies)
+      - [Advice](#advice)
 - [**Pros & Cons**](#pros--cons)
    - [Pros](#pros)
    - [Cons](#cons)
@@ -47,3 +50,4 @@
 ## When To Use
 
 ## References
+- Web Article: [Retry pattern | https://docs.microsoft.com/en-us/azure/architecture/patterns/retry](https://docs.microsoft.com/en-us/azure/architecture/patterns/retry)
