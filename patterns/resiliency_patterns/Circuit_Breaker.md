@@ -31,11 +31,11 @@
 ![](../../diagrams/png/circuit_breaker_states.png)
 - Circuit breaker retains a state over a series of calls, there are 3 common value:
    - **Closed**
-      - This is the default value. Circuit breaker doesn't intervene calls except counting the number of failures.
+      - This is the normal state. Circuit breaker doesn't intervene calls except counting the number of failures.
    - **Open** 
-      - Once the error rate exceeds some threshold, the circuit breaker's state will be changed to this value and all further calls will be failed immediately. 
-      - Timeout timer will be started for changing the state from "Open" to "Half open" when timeout.
-      - The calls from the client fail immediately.
+      - Once the error rate exceeds a threshold, the circuit breaker trips and its state will be changed to "Open".
+         - All further calls from client will be failed immediately. 
+         - Timeout timer will be started for changing the state from "Open" to "Half open" when timeout.
    - **Half open** 
       - Circuit breaker accepts a limited number of calls: 
          - If all those calls are successful, the circuit breaker will change the state to "Closed" and will all the calls as normal. 
