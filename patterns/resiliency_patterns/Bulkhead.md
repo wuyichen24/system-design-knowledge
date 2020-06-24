@@ -15,6 +15,7 @@
 
 ## Solution
 ### Concepts
+![](../../diagrams/png/bulkhead.jpg)
 - Isolate the misbehaving service and avoid to take down the entire application by exhausting all the resources.
 
 ### Implementation
