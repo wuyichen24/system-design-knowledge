@@ -22,6 +22,8 @@
 - Basic ideas
    - Fallback logic typically does little or no processing, and return value.
    - Fallback logic must have little chance of failing.
+- Approaches
+   - Return previous cached value.
    
 ## Pros & Cons
 ### Pros
