@@ -25,6 +25,7 @@
 ### Pros
 - Avoid waiting forever for a response that might never come.
 - Unbounded result sets by preventing the client from processing the entire result set.
+- Avoid cascading failures.
 
 ### Cons
 
