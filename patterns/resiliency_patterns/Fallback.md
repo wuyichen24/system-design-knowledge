@@ -36,3 +36,5 @@
 ## When To Use
 
 ## References
+- Web Article: [Fallback pattern | https://badia-kharroubi.gitbooks.io/microservices-architecture/patterns/communication-patterns/fallback-pattern.html](https://badia-kharroubi.gitbooks.io/microservices-architecture/patterns/communication-patterns/fallback-pattern.html)
+- Web Article: [Resilience design patterns: retry, fallback, timeout, circuit breaker | https://blog.codecentric.de/en/2019/06/resilience-design-patterns-retry-fallback-timeout-circuit-breaker/](https://blog.codecentric.de/en/2019/06/resilience-design-patterns-retry-fallback-timeout-circuit-breaker/)
