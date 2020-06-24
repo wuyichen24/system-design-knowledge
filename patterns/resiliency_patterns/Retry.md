@@ -31,6 +31,10 @@
    - increasing time
 - The maximum number of retries should be specified.
 
+#### Advice
+- For some noncritical operations, it's better to fail fast rather than retry several times and impact the throughput of the application.
+- It's useful for the retry policy to adjust the time between retry attempts based on the type of the exception.
+
 ## Pros & Cons
 ### Pros
 ### Cons
@@ -38,7 +42,8 @@
 ## Consideration
 | Topic | Consideration | Possible Solution Options |
 |----|-----|-----|
-
+| Duplicate execution | Retries could cause the operation to be executed more than once, with unintended side effects. | <li>Consider to make the operation idempotent (If the operation is idempotent, it would be inherently safe to retry). |
+   
 ## When To Use
 
 ## References
