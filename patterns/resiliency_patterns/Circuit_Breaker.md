@@ -45,6 +45,8 @@
 - General
   - Log all failed calls to enable an administrator to monitor the health of the operation.
   - Provide a manual option for an administrator to close or open a circuit breaker.
+  - Changes in a circuit breaker’s state should always be logged.
+  - A circuit breaker's current state should be exposed for querying and monitoring.
 - In the Closed state
   - Handle different types of errors more specifically.
   - Check frequency of errors rather than number of errors.
