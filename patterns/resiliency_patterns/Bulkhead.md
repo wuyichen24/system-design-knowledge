@@ -47,3 +47,4 @@
 
 ## References
 - Web Article: [Bulkhead pattern | https://docs.microsoft.com/en-us/azure/architecture/patterns/bulkhead](https://docs.microsoft.com/en-us/azure/architecture/patterns/bulkhead)
+- Web Article: [Preventing Systemic Failure: Bulkheads in Microservice Architectures | https://dzone.com/articles/preventing-systemic-failure-bulkheads-in-microserv](https://dzone.com/articles/preventing-systemic-failure-bulkheads-in-microserv)
