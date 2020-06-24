@@ -33,6 +33,6 @@
 |----|-----|-----|
 
 ## When To Use
-- Book: [Michael N.(2018). Chapter 5 Stability Patterns, *Release It!* (pp. 91-128). Pragmatic Bookshelf](https://pragprog.com/titles/mnee2/)
 
 ## References
+- Book: [Michael N.(2018). Chapter 5 Stability Patterns, *Release It!* (pp. 91-128). Pragmatic Bookshelf](https://pragprog.com/titles/mnee2/)
