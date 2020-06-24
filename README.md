@@ -35,8 +35,8 @@ Collect modern distributed system design patterns.
    - [Transaction Log Tailing](patterns/messaging_patterns/Transaction_Log_Tailing.md)
 - [**Resiliency Patterns**](#resiliency-patterns)
    - [Circuit Breaker](patterns/resiliency_patterns/Circuit_Breaker.md)
-   - [Fallback](patterns/resiliency_patterns/Fallback.md)
    - [Bulkhead](patterns/resiliency_patterns/Bulkhead.md)
+   - [Fallback](patterns/resiliency_patterns/Fallback.md)
    - [Retry](patterns/resiliency_patterns/Retry.md)
 - **Security Patterns**
    - [Valet Key](patterns/security_patterns/Valet_Key.md)
