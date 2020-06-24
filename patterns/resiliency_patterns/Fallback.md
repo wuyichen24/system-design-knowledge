@@ -15,8 +15,14 @@
 
 ## Solution
 ### Concepts
-### Implementation
+- When a request to a service fails, return an alternative response to the request.
 
+### Implementation
+#### Fallback Logic
+- Basic ideas
+   - Fallback logic typically does little or no processing, and return value.
+   - Fallback logic must have little chance of failing.
+   
 ## Pros & Cons
 ### Pros
 ### Cons
