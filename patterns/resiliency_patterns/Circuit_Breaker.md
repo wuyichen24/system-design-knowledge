@@ -76,3 +76,4 @@
 - Web Article: [断路器设计模式 | https://zh.wikipedia.org/wiki/%E6%96%B7%E8%B7%AF%E5%99%A8%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F](https://zh.wikipedia.org/wiki/%E6%96%B7%E8%B7%AF%E5%99%A8%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F)
 - Web Article: [CircuitBreaker | https://martinfowler.com/bliki/CircuitBreaker.html](https://martinfowler.com/bliki/CircuitBreaker.html)
 - Web Article: [Circuit Breaker pattern | https://docs.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker](https://docs.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker)
+- Book: [Michael N.(2018). Chapter 5 Stability Patterns, *Release It!* (pp. 91-128). Pragmatic Bookshelf](https://pragprog.com/titles/mnee2/)
