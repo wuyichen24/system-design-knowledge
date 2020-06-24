@@ -38,6 +38,7 @@ Collect modern distributed system design patterns.
    - [Bulkhead](patterns/resiliency_patterns/Bulkhead.md)
    - [Fallback](patterns/resiliency_patterns/Fallback.md)
    - [Retry](patterns/resiliency_patterns/Retry.md)
+   - [Timeout](patterns/resiliency_patterns/Timeout.md)
 - **Security Patterns**
    - [Valet Key](patterns/security_patterns/Valet_Key.md)
 - [**Transaction Patterns**](#transaction-patterns)
