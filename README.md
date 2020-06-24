@@ -109,7 +109,7 @@ Collect modern distributed system design patterns.
 | ---- | ------ | ---- |
 | [*Circuit Breaker*](patterns/resiliency_patterns/Circuit_Breaker.md) |  | Detects failures and prevents a failure from constantly recurring. |
 | [*Bulkhead*](patterns/resiliency_patterns/Bulkhead.md) |  | Isolate the misbehaving service and avoid to take down the entire application by exhausting all the resources. |
-| [*Fallback*](patterns/resiliency_patterns/Fallback.md) |  | When a service call fails, execute the alternative action. |
+| [*Fallback*](patterns/resiliency_patterns/Fallback.md) |  | When a request to a service fails, return an alternative response to the request. |
 | [*Retry*](patterns/resiliency_patterns/Retry.md) |  | Retry a failed operation. |
 | Timeout | | |
 
