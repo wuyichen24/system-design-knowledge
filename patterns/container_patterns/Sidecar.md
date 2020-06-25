@@ -29,12 +29,15 @@
    - Sidecar containers can be reused for pairing with numerous different main containers.
    - One failing container may not affect the functionalities of other containers.
    - Different containers can be upgraded or downgraded independently.
+- No significant latency when communicating between main containers and sidecar containers.
    
 ### Cons
 
 ## Consideration
-| Topic | Consideration | Possible Solution Options |
-|----|-----|-----|
+- Before putting functionality into a sidecar container, consider whether it would be better to implement the functionality as 
+  - A separate service.
+  - A traditional daemon.
+  - A traditional extension, like library.
 
 ## When To Use
 
