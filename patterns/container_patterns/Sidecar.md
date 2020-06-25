@@ -15,6 +15,7 @@
 
 ## Solution
 ### Concepts
+![](../../diagrams/png/sidecar_small.png)
 - Place an independent sidecar container next to the main container for providing supportive works to the main container.
 
 ### Implementation
