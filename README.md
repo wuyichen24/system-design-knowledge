@@ -106,13 +106,13 @@ Collect modern distributed system design patterns.
 | [*Transaction Log Tailing*](patterns/messaging_patterns/Transaction_Log_Tailing.md) | ![](./diagrams/png/transaction_log_tailing_small.png) | <li>Publish messages by tailing the database’s transaction log.<li>A transaction log miner reads the transaction log and publish each change as a message to the message broker. |
 
 ### Resiliency Patterns
-| Pattern Name | Diagram | Description |
-| ---- | ------ | ---- |
-| [*Circuit Breaker*](patterns/resiliency_patterns/Circuit_Breaker.md) |  | Detects failures and prevents a failure from constantly recurring. |
-| [*Bulkhead*](patterns/resiliency_patterns/Bulkhead.md) |  | Isolate the misbehaving service and avoid to take down the entire application by exhausting all the resources. |
-| [*Fallback*](patterns/resiliency_patterns/Fallback.md) |  | When a request to a service fails, return an alternative response to the request. |
-| [*Retry*](patterns/resiliency_patterns/Retry.md) |  | Retry a falling operation. |
-| [*Timeout*](patterns/resiliency_patterns/Timeout.md) | | Set a limited period of time to wait for a response. |
+| Pattern Name | Description |
+| ---- | ---- |
+| [*Circuit Breaker*](patterns/resiliency_patterns/Circuit_Breaker.md) |Detects failures and prevents a failure from constantly recurring. |
+| [*Bulkhead*](patterns/resiliency_patterns/Bulkhead.md) | Isolate the misbehaving service and avoid to take down the entire application by exhausting all the resources. |
+| [*Fallback*](patterns/resiliency_patterns/Fallback.md) | When a request to a service fails, return an alternative response to the request. |
+| [*Retry*](patterns/resiliency_patterns/Retry.md) | Retry a falling operation. |
+| [*Timeout*](patterns/resiliency_patterns/Timeout.md) | Set a limited period of time to wait for a response. |
 
 ### Transaction Patterns
 | Pattern Name | Diagram | Description |
