@@ -47,3 +47,6 @@
 ## When To Use
 
 ## References
+- Thesis: [Brendan, D. (2016) *Design patterns for container-based distributed systems*. Google](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/45406.pdf)
+- Web Article: [Work Queue: A Scalable Master/Worker Framework | http://ccl.cse.nd.edu/software/workqueue/](http://ccl.cse.nd.edu/software/workqueue/)
+- Web Article: [Work Queue User's Manual | https://cctools.readthedocs.io/en/latest/work_queue/](https://cctools.readthedocs.io/en/latest/work_queue/)
