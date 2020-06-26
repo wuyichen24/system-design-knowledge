@@ -27,6 +27,14 @@
    - **Task**
 
 ### Implementation
+#### Structure
+![](![](../../diagrams/png/work_queue_structure.png))
+- Master process
+   - Work queue manager container
+   - Work queue source container
+- Worker process
+   - Worker manager container: Integrates with the generic work queue framework.
+   - Application implementation container: Implements application-specific logic.
 
 ## Pros & Cons
 ### Pros
