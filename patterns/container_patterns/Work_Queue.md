@@ -15,6 +15,17 @@
 
 ## Solution
 ### Concepts
+- A scalable master-worker framework for distributing millions of tasks to thousands of remote workers drawn from clusters, clouds, and grids.
+- The framework consists of
+   - **Master process**
+      - Defines tasks.
+      - Submits tasks to the queue.
+   - **Worker process**
+      - Arranges for data transfer.
+      - Executes tasks
+      - Returns the results
+   - **Task**
+
 ### Implementation
 
 ## Pros & Cons
