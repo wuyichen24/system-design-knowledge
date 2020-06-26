@@ -17,8 +17,8 @@ Collect modern distributed system design patterns.
 - [**Container Patterns**](#container-patterns)
    - Single-node, multi-container patterns
       - [Sidecar](patterns/container_patterns/Sidecar.md)
-      - [Ambassador](patterns/container_patterns/Ambassador.md)
-      - [Adapter](patterns/container_patterns/Adapter.md)
+         - [Ambassador](patterns/container_patterns/Ambassador.md)
+         - [Adapter](patterns/container_patterns/Adapter.md)
    - Multi-node patterns
       - [Leader Election](patterns/container_patterns/Leader_Election.md)
       - [Work Queue](patterns/container_patterns/Work_Queue.md)
@@ -35,9 +35,10 @@ Collect modern distributed system design patterns.
    - [Transaction Log Tailing](patterns/messaging_patterns/Transaction_Log_Tailing.md)
 - [**Resiliency Patterns**](#resiliency-patterns)
    - [Circuit Breaker](patterns/resiliency_patterns/Circuit_Breaker.md)
-   - [Fallback](patterns/resiliency_patterns/Fallback.md)
    - [Bulkhead](patterns/resiliency_patterns/Bulkhead.md)
+   - [Fallback](patterns/resiliency_patterns/Fallback.md)
    - [Retry](patterns/resiliency_patterns/Retry.md)
+   - [Timeout](patterns/resiliency_patterns/Timeout.md)
 - **Security Patterns**
    - [Valet Key](patterns/security_patterns/Valet_Key.md)
 - [**Transaction Patterns**](#transaction-patterns)
@@ -81,11 +82,11 @@ Collect modern distributed system design patterns.
 ### Container Patterns
 | Pattern Name | Diagram | Description |
 |----|-------|----|
+| [*Sidecar*](patterns/container_patterns/Sidecar.md) | ![](./diagrams/png/sidecar_small.png) | <ul><li>Place an independent sidecar container next to the main application container for providing supportive works to the main application container.</ul> |
 | [*Ambassador*](patterns/container_patterns/Ambassador.md) | ![](./diagrams/png/ambassador_small.png) | <ul><li>Place an ambassador container between the main application container and the external system for simplifying the view of the external system.</ul> |
 | [*Adapter*](patterns/container_patterns/Adapter.md) | ![](./diagrams/png/adapter_small.png) | <ul><li>Place an adapter container between the main application container and the external system for standardizing the view of the internal application.</ul> |
-| [*Sidecar*](patterns/container_patterns/Sidecar.md) | ![](./diagrams/png/sidecar_small.png) | <ul><li>Place an independent sidecar container next to the main application container for providing supportive works to the main application container.</ul> |
 | [*Leader Election*](patterns/container_patterns/Leader_Election.md) | ![](./diagrams/png/leader_election_small.png) | <ul><li>Elect one instance as the leader for coordinating and monitoring the other instances.</ul> |
-| [*Work Queue*](patterns/container_patterns/Work_Queue.md) | ![](./diagrams/png/work_queue_small.png) | <ul><li>Group a work queue manager container and a work queue source container as a coordinator for managing the work queue and dispatch work items to workers.<li>Each worker consists of a worker manager container (for integrating with the generic work queue framework) and an application implementation container (for application-specific logic).</ul> |
+| [*Work Queue*](patterns/container_patterns/Work_Queue.md) | ![](./diagrams/png/work_queue_small.png) |A scalable master-worker framework for distributing millions of tasks to thousands of remote workers drawn from clusters, clouds, and grids. |
 | [*Scatter/Gather*](patterns/container_patterns/Scatter_Gather.md) | ![](./diagrams/png/scatter_gather_small.png) | <ul><li>The root node scatters out the original request to a group of servers to perform a set of tasks in parallel.<li>The root node gathers the partial data from each server and return a single response to the original request.</ul>
 
 ### Data Management Patterns
@@ -105,13 +106,13 @@ Collect modern distributed system design patterns.
 | [*Transaction Log Tailing*](patterns/messaging_patterns/Transaction_Log_Tailing.md) | ![](./diagrams/png/transaction_log_tailing_small.png) | <li>Publish messages by tailing the database’s transaction log.<li>A transaction log miner reads the transaction log and publish each change as a message to the message broker. |
 
 ### Resiliency Patterns
-| Pattern Name | Diagram | Description |
-| ---- | ------ | ---- |
-| [*Circuit Breaker*](patterns/resiliency_patterns/Circuit_Breaker.md) |  | Detects failures and prevents a failure from constantly recurring. |
-| [*Bulkhead*](patterns/resiliency_patterns/Bulkhead.md) |  | Isolate the misbehaving service and avoid to take down the entire application by exhausting all the resources. |
-| [*Fallback*](patterns/resiliency_patterns/Fallback.md) |  | When a service call fails, execute the alternative action. |
-| [*Retry*](patterns/resiliency_patterns/Retry.md) |  | Retry a failed operation. |
-| Timeout | | |
+| Pattern Name | Description |
+| ---- | ---- |
+| [*Circuit Breaker*](patterns/resiliency_patterns/Circuit_Breaker.md) |Detects failures and prevents a failure from constantly recurring. |
+| [*Bulkhead*](patterns/resiliency_patterns/Bulkhead.md) | Isolate the misbehaving service and avoid to take down the entire application by exhausting all the resources. |
+| [*Fallback*](patterns/resiliency_patterns/Fallback.md) | When a request to a service fails, return an alternative response to the request. |
+| [*Retry*](patterns/resiliency_patterns/Retry.md) | Retry a falling operation. |
+| [*Timeout*](patterns/resiliency_patterns/Timeout.md) | Set a limited period of time to wait for a response. |
 
 ### Transaction Patterns
 | Pattern Name | Diagram | Description |
