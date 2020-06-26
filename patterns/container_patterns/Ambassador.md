@@ -34,3 +34,4 @@
 
 ## References
 - Thesis: [Brendan, D. (2016) *Design patterns for container-based distributed systems*. Google](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/45406.pdf)
+- Book: [Brendan B.(2018). CHAPTER 3 Ambassadors, *Designing Distributed Systems* (pp. 21-30). O'Reilly Media](https://www.oreilly.com/library/view/designing-distributed-systems/9781491983638/)
