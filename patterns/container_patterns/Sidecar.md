@@ -24,6 +24,9 @@
    - Hostname
    - Network
    - More
+- Common supportive functionalities for a sidecar container:
+   - Logging
+   - Monitoring
 
 ## Pros & Cons
 ### Pros
