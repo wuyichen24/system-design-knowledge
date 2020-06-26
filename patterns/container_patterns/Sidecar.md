@@ -19,7 +19,11 @@
 - Place an independent sidecar container next to the main application container for providing supportive works to the main application container.
 
 ### Implementation
-- The main container and the sidecar container are on the same machine so that they can share a local disk volume.
+- The main container and the sidecar container are on the same machine so that they can share resources:
+   - File system
+   - Hostname
+   - Network
+   - More
 
 ## Pros & Cons
 ### Pros
