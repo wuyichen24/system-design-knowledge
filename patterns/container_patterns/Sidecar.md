@@ -27,6 +27,8 @@
 - Common supportive functionalities for a sidecar container:
    - Logging
    - Monitoring
+   - Configuration
+   - 
 
 ## Pros & Cons
 ### Pros
