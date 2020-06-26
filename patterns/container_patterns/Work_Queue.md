@@ -15,6 +15,7 @@
 
 ## Solution
 ### Concepts
+![](../../diagrams/png/work_queue_small.png)
 - A scalable master-worker framework for distributing millions of tasks to thousands of remote workers drawn from clusters, clouds, and grids.
 - The framework consists of
    - **Master process**
@@ -28,7 +29,7 @@
 
 ### Implementation
 #### Structure
-![](![](../../diagrams/png/work_queue_structure.png))
+![](../../diagrams/png/work_queue_structure.png)
 - Master process
    - Work queue manager container
    - Work queue source container
