@@ -22,6 +22,8 @@
 
 ## Pros & Cons
 ### Pros
+- Simplify the view of the external system.
+
 ### Cons
 
 ## Consideration
