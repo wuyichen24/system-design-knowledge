@@ -1,7 +1,7 @@
 # distributed-system-design-pattern
 
 ## Overview
-Collect modern distributed system design patterns.
+Collect the knowledge of modern distributed system design patterns from different resources (books, thesis, web).
 
 ## Categories
 - [**Legacy System Pattern**](#legacy-system-patterns)
