@@ -1,6 +1,8 @@
 # Message Queue
 
 ## Pros & Cons
+### Pros
+### Cons
 
 ## Consideration
 When choosing a message queue product or designing a message queue architecture, the following aspects need to be considered:
@@ -16,5 +18,9 @@ When choosing a message queue product or designing a message queue architecture,
 - **Latency**
 
 ## Solutions
+### Message Ordering
+If a message queue cannot preserve the order of messages on its own
+
+### Duplicate Messages
 
 ## References
