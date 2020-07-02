@@ -3,6 +3,7 @@
 - [**Motivation**](#motivation)
 - [**Solution**](#solution)
    - [Concepts](#concepts)
+   - [Sub-Patterns](#sub-patterns)
    - [Implementation](#implementation)
 - [**Pros & Cons**](#pros--cons)
    - [Pros](#pros)
