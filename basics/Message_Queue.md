@@ -3,10 +3,17 @@
 ## Pros & Cons
 ### Pros
 - **Asynchronous**
+   - The producer doesn’t wait for the message to be delivered.
 - **Loose coupling**
+   - Producers are completely unaware of consumers (Don't have to know the IPs and ports of consumers).
 - **Message buffering**
+   - It can act as a buffer if the consumer is unavailable or overloaded.
 
 ### Cons
+- **Single point of failure**
+   - The message queue can be a potential single point of failure.
+- **Increase complexity**
+   - Increase system complexity and operational complexity.
 
 ## Consideration
 When choosing a message queue product or designing a message queue architecture, the following aspects need to be considered:
