@@ -19,9 +19,12 @@ When choosing a message queue product or designing a message queue architecture,
 
 ## Solutions
 ### Message Ordering
-If a message queue cannot preserve the order of messages on its own, how to deliver messages in order.
+If a message queue cannot preserve the order of messages on its own, how to keep messages delivered in order (FIFO).
+- **Solution 1**: Add sequencing information into each message.
 
 ### Duplicate Messages
 If there are duplicate messages in a message queue, how the consumer handle duplicate messages (Achieve exactly-once delivery guarantee from at-least-once delivery guarantee).
+- **Solution 1**: Make the consumer idempotent.
+   - The consumer can process the same message multiple times without no additional effect.
 
 ## References
