@@ -4,10 +4,10 @@
 Brainstorm the knowledge of modern distributed system design patterns from different resources (books, essays, web).
 
 ## Categories
-- [**Legacy System Pattern**](#legacy-system-patterns)
+- [**Legacy System Patterns**](#legacy-system-patterns)
    - [Anti-Corruption Layer (ACL)](patterns/legacy_system_patterns/Anti_Corruption_Layer.md)
    - [Strangler](patterns/legacy_system_patterns/Strangler.md)
-- [**Cache Pattern**](#cache-patterns)
+- [**Cache Patterns**](#cache-patterns)
    - [Cache-Aside](patterns/cache_patterns/Cache_Aside.md)
    - [Cache-As-SOR](patterns/cache_patterns/Cache_As_Sor.md)
 - [**Container Patterns**](#container-patterns)
@@ -53,8 +53,7 @@ Brainstorm the knowledge of modern distributed system design patterns from diffe
 ----
 
 ## Brief Introduction
-### Legacy System Pattern
-
+### Legacy System Patterns
 | Pattern Name | Diagram | Description |
 | ---- | ------ | ---- |
 | [*Anti-Corruption Layer (ACL)*](patterns/legacy_system_patterns/Anti_Corruption_Layer.md) | ![](./diagrams/png/anti_corruption_layer_small.png) | Place an adapter layer between 2 domain models and translate communications between them. | 
