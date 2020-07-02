@@ -1,4 +1,4 @@
-# Event Sourcing
+# Event Sourcing (ES)
 
 - [**Motivation**](#motivation)
 - [**Solution**](#solution)
