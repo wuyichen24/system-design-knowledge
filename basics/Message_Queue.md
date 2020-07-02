@@ -2,6 +2,10 @@
 
 ## Pros & Cons
 ### Pros
+- **Asynchronous**
+- **Loose coupling**
+- **Message buffering**
+
 ### Cons
 
 ## Consideration
