@@ -23,7 +23,7 @@ If a message queue cannot preserve the order of messages on its own, how to keep
 - **Solution 1**: Add sequencing information into each message.
 
 ### Duplicate Messages
-If there are duplicate messages in a message queue, how the consumer handle duplicate messages (Achieve exactly-once delivery guarantee from at-least-once delivery guarantee).
+If there are duplicate messages in a message queue, how the consumer handles duplicate messages (Achieve exactly-once delivery guarantee from at-least-once delivery guarantee).
 - **Solution 1**: Make the consumer idempotent.
    - The consumer can consume the same message multiple times without no additional effect.
 - **Solution 2**: Track each message which has been consumed into a data store and discard duplicates.
