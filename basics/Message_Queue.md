@@ -19,8 +19,9 @@ When choosing a message queue product or designing a message queue architecture,
 
 ## Solutions
 ### Message Ordering
-If a message queue cannot preserve the order of messages on its own
+If a message queue cannot preserve the order of messages on its own, how to deliver messages in order.
 
 ### Duplicate Messages
+If there are duplicate messages in a message queue, how the consumer handle duplicate messages (Achieve exactly-once delivery guarantee from at-least-once delivery guarantee).
 
 ## References
