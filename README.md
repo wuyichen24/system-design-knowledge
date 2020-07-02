@@ -9,11 +9,7 @@ Brainstorm the knowledge of modern distributed system design patterns from diffe
    - [Strangler](patterns/legacy_system_patterns/Strangler.md)
 - [**Cache Pattern**](#cache-patterns)
    - [Cache-Aside](patterns/cache_patterns/Cache_Aside.md)
-   - Cache-As-SOR
-      - [Read-Through](patterns/cache_patterns/Read_Through.md)
-      - [Write-Through](patterns/cache_patterns/Write_Through.md)
-      - [Write-Behind](patterns/cache_patterns/Write_Behind.md)
-      - [Refresh-Ahead](patterns/cache_patterns/Refresh_Ahead.md)
+   - [Cache-As-SOR](patterns/cache_patterns/Cache_As_Sor.md)
 - [**Container Patterns**](#container-patterns)
    - Single-node, multi-container patterns
       - [Sidecar](patterns/container_patterns/Sidecar.md)
@@ -65,19 +61,10 @@ Brainstorm the knowledge of modern distributed system design patterns from diffe
 | [*Strangler*](patterns/legacy_system_patterns/Strangler.md) | ![](./diagrams/png/strangler_small.png) | Incrementally refactor the legacy application to the new application and services. |
 
 ### Cache Patterns
-#### Cache Pattern Categories
-| Category Name | Diagram | Description | Patterns |
+| Category Name | Diagram | Description | Sub-Patterns |
 |----|----|----|----|
 | [*Cache-Aside*](patterns/cache_patterns/Cache_Aside.md) | ![](./diagrams/png/cache_aside_small.png) | Application interacts with both cache and database (No interaction between cache and database). |  |
-| *Cache-As-SOR* | ![](./diagrams/png/cache_as_sor_small.png) | Application only interacts with cache. | <ul><li>Read-Through<li>Write-Through<li>Write-Behind<li>Refresh-Ahead</ul> |
-
-#### Cache-As-SOR Patterns
-| Pattern Name | Diagram | Description | 
-|----|----|----|
-| [*Read-Through*](patterns/cache_patterns/Read_Through.md) | ![](./diagrams/png/read_through_small.png) | If requested data is not in cache, cache will load the data from database and let application read **synchronously**. |
-| [*Write-Through*](patterns/cache_patterns/Write_Through.md) | ![](./diagrams/png/write_through_small.png) | After application writes data to cache, cache **synchronously** write the same data to database. |
-| [*Write-Behind*](patterns/cache_patterns/Write_Behind.md) | ![](./diagrams/png/write_behind_small.png) | After application writes data to cache, cache **asynchronously** write the same data to database (When satisfy a certain criteria). |
-| [*Refresh-Ahead*](patterns/cache_patterns/Refresh_Ahead.md) | ![](./diagrams/png/refresh_ahead_small.png) | Cache automatically and **asynchronously** reloads (refreshs) any recently accessed cache entry from database before its expiration. |
+| [*Cache-As-SOR*](patterns/cache_patterns/Cache_As_Sor.md) | ![](./diagrams/png/cache_as_sor_small.png) | Application only interacts with cache. | <ul><li>Read-Through<li>Write-Through<li>Write-Behind<li>Refresh-Ahead</ul> |
 
 ### Container Patterns
 | Pattern Name | Diagram | Description |
