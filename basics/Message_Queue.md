@@ -20,8 +20,8 @@ When choosing a message queue product or designing a message queue architecture,
 - **Supported programming languages**
 - **Message ordering**
    - The order of messages can be preserved by the queue or not.
-- **Message retention**
-   - The period of time message will be retained in the queue before being removed.
+- **Message retention/expiration**
+   - The limited period of time the message will be retained in the queue before being discarded.
 - **Delivery guarantees**
    - *At-least-once*: Every message from the source system will reach its destination, but sometimes retries will cause duplicates.
    - *Exactly-once*: Every message from the source system will reach the destination with no possibility for loss or duplication.
