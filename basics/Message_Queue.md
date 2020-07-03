@@ -25,6 +25,7 @@ When choosing a message queue product or designing a message queue architecture,
 - **Delivery guarantees**
    - *At-least-once*: Every message from the source system will reach its destination, but sometimes retries will cause duplicates.
    - *Exactly-once*: Every message from the source system will reach the destination with no possibility for loss or duplication.
+- **Availability**
 - **Scalability**
 - **Latency**
 
