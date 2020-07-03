@@ -3,11 +3,11 @@
 ## Pros & Cons
 ### Pros
 - **Asynchronous**
-   - The producer doesn’t wait for the message to be delivered.
+   - A sender doesn’t wait for the message to be delivered.
 - **Loose coupling**
-   - Producers are completely unaware of consumers (Don't have to know the IPs and ports of consumers).
+   - Senders are completely unaware of receivers (Don't have to know the IPs and ports of receivers).
 - **Message buffering**
-   - It can act as a buffer if the consumer is unavailable or overloaded.
+   - It can act as a buffer if the receiver is unavailable or overloaded.
 
 ### Cons
 - **Single point of failure**
@@ -35,10 +35,10 @@ If a message queue cannot preserve the order of messages on its own, how to keep
 - **Solution 1**: Add sequencing information into each message.
 
 ### Duplicate Messages
-If there are duplicate messages in a message queue, how the consumer handles duplicate messages (Achieve exactly-once delivery guarantee from at-least-once delivery guarantee).
-- **Solution 1**: Make the consumer idempotent.
-   - The consumer can consume the same message multiple times without no additional effect.
-- **Solution 2**: Track each message which has been consumed into a data store and discard duplicates.
+If there are duplicate messages in a message queue, how the receiver handles duplicate messages (Achieve exactly-once delivery guarantee from at-least-once delivery guarantee).
+- **Solution 1**: Make the receiver idempotent.
+   - The receiver can process the same message multiple times without no additional effect.
+- **Solution 2**: Track each message which has been processed into a data store and discard duplicates.
    - Add a unique identifier into each message.
 
 ## References
