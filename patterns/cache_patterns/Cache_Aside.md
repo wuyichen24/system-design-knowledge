@@ -12,9 +12,12 @@
 - [**References**](#references)
 
 ## Motivation
+- Some caching systems don't provide read-through and write-through/write-behind operations.
 
 ## Solution
 ### Concepts
+- Applications take the responsibility of using the cache to maintain data.
+
 ### Implementation
 
 ## Pros & Cons
