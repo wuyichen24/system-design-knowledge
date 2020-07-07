@@ -45,7 +45,10 @@
 | Interoperability risk | Two services need to communicate and both are out of your control. | <li>Always control at least one service of each communication. |
 
 ## When To Use
-- Reservation-style business models.
+- Critical transactions
+   - Reservation
+   - Payment
+   - More
 
 ## References
 - Web Article: [Eventual Data Consistency Solution in ServiceComb - part 3 | https://servicecomb.apache.org/docs/distributed_saga_3/#:~:text=Try%2DConfirm%2FCancel%20(TCC),with%20reserved%20state%20into%20database](https://servicecomb.apache.org/docs/distributed_saga_3/#:~:text=Try%2DConfirm%2FCancel%20(TCC),with%20reserved%20state%20into%20database)
