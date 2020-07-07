@@ -16,6 +16,7 @@
 
 ## Solution
 ### Concepts
+-[](../../diagrams/png/cache_aside_small.png)
 - Applications take the responsibility of using the cache to maintain data.
 
 ### Implementation
