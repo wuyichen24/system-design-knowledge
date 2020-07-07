@@ -5,6 +5,11 @@
 ## Overview
 Brainstorm the knowledge of modern distributed system design patterns from different resources (books, essays, web).
 
+## Basics
+- [**Message Queue**](basics/Message_Queue.md)
+- [**Transaction**](basics/Transaction.md)
+- [**Cache**](basics/Cache.md)
+
 ## Categories
 - [**Data Management Patterns**](#data-management-patterns)
    - [Command Query Responsibility Segregation (CQRS)](patterns/data_management_patterns/Command_Query_Responsibility_Segregation.md)
