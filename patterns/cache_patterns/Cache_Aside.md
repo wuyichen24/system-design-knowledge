@@ -29,7 +29,7 @@
       
 #### Update Operation
 - Update the record into the database.
-- Invalidate the corresponding item in the cache.
+- Invalidate the corresponding record in the cache.
 
 ## Pros & Cons
 ### Pros
