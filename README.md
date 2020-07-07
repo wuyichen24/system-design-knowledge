@@ -1,5 +1,7 @@
 # distributed-system-design-pattern
 
+[![License: CC BY-NC-ND 4.0](https://licensebuttons.net/l/by-nc-nd/4.0/80x15.png)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+
 ## Overview
 Brainstorm the knowledge of modern distributed system design patterns from different resources (books, essays, web).
 
@@ -8,8 +10,6 @@ Brainstorm the knowledge of modern distributed system design patterns from diffe
    - [Command Query Responsibility Segregation (CQRS)](patterns/data_management_patterns/Command_Query_Responsibility_Segregation.md)
    - [Event Sourcing (ES)](patterns/data_management_patterns/Event_Sourcing.md)
    - [API Composition](patterns/data_management_patterns/API_Composition.md)
-   - [Database Per Service](patterns/data_management_patterns/Database_Per_Service.md)
-   - [Shared Database](patterns/data_management_patterns/Shared_Database.md)
 - [**Transaction Patterns**](#transaction-patterns)
    - [Two-Phase Commit (2PC)](patterns/transaction_patterns/Two_Phase_Commit.md)
    - [Three-Phase Commit (3PC)](patterns/transaction_patterns/Three_Phase_Commit.md)
@@ -59,8 +59,6 @@ Brainstorm the knowledge of modern distributed system design patterns from diffe
 | [*Command Query Responsibility Segregation (CQRS)*](patterns/data_management_patterns/Command_Query_Responsibility_Segregation.md) | ![](./diagrams/png/command_query_responsibility_segregation_small.png) | Use separated models for different types of operations: Command (update data) and Query (read data). |
 | [*Event Sourcing (ES)*](patterns/data_management_patterns/Event_Sourcing.md) | ![](./diagrams/png/event_sourcing_small.png) | Use a sequence of events to capture a series of changes to data. |
 | [*API Composition*](patterns/data_management_patterns/API_Composition.md) | ![](./diagrams/png/api_composition_small.png) | Use an API composer to retrieve data from multiple services and combine the results for query operations. |
-| [*Database Per Service*](patterns/data_management_patterns/Database_Per_Service.md) |  |  |
-| [*Shared Database*](patterns/data_management_patterns/Shared_Database.md) |  |  |
 
 ### Transaction Patterns
 | Pattern Name | Diagram | Description |
