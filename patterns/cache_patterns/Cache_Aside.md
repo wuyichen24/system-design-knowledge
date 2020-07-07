@@ -35,6 +35,7 @@
 ## Pros & Cons
 ### Pros
 ### Cons
+- Cost more efforts on development (Applications need to handle both cache and database).
 
 ## Consideration
 | Topic | Consideration | Possible Solution Options |
