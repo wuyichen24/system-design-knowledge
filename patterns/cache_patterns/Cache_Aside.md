@@ -27,8 +27,8 @@
       - Read the record from the database and return it.
       - Store the copy of the record in the cache.
       
-#### Update Operation
-- Update the record into the database.
+#### Write Operation
+- Write the record into the database.
 - Invalidate the corresponding record in the cache.
 
 ## Pros & Cons
