@@ -34,6 +34,8 @@
 
 ## Pros & Cons
 ### Pros
+- Improve performance on read operations.
+
 ### Cons
 - Cost more efforts on development (Applications need to handle both cache and database).
 
@@ -42,5 +44,9 @@
 |----|-----|-----|
 
 ## When To Use
+- The cache doesn't provide read-through and write-through/write-behind operations.
+- The application performs more read operations than write operations.
 
 ## References
+- Web Article: [Cache-Aside pattern | https://docs.microsoft.com/en-us/azure/architecture/patterns/cache-aside](https://docs.microsoft.com/en-us/azure/architecture/patterns/cache-aside)
+- Web Article: [缓存更新的套路 | https://coolshell.cn/articles/17416.html)
