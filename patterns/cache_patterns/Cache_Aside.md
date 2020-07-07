@@ -19,15 +19,17 @@
 - Applications take the responsibility of using the cache to maintain data.
 
 ### Implementation
-#### Basic Mechanism
-- **Read**
-   - Check the requested record is held in the cache or not:
-      - If the requested record is held in the cache:
-         - Return the record directly.
-      - If the requested record is not in the cache:
-         - Read the record from database and return it.
-         - Store the copy of the record in the cache.
-- **Update**
+#### Read Operation
+- Check the requested record is held in the cache or not:
+   - If the requested record is held in the cache:
+      - Return the record directly.
+   - If the requested record is not in the cache:
+      - Read the record from the database and return it.
+      - Store the copy of the record in the cache.
+      
+#### Update Operation
+- Update the record into the database.
+- Invalidate the corresponding item in the cache.
 
 ## Pros & Cons
 ### Pros
