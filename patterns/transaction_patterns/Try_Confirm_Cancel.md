@@ -37,7 +37,7 @@
 - No combinatorial explosion or error path complexity.
 
 ### Cons
-- Cost more efforts on development.
+- Cost more efforts on development (Especially, you need to write more code for rollback operations).
 
 ## Consideration
 | Topic | Consideration | Possible Solution Options |
