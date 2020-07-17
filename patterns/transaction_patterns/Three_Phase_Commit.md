@@ -46,4 +46,4 @@
 ## References
 - Web Article: [Three-phase commit protocol | https://en.wikipedia.org/wiki/Three-phase_commit_protocol](https://en.wikipedia.org/wiki/Three-phase_commit_protocol)
 - Web Article: [What is a 3 phase commit / 3pc? | https://www.xenovation.com/blog/development/java/java-professional-developer/what-is-a-three-phase-commit-3pc](https://www.xenovation.com/blog/development/java/java-professional-developer/what-is-a-three-phase-commit-3pc)
-- [Book: Sacha K.(2009). Chapter 9 Transactions, Middleware Architecture with Patterns and Frameworks (pp. 9-1 - 9-35).](http://sardes.inrialpes.fr/_krakowia/MW-Book/index.html)
+- Book: [Sacha K.(2009). Chapter 9 Transactions, Middleware Architecture with Patterns and Frameworks (pp. 9-1 - 9-35).](http://sardes.inrialpes.fr/_krakowia/MW-Book/index.html)
