@@ -33,6 +33,8 @@ The coordinator uses 2 phases to coordinates participants on whether to commit o
       - Each participant sends an acknowledgement to the coordinator.
 
 ### Implementation
+- The coordinator must write its commit or abort decision to a transaction log on disk before sending commit or abort requests to participants.
+
 ### Optimizations
 - **Presumed Abort (2PC-PA) and Presumed Commit (2PC-PC)**:
    - An assumption about the outcome of transactions, either commit, or abort, can save both messages and logging operations by the participants during the 2PC protocol's execution.
