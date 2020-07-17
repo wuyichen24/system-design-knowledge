@@ -73,3 +73,4 @@ The coordinator uses 2 phases to coordinates participants on whether to commit o
 - Web Article: [Two-phase commit protocol | https://en.wikipedia.org/wiki/Two-phase_commit_protocol](https://en.wikipedia.org/wiki/Two-phase_commit_protocol)
 - Web Article: [Patterns for distributed transactions within a microservices architecture | https://developers.redhat.com/blog/2018/10/01/patterns-for-distributed-transactions-within-a-microservices-architecture/](https://developers.redhat.com/blog/2018/10/01/patterns-for-distributed-transactions-within-a-microservices-architecture/)
 - [Book: Sacha K.(2009). Chapter 9 Transactions, Middleware Architecture with Patterns and Frameworks (pp. 9-1 - 9-35).](http://sardes.inrialpes.fr/_krakowia/MW-Book/index.html)
+- Book: [Martin K.(2017). Chapter 9 Consistency and Consensus, *Designing Data-Intensive Applications* (pp. 321-388). O'Reilly Media](https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/)
