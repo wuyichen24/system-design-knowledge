@@ -32,8 +32,9 @@ When choosing a message queue product or designing a message queue architecture,
 - **Message retention/expiration**
    - The limited period of time the message will be retained in the queue before being discarded.
 - **Delivery guarantees**
-   - *At-least-once*: Every message from the source system will reach its destination, but sometimes retries will cause duplicates.
-   - *Exactly-once*: Every message from the source system will reach the destination with no possibility for loss or duplication.
+   - *At-least-once*: Every message from the source system will reach its destination, but sometimes retries will cause duplicates (delivery times >= 1).
+   - *Exactly-once*: Every message from the source system will reach the destination with no possibility for loss or duplication (delivery times = 1).
+   - *At-most-once*: Every message from the source system may reach the destination with no possibility for duplication (delivery times <= 1).
 - **Availability**
 - **Scalability**
 - **Latency**
