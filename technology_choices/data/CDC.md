@@ -13,6 +13,6 @@
 | Yahoo Sherpa | | |
 | Bottled Water | | |
 | Maxwell | |
-
+| Mongoriver (for MongoDB) | | |
 
 https://www.confluent.io/blog/no-more-silos-how-to-integrate-your-databases-with-apache-kafka-and-cdc/
