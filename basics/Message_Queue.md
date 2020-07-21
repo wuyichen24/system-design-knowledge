@@ -7,6 +7,9 @@
 - [**Solutions**](#solutions)
    - [Message Ordering](#message-ordering)
    - [Duplicate Messages](#duplicate-messages)
+- [**Standards**](#standards)
+   - [Protocols](#protocols)
+   - [APIs](#apis)
 - [**References**](#references)
 
 ## Pros & Cons
