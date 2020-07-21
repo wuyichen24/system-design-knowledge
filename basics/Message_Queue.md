@@ -51,6 +51,16 @@ If there are duplicate messages in a message queue, how the receiver handles dup
 - **Solution 2**: Track each message which has been processed into a data store and discard duplicates.
    - Add a unique identifier into each message.
 
+## Standards
+### Protocols
+- AMQP (Advanced Message Queuing Protocol)
+- STOMP (Streaming Text Oriented Messaging Protocol)
+- MQTT (Message Queuing Telemetry Transport)
+- XMPP (Extensible Messaging and Presence Protocol)
+
+### APIs
+- JMS (Java Message Service)
+
 ## References
 - Book: [Chris R.(2018). Chapter 3. Interprocess communication in a microservice architecture, *Microservices Patterns* (pp. 65-109). Manning Publications](https://www.manning.com/books/microservices-patterns)
 - Book: [Neha N.,Gwen S.,Todd P.(2017). Chapter 7. Building Data Pipelines, *Kafka: The Definitive Guide* (pp. 135-156). O'Reilly Media](https://www.oreilly.com/library/view/kafka-the-definitive/9781491936153/)
