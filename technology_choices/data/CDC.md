@@ -11,6 +11,8 @@
 | SQData | Proprietary | https://www.sqdata.com/ |
 | Facebook Wormhole | | |
 | Yahoo Sherpa | | |
+| Bottled Water | | |
+| Maxwell | |
 
 
 https://www.confluent.io/blog/no-more-silos-how-to-integrate-your-databases-with-apache-kafka-and-cdc/
