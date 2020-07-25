@@ -22,11 +22,13 @@
 - **Phantoms**: A write in one transaction changes the result of a search query in another transaction.
 
 ### Isolation Levels
+#### Levels (from lowest to highest)
 - **Read Uncommitted** (Lowest)
 - **Read Committed**
 - **Repeatable Read**
 - **Serializable** (Highest)
 
+#### Definitions
 | Isolation Levels | Dirty reads | Dirty writes | Lost updates |	Non-repeatable reads | Phantoms |
 |----|----|----|----|----|----|
 | **Read Uncommitted** | May occur | May occur | May occur | May occur | May occur |
