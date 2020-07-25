@@ -28,7 +28,7 @@
 - **Repeatable Read**
 - **Serializable** (Highest)
 
-#### Definitions
+#### Goals
 | Isolation Levels | Dirty reads | Dirty writes | Lost updates |	Non-repeatable reads | Phantoms |
 |----|----|----|----|----|----|
 | **Read Uncommitted** | May occur | May occur | May occur | May occur | May occur |
@@ -36,3 +36,10 @@
 | **Repeatable Read** | Avoid | Avoid | Avoid | Avoid | May occur |
 | **Serializable** | Avoid | Avoid | Avoid | Avoid | Avoid |
 
+#### Implementations
+| Isolation Levels | Write locks | Read locks | Range locks |
+|----|----|----|----|----|----|
+| **Read Uncommitted** | None | None | None | 
+| **Read Committed** | Use (release at the end of the transcation) | Use (release just after the SELECT operation is performed) | None |
+| **Repeatable Read** | Use (release at the end of the transcation) | Use (release at the end of the transcation) | None |
+| **Serializable** | Use (release at the end of the transcation) | Use (release at the end of the transcation) | Use |
