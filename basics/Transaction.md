@@ -38,7 +38,7 @@
 
 #### Implementations
 | Isolation Levels | Write locks | Read locks | Range locks |
-|----|----|----|----|----|----|
+|----|----|----|----|
 | **Read Uncommitted** | None | None | None | 
 | **Read Committed** | Use (release at the end of the transcation) | Use (release just after the SELECT operation is performed) | None |
 | **Repeatable Read** | Use (release at the end of the transcation) | Use (release at the end of the transcation) | None |
