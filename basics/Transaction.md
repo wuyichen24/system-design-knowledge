@@ -14,13 +14,23 @@
 
 ## Isolation
 ### Race Conditions
-- **Dirty read**: A transaction reads the data that has not yet been committed by another transaction.
-- **Dirty write**: A transaction overwrites the data that has not yet been committed by another transaction.
+- **Dirty reads**: A transaction reads the data that has not yet been committed by another transaction.
+- **Dirty writes**: A transaction overwrites the data that has not yet been committed by another transaction.
 - **Read skew (Non-repeatable read)**: When a transaction reads the same record twice but gets different result each time.
-- **Lost update**: When two transactions do read-modify-write on the same record concurrently, one of the modifications can be lost (overwritten by another).
+- **Lost updates**: When two transactions do read-modify-write on the same record concurrently, one of the modifications can be lost (overwritten by another).
 - **Write skew**: Two transactions read the same set of objects, and then update a different subset of those objects concurrently. But the updates violate the rules defined by the application.
-- **Phantom**: A write in one transaction changes the result of a search query in another transaction.
+- **Phantoms**: A write in one transaction changes the result of a search query in another transaction.
 
 ### Isolation Levels
+- **Read Uncommitted** (Lowest)
+- **Read Committed**
+- **Repeatable Read**
+- **Serializable** (Highest)
 
+| Isolation Levels | Dirty reads | Dirty writes | Lost updates |	Non-repeatable reads | Phantoms |
+|----|----|----|----|----|----|
+| **Read Uncommitted** | May occur | May occur | May occur | May occur | May occur |
+| **Read Committed** | Avoid | Avoid | May occur | May occur | May occur |
+| **Repeatable Read** | Avoid | Avoid | Avoid | Avoid | May occur |
+| **Serializable** | Avoid | Avoid | Avoid | Avoid | Avoid |
 
