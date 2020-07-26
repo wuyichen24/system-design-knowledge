@@ -52,7 +52,27 @@
 | **Repeatable Read** | Use (release at the end of the transcation) | Use (release at the end of the transcation) | None |
 | **Serializable** | Use (release at the end of the transcation) | Use (release at the end of the transcation) | Use |
 
+## Distributed Transactions
+### Consensus
+#### Concept
+- Get several nodes to agree on something
+
+#### Use Cases
+- **Leader election**: All nodes need to agree on which node is the leader.
+- **Atomic commit**: Get all nodes to agree on the outcome of the transaction - Either they all abort or they all commit.
+
+#### Properties
+- **Uniform agreement**: No two nodes decide differently.
+- **Integrity**: No node decides twice.
+- **Validity**: If a node decides value v, then v was proposed by some node.
+- **Termination**: Every node that does not crash eventually decides some value.
+
+### Types
+- **Database-internal distributed transactions**: Some distributed databases support internal transactions among the nodes of that database.
+- **Heterogeneous distributed transactions**: The participants are two or more different technologies.
+
 ## References
 - Book: [Martin K.(2017). Chapter 7 Transactions, *Designing Data-Intensive Applications* (pp. 221-272). O'Reilly Media](https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/)
+- Book: [Martin K.(2017). Chapter 9 Consistency and Consensus, *Designing Data-Intensive Applications* (pp. 321-388). O'Reilly Media](https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/)
 - Web Article: [Isolation (database systems) | https://en.wikipedia.org/wiki/Isolation_(database_systems)](https://en.wikipedia.org/wiki/Isolation_(database_systems))
 - Web Article: [Transaction Isolation Levels (ODBC) | https://docs.microsoft.com/en-us/sql/odbc/reference/develop-app/transaction-isolation-levels?view=sql-server-ver15](https://docs.microsoft.com/en-us/sql/odbc/reference/develop-app/transaction-isolation-levels?view=sql-server-ver15)
