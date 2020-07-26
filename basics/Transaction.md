@@ -9,7 +9,7 @@
 - [**Distributed Transactions**](#distributed-transactions)
    - [Consensus](#consensus)
    - [Types](#types)
-- [**References**]
+- [**References**](#references)
 
 ## Guarantees
 ### ACID
