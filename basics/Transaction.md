@@ -6,6 +6,7 @@
 - [**Isolation**](#isolation)
    - [Race Conditions](#race-conditions)
    - [Isolation Levels](#isolation-levels)
+- [**References**]
 
 ## Guarantees
 ### ACID
@@ -50,3 +51,6 @@
 | **Read Committed** | Use (release at the end of the transcation) | Use (release just after the SELECT operation is performed) | None |
 | **Repeatable Read** | Use (release at the end of the transcation) | Use (release at the end of the transcation) | None |
 | **Serializable** | Use (release at the end of the transcation) | Use (release at the end of the transcation) | Use |
+
+## References
+- Book: [Martin K.(2017). Chapter 7 Transactions, *Designing Data-Intensive Applications* (pp. 221-272). O'Reilly Media](https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/)
