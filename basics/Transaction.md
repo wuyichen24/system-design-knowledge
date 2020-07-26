@@ -6,6 +6,9 @@
 - [**Isolation**](#isolation)
    - [Race Conditions](#race-conditions)
    - [Isolation Levels](#isolation-levels)
+- [**Distributed Transactions**](#distributed-transactions)
+   - [Consensus](#consensus)
+   - [Types](#types)
 - [**References**]
 
 ## Guarantees
