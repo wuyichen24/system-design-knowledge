@@ -54,3 +54,5 @@
 
 ## References
 - Book: [Martin K.(2017). Chapter 7 Transactions, *Designing Data-Intensive Applications* (pp. 221-272). O'Reilly Media](https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/)
+- Web Article: [Isolation (database systems) | https://en.wikipedia.org/wiki/Isolation_(database_systems)](https://en.wikipedia.org/wiki/Isolation_(database_systems))
+- Web Article: [Transaction Isolation Levels (ODBC) | https://docs.microsoft.com/en-us/sql/odbc/reference/develop-app/transaction-isolation-levels?view=sql-server-ver15](https://docs.microsoft.com/en-us/sql/odbc/reference/develop-app/transaction-isolation-levels?view=sql-server-ver15)
