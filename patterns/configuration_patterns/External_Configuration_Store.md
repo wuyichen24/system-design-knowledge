@@ -37,7 +37,7 @@
 #### Pull Model External Configuration
 - Solution options for storing configuration properties
    - Version control system such as Git
-   - Databases
+   - Databases (Relational database or in-memory database, like Redis)
    - Specialized configuration servers
       - Spring Cloud Config Server
       - Hashicorp Vault
