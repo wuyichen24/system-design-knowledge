@@ -126,7 +126,3 @@ Brainstorm the knowledge of modern distributed system design patterns from diffe
 | Pattern Name | Diagram | Description |
 |----|-------|----|
 | [*Health Check API*](patterns/other_patterns/Health_Check_API.md) | | A service exposes a health check API endpoint which returns the health of the service. |
-
-------
-
-![wuyichen24's github stats](https://github-readme-stats.vercel.app/api?username=wuyichen24&count_private=true)
