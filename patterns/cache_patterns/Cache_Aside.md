@@ -35,10 +35,12 @@
 
 ## Pros & Cons
 ### Pros
-- Improve performance on read operations.
+- Improve performance on read operations generally.
 
 ### Cons
 - Cost more efforts on development (Applications need to handle both cache and database).
+- Data in the cache can become stale if it is updated in the database.
+- Each cache miss causes a noticeable delay.
 
 ## Consideration
 | Topic | Consideration | Possible Solution Options |
