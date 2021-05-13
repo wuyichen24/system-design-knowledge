@@ -40,7 +40,7 @@
 ### Cons
 - Cost more efforts on development (Applications need to handle both cache and database).
 - Data in the cache can become stale if it is updated in the database.
-- Each cache miss causes a noticeable delay.
+- Each cache miss causes a noticeable delay (Data need to load from database to cache through application).
 
 ## Consideration
 | Topic | Consideration | Possible Solution Options |
