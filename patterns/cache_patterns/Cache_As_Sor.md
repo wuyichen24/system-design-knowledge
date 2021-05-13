@@ -26,6 +26,8 @@
 
 ## Pros & Cons
 - **Write-Through**
+   - Pros
+      - No risk of data loss.
    - Cons
       - Slow (cache can only ack back until writing data to database successfully).
       - When a new cache node is added, the new cache node will be empty until there is a update from the application.
@@ -33,7 +35,7 @@
    - Pros
       - Faster (cache can ack back without writing data to database).
    - Cons
-      - Data may lose after cache goes down, but before it have been written to database.
+      - Risk of data loss: Data may lose after cache goes down, but before it have been written to database.
       - More complex to implement.
 - **Refresh-ahead**
    - Pros
