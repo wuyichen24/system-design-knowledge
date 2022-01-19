@@ -5,12 +5,26 @@
 ## Overview
 Accumulate system design knowledge (concepts, patterns, technology choices, etc.) from different resources (books, essays, web, etc.).
 
-## Basics
-- [**Message Queue**](basics/Message_Queue.md)
-- [**Transaction**](basics/Transaction.md)
-- [**Cache**](basics/Cache.md)
+## Concepts
 
-## Categories
+- [Scalability](concepts/Scalability.md)
+- [Availability](concepts/Availability.md)
+- [CAP Theorem](concepts/CAP_Theorem.md)
+- [Transaction](concepts/Transaction.md)
+- [Network](concepts/Network.md)
+- [Communication](concpets/Communication.md)
+- [Service Discovery](concepts/Service_Discovery.md)
+
+## Components
+- [Domain Name System (DNS)](components/Domain_Name_System.md)
+- [Load Balancer (LB)](components/Load_Balancer.md)
+- [Content Delivery Network (CDN)](components/Content_Delivery_Network.md)
+- [Database (DB)](components/Database.md)
+- [Cache](components/Cache.md)
+- [Message Queue](basics/Message_Queue.md)
+- [Reverse Proxy](components/Reverse_Proxy.md)
+
+## Patterns
 - [**Data Management Patterns**](#data-management-patterns)
    - [Command Query Responsibility Segregation (CQRS)](patterns/data_management_patterns/Command_Query_Responsibility_Segregation.md)
    - [Event Sourcing (ES)](patterns/data_management_patterns/Event_Sourcing.md)
