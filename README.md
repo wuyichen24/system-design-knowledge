@@ -9,6 +9,7 @@ Accumulate system design knowledge (concepts, patterns, technology choices, etc.
 
 - [Scalability](concepts/Scalability.md)
 - [Availability](concepts/Availability.md)
+- [Consistency](concepts/Consistency.md)
 - [CAP Theorem](concepts/CAP_Theorem.md)
 - [Transaction](concepts/Transaction.md)
 - [Network](concepts/Network.md)
