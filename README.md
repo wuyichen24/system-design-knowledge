@@ -1,9 +1,9 @@
-# distributed-system-design-pattern
+# system-design-knowledge
 
 [![License: CC BY-NC-ND 4.0](https://licensebuttons.net/l/by-nc-nd/4.0/80x15.png)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 ## Overview
-Brainstorm the knowledge of modern distributed system design patterns from different resources (books, essays, web).
+Accumulate system design knowledge (concepts, patterns, technology choices, etc.) from different resources (books, essays, web, etc.).
 
 ## Basics
 - [**Message Queue**](basics/Message_Queue.md)
