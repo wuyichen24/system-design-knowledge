@@ -30,6 +30,18 @@
 - **Features**
    - Stateless: The web server doesn't retain information or status about each user for the duration of multiple requests.
    - Can be stateful: HTTP cookies allow the web server retain information or status (session) about each user for the duration of multiple requests.
+- **Request and response**
+   - Request
+      - Methods
+   - Response
+      - Status code
+        | Code | Type | Description |
+        |----|----|----|
+        | 1XX | Informational | The request was received, continuing process. |
+        | 2XX | Successful | The request was successfully received, understood, and accepted. |
+        | 3XX | Redirection | Further action needs to be taken in order to complete the request. |
+        | 4XX | Client error | The request contains bad syntax or cannot be fulfilled. |
+        | 5XX | server error | The server failed to fulfill an apparently valid request. |
 - Techniques
    - HTTP polling
    - HTTP long polling
