@@ -23,6 +23,8 @@
 - **Soft state**: Without consistency guarantees, after some amount of time, we only have some probability of knowing the state, since it may not yet have converged.
 - **Eventually consistent**: If the system is functioning and we wait long enough after any given set of inputs, we will eventually be able to know what the state of the database is, and so any further reads will be consistent with our expect.
 
+> Note: Not only SQL databases are ACID compliant, some of NoSQL databases are fully ACID compliant too, like OrientDB, Neo4j, etc.
+
 ## Isolation
 ### Race conditions
 - **Dirty reads**: A transaction reads the data that has not yet been committed by another transaction.
