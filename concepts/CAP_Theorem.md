@@ -15,8 +15,7 @@
 | AP (Availability over Consistency) | BASE | The system will always try to return the most recent available version of the information, but the information cannot be guaranteed to be up to date. |
 | CA (This is possible)  | | |
 
-## Notes
-- The choice is between consistency and availability only when a network partition or failure happens. When there is no network failure, both availability and consistency can be satisfied.
+> Note: The choice is between consistency and availability only when a network partition or failure happens. When there is no network failure, both availability and consistency can be satisfied.
 
 ## References
 - [Wikipedia: CAP theorem](https://en.wikipedia.org/wiki/CAP_theorem)
