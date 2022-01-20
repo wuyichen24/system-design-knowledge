@@ -27,6 +27,8 @@
 - Concepts
    - A request–response protocol in the client–server model:
    - Rely on TCP/IP connection.
+- Features
+   - Stateless: The web server doesn't retain information or status about each user for the duration of multiple requests.
 - Techniques
    - HTTP polling
    - HTTP long polling
