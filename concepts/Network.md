@@ -11,32 +11,34 @@
 | 2 | Data Link | Frame | Reliable transmission of data frames between two nodes connected by a physical layer. | |
 | 1 | Physical | Bit, Symbol | Transmission and reception of raw bit streams over a physical medium. | |
 
-## Common Protocols
+## Common protocols
 ### Common transport layer (L4) protocols
-- UDP
+#### UDP
+- Features
    - Connectionless
    - Unreliable
-- TCP
+#### TCP
+- Features
    - Connection-based
    - Reliable
  
 ### Common application layer (L7) protocols
-- HTTP
-   - Techniques
-      - HTTP polling
-      - HTTP long polling
-      - HTTP streaming
-- RPC
-   - Concepts
-      - Allows a computer program to cause a procedure to execute in another address space (commonly on another computer on a shared network).
-   - Pros
-      - Efficient for exchanging large data.
-      - Bidirectional streaming.
-   - Cons
-      - Hard to debug.
-      - Not flexible.
-      - Old firewalls don’t support HTTP/2-based RPCs (Cannot be used for public APIs).
-- WebSocket
+#### HTTP**
+- Techniques
+   - HTTP polling
+   - HTTP long polling
+   - HTTP streaming
+#### RPC
+- Concepts
+   - Allows a computer program to cause a procedure to execute in another address space (commonly on another computer on a shared network).
+- Pros
+   - Efficient for exchanging large data.
+   - Bidirectional streaming.
+- Cons
+   - Hard to debug.
+   - Not flexible.
+   - Old firewalls don’t support HTTP/2-based RPCs (Cannot be used for public APIs).
+#### WebSocket
    - Pros
       - Full duplex: Client and server can send data at the same time.
       - Connections can keep open for the duration of the session.
