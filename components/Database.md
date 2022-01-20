@@ -1,4 +1,4 @@
-# Database
+# Database (DB)
 
 ## Types
 ### Relational and non-relational database
