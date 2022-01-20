@@ -13,10 +13,10 @@
      ![CAP-Theorem-Explained](https://user-images.githubusercontent.com/8989447/150275056-ecdea92d-fe35-4a15-9c77-16b0f9ece6b4.png)
 
 ## Combinations
-| Combination | Property Set | Behavior when a network partition failure happens |
+| Combination | Property set | Behavior when a network partition failure happens |
 |----|----|----|
-| CP (Consistency over Availability) | ACID | The system will return an error or a time out if particular information cannot be guaranteed to be up to date. |
-| AP (Availability over Consistency) | BASE | The system will always try to return the most recent available version of the information, but the information cannot be guaranteed to be up to date. |
+| CP (Consistency over Availability) | [ACID](Transaction.md#acid-consistency-over-availability) | The system will return an error or a time out if particular information cannot be guaranteed to be up to date. |
+| AP (Availability over Consistency) | [BASE](Transaction.md#base-availability-over-consistency---eventual-consistency) | The system will always try to return the most recent available version of the information, but the information cannot be guaranteed to be up to date. |
 | CA (This is possible)  | | |
 
 > Note: The choice is between consistency and availability only when a network partition or failure happens. When there is no network failure, both availability and consistency can be satisfied.
