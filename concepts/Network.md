@@ -37,9 +37,10 @@
         |----|----|
         | GET | Retrieves data without making changes. |
         | HEAD | Retrieves the metadata of data in the response headers without the response body. |
-        | POST | Submits data and ask web server to process. |
+        | POST | Submits data and ask the server to process. |
         | PUT | Creates or updates data. |
         | DELETE | Deletes data. |
+        | CONNECT | Asks proxy server to establish a TCP/IP tunnel to the origin server. | 
         
    - Response
       - Status code
