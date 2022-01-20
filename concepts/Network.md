@@ -14,20 +14,20 @@
 ## Common protocols
 ### Common transport layer (L4) protocols
 #### UDP
-- Features
+- **Features**
    - Connectionless
    - Unreliable
 #### TCP
-- Features
+- **Features**
    - Connection-based
    - Reliable
  
 ### Common application layer (L7) protocols
 #### HTTP
-- Concepts
+- **Concepts**
    - A request–response protocol in the client–server model:
    - Rely on TCP/IP connection.
-- Features
+- **Features**
    - Stateless: The web server doesn't retain information or status about each user for the duration of multiple requests.
    - Can be stateful: HTTP cookies allow the web server retain information or status (session) about each user for the duration of multiple requests.
 - Techniques
