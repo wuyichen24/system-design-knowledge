@@ -6,7 +6,9 @@
    - **Availability (A)**: Every request receives a (non-error) response, without the guarantee that it contains the most recent write.
    - **Partition tolerance (P)**: The system continues to work despite message loss or partial failure.
 
-     ![Screen Shot 2021-05-10 at 2 51 22 PM](https://user-images.githubusercontent.com/8989447/117723127-3b6f5300-b19f-11eb-893a-488ec6afbc46.png)
+     ![CAP-Theorem-Explained](https://user-images.githubusercontent.com/8989447/150275056-ecdea92d-fe35-4a15-9c77-16b0f9ece6b4.png)
+
+     
 
 ## Combinations
 | Combination | Property Set | Behavior when a network partition failure happens |
