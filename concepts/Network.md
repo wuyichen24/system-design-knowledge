@@ -41,7 +41,7 @@
         | 2XX | Successful | The request was successfully received, understood, and accepted. |
         | 3XX | Redirection | Further action needs to be taken in order to complete the request. |
         | 4XX | Client error | The request contains bad syntax or cannot be fulfilled. |
-        | 5XX | server error | The server failed to fulfill an apparently valid request. |
+        | 5XX | Server error | The server failed to fulfill an apparently valid request. |
 - Techniques
    - HTTP polling
    - HTTP long polling
