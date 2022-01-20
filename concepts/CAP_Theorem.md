@@ -22,4 +22,4 @@
 > Note: The choice is between consistency and availability only when a network partition or failure happens. When there is no network failure, both availability and consistency can be satisfied.
 
 ## References
-- [Wikipedia: CAP theorem](https://en.wikipedia.org/wiki/CAP_theorem)
+- Web Article: [CAP theorem | https://en.wikipedia.org/wiki/Isolation_(database_systems)](https://en.wikipedia.org/wiki/CAP_theorem)
