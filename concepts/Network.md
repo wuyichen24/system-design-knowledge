@@ -29,6 +29,7 @@
    - Rely on TCP/IP connection.
 - Features
    - Stateless: The web server doesn't retain information or status about each user for the duration of multiple requests.
+   - Can be stateful: HTTP cookies allow the web server retain information or status (session) about each user for the duration of multiple requests.
 - Techniques
    - HTTP polling
    - HTTP long polling
