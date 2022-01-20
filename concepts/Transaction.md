@@ -1,6 +1,6 @@
 # Transaction
 
-- [**Guarantees**](#guarantees)
+- [**Property sets**](#property-sets)
    - [ACID](#acid)
    - [BASE](#base-eventual-consistency)
 - [**Isolation**](#isolation)
@@ -11,7 +11,7 @@
    - [Types](#types)
 - [**References**](#references)
 
-## Guarantees
+## Property sets
 ### ACID (Consistency over availability)
 - **Atomicity**: Each transaction is treated as a single unit, which either succeeds completely, or fails completely.
 - **Consistency**: Each transaction can only bring the database from one valid state to another and always obey database invariants (rules).
