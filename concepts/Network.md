@@ -33,6 +33,14 @@
 - **Request and response**
    - Request
       - Methods
+        | Method | Description |
+        |----|----|
+        | GET | Retrieves data without making changes. |
+        | HEAD | Retrieves the metadata of data in the response headers without the response body. |
+        | POST | Submits data and ask web server to process. |
+        | PUT | Creates or updates data. |
+        | DELETE | Deletes data. |
+        
    - Response
       - Status code
         | Code | Type | Description |
