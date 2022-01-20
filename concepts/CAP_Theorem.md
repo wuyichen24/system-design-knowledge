@@ -1,5 +1,9 @@
 # CAP Theorem
 
+- [Concepts](#concepts)
+- [Combinations](#combinations)
+- [References](#references)
+
 ## Concepts
 - Any distributed data store can only provide two of the following three guarantees:
    - **Consistency (C)**: All nodes can see the same data at the same time.
