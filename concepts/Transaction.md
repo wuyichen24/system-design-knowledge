@@ -4,27 +4,27 @@
    - [ACID](#acid)
    - [BASE](#base-eventual-consistency)
 - [**Isolation**](#isolation)
-   - [Race Conditions](#race-conditions)
-   - [Isolation Levels](#isolation-levels)
-- [**Distributed Transactions**](#distributed-transactions)
+   - [Race conditions](#race-conditions)
+   - [Isolation levels](#isolation-levels)
+- [**Distributed transactions**](#distributed-transactions)
    - [Consensus](#consensus)
    - [Types](#types)
 - [**References**](#references)
 
 ## Guarantees
-### ACID (Consistency over Availability)
+### ACID (Consistency over availability)
 - **Atomicity**: Each transaction is treated as a single unit, which either succeeds completely, or fails completely.
 - **Consistency**: Each transaction can only bring the database from one valid state to another and always obey database invariants (rules).
 - **Isolation**: Concurrently executing transactions shouldn’t interfere with each other.
 - **Durability**: Once a transaction has committed successfully, any data it has written will not be forgotten, even if there is a hardware fault or the database crashes.
 
-### BASE (Availability over Consistency - Eventual Consistency)
+### BASE (Availability over consistency - eventual consistency)
 - **Basically Available**: Basic reading and writing operations are available as much as possible (using all nodes of a database cluster), but without any kind of consistency guarantees (the write may not persist after conflicts are reconciled, the read may not get the latest write).
 - **Soft state**: Without consistency guarantees, after some amount of time, we only have some probability of knowing the state, since it may not yet have converged.
 - **Eventually consistent**: If the system is functioning and we wait long enough after any given set of inputs, we will eventually be able to know what the state of the database is, and so any further reads will be consistent with our expect.
 
 ## Isolation
-### Race Conditions
+### Race conditions
 - **Dirty reads**: A transaction reads the data that has not yet been committed by another transaction.
 - **Dirty writes**: A transaction overwrites the data that has not yet been committed by another transaction.
 - **Read skew (Non-repeatable read)**: When a transaction reads the same record twice but gets different result each time.
@@ -32,30 +32,30 @@
 - **Write skew**: Two transactions read the same set of objects, and then update a different subset of those objects concurrently. But the updates violate the rules defined by the application.
 - **Phantoms**: A write in one transaction changes the result of a search query in another transaction.
 
-### Isolation Levels
+### Isolation levels
 #### Levels (from lowest to highest)
-- **Read Uncommitted** (Lowest)
-- **Read Committed**
-- **Repeatable Read**
+- **Read uncommitted** (Lowest)
+- **Read committed**
+- **Repeatable read**
 - **Serializable** (Highest)
 
 #### Goals
 | Isolation Levels | Dirty reads | Dirty writes | Lost updates |	Non-repeatable reads | Phantoms |
 |----|----|----|----|----|----|
-| **Read Uncommitted** | May occur | May occur | May occur | May occur | May occur |
-| **Read Committed** | Avoid | Avoid | May occur | May occur | May occur |
-| **Repeatable Read** | Avoid | Avoid | Avoid | Avoid | May occur |
+| **Read uncommitted** | May occur | May occur | May occur | May occur | May occur |
+| **Read committed** | Avoid | Avoid | May occur | May occur | May occur |
+| **Repeatable read** | Avoid | Avoid | Avoid | Avoid | May occur |
 | **Serializable** | Avoid | Avoid | Avoid | Avoid | Avoid |
 
 #### Implementations
 | Isolation Levels | Write locks | Read locks | Range locks |
 |----|----|----|----|
-| **Read Uncommitted** | None | None | None | 
-| **Read Committed** | Use (release at the end of the transcation) | Use (release just after the SELECT operation is performed) | None |
-| **Repeatable Read** | Use (release at the end of the transcation) | Use (release at the end of the transcation) | None |
+| **Read uncommitted** | None | None | None | 
+| **Read committed** | Use (release at the end of the transcation) | Use (release just after the SELECT operation is performed) | None |
+| **Repeatable read** | Use (release at the end of the transcation) | Use (release at the end of the transcation) | None |
 | **Serializable** | Use (release at the end of the transcation) | Use (release at the end of the transcation) | Use |
 
-## Distributed Transactions
+## Distributed transactions
 ### Consensus
 #### Concept
 - Get several nodes to agree on something
