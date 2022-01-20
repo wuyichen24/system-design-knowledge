@@ -40,7 +40,8 @@
         | POST | Submits data and ask the server to process. |
         | PUT | Creates or updates data. |
         | DELETE | Deletes data. |
-        | CONNECT | Asks proxy server to establish a TCP/IP tunnel to the origin server. | 
+        | CONNECT | Asks proxy server to establish a TCP/IP tunnel to the origin server. |
+        | OPTIONS | Returns all the supported HTTP methods. |
         
    - Response
       - Status code
