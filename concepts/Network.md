@@ -26,7 +26,7 @@
 #### HTTP
 - Concepts
    - A request–response protocol in the client–server model:
-   - Rely on TCP.
+   - Rely on TCP/IP connection.
 - Techniques
    - HTTP polling
    - HTTP long polling
