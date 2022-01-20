@@ -24,6 +24,9 @@
  
 ### Common application layer (L7) protocols
 #### HTTP
+- Concepts
+   - A request–response protocol in the client–server model:
+   - Rely on TCP.
 - Techniques
    - HTTP polling
    - HTTP long polling
