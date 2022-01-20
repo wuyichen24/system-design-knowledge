@@ -23,11 +23,12 @@
    - Reliable
  
 ### Common application layer (L7) protocols
-#### HTTP**
+#### HTTP
 - Techniques
    - HTTP polling
    - HTTP long polling
    - HTTP streaming
+
 #### RPC
 - Concepts
    - Allows a computer program to cause a procedure to execute in another address space (commonly on another computer on a shared network).
@@ -38,10 +39,11 @@
    - Hard to debug.
    - Not flexible.
    - Old firewalls don’t support HTTP/2-based RPCs (Cannot be used for public APIs).
+
 #### WebSocket
-   - Pros
-      - Full duplex: Client and server can send data at the same time.
-      - Connections can keep open for the duration of the session.
+- Pros
+   - Full duplex: Client and server can send data at the same time.
+   - Connections can keep open for the duration of the session.
 
 ## References
 - https://en.wikipedia.org/wiki/WebSocket
