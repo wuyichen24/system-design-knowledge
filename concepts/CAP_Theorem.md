@@ -8,11 +8,15 @@
 
      ![CAP-Theorem-Explained](https://user-images.githubusercontent.com/8989447/150275056-ecdea92d-fe35-4a15-9c77-16b0f9ece6b4.png)
 
-     
-
 ## Combinations
 | Combination | Property Set | Behavior when a network partition failure happens |
 |----|----|----|
 | CP (Consistency over Availability) | ACID | The system will return an error or a time out if particular information cannot be guaranteed to be up to date. |
 | AP (Availability over Consistency) | BASE | The system will always try to return the most recent available version of the information, but the information cannot be guaranteed to be up to date. |
 | CA (This is possible)  | | |
+
+## Notes
+- The choice is between consistency and availability only when a network partition or failure happens. When there is no network failure, both availability and consistency can be satisfied.
+
+## References
+- [Wikipedia: CAP theorem](https://en.wikipedia.org/wiki/CAP_theorem)
