@@ -32,6 +32,12 @@
    - Can be stateful: HTTP cookies allow the web server retain information or status (session) about each user for the duration of multiple requests.
 - **Request and response**
    - Request
+      - Structure
+         - Method
+         - URL/Path
+         - Protocol version
+         - Header(s)
+         - Body
       - Methods
         | Method | Description |
         |----|----|
@@ -45,6 +51,12 @@
         | PATCH | Updates data partially. |
         
    - Response
+      - Structure
+         - Protocol version
+         - Status code
+         - Status message
+         - Header(s)
+         - Body
       - Status code
         | Code | Type | Description |
         |----|----|----|
