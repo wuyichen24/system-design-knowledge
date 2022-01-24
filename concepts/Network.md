@@ -65,9 +65,16 @@
         | 3XX | Redirection | Further action needs to be taken in order to complete the request. |
         | 4XX | Client error | The request contains bad syntax or cannot be fulfilled. |
         | 5XX | Server error | The server failed to fulfill an apparently valid request. |
-- Techniques
+- **Techniques**
    - HTTP polling
    - HTTP long polling
+      - Concepts
+         - The server doesn't respond the client immediately when it receives a request from the client.
+         - The server holds the connection and responds only if any new message is available or if a timeout threshold is reached.
+      - Pros
+         - The client doesn't need to send requests frequently to check any new message is available or not.
+      - Cons
+         - The server need to maintain lots of open connections.
    - HTTP streaming
 
 #### RPC
