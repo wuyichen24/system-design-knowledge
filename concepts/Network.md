@@ -26,7 +26,7 @@
 #### HTTP
 - **Concepts**
    - A request–response protocol in the client–server model:
-   - Rely on TCP/IP connection.
+   - Rely on TCP/IP standard.
 - **Features**
    - Stateless: The web server doesn't retain information or status about each user for the duration of multiple requests.
    - Can be stateful: HTTP cookies allow the web server retain information or status (session) about each user for the duration of multiple requests.
