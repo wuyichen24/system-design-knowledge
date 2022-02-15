@@ -16,6 +16,7 @@
 ## Limitations for vertical scaling
 - Vertical scaling has a hard limit (It is impossible to add unlimited CPU and memory to a single server).
 - Vertical scaling doesn't have failover and redundancy.
+- The overall cost of vertical scaling is high.
 
 ## Solutions for enhancing scalability
 - **Loose coupling**
