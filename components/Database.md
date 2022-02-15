@@ -65,7 +65,9 @@
            ![dss](https://user-images.githubusercontent.com/8989447/117697354-9d1fc500-b17f-11eb-895d-4164124c4b01.png)
 
 ### Denormalization (Materialized View)
+   
    ![materialized-view-pattern-diagram](https://user-images.githubusercontent.com/8989447/154134405-95c792a7-ce84-4b8b-94a9-6dbdf145fb44.png)
+   
 - **Concept**
    - Add redundant copies of data or by grouping data to improve the read performance of a database
 - **Pros**
