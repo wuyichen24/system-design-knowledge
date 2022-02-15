@@ -39,10 +39,12 @@
    - Less read and write traffic to a single database/shard.
    - If one database/shard is down, other databases/shards will be still operational.
    - More writes in parallel to increase throughput.
-- **Cons**
-   - Join operation is complex.
-   - Rebalance is complex.
-   - Introduce hot spots (celebrity problem).
+- **Cons and solutions**
+   | Cons | Solution |
+   |----|----|
+   | Join operation is complex. | De-normalize the database so that queries can be performed in a single table (See [Denormalization](#denormalization-materialized-view)) |
+   | Rebalance is complex. | |
+   | Introduce hot spots (celebrity problem). | Allocate a partition for each celebrity. Each partition might even require further partition. |
 - **Sharding**
    - Strategies
      | | By key range | By hash of key |
