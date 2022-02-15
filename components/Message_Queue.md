@@ -54,6 +54,9 @@ If there are duplicate messages in a message queue, how the receiver handles dup
 - **Solution 2**: Track each message which has been processed into a data store and discard duplicates.
    - Add a unique identifier into each message.
 
+## When to use
+- When most requests need to take a long time to be processed, like video, image, or audio processing. A client doesn’t need to wait until the processing is finished.
+
 ## Standards
 ### Protocols
 - AMQP (Advanced Message Queuing Protocol)
