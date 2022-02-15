@@ -22,7 +22,7 @@ Accumulate system design knowledge (concepts, patterns, technology choices, etc.
 - [Content Delivery Network (CDN)](components/Content_Delivery_Network.md)
 - [Database (DB)](components/Database.md)
 - [Cache](components/Cache.md)
-- [Message Queue](components/Message_Queue.md)
+- [Message Queue (MQ)](components/Message_Queue.md)
 - [Reverse Proxy](components/Reverse_Proxy.md)
 
 ## Patterns
