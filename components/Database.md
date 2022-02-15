@@ -42,7 +42,7 @@
 - **Cons**
    - Join operation is complex.
    - Rebalance is complex.
-   - Introduce hot spots.
+   - Introduce hot spots (celebrity problem).
 - **Sharding**
    - Strategies
      | | By key range | By hash of key |
