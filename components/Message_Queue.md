@@ -1,4 +1,4 @@
-# Message Queue
+# Message Queue (MQ)
 
 - [**Pros & Cons**](#pros--cons)
    - [Pros](#pros)
