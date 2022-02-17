@@ -1,7 +1,7 @@
 # Metrics
 
-## Basics
-### Units of measurement
+## Storage
+### Units of measurement for data storage
 | Name | Abbreviation | Size (base 2) | Conversion |
 |----|----|----|----|
 | bit | b | 1/8 | |
@@ -15,7 +15,6 @@
 | Zettabyte | ZB | 2<sup>70</sup> | 1 ZB = 2<sup>10</sup> EB |
 | Yottabyte | YB | 2<sup>80</sup> | 1 YB = 2<sup>10</sup> ZB |
 
-## Storage
 ## Availability
 ### Mapping between availability percentage and service downtime
 | Availability % | Number of nines | Downtime per year | Downtime per month | Downtime per week |
