@@ -30,7 +30,13 @@
 | 99.99999% | 7 nines | 3.15 seconds | 0.259 seconds | 0.0605 seconds |
 
 ## Performance
+### General system
 - Queries per second (QPS): The number of queries received by a system. 
+
+### Web server
 - Requests per second (RPS): The number of requests per second received by web server.
 - Connnections per second (CPS): The number of connections per second accepted by web server.
 - Network latency + response time
+
+### Database
+- Transactions per second (TPS): The number of database transactions performed per second
