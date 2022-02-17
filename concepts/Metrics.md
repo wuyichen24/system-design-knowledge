@@ -28,3 +28,9 @@
 | 99.999% | 5 nines | 5.26 minutes | 25.9 seconds | 6.05 seconds |
 | 99.9999% | 6 nines | 31.5 seconds | 2.59 seconds | 0.605 seconds |
 | 99.99999% | 7 nines | 3.15 seconds | 0.259 seconds | 0.0605 seconds |
+
+## Performance
+- Queries per second (QPS): The number of queries received by a system. 
+- Requests per second (RPS): The number of requests per second received by web server.
+- Connnections per second (CPS): The number of connections per second accepted by web server.
+- Network latency + response time
