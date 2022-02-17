@@ -1,8 +1,8 @@
 # Estimation
 
-## Storage
+## Basics
 ### Units of measurement
-| Name | Abbreviation | Size in bytes | Conversion |
+| Name | Abbreviation | Size (base 2) | Conversion |
 |----|----|----|----|
 | bit | b | 1/8 | |
 | Byte | B | 1 | 1 B = 8 b |
@@ -15,5 +15,5 @@
 | Zettabyte | ZB | 2<sup>70</sup> | 1 ZB = 2<sup>10</sup> EB |
 | Yottabyte | YB | 2<sup>80</sup> | 1 YB = 2<sup>10</sup> ZB |
 
+## Storage
 ## Availability
-
