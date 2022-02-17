@@ -16,6 +16,7 @@ Accumulate system design knowledge (concepts, patterns, technology choices, etc.
 - [Communication](concpets/Communication.md)
 - [Service Discovery](concepts/Service_Discovery.md)
 - [Consistent Hashing](concepts/Consistent_Hashing.md)
+- [Metrics](concepts/Metrics.md)
 
 ## Components
 - [Domain Name System (DNS)](components/Domain_Name_System.md)
