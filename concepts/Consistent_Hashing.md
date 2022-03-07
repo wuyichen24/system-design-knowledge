@@ -45,7 +45,14 @@
 ## Virtual nodes
 ### Issues for the basic approach
 - It is impossible to keep the same size of partitions on the ring for all servers when a server is add or removed.
+
+  ![ring drawio](https://user-images.githubusercontent.com/8989447/156979379-26b333d3-1d73-4528-a8b3-49ce4374e2ff.png)
+
 - The keys cannot be distributed evenly on the ring.
+
+  ![ring drawio (1)](https://user-images.githubusercontent.com/8989447/156979756-5a15c1f0-ee60-4bfb-9852-824154ce2959.png)
+
+  
 
 ## Benefits
 - Minimize reorganization/rebalance when servers are added or removed.
