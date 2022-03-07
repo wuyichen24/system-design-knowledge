@@ -52,8 +52,13 @@
 
   ![ring drawio (1)](https://user-images.githubusercontent.com/8989447/156979756-5a15c1f0-ee60-4bfb-9852-824154ce2959.png)
 
-### Concepts
+### Concepts of virtual nodes
 - Use multiple virtual nodes to represent a server on the ring (Each server is responsible for multiple partitions).
+- Example
+   - The virtual nodes V<sup>A1<sup>, VA2 and VA3 represent the server A.
+   - The virtual nodes VC1, VC2 and VC3 represent the server C.
+  
+  ![ring drawio (2)](https://user-images.githubusercontent.com/8989447/156980505-0b2dd681-d91e-43ab-b01c-d227f13a71be.png)
 
 ## Benefits
 - Minimize reorganization/rebalance when servers are added or removed.
