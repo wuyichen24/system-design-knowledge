@@ -16,7 +16,7 @@
 
 ## Operations
 ### Map a key to a server
-- **Process*
+- **Process**
    - Get the hash value of the key: hash(key).
    - hash(key) will be represented a position on the ring.
    - The key will assigned to the next server that appears on the circle in clockwise order from the position. 
