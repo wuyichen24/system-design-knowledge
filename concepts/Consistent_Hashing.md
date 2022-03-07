@@ -55,7 +55,7 @@
 ### Concepts of virtual nodes
 - Use multiple virtual nodes to represent a server on the ring (Each server is responsible for multiple partitions).
 - Example
-   - The virtual nodes V<sup>A1<sup>, VA2 and VA3 represent the server A.
+   - The virtual nodes V<sub>A1</sub>, V<sub>A2</sub> and VA3 represent the server A.
    - The virtual nodes VC1, VC2 and VC3 represent the server C.
   
   ![ring drawio (2)](https://user-images.githubusercontent.com/8989447/156980505-0b2dd681-d91e-43ab-b01c-d227f13a71be.png)
