@@ -26,7 +26,7 @@
      ![ch3](https://user-images.githubusercontent.com/8989447/117731784-f1409e80-b1ab-11eb-8d64-ecd141276d57.png)  
      ![ch4](https://user-images.githubusercontent.com/8989447/117732075-70ce6d80-b1ac-11eb-9349-f148aed9872b.png)
 
-### Add a new server to the ring**
+### Add a new server to the ring
 - **Example**
    - Add server D (see diagram).
 - **Process**
