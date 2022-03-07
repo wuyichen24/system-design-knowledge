@@ -52,7 +52,8 @@
 
   ![ring drawio (1)](https://user-images.githubusercontent.com/8989447/156979756-5a15c1f0-ee60-4bfb-9852-824154ce2959.png)
 
-  
+### Concepts
+- Use multiple virtual nodes to represent a server on the ring (Each server is responsible for multiple partitions).
 
 ## Benefits
 - Minimize reorganization/rebalance when servers are added or removed.
