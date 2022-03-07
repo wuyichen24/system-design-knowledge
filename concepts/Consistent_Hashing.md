@@ -34,7 +34,7 @@
 
      ![ch5](https://user-images.githubusercontent.com/8989447/117736418-c3ac2300-b1b4-11eb-914d-fc7c3b5ddbc6.png)
 
-### Remove a server from the ring**
+### Remove a server from the ring
 - **Example**
    - Remove server A (see diagram).
 - **Process**   
