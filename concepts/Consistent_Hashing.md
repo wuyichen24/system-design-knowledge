@@ -1,5 +1,16 @@
 # Consistent Hashing
 
+- [**Concepts**](#concepts)
+- [**Algorithm**](#algorithm)
+- [**Operations**](#operations)
+   - [Map a key to a server](#map-a-key-to-a-server)
+   - [Add a new server to the ring](#add-a-new-server-to-the-ring)
+   - [Remove a server from the ring](#remove-a-server-from-the-ring)
+- [**Virtual nodes**](#virtual-nodes)
+   - [Issues for the basic approach](#issues-for-the-basic-approach)
+   - [Concepts of virtual nodes](#concepts-of-virtual-nodes)
+- [**Benefits**](#benefits)
+
 ## Concepts
 - A special hashing technique that when a hash table is resized, only k/n keys need to be remapped on average.
    - k is the total number of keys.
