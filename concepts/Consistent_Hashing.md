@@ -71,5 +71,9 @@
   
   ![ring drawio (2)](https://user-images.githubusercontent.com/8989447/156980505-0b2dd681-d91e-43ab-b01c-d227f13a71be.png)
 
+### Benefits of virtual nodes
+- As the number of virtual nodes increases, the distribution of keys becomes more balanced.
+- The server with higher capacity can be assigned with more virtual nodes.
+
 ## Benefits
 - Minimize reorganization/rebalance when servers are added or removed.
