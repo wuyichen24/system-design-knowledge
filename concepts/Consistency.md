@@ -14,8 +14,10 @@
 ### Sequential consistency
 
 ### Causal consistency
-- Concepts
+- **Concepts**
    - Operations are in order: Which operation happened before which other operation (cause comes before effect).
    - Causality defines a partial order, not a total order.
 
 ### Eventual consistency 
+- **Concepts**
+   - Given enough time, all updates are propagated, and all replicas are consistent.
