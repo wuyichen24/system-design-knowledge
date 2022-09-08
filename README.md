@@ -72,3 +72,6 @@ Accumulate system design knowledge (concepts, patterns, technology choices, etc.
    - [Valet Key](patterns/security_patterns/Valet_Key.md)
 - [**Other Patterns**](#other-patterns)
    - [Health Check API](patterns/other_patterns/Health_Check_API.md)
+
+## Best Practices
+- [Keep data type of numbers as string](best_practices/Keep_Data_Type_Of_Numbers_As_String.md)
