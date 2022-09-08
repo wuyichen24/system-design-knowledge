@@ -75,3 +75,4 @@ Accumulate system design knowledge (concepts, patterns, technology choices, etc.
 
 ## Best Practices
 - [Keep data type of numbers as string](best_practices/Keep_Data_Type_Of_Numbers_As_String.md)
+- [Non-technical factors need to be considered for selecting a storage solution](best_practices/Non_Technical_Factors_Need_To_Be_Considered_For_Selecting_Storage_Solution.md)
