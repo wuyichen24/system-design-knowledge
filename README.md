@@ -13,7 +13,7 @@ Accumulate system design knowledge (concepts, patterns, technology choices, etc.
 - [CAP Theorem](concepts/CAP_Theorem.md)
 - [Transaction](concepts/Transaction.md)
 - [Network](concepts/Network.md)
-- [Communication](concpets/Communication.md)
+- [Communication](concepts/Communication.md)
 - [Service Discovery](concepts/Service_Discovery.md)
 - [Consistent Hashing](concepts/Consistent_Hashing.md)
 - [Metrics](concepts/Metrics.md)
