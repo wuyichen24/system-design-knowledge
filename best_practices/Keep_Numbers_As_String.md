@@ -1,4 +1,4 @@
-# Keep data type of numbers as string
+# Keep numbers as string
 
 It is better to keep the data type of amount field as string rather than double. Double is not a good choice for the following reasons:
 
