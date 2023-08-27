@@ -1,10 +1,10 @@
 # Database (DB)
 
 ## Types
-### Relational and non-relational database
-| | Relational database | Non-relational database |
+### Relational and NoSQL database
+| | Relational database | NoSQL database |
 |---|---|---|
-| Alias | SQL database | NoSQL database |
+| Alias | SQL database |  |
 | Schema | Fixed | Dynamic |
 | Query Language | SQL | UnQL (Unstructured Query Language) |
 | Scalability | Vertically scalable | Horizontally scalable |
