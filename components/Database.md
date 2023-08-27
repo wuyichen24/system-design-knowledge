@@ -3,7 +3,7 @@
 ## Types
 ### Overview
 
-![cb5bb38f-5383-495d-aed8-cf1d0a44e03b_1600x1600](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/5ba7899e-b1fe-43c9-bb0b-95b29783a4cd)
+![cb5bb38f-5383-495d-aed8-cf1d0a44e03b_1600x1600](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/a25e8586-14b1-45f4-8ae0-6f6beb736973)
 
 - Relational databases
 - NoSQL databases
