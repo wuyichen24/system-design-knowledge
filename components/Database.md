@@ -32,6 +32,10 @@
       - The predefined schema in relational databases can make it difficult to adapt to changing requirements, as altering the schema may require significant modifications to existing data and applications.
    - *Performance issues*
       - As the volume of data grows, relational databases may experience performance issues, particularly when dealing with complex queries and large-scale data manipulations.
+   - *Inefficient for unstructured or semi-structured data*
+      - Relational databases may not be suitable for managing unstructured or semi-structured data, such as social media data or sensor data.
+- **Common products**
+  
 
 #### NoSQL databases
 #### NewSQL databases
