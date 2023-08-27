@@ -12,6 +12,21 @@
 
 ### Details of main types
 #### Relational databases
+- **Key points**
+   - Relational databases are based on the relational model, which organizes data into tables with rows and columns.
+- **Pros**
+   - *Structured data*
+      - Data in relational databases is stored in tables with a predefined schema, enforcing a consistent structure throughout the database.
+   - *Relationships and referential integrity*
+      - The relationships between tables in a relational database are defined by primary and foreign keys, ensuring referential integrity.
+   - *SQL support*
+      - Relational databases use Structured Query Language (SQL) for querying, manipulating, and managing data. SQL is a powerful and widely adopted language that enables developers to perform complex queries and data manipulations.
+   - *Transactions and ACID properties*
+      - Relational databases support transactions, which are sets of related operations that either succeed or fail as a whole. This feature ensures the ACID properties are maintained, guaranteeing data consistency and integrity.
+   - *Indexing and optimization*
+      - Relational databases offer various indexing techniques and query optimization strategies, which help improve query performance and reduce resource consumption.
+- **Cons**
+
 #### NoSQL databases
 #### NewSQL databases
 #### Time-series databases
