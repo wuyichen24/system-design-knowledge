@@ -19,13 +19,13 @@ Accumulate system design knowledge (concepts, patterns, technology choices, etc.
 - [Metrics](concepts/Metrics.md)
 
 ## Components
+- [Database (DB)](components/Database.md)
+- [Message Queue (MQ)](components/Message_Queue.md)
+- [Cache](components/Cache.md)
 - [Domain Name System (DNS)](components/Domain_Name_System.md)
 - [Load Balancer (LB)](components/Load_Balancer.md)
-- [Content Delivery Network (CDN)](components/Content_Delivery_Network.md)
-- [Database (DB)](components/Database.md)
-- [Cache](components/Cache.md)
-- [Message Queue (MQ)](components/Message_Queue.md)
 - [Reverse Proxy](components/Reverse_Proxy.md)
+- [Content Delivery Network (CDN)](components/Content_Delivery_Network.md)
 
 ## Patterns
 - [**Overview**](patterns/README.md)
