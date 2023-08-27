@@ -2,6 +2,9 @@
 
 ## Types
 ### Overview
+
+![cb5bb38f-5383-495d-aed8-cf1d0a44e03b_1600x1600](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/5ba7899e-b1fe-43c9-bb0b-95b29783a4cd)
+
 - Relational databases
 - NoSQL databases
 - NewSQL databases
