@@ -26,6 +26,12 @@
    - *Indexing and optimization*
       - Relational databases offer various indexing techniques and query optimization strategies, which help improve query performance and reduce resource consumption.
 - **Cons**
+   - *Limited scalability*
+      - Scaling relational databases horizontally (adding more nodes) can be challenging.
+   - *Low flexibility*
+      - The predefined schema in relational databases can make it difficult to adapt to changing requirements, as altering the schema may require significant modifications to existing data and applications.
+   - *Performance issues*
+      - As the volume of data grows, relational databases may experience performance issues, particularly when dealing with complex queries and large-scale data manipulations.
 
 #### NoSQL databases
 #### NewSQL databases
