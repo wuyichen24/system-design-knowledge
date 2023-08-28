@@ -1,5 +1,18 @@
 # Database (DB)
 
+- [**Types**](#types)
+   - [Overview](#overview)
+   - [Details of main types](#details-of-main-types)
+      - [Relational databases](#relational-databases)
+      - [NoSQL databases](#nosql-databases)
+      - [NewSQL databases](#newsql-databases)
+      - [Time-series databases](#time-series-databases)
+   - [Comparisons](#comparisons)
+- [**Techniques**](#techniques)
+   - [Replication](#replication)
+   - [Partitioning](#partitioning)
+   - [Denormalization (Materialized View)](#denormalization-materialized-view)
+
 ## Types
 ### Overview
 
