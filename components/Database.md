@@ -248,6 +248,11 @@
       - Time-series databases need to handle time-based data.
 
 #### Consistency
+- **Type**
+   - *Strong consistency*
+      - Based on [ACID](../concepts/Transaction.md#acid-consistency-over-availability) properties (Atomicity, Consistency, Isolation and Durability).
+   - *Weak consistency*
+      - Based on [BASE](../concepts/Transaction.md#base-availability-over-consistency---eventual-consistency) properties (Basically Available, Soft state and Eventually consistent)
 #### Data model
 #### Security
 #### Cost
