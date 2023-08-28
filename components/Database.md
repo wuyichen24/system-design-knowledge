@@ -264,7 +264,12 @@
    - *Causal Consistency*
       - All nodes see updates that are causally related in the same order.
 - **Characteristics**
-   - Relational databases typically emphasize strong consistency
+   - Relational databases typically emphasize strong consistency.
+   - NoSQL databases often lean towards eventual consistency.
+- **Considerations**
+   - Consider the performance requirements of the project.
+      - Financial applications need strong consistency.
+      - For other applications, eventual consistency is enough.
     
 #### Data model
 #### Security
