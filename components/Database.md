@@ -213,6 +213,21 @@
 ![d05f286e-16e5-457c-aee3-cc6b960c796d_1600x755](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/cb04f20f-5b22-4a0d-876e-3652bca94cb4)
 
 #### Scalability
+- **Methods of scaling**
+   - *Vertical scaling*
+      - Add resources (CPU, memory, etc.) to a single server.
+   - *Horizontal scaling*
+      - Add more servers to the system.
+- **Characteristics**
+   - Relational databases often have low scalability but high consistency.
+      - Relational databases can struggle with horizontal scaling.
+   - NoSQL databases often have high scalability but low consistency.
+      - NoSQL databases often excel in horizontal scaling.
+   - NewSQL databases aim to balance scalability and consistency.
+   - Time-series databases often provide good scalability.
+- **Considerations**
+   - Consider the expected growth of the project and how well the database can handle such expansion.
+   - Assess the database's ability to scale vertically or horizontally to handle for handling increasing data volumes and traffic loads.
 
 ## Techniques
 ### Replication
