@@ -268,13 +268,34 @@
       - Based on [BASE](../concepts/Transaction.md#base-availability-over-consistency---eventual-consistency) properties (Basically Available, Soft state and Eventually consistent).
    - *Causal Consistency*
       - All nodes see updates that are causally related in the same order.
-- **Characteristics**
-   - Relational databases typically emphasize strong consistency.
-   - NoSQL databases often lean towards eventual consistency.
 - **Considerations**
    - Consider the performance requirements of the project.
       - Financial applications need strong consistency.
       - For other applications, eventual consistency is enough.
+- **Characteristics**
+   - Relational databases typically emphasize strong consistency.
+   - NoSQL databases often lean towards eventual consistency.
+
+
+#### Data model
+- **Structured levels**
+   - *Structured*
+      - Structured data refers to data that follows a predefined schema or format.
+      - It is organized into rows and columns, similar to a table, and each data element has a well-defined data type.
+      - Examples: Data stored in relational databases, spreadsheets, CSV, TSV.
+   - *Semi-structured*
+      - Semi-structured data is less rigidly organized compared to structured data.
+      - It doesn't conform to a fixed schema, but it does have some form of hierarchy or organization.
+      - Examples: Data stored in NoSQL databases, JSON, XML.
+   - *Unstructured*
+      - Unstructured data lacks a predefined structure or format.
+      - Examples: Text documents, social media posts, images, videos, audios.
+- **Considerations**
+   - Consider schema flexibility.
+   - Consider support for complex data relationships.
+- **Characteristics**
+   - Relational databases use a fixed schema and support complex data relationships.
+   - NoSQL databases often offer more flexible schemas and can be better suited for flexible data relationships
     
 #### Data model
 #### Security
