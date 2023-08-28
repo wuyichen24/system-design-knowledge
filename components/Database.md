@@ -132,6 +132,17 @@
       - They maintain the relational model, ACID properties, and SQL support.
       - They offer improved scalability, distributed architecture, and performance enhancements.
 - **Pros**
+   - *Distributed architecture*
+      - NewSQL databases are distributed. They leverage data partitioning and replication across multiple nodes or even data centers. This architecture allows for better fault tolerance, high availability, and global scale.
+   - *Horizontal Scalability*
+      - NewSQL databases can scale horizontally (Adding more nodes to the system).
+   - *Concurrency control*
+      - NewSQL databases use advanced concurrency control mechanisms (e.g. multi-version concurrency control (MVCC) or optimistic concurrency control). These mechanisms allow efficient handling of a large number of simultaneous transactions.
+   - *SQL support*
+      - NewSQL databases support SQL for querying and manipulating data.
+         - Simplify the learning curve for developers.
+         - Provide compatibility with existing relational databases and tools.
+         - simplify the migration process.
 - **Cons**
   
 #### Time-series databases
@@ -145,7 +156,6 @@
 
 | | Relational database | NoSQL database |
 |---|---|---|
-| Alias | SQL database |  |
 | Schema | Fixed | Dynamic |
 | Query Language | SQL | UnQL (Unstructured Query Language) |
 | Scalability | Vertically scalable | Horizontally scalable |
