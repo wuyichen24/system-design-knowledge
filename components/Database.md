@@ -206,7 +206,10 @@
 | Transaction Guarantee | ACID | BASE (for performance and scalability) |
 | Sub-types | | <li>Document<li>Wide-column<li>Key-value<li>Graph<li>Object<li>Tuple |
 | When to use | <li>Structured data<li>Need for complex joins<li>Need for ACID guarantee<li>The scale of data is small/medium and consistent | <li>Semi-structured or unstructured data<li>No need for complex joins<li>No need for ACID guarantee<li>The scale of data is huge (TB or PB) and grows massively (high scalability)<li>Need for high performance (high throughput, super-low latency) |
-   
+
+## Selection
+### Factors
+
 ## Techniques
 ### Replication
 | | Master-slave | Master-master |
