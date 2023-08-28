@@ -144,6 +144,12 @@
          - Provide compatibility with existing relational databases and tools.
          - simplify the migration process.
 - **Cons**
+   - *Complexity*
+      - NewSQL databases can introduce additional complexity in terms of configuration, maintenance, and troubleshooting.
+   - *Vendor lock-in*
+      - Some NewSQL databases are offered as managed services by specific vendors, which may lead to vendor lock-in and limit the flexibility to switch providers.
+   - *Lack of maturity*
+      - NewSQL databases may lack the maturity and extensive ecosystem.
   
 #### Time-series databases
 
