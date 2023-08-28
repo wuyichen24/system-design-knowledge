@@ -210,6 +210,10 @@
 ## Selection
 ### Factors
 
+![d05f286e-16e5-457c-aee3-cc6b960c796d_1600x755](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/cb04f20f-5b22-4a0d-876e-3652bca94cb4)
+
+#### Scalability
+
 ## Techniques
 ### Replication
 | | Master-slave | Master-master |
