@@ -231,18 +231,27 @@
 
 #### Performance
 - **Considerations**
+   - Consider the performance requirements of the project.
    - Consider the balance between read and write performance.
       - Some databases may be optimized for read-heavy workloads.
       - Some other databases may be optimized for write-heavy workloads.
    - Consider the query efficiency.
       - Query efficiency means the capability to handle complex queries and aggregation with good performance.
-      - Relational databases usually provide better querying efficiency due to their structured schema and support for SQL.
 - **Characteristics**
    - Relational databases usually provide better querying efficiency
       - Relational databases offer structured schema and support for SQL.
-   - NoSQL databases can offer faster write speeds.
+   - NoSQL databases can offer faster write speeds but may have low query efficiency.
       - NoSQL databases have simpler data models and more flexible schemas.
+   - NewSQL databases aim to provide both high query efficiency and high write performance.
+      - NoSQL databases often employ innovative techniques, such as distributed query processing and advanced indexing.
+   - Time-series databases often provide good write performance.
+      - Time-series databases need to handle time-based data.
 
+#### Consistency
+#### Data model
+#### Security
+#### Cost
+#### Community and ecosystem
 ## Techniques
 ### Replication
 | | Master-slave | Master-master |
