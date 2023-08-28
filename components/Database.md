@@ -249,13 +249,20 @@
 
 #### Consistency
 - **Theorem**
-   - CAP theorem
-   - PACELC theorem
-- **Type**
+   - *CAP theorem*
+      - A distributed database system can only achieve two out of the three properties: Consistency, Availability, and Partition tolerance.
+   - *PACELC theorem*
+- **Levels**
    - *Strong consistency*
+      - All nodes in the system see the same version of data at the same time. 
       - Based on [ACID](../concepts/Transaction.md#acid-consistency-over-availability) properties (Atomicity, Consistency, Isolation and Durability).
-   - *Weak consistency*
-      - Based on [BASE](../concepts/Transaction.md#base-availability-over-consistency---eventual-consistency) properties (Basically Available, Soft state and Eventually consistent)
+   - *Eventual consistency*
+      - All nodes will eventually converge to the same state, but it's possible for different nodes to have different views of the data for a certain period of time.
+      - Based on [BASE](../concepts/Transaction.md#base-availability-over-consistency---eventual-consistency) properties (Basically Available, Soft state and Eventually consistent).
+   - *Causal Consistency*
+      - All nodes see updates that are causally related in the same order.
+- **Characteristics**
+   - Relational databases typically emphasize strong consistency
     
 #### Data model
 #### Security
