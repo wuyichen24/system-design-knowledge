@@ -81,12 +81,13 @@
       - Concepts
          - Store data as key-value pairs.
       - Pros
-         - Could handle high-speed reads and writes
+         - High read and write performance.
          - Horizontal scalability.
       - Use cases
-         - Caching layers
-         - Session stores
-         - Configuration storage
+         - Needs to handle high-speed reads and writes
+            - Caching layers
+            - Session stores
+            - Configuration storage
          - Needs to have low-latency access to data
             - Gaming platforms
             - Real-time analytics systems
