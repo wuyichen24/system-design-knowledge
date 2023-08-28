@@ -229,6 +229,16 @@
    - Consider the expected growth of the project and how well the database can handle such expansion.
    - Assess the database's ability to scale vertically or horizontally to handle for handling increasing data volumes and traffic loads.
 
+#### Performance
+- **Considerations**
+   - Consider the balance between read and write performance.
+      - Some databases may be optimized for read-heavy workloads.
+      - Some other databases may be optimized for write-heavy workloads.
+   - Consider the query efficiency.
+      - Query efficiency means the capability to handle complex queries with good performance.
+      - Relational databases usually provide better querying efficiency due to their structured schema and support for SQL.
+      
+
 ## Techniques
 ### Replication
 | | Master-slave | Master-master |
