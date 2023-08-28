@@ -40,6 +40,7 @@
    - PostgreSQL
    - Oracle Database
    - Microsoft SQL Server
+   - Amazon RDS
    - SQLite
    - IBM Bb2
    - MariaDB
@@ -92,7 +93,25 @@
             - Gaming platforms
             - Real-time analytics systems
             - Recommendation engines
-   - **
+      - Products
+         - Redis
+         - Memcache
+         - Amazon DynamoDB
+         - Cassandra
+         - Couchbase
+   - *Graph*
+      - Concepts
+         - Store data as nodes and edges in a graph
+      - Pros
+         - Efficient processing of complex relationships, traversals, and graph-based algorithms.
+         - Provide powerful querying capabilities for traversing and analyzing interconnected data.
+      - Use cases
+         - Need to involve intricate relationships between entities.
+            - Social networks
+            - Fraud detection systems
+            - Recommendation engines
+      - Products
+- **Cons**
 
 | Type | Concept | Pros | Products |
 |----|----|----|----|
