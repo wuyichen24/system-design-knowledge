@@ -14,6 +14,7 @@
 #### Relational databases
 - **Key points**
    - Relational databases are based on the relational model, which organizes data into tables with rows and columns.
+   - Relational databases is suitable for storing structured data.
 - **Pros**
    - *Structured data*
       - Data in relational databases is stored in tables with a predefined schema, enforcing a consistent structure throughout the database.
@@ -46,16 +47,64 @@
   ![b5d5235c-260c-4cf6-969b-efa2af2265bb_1600x402](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/c602649c-ee04-4313-8b8f-6ce463cdec8f)
 
 #### NoSQL databases
+- **Key points**
+   - NoSQL databases can store data in various formats, which makes them suitable for a diverse range of use cases.
+   - NoSQL databases is suitable for storing semi-structured data.
+- **Sub-types**
+   - *Document-oriented*
+      - Concept
+         - Documents encapsulate and encode data in some standard formats or encodings (JSON,XML,YAML,BSON).
+      - Pros
+         - Flexibility (Schemaless)
+      - Use cases
+         - Need to store hierarchical or nested data (JSON, XML).
+      - Products
+         - MongoDB
+         - CouchDB
+         - Terrastore
+         - OrientDB
+         - RavenDB
+   - *Column-oriented (Wide-column)*
+      - Concept
+         - Organize data by columns rather than rows.
+      - Pros
+         - Provides improved compression and better read performance.
+      - Use cases
+         - Need to store and query large amounts of data across many nodes (Popular choice for big data and analytics).
+         - Need to handle high write and read workloads.
+      - Products
+         - Cassandra
+         - HBase
+         - Hypertable
+         - Amazon SimpleDB
+   - *Key–value*
+      - Concepts
+         - Store data as key-value pairs.
+      - Pros
+         - Could handle high-speed reads and writes
+         - Horizontal scalability.
+      - Use cases
+         - Caching layers
+         - Session stores
+         - Configuration storage
+         - Needs to have low-latency access to data
+            - Gaming platforms
+            - Real-time analytics systems
+            - Recommendation engines
+   - **
+
+| Type | Concept | Pros | Products |
+|----|----|----|----|
+| Document-oriented | Documents encapsulate and encode data in some standard formats or encodings (JSON,XML,YAML,BSON). | <li>Flexibility (Schemaless)<li>Suitalbe for hierarchical or nested data structures. | <li>MongoDB<li>CouchDB<li>Terrastore<li>OrientDB<li>RavenDB |
+| Column-oriented<br>(Wide-column) | Organize data by columns rather than rows. | <li>Distributed<li>Highly-available<li>Optimized for write | <li>Cassandra<li>HBase<li>Hypertable<li>Amazon SimpleDB |
+| Key–value | Use map as fundamental data model. | <li>Reduce latency for accessing active data. | <li>Redis<li>Memcache |
+| Graph | Node is the data and edge is the relationship. | <li>Good for storing data relationship.<li>No schema change and data movement when changing relationship. | <li>Neo4J<li>Infinitegraph<li>OrientDB<li>FlockDB |
+
 #### NewSQL databases
 #### Time-series databases
 
 #### NoSQL databases
-| Type | Concept | Pros | Products |
-|----|----|----|----|
-| Document-oriented | Documents encapsulate and encode data in some standard formats or encodings (JSON,XML,YAML,BSON). | <li>Flexibility (Schemaless)<li>High Performance | <li>MongoDB<li>CouchDB<li>Terrastore<li>OrientDB<li>RavenDB |
-| Column-oriented | Store data tables by column rather than by row. | <li>Distributed<li>Highly-available<li>Optimized for write | <li>Cassandra<li>HBase<li>Hypertable<li>Amazon SimpleDB |
-| Key–value | Use map as fundamental data model. | <li>Reduce latency for accessing active data. | <li>Redis<li>Memcache |
-| Graph | Node is the data and edge is the relationship. | <li>Good for storing data relationship.<li>No schema change and data movement when changing relationship. | <li>Neo4J<li>Infinitegraph<li>OrientDB<li>FlockDB |
+
 
 
 ### Comparisons
