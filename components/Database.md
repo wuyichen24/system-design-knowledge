@@ -111,16 +111,29 @@
             - Fraud detection systems
             - Recommendation engines
       - Products
+         - Neo4J
+         - Amazon Neptune
+         - Infinitegraph
+         - OrientDB
+         - FlockDB
 - **Cons**
+   - *Lack of standardization*
+      - NoSQL databases often use their own query languages or APIs. This can lead to increased learning curves and difficulties.
+   - *Weaker consistency*
+      - Many NoSQL databases employ eventual consistency models to achieve higher performance and availability.
+   - *Limited support for complex queries and transactions*
+      - Some NoSQL databases are not designed for complex queries or multi-record transactions.
 
-| Type | Concept | Pros | Products |
-|----|----|----|----|
-| Document-oriented | Documents encapsulate and encode data in some standard formats or encodings (JSON,XML,YAML,BSON). | <li>Flexibility (Schemaless)<li>Suitalbe for hierarchical or nested data structures. | <li>MongoDB<li>CouchDB<li>Terrastore<li>OrientDB<li>RavenDB |
-| Column-oriented<br>(Wide-column) | Organize data by columns rather than rows. | <li>Distributed<li>Highly-available<li>Optimized for write | <li>Cassandra<li>HBase<li>Hypertable<li>Amazon SimpleDB |
-| Key–value | Use map as fundamental data model. | <li>Reduce latency for accessing active data. | <li>Redis<li>Memcache |
-| Graph | Node is the data and edge is the relationship. | <li>Good for storing data relationship.<li>No schema change and data movement when changing relationship. | <li>Neo4J<li>Infinitegraph<li>OrientDB<li>FlockDB |
+   ![2ee12dc5-0546-4f35-8ad3-df051bb47c6a_1600x399](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/32723127-e7f1-49fc-b0f0-3871186e3878)
 
 #### NewSQL databases
+- **Key points**
+   - Modern approach to combining the strengths of both relational and NoSQL databases.
+      - They maintain the relational model, ACID properties, and SQL support.
+      - They offer improved scalability, distributed architecture, and performance enhancements.
+- **Pros**
+- **Cons**
+  
 #### Time-series databases
 
 #### NoSQL databases
