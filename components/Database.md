@@ -157,7 +157,7 @@
    - VoltDB
    - TiDB
 
-  ![1244f1aa-951e-45d6-8075-3d79de1becc6_1414x1228](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/b70bf607-efcf-4c40-baa4-6a7588aa7a44)
+  ![1244f1aa-951e-45d6-8075-3d79de1becc6_1414x1228](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/968d9197-b324-4cd8-b61a-31207d4a46fb)
    
 #### Time-series databases
 
