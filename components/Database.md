@@ -252,6 +252,8 @@
    - *CAP theorem*
       - A distributed database system can only achieve two out of the three properties: Consistency, Availability, and Partition tolerance.
    - *PACELC theorem*
+      - An extension to the CAP theorem.
+      - In case of network partitioning (P) in a distributed system, one has to choose between availability (A) and consistency (C) (as per the CAP theorem), but else (E), even when the system is running normally in the absence of partitions, one has to choose between latency (L) and consistency (C).
 - **Levels**
    - *Strong consistency*
       - All nodes in the system see the same version of data at the same time. 
