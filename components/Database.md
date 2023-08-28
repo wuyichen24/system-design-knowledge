@@ -235,9 +235,13 @@
       - Some databases may be optimized for read-heavy workloads.
       - Some other databases may be optimized for write-heavy workloads.
    - Consider the query efficiency.
-      - Query efficiency means the capability to handle complex queries with good performance.
+      - Query efficiency means the capability to handle complex queries and aggregation with good performance.
       - Relational databases usually provide better querying efficiency due to their structured schema and support for SQL.
-      
+- **Characteristics**
+   - Relational databases usually provide better querying efficiency
+      - Relational databases offer structured schema and support for SQL.
+   - NoSQL databases can offer faster write speeds.
+      - NoSQL databases have simpler data models and more flexible schemas.
 
 ## Techniques
 ### Replication
