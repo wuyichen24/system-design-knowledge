@@ -35,7 +35,15 @@
    - *Inefficient for unstructured or semi-structured data*
       - Relational databases may not be suitable for managing unstructured or semi-structured data, such as social media data or sensor data.
 - **Common products**
-  
+   - MySQL
+   - PostgreSQL
+   - Oracle Database
+   - Microsoft SQL Server
+   - SQLite
+   - IBM Bb2
+   - MariaDB
+
+  ![b5d5235c-260c-4cf6-969b-efa2af2265bb_1600x402](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/c602649c-ee04-4313-8b8f-6ce463cdec8f)
 
 #### NoSQL databases
 #### NewSQL databases
