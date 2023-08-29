@@ -295,7 +295,14 @@
    - Consider support for complex data relationships.
 - **Characteristics**
    - Relational databases use a fixed schema and support complex data relationships.
-   - NoSQL databases often offer more flexible schemas and can be better suited for flexible data relationships
+   - NoSQL databases often offer more flexible schemas and can be better suited for flexible data relationships.
+ 
+#### Security
+- **Considerations**
+   - Consider the authentication and authorization mechanisms.
+      - Databases should provide robust mechanisms for managing user accounts, roles, and permissions.
+   - Consider the encryption and data protection capabilities help safeguard sensitive data.
+
     
 #### Data model
 #### Security
