@@ -301,8 +301,10 @@
 - **Considerations**
    - Consider the authentication and authorization mechanisms.
       - Databases should provide robust mechanisms for managing user accounts, roles, and permissions.
-   - Consider the encryption and data protection capabilities help safeguard sensitive data.
-
+   - Consider the encryption and data protection capabilities.
+      - Use strong encryption algorithms, such as AES-256
+      - Databases could provide additional data protection features (e.g. data masking or redaction).
+   - Consider to integrate databases with built-in security mechanisms (e.g. identity providers, firewalls, and intrusion detection systems).
     
 #### Data model
 #### Security
