@@ -326,6 +326,16 @@
 <img width="794" alt="Screenshot 2023-09-08 at 10 34 26 AM" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/1561ffcf-aec8-4573-8b15-89dbbe6e31f5">
   
 #### Community and ecosystem
+- **Considerations**
+   - Consider community
+      - Documentation, tutorials, and communication channels (forums, mailing list, chat platforms).
+      - Easier to troubleshoot issues, learn best practices, and optimize the database's performance.
+   - Consider ecosystem
+      - Integration with other technologies, tools, and services.
+      - Simplify the process of incorporating the database into the existing technology stack.
+
+<img width="802" alt="Screenshot 2023-09-08 at 10 42 45 AM" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/70aa19bf-cb27-438a-b969-28619de3dc32">
+
 ## Techniques
 ### Replication
 | | Master-slave | Master-master |
