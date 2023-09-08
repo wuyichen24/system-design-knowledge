@@ -340,6 +340,11 @@
 
 <img width="802" alt="Screenshot 2023-09-08 at 10 42 45 AM" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/70aa19bf-cb27-438a-b969-28619de3dc32">
 
+### Process
+
+<img width="768" alt="Screenshot 2023-09-08 at 11 05 55 AM" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/c8fae321-c8c4-4acd-912a-47a8b657cb46">
+
+
 ## Techniques
 ### Replication
 | | Master-slave | Master-master |
