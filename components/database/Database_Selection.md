@@ -145,7 +145,8 @@
       - Unstructure data
 - **Step 2**: Data patterns or relationship
    - Examine the data patterns or relationships that need to be captured.
-- **Step 3**:
+- **Step 3**: Data volume
+   - Examine the expected volume of data the project will generate, both now and in the future. 
 
 
 
