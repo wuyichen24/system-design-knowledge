@@ -147,6 +147,7 @@
    - Examine the data patterns or relationships that need to be captured.
 - **Step 3**: Data volume
    - Examine the expected volume of data the project will generate, both now and in the future. 
-
+- **Step 4**: Data read/write rate
+   - Exmaine the date will be read/write at high speed.
 
 
