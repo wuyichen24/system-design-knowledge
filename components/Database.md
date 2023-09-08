@@ -322,6 +322,8 @@
    - Proprietary databases (paid)
       - Oracle Database
       - Microsoft SQL Server
+    
+![db_cost](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/3e051d86-b975-4c51-a634-3cf72fdc13ba)
   
 #### Community and ecosystem
 ## Techniques
