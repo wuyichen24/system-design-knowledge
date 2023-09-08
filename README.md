@@ -28,7 +28,7 @@ Accumulate system design knowledge (concepts, patterns, technology choices, etc.
          - [NewSQL databases](components/Database.md#newsql-databases)
          - [Time-series databases](components/Database.md#time-series-databases)
       - [Comparisons](components/Database.md#comparisons)
-      - [**Selection**](components/Database.md#selection)
+      - [Selection](components/Database.md#selection)
          - [Factors](components/Database.md#factors)
             - [Scalability](components/Database.md#scalability)
             - [Performance](components/Database.md#performance)
