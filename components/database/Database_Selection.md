@@ -134,10 +134,10 @@
 <img width="802" alt="Screenshot 2023-09-08 at 10 42 45 AM" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/70aa19bf-cb27-438a-b969-28619de3dc32">
 
 ## Process
+### Steps
 
 <img width="768" alt="Screenshot 2023-09-08 at 11 05 55 AM" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/c8fae321-c8c4-4acd-912a-47a8b657cb46">
 
-### Steps
 - **Step 1**: Data model
    - Examine the types of data our project will handle.
       - Structured data
@@ -147,7 +147,15 @@
    - Examine the data patterns or relationships that need to be captured.
 - **Step 3**: Data volume
    - Examine the expected volume of data the project will generate, both now and in the future. 
-- **Step 4**: Data read/write rate
-   - Exmaine the date will be read/write at high speed.
-
-
+- **Step 4**: Data read/write
+   - Exmaine the use case and the rate for reading and writing data.
+- **Step 5**: Number of concurrent users/connections
+   - Exmaine the maximum number of users or connections the database must support.
+   - Exmaine how the demand may fluctuate during peak and off-peak periods.
+- **Step 6**: Performance
+   - Exmaine any specific performance metrics (repsonse time, query efficiency, etc.)
+- **Step 7**: Security
+   - Any regulatory or compliance needs to be satisfied.
+- **Step 8**: Ecosystem
+   - Identify any potential compatibility issues or integration challenges.
+- **Step 9**: Community
