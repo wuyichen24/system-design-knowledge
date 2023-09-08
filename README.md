@@ -35,6 +35,8 @@ Accumulate system design knowledge (concepts, patterns, technology choices, etc.
             - [Consistency](components/Database.md#consistency)
             - [Data model](components/Database.md#data-model)
             - [Security](components/Database.md#security)
+            - [Cost](components/Database.md#cost)
+            - [Community and ecosystem](components/Database.md#community-and-ecosystem)
    - [Techniques](components/Database.md#techniques)
       - [Replication](components/Database.md#replication)
       - [Partitioning](components/Database.md#partitioning)
