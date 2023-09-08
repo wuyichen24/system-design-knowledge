@@ -305,8 +305,24 @@
       - Use strong encryption algorithms, such as AES-256
       - Databases could provide additional data protection features (e.g. data masking or redaction).
    - Consider to integrate databases with built-in security mechanisms (e.g. identity providers, firewalls, and intrusion detection systems).
-    
+
 #### Cost
+- **Considerations**
+   - Consider fee and cost:
+      - Licensing fee.
+      - Hosting fee.
+      - Maintenance and management cost.
+         - Software and hardware upgrades.
+         - Staff training.
+   - Evaluate the cost against the benefits they provide.
+- **Examples**
+   - Open-source databases (free)
+      - MySQL
+      - PostgreSQL
+   - Proprietary databases (paid)
+      - Oracle Database
+      - Microsoft SQL Server
+  
 #### Community and ecosystem
 ## Techniques
 ### Replication
