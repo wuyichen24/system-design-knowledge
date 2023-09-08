@@ -323,7 +323,7 @@
       - Oracle Database
       - Microsoft SQL Server
     
-![db_cost](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/3e051d86-b975-4c51-a634-3cf72fdc13ba)
+<img width="794" alt="Screenshot 2023-09-08 at 10 34 26 AM" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/1561ffcf-aec8-4573-8b15-89dbbe6e31f5">
   
 #### Community and ecosystem
 ## Techniques
