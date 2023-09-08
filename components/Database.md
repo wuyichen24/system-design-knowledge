@@ -306,8 +306,6 @@
       - Databases could provide additional data protection features (e.g. data masking or redaction).
    - Consider to integrate databases with built-in security mechanisms (e.g. identity providers, firewalls, and intrusion detection systems).
     
-#### Data model
-#### Security
 #### Cost
 #### Community and ecosystem
 ## Techniques
