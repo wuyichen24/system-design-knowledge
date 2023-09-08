@@ -136,3 +136,16 @@
 ## Process
 
 <img width="768" alt="Screenshot 2023-09-08 at 11 05 55 AM" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/c8fae321-c8c4-4acd-912a-47a8b657cb46">
+
+### Steps
+- **Step 1**: Data model
+   - Examine the types of data our project will handle.
+      - Structured data
+      - Semi-structured data
+      - Unstructure data
+- **Step 2**: Data patterns or relationship
+   - Examine the data patterns or relationships that need to be captured.
+- **Step 3**:
+
+
+
