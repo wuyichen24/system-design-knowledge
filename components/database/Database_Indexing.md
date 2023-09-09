@@ -10,6 +10,17 @@
    - [Clustered index](#clustered-index)
    - [Non-clustered index](#non-clustered-index)
    - [Comparison between clustered index and non-clustered index](#comparison-between-clustered-index-and-non-clustered-index)
+- [**Types**](#types)
+   - [Primary index](#primary-index)
+   - [Secondary index](#secondary-index)
+   - [Composite index](#composite-index)
+   - [Covering index](#covering-index)
+   - [Unique index](#unique-index)
+   - [Filter index](#filter-index)
+   - [Bitmap index](#bitmap-index)
+   - [Spatial index](#spatial-index)
+   - [Full-text index](#full-text-index)
+   - [Hash index](#hash-index)
 
 ## Concepts
 - A data structure that speeds up data retrieval operations.
