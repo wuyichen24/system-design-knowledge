@@ -122,6 +122,9 @@
    - The covering indexes can become large and use more storage space (Need to find balance between query performance and storage usage).
   
 ### Unique index
+- **Concepts**
+   - The unique index ensures values are unique in the indexed column.
+
 ### Filter index
 ### Bitmap index
 ### Spatial index
