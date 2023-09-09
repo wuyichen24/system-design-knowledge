@@ -108,18 +108,20 @@
    - Concatenated index
 - **Concept**
    - The index on multiple columns.
-   - Beneficial for queries that filter or sort by a specific set of columns.
    - The column order can significantly affect the composite index's usefulness.
    - The composite indexes can become large and use more storage space (Need to find balance between query performance and storage usage).
 - **Strategies**
    - The column that narrows down the data most should come first in the index.
+- **Use cases**
+   - Beneficial for queries that filter or sort by a specific set of columns.
 
 ### Covering index
 - **Concepts**
    - All the indexed columns are used in the select, where, and join clauses of the query.
    - Database can retrieve all the necessary information from the covering index itself without additional lookups in the table.
-   - Beneficial for large tables and queries that return a small subset of columns.
    - The covering indexes can become large and use more storage space (Need to find balance between query performance and storage usage).
+- **Use cases**
+   - Beneficial for large tables and queries that return a small subset of columns.
   
 ### Unique index
 - **Concepts**
@@ -131,9 +133,11 @@
    - Conditional index
 - **Concepts**
    - Only creates index on a subset or specific range of data.
-   - Enhances performance and save storage space when dealing with large tables where only a small portion of data is accessed frequently.
+- **Use cases**
+   - Beneficial for dealing with large tables where only a small portion of data is accessed frequently.
 
 ### Bitmap index
+- 
 ### Spatial index
 ### Full-text index
 ### Hash index
