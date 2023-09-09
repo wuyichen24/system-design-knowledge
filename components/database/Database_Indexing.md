@@ -68,6 +68,7 @@
    - One table can have only one clustered index.
    - Adding or altering the clustered index can be time-consuming.
    - Only need 1 disk read (index and data are one and the same).
+   - The clustered index could be based on any column or set of columns, not necessarily the primary key.
 - **Strategy of selection**
    - Choose a unique, sequential key (That is the reason why the primary key is selected as the clustered index by default).
 - **Exceptions**
@@ -93,7 +94,13 @@
 
 ## Types
 ### Primary index
+- **Concepts**
+   - The clustered index on the primary-key column.
+
 ### Secondary index
+- **Concepts**
+   - The non-clustered index on non-primary-key columns.
+
 ### Composite index
 ### Covering index
 ### Unique index
