@@ -1,5 +1,16 @@
 # Database Indexing
 
+- [**Concepts**](#concepts)
+- [**Benefits**](#benefits)
+- [**Data structure**](#data-structure)
+   - [B-tree](#b-tree)
+   - [B+ tree](#b-tree-1)
+   - [Comparison between B-tree and B+ tree](#comparison-between-b-tree-and-b-tree)
+- [**Main categories**](#main-categories)
+   - [Clustered index](#clustered-index)
+   - [Non-clustered index](#non-clustered-index)
+   - [Comparison between clustered index and non-clustered index](#comparison-between-clustered-index-and-non-clustered-index)
+
 ## Concepts
 - A data structure that speeds up data retrieval operations.
 - Indexes are typically stored on disk.
