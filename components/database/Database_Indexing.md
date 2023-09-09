@@ -50,7 +50,7 @@
 | Space utilization | Might be less efficient. | More space efficient. |
 | Use cases | Useful for database systems where data retrieval is usually targeted (e.g., specific key). | More commonly used in database and file systems where range queries are more common. |
 
-## Main types
+## Main categories
 ### Clustered index
 - **Concepts**
    - Determines the physical order of rows.
