@@ -5,6 +5,9 @@
 - Indexes are typically stored on disk.
 - Indexes are associated with a table.
 
+## Benefits
+- Speed up data retrieval without needing to scan every row in a database table.
+
 ## Data structure
 - B-tree
 - B+ tree (Typical)
@@ -47,8 +50,21 @@
 | Space utilization | Might be less efficient. | More space efficient. |
 | Use cases | Useful for database systems where data retrieval is usually targeted (e.g., specific key). | More commonly used in database and file systems where range queries are more common. |
 
-## Benefits
-- Speed up data retrieval without needing to scan every row in a database table.
+## Management
+### Clustered index
+### Non-clustered index
+
+## Types
+### Primary index
+### Secondary index
+### Composite index
+### Covering index
+### Unique index
+### Filter index
+### Bitmap index
+### Spatial index
+### Full-text index
+### Hash index
 
 ## Strategies
 - Overviews
