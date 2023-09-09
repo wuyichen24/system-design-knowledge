@@ -52,6 +52,10 @@
 
 ## Management
 ### Clustered index
+- **Concepts**
+   - Organize rows with the order of the index.
+   - Clustered key: The column or columns used to arrange this order.
+     
 ### Non-clustered index
 
 ## Types
