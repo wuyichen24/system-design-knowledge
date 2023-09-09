@@ -126,6 +126,13 @@
    - The unique index ensures values are unique in the indexed column.
 
 ### Filter index
+- **Alias**
+   - Partial index
+   - Conditional index
+- **Concepts**
+   - Only creates index on a subset or specific range of data.
+   - Enhances performance and save storage space when dealing with large tables where only a small portion of data is accessed frequently.
+
 ### Bitmap index
 ### Spatial index
 ### Full-text index
