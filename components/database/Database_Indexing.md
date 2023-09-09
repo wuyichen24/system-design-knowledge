@@ -26,7 +26,7 @@
 
 ### B+ tree
 - **Concepts**
-   - A variant of B-tree.
+   - A variant of B-tree, the main difference is data is stored in leaf nodes.
    - Storing data for efficient retrieval in a block-oriented storage context.
    - B+ trees have very high fanout (Reduces the number of I/O operations required to find an element in the tree).
 - **Strucure**
@@ -40,9 +40,12 @@
 ### Comparison between B-tree and B+ tree
 | | B-tree | B+ tree |
 |---|---|---|
-| Structure | Both leaf and internal nodes store keys and data. | Only leaf nodes store data (or pointers to data), while internal nodes only store keys. |
+| Structure | Both leaf and internal nodes store keys and data. | Only leaf nodes store data. |
 | Data accessibility | Data can be accessed directly from both leaf and internal nodes. | Data can only be accessed by traversing to leaf nodes. |
-| Efficiency | May be slightly less efficient for range querys as data is stored throughout all nodes. | More efficient for range queries as all data is located in leaf nodes, which are linked for easy traversal. |
+| Efficiency | Slightly less efficient for range queries | More efficient for** range queries. |
+| Insertion and deletion | Slightly more complex | Slightly more efficient |
+| Space utilization | Might be less efficient. | More space efficient. |
+| Use cases | Useful for database systems where data retrieval is usually targeted (e.g., specific key). | More commonly used in database and file systems where range queries are more common. |
 
 ## Benefits
 - Speed up data retrieval without needing to scan every row in a database table.
