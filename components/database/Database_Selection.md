@@ -10,6 +10,8 @@
    - [Community and ecosystem](#community-and-ecosystem)
 - [**Process**](#process)
    - [Steps](#steps)
+   - [Performance testing and benchmarking](#performance-testing-and-benchmarking)
+   - [Tips](#tips)
 
 ## Factors
 
