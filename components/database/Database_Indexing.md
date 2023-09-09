@@ -151,7 +151,27 @@
    - Dealing with columns that have a limited number of distinct values (like status, yes/no).
 
 ### Spatial index
+- **Concepts**
+   - Used for indexing multi-dimensional objects (geographical coordinates, polygons).
+- **Pros**
+   - Speed up spatial queries, like nearest neighbor searches or range searches.
+- **Data structure**
+   - R-trees (most common)
+   - Quad-trees
+
 ### Full-text index
+- **Concepts**
+   - Handle searches in a text column (large volumes of text).
+   - Full-text indexes work by breaking the text into or tokens, and then building an index over these tokens.
+- **Pros**
+   - Speed up complex search queries that involve multiple words, phrases, or different forms of a word.
+- **Cons**
+   - May slow down write operations.
+   - May use more storage.
+- **Data structure**
+   - Inverted index
+      - Inverts a page-centric schema (page->words) into a keyword-centric schema (word->pages).
+  
 ### Hash index
 
 ## Strategies
