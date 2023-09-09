@@ -19,8 +19,8 @@ Accumulate system design knowledge (concepts, patterns, technology choices, etc.
 - [Metrics](concepts/Metrics.md)
 
 ## Components
-- Database (DB)
-   - [Types](components/database/Database_Types.md)
+- **Database (DB)**
+   - [*Types*](components/database/Database_Types.md)
       - [Overview](components/database/Database_Types.md#overview)
       - [Details of main types](components/database/Database_Types.md#details-of-main-types)
          - [Relational databases](components/database/Database_Types.md#relational-databases)
@@ -28,7 +28,7 @@ Accumulate system design knowledge (concepts, patterns, technology choices, etc.
          - [NewSQL databases](components/database/Database_Types.md#newsql-databases)
          - [Time-series databases](components/database/Database_Types.md#time-series-databases)
       - [Comparisons](components/database/Database_Types.md#comparisons)
-   - [Selection](components/database/Database_Selection.md)
+   - [*Selection*](components/database/Database_Selection.md)
       - [Factors](components/database/Database_Selection.md#factors)
          - [Scalability](components/database/Database_Selection.md#scalability)
          - [Performance](components/database/Database_Selection.md#performance)
@@ -41,7 +41,7 @@ Accumulate system design knowledge (concepts, patterns, technology choices, etc.
          - [Steps](components/database/Database_Selection.md#steps)
          - [Performance testing and benchmarking](components/database/Database_Selection.md#performance-testing-and-benchmarking)
          - [Tips](components/database/Database_Selection.md#tips)
-   - [Techniques](components/database/Database_Techniques.md)
+   - [*Techniques*](components/database/Database_Techniques.md)
       - [Replication](components/database/Database_Techniques.md#replication)
       - [Partitioning](components/database/Database_Techniques.md#partitioning)
       - [Denormalization (Materialized View)](components/database/Database_Techniques.md#denormalization-materialized-view)
