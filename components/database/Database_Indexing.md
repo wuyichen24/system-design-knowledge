@@ -13,3 +13,7 @@
 
 ## Benefits
 - Speed up data retrieval without needing to scan every row in a database table.
+
+## Strategies
+- Overviews
+   - Finding the right indexes a balancing act between quick query responses and update costs.
