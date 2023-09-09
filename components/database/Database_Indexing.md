@@ -115,6 +115,12 @@
    - The column that narrows down the data most should come first in the index.
 
 ### Covering index
+- **Concepts**
+   - All the indexed columns are used in the select, where, and join clauses of the query.
+   - Database can retrieve all the necessary information from the covering index itself without additional lookups in the table.
+   - Beneficial for large tables and queries that return a small subset of columns.
+   - The covering indexes can become large and use more storage space (Need to find balance between query performance and storage usage).
+  
 ### Unique index
 ### Filter index
 ### Bitmap index
