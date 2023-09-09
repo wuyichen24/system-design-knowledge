@@ -53,8 +53,15 @@
 ## Management
 ### Clustered index
 - **Concepts**
-   - Organize rows with the order of the index.
+   - Determines the order of rows in physical storage.
    - Clustered key: The column or columns used to arrange this order.
+- **Key points**
+   - One table can have only one clustered index.
+   - Adding or altering the clustered index can be time-consuming.
+- **Strategy of selection**
+   - Choose a unique, sequential key (That is the reason why the primary key is selected as the clustered index by default).
+- **Exceptions**
+   - In PostgreSQL, data is stored in the order it was inserted, not based on the clustered index or any other index (You have to run `CLUSTER` command).   
      
 ### Non-clustered index
 
