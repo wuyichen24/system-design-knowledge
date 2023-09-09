@@ -42,7 +42,7 @@
 |---|---|---|
 | Structure | Both leaf and internal nodes store keys and data. | Only leaf nodes store data. |
 | Data accessibility | Data can be accessed directly from both leaf and internal nodes. | Data can only be accessed by traversing to leaf nodes. |
-| Efficiency | Slightly less efficient for range queries | More efficient for** range queries. |
+| Efficiency | Slightly less efficient for range queries | More efficient for range queries. |
 | Insertion and deletion | Slightly more complex | Slightly more efficient |
 | Space utilization | Might be less efficient. | More space efficient. |
 | Use cases | Useful for database systems where data retrieval is usually targeted (e.g., specific key). | More commonly used in database and file systems where range queries are more common. |
