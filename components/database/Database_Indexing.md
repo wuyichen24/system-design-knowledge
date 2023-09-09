@@ -173,6 +173,12 @@
       - Inverts a page-centric schema (page->words) into a keyword-centric schema (word->pages).
   
 ### Hash index
+- **Concepts**
+   - Uses a hash function to map keys to specific locations in an index.
+- **Cons**
+   - Not well-suited for range-based queries.
+- **Use cases**
+   - Well-suited for equality comparisons, such as "=", where the search key is exactly equal to the indexed key.
 
 ## Strategies
 - Overviews
