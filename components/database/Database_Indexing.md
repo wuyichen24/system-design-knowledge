@@ -110,6 +110,9 @@
    - The index on multiple columns.
    - Beneficial for queries that filter or sort by a specific set of columns.
    - The column order can significantly affect the composite index's usefulness.
+   - The composite indexes can become large and use more storage space (Need to find balance between query performance and storage usage).
+- **Strategies**
+   - The column that narrows down the data most should come first in the index.
 
 ### Covering index
 ### Unique index
