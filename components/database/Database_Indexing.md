@@ -100,6 +100,7 @@
 ### Secondary index
 - **Concepts**
    - The non-clustered index on a non-primary-key column.
+- **Cons**
    - May slow down write operations (from the property of non-clustered index).
 
 ### Composite index
@@ -109,19 +110,21 @@
 - **Concept**
    - The index on multiple columns.
    - The column order can significantly affect the composite index's usefulness.
+- **Cons**
    - The composite indexes can become large and use more storage space (Need to find balance between query performance and storage usage).
 - **Strategies**
    - The column that narrows down the data most should come first in the index.
 - **Use cases**
-   - Beneficial for queries that filter or sort by a specific set of columns.
+   - Queries that filter or sort by a specific set of columns.
 
 ### Covering index
 - **Concepts**
    - All the indexed columns are used in the select, where, and join clauses of the query.
    - Database can retrieve all the necessary information from the covering index itself without additional lookups in the table.
+- **Cons**
    - The covering indexes can become large and use more storage space (Need to find balance between query performance and storage usage).
 - **Use cases**
-   - Beneficial for large tables and queries that return a small subset of columns.
+   - Large tables and queries that return a small subset of columns.
   
 ### Unique index
 - **Concepts**
@@ -134,10 +137,19 @@
 - **Concepts**
    - Only creates index on a subset or specific range of data.
 - **Use cases**
-   - Beneficial for dealing with large tables where only a small portion of data is accessed frequently.
+   - Dealing with large tables where only a small portion of data is accessed frequently.
 
 ### Bitmap index
-- 
+- **Concept**
+   - Each unique value of the column gets its own bitmap, where the number of bits corresponds to the number of rows.
+- **Pros**
+   - More efficient storage useage.
+   - Handle complex queries involving multiple predicates efficiently using bitwise operations (`AND`, `OR`, `NOT`).
+- **Cons**
+   - May slow down write operations.
+- **Use cases**
+   - Dealing with columns that have a limited number of distinct values (like status, yes/no).
+
 ### Spatial index
 ### Full-text index
 ### Hash index
