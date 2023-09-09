@@ -36,7 +36,6 @@
    - Every key appears twice, once in the internal nodes and once in the leaf nodes.
 
   ![cde45cda-7d59-4e99-88e8-a3e06dc3ceb0_1532x508](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/a69f3c2e-aa3b-452e-8ab4-1d7f131fb2d6)
-
  
 ### Comparison between B-tree and B+ tree
 | | B-tree | B+ tree |
