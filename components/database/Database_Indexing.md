@@ -25,6 +25,10 @@
   ![80327ae8-389b-4fa7-81ad-47d7db9afad5_1350x428](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/013263dc-d108-4dd5-a6ab-19b340da6c38)
 
 ### B+ tree
+- **Concepts**
+   - A variant of B-tree.
+   - Storing data for efficient retrieval in a block-oriented storage context.
+   - B+ trees have very high fanout (Reduces the number of I/O operations required to find an element in the tree).
 - **Strucure**
    - Internal nodes don't store data, they only contains keys and pointers to other nodes.
    - Leaf nodes stores data (or pointers to data) and the pointers to next leaf node.
