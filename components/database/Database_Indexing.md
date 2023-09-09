@@ -100,6 +100,7 @@
 ### Secondary index
 - **Concepts**
    - The non-clustered index on non-primary-key columns.
+   - May slow down write operations (from the property of non-clustered index).
 
 ### Composite index
 ### Covering index
