@@ -50,7 +50,7 @@
 | Space utilization | Might be less efficient. | More space efficient. |
 | Use cases | Useful for database systems where data retrieval is usually targeted (e.g., specific key). | More commonly used in database and file systems where range queries are more common. |
 
-## Management
+## Main types
 ### Clustered index
 - **Concepts**
    - Determines the physical order of rows.
@@ -70,6 +70,15 @@
       - Key: Values in the column.
       - Value: A pointer indicating the location of the row.
    - Only need 2 disk reads (access the index and access the data).
+
+### Comparison between clustered index and non-clustered index
+| | Custered index | Non-clustered index |
+|---|---|---|
+| Order of row | Physical order | Logical order |
+| Number limitation | Allow only one | Allow multiple |
+| Number of disk read | 1 | 2 |
+| Pros | | <li>You can create multiple non-clustered indexes based on different types of queries.<li>Speed up read operations. |
+| Cons | <li>You can only create one clustered index. | <li>Slow down write operations (each index must be updated whenever data is modified in the table).  |
 
 ## Types
 ### Primary index
