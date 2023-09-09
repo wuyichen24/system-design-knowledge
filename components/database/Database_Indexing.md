@@ -99,10 +99,18 @@
 
 ### Secondary index
 - **Concepts**
-   - The non-clustered index on non-primary-key columns.
+   - The non-clustered index on a non-primary-key column.
    - May slow down write operations (from the property of non-clustered index).
 
 ### Composite index
+- **Alias**
+   - Multi-column index
+   - Concatenated index
+- **Concept**
+   - The index on multiple columns.
+   - Beneficial for queries that filter or sort by a specific set of columns.
+   - The column order can significantly affect the composite index's usefulness.
+
 ### Covering index
 ### Unique index
 ### Filter index
