@@ -22,7 +22,8 @@
    - All leaves are at the same level.
    - A non-leaf node with k children contains k−1 keys.
 
-  <img width="448" alt="output253" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/0557b681-40e8-4389-bbad-68675884669c">
+  ![80327ae8-389b-4fa7-81ad-47d7db9afad5_1350x428](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/3043e3a8-6ae1-4d0b-b44a-8710945060cc)
+
 
 ### B+ tree
 
