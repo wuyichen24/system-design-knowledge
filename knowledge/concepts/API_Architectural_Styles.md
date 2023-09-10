@@ -11,6 +11,9 @@
 
 ## SOAP
 - **History**
+   - 1998
+- **Full name**
+   - Simple Object Access Protocol
 - **Concepts**
    - An XML-formatted, highly standardized web communication protocol.
 - **Message**
@@ -46,7 +49,24 @@
 
 ## REST
 - **History**
+   - 2000
+- **Full name**
+   - Representational State Transfer
 - **Concepts**
+   - An architectural style and set of constraints for designing networked applications and web services.
+- **6 constraints**
+   - *Client–server architecture*
+      - Separate as client and server.
+      - Allows either client or server to evolve independently.
+   - *Statelessness*
+      - The server does not store any information about the client's state between requests.
+      - Each request from a client to a server must contain all the information needed to understand and process the request.
+   - *Cacheability*
+   - *Layered system*
+   - *Code on demand (optional)*
+   - *Uniform interface*
+- **Message**
+- **Dependent protocols**
 - **Pros**
 - **Cons**
 
