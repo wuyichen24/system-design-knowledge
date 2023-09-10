@@ -16,6 +16,7 @@
    - Simple Object Access Protocol
 - **Concepts**
    - An XML-formatted, highly standardized web communication protocol.
+   - SOAP is a successor of XML-RPC and also uses XML to encode its HTTP-based calls.
 - **Message**
    - *Format*:
       - XML
@@ -119,7 +120,10 @@
 - **Full name**
    - Remote Procedure Call
 - **Concepts**
-   - A computer program causes a procedure to execute in a another computer remotely.
+   - A protocol and technique for invoking functions or procedures in a remote system.
+- **Modern RPC frameworks**
+   - gRPC
+   - 
 - **Pros**
 - **Cons**
 
