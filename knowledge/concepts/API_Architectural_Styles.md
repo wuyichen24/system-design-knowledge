@@ -26,6 +26,14 @@
       - HTTP
       - SMTP
 - **Pros**
+   - *Platform-independent*
+      - Supported by all mainstream platforms.
+   - *Language-independent*
+      - Supported by all mainstream programming languages.
+   - *Error handling*
+      - SOAP provides a standardized way to handle errors and exceptions.
+   - *Security*
+      - SOAP meets an enterprise-grade transaction quality. It provides privacy and integrity inside the transactions while allowing for encryption on the message level.
 - **Cons**
 
 ## REST
