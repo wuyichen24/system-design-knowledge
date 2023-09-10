@@ -21,6 +21,9 @@
    - [Spatial index](#spatial-index)
    - [Full-text index](#full-text-index)
    - [Hash index](#hash-index)
+- [**Use case**](#use-cases)
+   - [Search](#search)
+   - [SQL optimization](#sql-optimization)
 
 ## Concepts
 - A data structure that speeds up data retrieval operations.
