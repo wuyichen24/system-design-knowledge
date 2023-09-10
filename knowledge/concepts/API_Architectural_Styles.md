@@ -62,10 +62,19 @@
       - The server does not store any information about the client's state between requests.
       - Each request from a client to a server must contain all the information needed to understand and process the request.
    - *Cacheability*
+      - Responses from the server can be explicitly marked as cacheable or non-cacheable.
+      - Clients and intermediaries can cache responses.
    - *Layered system*
+      - Intermediaries can be placed between the client and server, such as load balancers, API gateways, proxy servers.
+      - Those intermediaries will enhance scalability, security.
    - *Code on demand (optional)*
+      - Servers can temporarily extend or customize the functionality of a client by transferring executable code
    - *Uniform interface*
+      - REST encourages the use of a uniform and consistent interface for interacting with resources.
+      - This simplifies client implementation and enhances the predictability of the API.
 - **Message**
+   - *Format*
+   - *Structure*
 - **Dependent protocols**
 - **Pros**
 - **Cons**
