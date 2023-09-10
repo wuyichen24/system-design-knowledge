@@ -192,19 +192,26 @@
    - Well-suited for equality comparisons, such as "=", where the search key is exactly equal to the indexed key.
 
 ## Use cases
-### Point lookup
-- **Key points**
+### Search
+- **Point search**
    - Searches on a specific attribute or key.
-   - Without an index, the database would have to scan every row in the table.
-
-  ![pic1](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/5b898539-1645-45b5-9094-2be784b59796)
-  
-### Range lookup
-- **Key points**
+- **Range search**
    - Search on a range of values.
-   - Without an index, the database would have to scan every row in the table and sort the results.
+- **Prefix search**
+   - Search on prefix.
+- **Geo-location search**
+   - Geohashes are a form of spatial index that divides the Earth into a grid.
+   - Each cell in the grid is assigned a unique hash, and points within the same cell share the same hash prefix.
+- **Text search**
+   - Searches within a large string of text.
 
-  ![pic2](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/7596ff8c-77a4-42d9-bcbf-02557a667036)
+### SQL optimization
+- **JOIN**
+   - If there's an index on the columns being joined, the database can quickly identify matching records without scanning every row in both tables.
+- **ORDER BY**
+   - If there's an index on the columns being ordered by, the index will store the rows in that specific order, reducing the need for the database to sort the data whenever the query is run.
+- **GROUP BY**
+   - If we frequently group results by a certain column, the database can utilize an index on that column to group the rows more quickly.
 
 ## Strategies
 - Overviews
