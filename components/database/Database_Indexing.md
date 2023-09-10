@@ -193,13 +193,18 @@
 
 ## Use cases
 ### Point lookup
-- **Concepts**
+- **Key points**
    - Searches on a specific attribute or key.
    - Without an index, the database would have to scan every row in the table.
 
   ![pic1](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/5b898539-1645-45b5-9094-2be784b59796)
   
 ### Range lookup
+- **Key points**
+   - Search on a range of values.
+   - Without an index, the database would have to scan every row in the table and sort the results.
+
+  ![pic2](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/7596ff8c-77a4-42d9-bcbf-02557a667036)
 
 ## Strategies
 - Overviews
