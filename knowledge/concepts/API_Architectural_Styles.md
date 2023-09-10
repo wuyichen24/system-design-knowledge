@@ -20,10 +20,10 @@
    - *Format*:
       - XML
    - *Structure*:
-      - <u>Envelope</u>: Identifies the XML document as a SOAP message.
-      - <u>Header</u>: Contains header information.
-      - <u>Body</u>: Contains call and response information.
-      - <u>Fault</u>: Provides information about errors that occurred while processing the message.
+      - Envelope: Identifies the XML document as a SOAP message.
+      - Header: Contains header information.
+      - Body: Contains call and response information.
+      - Fault: Provides information about errors that occurred while processing the message.
 - **Dependent protocols**
    - Application layer protocol
       - HTTP
@@ -82,7 +82,8 @@
          - PUT
          - DELETE
          - PATCH
-      - Headers: Provides additional metadata about the request or response. 
+      - Headers: Provides additional metadata about the request or response.
+      - Request body: Contains data that the client sends to the server to create or update a resource.
 - **Dependent protocols**
 - **Pros**
 - **Cons**
