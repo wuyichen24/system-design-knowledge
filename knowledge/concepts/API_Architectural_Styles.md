@@ -88,6 +88,16 @@
    - Application layer protocol
       - HTTP
 - **Pros**
+   - *Most common API architectural styles*
+   - *Simple*
+   - *Easy to debug*
+      - You can test a API from a web browser.
+   - *Platform-independent*
+      - Supported by all mainstream platforms.
+      - Client and server can use different platform.
+   - *Language-independent*
+      - Supported by all mainstream programming languages.
+      - Client and server can use different programming language.
 - **Cons**
 
 ## RPC
