@@ -109,6 +109,10 @@
       - Supported by all mainstream programming languages.
       - Client and server can use different programming language.
 - **Cons**
+   - *Simple in theory, but difficult in practice*
+      - REST has a lot of good practices which is not enforced by the protocols.
+   - *No strongly typed interfaces*
+      - REST is not required to have a interface definition (IDL) and type definition of the information shared between client and server.
    - *Message is heavyweight*
    - *Fetching multiple resources is challenging*
 - **Use cases**
@@ -121,9 +125,13 @@
    - Remote Procedure Call
 - **Concepts**
    - A protocol and technique for invoking functions or procedures in a remote system.
-- **Modern RPC frameworks**
-   - gRPC
-   - 
+- **RPC frameworks**
+   - XML-RPC: A RPC framework that uses XML-encoded message.
+   - JSON-RPC: A RPC framework that uses JSON-encoded message.
+   - gRPC: A RPC framework for high performance data transmition.
+   - Avro RPC
+   - Thrift RPC
+   - Finagle: A RPC framework for the JVM, used to construct high-concurrency servers.
 - **Pros**
 - **Cons**
 
