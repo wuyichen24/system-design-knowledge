@@ -116,6 +116,12 @@
    
 ## RPC
 - **History**
+- **Full name**
+   - Remote Procedure Call
 - **Concepts**
+   - A computer program causes a procedure to execute in a another computer remotely.
 - **Pros**
 - **Cons**
+
+## Resources
+- [AWS | What Is A RESTful API?](https://aws.amazon.com/what-is/restful-api/)
