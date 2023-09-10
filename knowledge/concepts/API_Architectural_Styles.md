@@ -25,7 +25,7 @@
       - Body: Contains call and response information.
       - Fault: Provides information about errors that occurred while processing the message.
 - **Dependent protocols**
-   - Application layer protocol
+   - Application layer protocols
       - HTTP
       - SMTP
 - **Pros**
@@ -85,6 +85,8 @@
       - Headers: Provides additional metadata about the request or response.
       - Request body: Contains data that the client sends to the server to create or update a resource.
 - **Dependent protocols**
+   - Application layer protocol
+      - HTTP
 - **Pros**
 - **Cons**
 
