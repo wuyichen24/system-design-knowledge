@@ -217,4 +217,9 @@
    - If we frequently group results by a certain column, the database can utilize an index on that column to group the rows more quickly.
 
 ## Best practices
-
+- Have a clear understanding of the application's requirements:
+   - Analysis of the application’s workload.
+   - Identify the most common queries and understand how frequently they are used.
+   - Determine the application's read-to-write ratio:
+      - Read-heavy: Can use more indexes.
+      - Write-heavy: Use less indexes.
