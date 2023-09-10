@@ -35,6 +35,14 @@
    - *Security*
       - SOAP meets an enterprise-grade transaction quality. It provides privacy and integrity inside the transactions while allowing for encryption on the message level.
 - **Cons**
+   - *Outdated*
+   - *Only support XML*
+   - *Message is heavyweight*
+   - *Need specialized knowledge*
+- **Use cases**
+   - *Highly secured data transmission*
+      - Financial industry
+   - *Legacy system*
 
 ## REST
 - **History**
