@@ -191,6 +191,16 @@
 - **Use cases**
    - Well-suited for equality comparisons, such as "=", where the search key is exactly equal to the indexed key.
 
+## Use cases
+### Point lookup
+- **Concepts**
+   - Searches on a specific attribute or key.
+   - Without an index, the database would have to scan every row in the table.
+
+  ![pic1](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/5b898539-1645-45b5-9094-2be784b59796)
+  
+### Range lookup
+
 ## Strategies
 - Overviews
    - Finding the right indexes a balancing act between quick query responses and update costs.
