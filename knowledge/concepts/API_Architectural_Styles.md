@@ -89,6 +89,7 @@
       - HTTP
 - **Pros**
    - *Most common API architectural styles*
+      - Large ecosystem and community
    - *Simple*
    - *Easy to debug*
       - You can test a API from a web browser.
