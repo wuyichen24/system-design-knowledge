@@ -232,6 +232,7 @@
    - Unique index: Use on the columns need to have unique values.
    - Filter index: Use when querying a large table but only need to get a small portion of data.
    - Bitmap index: Use on the columns that have a limited number of distinct values.
+   - Full-text index: Use when querying a text column frequently.
 - **Balance the trade-off**
    - The trade-off between query efficiency (read) and data modification (write).
    - The trade-off between query efficiency (read) and storage usage.
