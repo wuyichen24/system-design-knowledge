@@ -216,6 +216,5 @@
 - **GROUP BY**
    - If we frequently group results by a certain column, the database can utilize an index on that column to group the rows more quickly.
 
-## Strategies
-- Overviews
-   - Finding the right indexes a balancing act between quick query responses and update costs.
+## Best practices
+
