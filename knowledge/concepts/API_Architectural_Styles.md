@@ -130,14 +130,19 @@
 - **Concepts**
    - A protocol and technique for invoking functions or procedures in a remote system.
 - **RPC frameworks**
-   - XML-RPC: A RPC framework that uses XML-encoded message.
-   - JSON-RPC: A RPC framework that uses JSON-encoded message.
-   - gRPC: A RPC framework for high performance data transmition.
-   - Avro RPC
-   - Thrift RPC
-   - Finagle: A RPC framework for the JVM, used to construct high-concurrency servers.
+
+  | Name | Description | Message encoding | Introduced by |
+  |---|---|---|---|
+  | gRPC | A RPC framework for high performance data transmition. | Protocol Buffers | Google |
+  | Avro RPC | A RPC framework for high performance data transmition. | Avro | |
+  | Thrift RPC | A RPC framework for high performance data transmition. | Thrift | Facebook |
+  | Finagle | A RPC framework for the JVM, used to construct high-concurrency servers. | |
+  | Twrip | | Protocol Buffers | Twitch |
 - **Pros**
+   - *Language-independent*
+      - Supported by all mainstream programming languages.
 - **Cons**
+   - *Tight coupling*
 
 ## Resources
 - [AWS | What Is A RESTful API?](https://aws.amazon.com/what-is/restful-api/)
