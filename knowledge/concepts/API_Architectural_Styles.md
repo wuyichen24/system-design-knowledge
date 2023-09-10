@@ -109,15 +109,19 @@
       - Supported by all mainstream programming languages.
       - Client and server can use different programming language.
 - **Cons**
-   - *Simple in theory, but difficult in practice*
+   - *Difficult in practice*
+      - REST is simple in theory, but difficult in practice*
       - REST has a lot of good practices which is not enforced by the protocols.
    - *No strongly typed interfaces*
       - REST is not required to have a interface definition (IDL) and type definition of the information shared between client and server.
-   - *Message is heavyweight*
-   - *Fetching multiple resources is challenging*
+   - *Text-based message*
+      - Message is heavyweight.
+      - Inefficient for transporting binary data.
+   - *Single resource*
+      - Fetching multiple resources is challenging*
 - **Use cases**
    - Public APIs
-   - Aimple resource-drive APIs
+   - Simple resource-drive APIs
    
 ## RPC
 - **History**
