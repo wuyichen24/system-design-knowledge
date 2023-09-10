@@ -223,3 +223,19 @@
    - Determine the application's read-to-write ratio:
       - Read-heavy: Can use more indexes.
       - Write-heavy: Use less indexes.
+- **Choose the right columns**
+   - Create indexes on the columns are frequently used in WHERE clauses, ORDER BY clauses, JOIN conditions, or used for sorting and grouping data.
+   - The column that narrows down the data most should be indexed first.
+- **Use different types of indexes properly**
+   - Composite index: Use when multiple columns are involved in WHERE clause.
+   - Covering index: Use when querying a large table but only need to return a small subset of columns.
+   - Unique index: Use on the columns need to have unique values.
+   - Filter index: Use when querying a large table but only need to get a small portion of data.
+   - Bitmap index: Use on the columns that have a limited number of distinct values.
+- **Balance the trade-off**
+   - The trade-off between query efficiency (read) and data modification (write).
+   - The trade-off between query efficiency (read) and storage usage.
+- **Regularly monitor and optimize indexes**
+   - Use database built-in tools.
+   - Check the slow query log.
+- **Drop unused indexes**
