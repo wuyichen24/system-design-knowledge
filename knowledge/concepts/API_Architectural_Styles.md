@@ -74,6 +74,11 @@
       - This simplifies client implementation and enhances the predictability of the API.
 - **Message**
    - *Format*
+      - Plain text
+      - JSON
+      - XML
+      - HTML
+      - Binary (file uploading)
    - *Structure*
       - URI (Uniform Resource Identifier): Identifies the resource being accessed or manipulated.
       - Method: Indicates the intended action to be performed on a resource.
@@ -103,7 +108,12 @@
       - Supported by all mainstream programming languages.
       - Client and server can use different programming language.
 - **Cons**
-
+   - *Message is heavyweight*
+   - *Fetching multiple resources is challenging*
+- **Use cases**
+   - Public APIs
+   - Aimple resource-drive APIs
+   
 ## RPC
 - **History**
 - **Concepts**
