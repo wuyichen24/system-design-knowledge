@@ -20,10 +20,10 @@
    - *Format*:
       - XML
    - *Structure*:
-      - Envelope: Identifies the XML document as a SOAP message.
-      - Header: Contains header information.
-      - Body: Contains call and response information.
-      - Fault: Provides information about errors that occurred while processing the message.
+      - <u>Envelope</u>: Identifies the XML document as a SOAP message.
+      - <u>Header</u>: Contains header information.
+      - <u>Body</u>: Contains call and response information.
+      - <u>Fault</u>: Provides information about errors that occurred while processing the message.
 - **Dependent protocols**
    - Application layer protocol
       - HTTP
@@ -75,6 +75,14 @@
 - **Message**
    - *Format*
    - *Structure*
+      - URI (Uniform Resource Identifier): Identifies the resource being accessed or manipulated.
+      - Method: Indicates the intended action to be performed on a resource.
+         - GET
+         - POST
+         - PUT
+         - DELETE
+         - PATCH
+      - Headers: Provides additional metadata about the request or response. 
 - **Dependent protocols**
 - **Pros**
 - **Cons**
