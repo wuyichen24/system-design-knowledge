@@ -43,6 +43,9 @@
    - *Only support XML*
    - *Message is heavyweight*
    - *Need specialized knowledge*
+   - *Only support request/response style communication*
+      - The client sends a request and needs to wait for a response.
+      - Doesn't support streaming.
 - **Use cases**
    - *Highly secured data transmission*
       - Financial industry
@@ -117,6 +120,9 @@
    - *Text-based message*
       - Message is heavyweight.
       - Inefficient for transporting binary data.
+   - *Only support request/response style communication*
+      - The client sends a request and needs to wait for a response.
+      - Doesn't support streaming.
    - *Single resource*
       - Fetching multiple resources is challenging*
 - **Use cases**
@@ -138,11 +144,16 @@
   | Thrift RPC | A RPC framework for high performance data transmition. | Thrift | Facebook |
   | Finagle | A RPC framework for the JVM, used to construct high-concurrency servers. | |
   | Twrip | | Protocol Buffers | Twitch |
+
 - **Pros**
    - *Language-independent*
       - Supported by all mainstream programming languages.
 - **Cons**
    - *Tight coupling*
+      - Leads to tight coupling between the client and server, making it challenging to evolve and update the system without breaking compatibility.
+   - *Hard to change*
+      - Updating the service contract or interface of an RPC service can be challenging.
+   - **
 
 ## Resources
 - [AWS | What Is A RESTful API?](https://aws.amazon.com/what-is/restful-api/)
