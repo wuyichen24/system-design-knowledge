@@ -93,6 +93,9 @@
    - *Simple*
    - *Easy to debug*
       - You can test a API from a web browser.
+   - *Scalability*
+      - Statelessness: The server doesn't have to retain past client request information.
+      - Cacheability: Well-managed caching partially or completely eliminates some client-server interactions.
    - *Platform-independent*
       - Supported by all mainstream platforms.
       - Client and server can use different platform.
