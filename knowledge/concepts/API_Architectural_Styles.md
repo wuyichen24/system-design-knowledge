@@ -155,5 +155,14 @@
    - *Hard to change*
    - *Hard to debug*
 
+## gRPC
+## Avro RPC
+- **Pros**
+   - *No need to generate code beforehand*
+      - Client and server exchange schemas in the connection handshake and code generation is not required.
+## GraphQL
+## Web socket
+## Webhook
+
 ## Resources
 - [AWS | What Is A RESTful API?](https://aws.amazon.com/what-is/restful-api/)
