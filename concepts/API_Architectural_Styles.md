@@ -241,7 +241,7 @@
         
 ## WebSocket
 - **Concept**
-   - A computer communications protocol, providing full-duplex communication channels over a single TCP connection.
+   - Provides full-duplex communication over a single TCP connection.
    - A connection consists of 3 steps
       - Handshake
       - Persistent connection
