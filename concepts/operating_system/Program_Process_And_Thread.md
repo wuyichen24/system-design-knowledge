@@ -62,3 +62,4 @@
 | Independency | Independent | Not independent |
 | Memory | Not shared | Shared | 
 | Weight | Heavyweight | Lightweight |
+| Context switching | More expensive | Less expensive |
