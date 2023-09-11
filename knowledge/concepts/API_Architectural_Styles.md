@@ -26,9 +26,8 @@
       - Body: Contains call and response information.
       - Fault: Provides information about errors that occurred while processing the message.
 - **Dependent protocols**
-   - Application layer protocols
-      - HTTP
-      - SMTP
+   - HTTP
+   - SMTP
 - **Pros**
    - *Platform-independent*
       - Supported by all mainstream platforms.
@@ -93,8 +92,7 @@
       - Headers: Provides additional metadata about the request or response.
       - Request body: Contains data that the client sends to the server to create or update a resource.
 - **Dependent protocols**
-   - Application layer protocol
-      - HTTP
+   - HTTP/1.1 (most common)
 - **Pros**
    - *Most common API architectural styles*
       - Large ecosystem and community
@@ -162,6 +160,8 @@
 - **Message**
    - *Format*
       - Protocol Buffers
+- **Dependent protocols**
+   - HTTP/2
 - **Pros**
    - *Efficient and compact inter-process communication (IPC)*
       - Especially when exchanging large messages.
@@ -181,6 +181,13 @@
       - Client and server can use different programming language.
       - Client and server only need to share the interface definition file for generating stubs respectively.
 - **Cons**
+   - *Not for external*
+      - May not be suitable for external-facing services.
+   - *Need to regenerate code*
+      - When the interface definition changes hugely, we need to regenerate code for both client and server.
+   - *Small ecosystem*
+   - *Legacy firewall might not support HTTP/2*
+
 
 ## Avro RPC
 - **Pros**
