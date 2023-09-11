@@ -4,6 +4,7 @@
 - [**REST**](#rest)
 - [**RPC**](#rpc)
    - [gRPC](#grpc)
+   - [Avro RPC](#avro-rpc)
 - GraphQL
 - Web socket
 - Webhook
