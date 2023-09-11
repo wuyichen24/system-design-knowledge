@@ -14,10 +14,28 @@
    - A process is a heavyweight operation. It takes more time to create and terminate.
    - Context switching is more expensive between processes.
 - **Inter-process communication**
-
+   - Concepts
+      - The mechanisms and techniques that separate processes use to exchange data, share information, or coordinate their activities.
+   - Methods
+      - *Pipes*
+         - Pipes provide a unidirectional communication channel between two related processes, typically a parent and child process.
+      - *Shared memory*
+         - Processes can map a shared region of memory into their address spaces.
+      - *Message queues*
+         - Message queues enable processes to send messages to each other.
+      - *Sockets*
+         - Sockets are a network-based IPC mechanism that enables communication between processes running on different machines or locally.
+      - *Signals*
+         - Processes can send signals to other processes to notify them of events or trigger specific actions.
+      - *File locking*
+         - Processes can use file locking mechanisms to coordinate access to shared files, ensuring that only one process at a time can modify a particular file.
+        
 ## Thread
 - **Concepts**
    - The smallest unit of execution within a process.
+- **Characteristics**
+   - Treads are not independent.
+   - Threads that belong to the same process share the same memory.
 - **Inter-thread communication**
    - Concepts
       - The mechanisms and techniques that threads within the same process use to exchange data, synchronize their actions, and coordinate their execution.
@@ -36,3 +54,10 @@
          - Threads can signal or notify each other when certain events occur, allowing them to respond to changes in the program's state or conditions.
       - *Message queues/Channels*
          - Threads can use message queues or channels to send messages or data to each other within the same process.
+
+## Process vs. Thread
+| | Processes | Threads |
+|---|---|---|
+| Independency | Independent | Not independent |
+| Memory | Not shared | Shared | 
+| Weight | Heavyweight | Lightweight |
