@@ -1,4 +1,4 @@
-# Program, Process and Thread
+# Program, Process, Thread and Coroutine
 
 ## Program
 - **Concepts**
@@ -54,6 +54,7 @@
          - Threads can signal or notify each other when certain events occur, allowing them to respond to changes in the program's state or conditions.
       - *Message queues/Channels*
          - Threads can use message queues or channels to send messages or data to each other within the same process.
+
 
 ## Comparison
 ### Process vs. Thread
