@@ -69,6 +69,9 @@
       - Coroutines are often used to perform asynchronous operations.
    - *Release resources and clean up when finish*
       - When a coroutine is canceled or completes, it can automatically clean up resources and perform necessary cleanup actions.
+- **Terms**
+   - *Subroutine*
+   - *Generators*
      
 ## Comparison
 ### Process vs. Thread
