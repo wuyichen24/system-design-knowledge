@@ -3,10 +3,11 @@
 - [**Pros & Cons**](#pros--cons)
    - [Pros](#pros)
    - [Cons](#cons)
-- [**Considerations**](#considerations)
-- [**Solutions**](#solutions)
-   - [Message Ordering](#message-ordering)
-   - [Duplicate Messages](#duplicate-messages)
+- [**Selection**](#selection)
+   - [Factors](#factors)
+- [**Common problems and solutions**](#common-problems-and-solutions)
+   - [How to guarantee message order](components/Message_Queue.md#how-to-guarantee-message-order)
+   - [How to handle duplicated message](How to handle duplicated message)
 - [**Standards**](#standards)
    - [Protocols](#protocols)
    - [APIs](#apis)
@@ -28,7 +29,7 @@
    - Increase system complexity and operational complexity.
 
 ## Considerations
-When choosing a message queue product or designing a message queue architecture, the following aspects need to be considered:
+### Factors
 - **Supported programming languages**
 - **Message ordering**
    - The order of messages can be preserved by the queue or not.
@@ -42,7 +43,7 @@ When choosing a message queue product or designing a message queue architecture,
 - **Scalability**
 - **Latency**
 
-## Solutions
+## Common problems and solutions
 ### How to guarantee message order
 If a message queue cannot preserve the order of messages on its own, how to keep messages delivered in order (FIFO).
 - **Solution 1**: Add sequencing information into each message.
