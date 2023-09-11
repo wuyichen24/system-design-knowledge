@@ -254,14 +254,14 @@
    - *Persistent connection*
 - **Cons**
 - **Use cases**
-   - Live chat apps
-   - Real-time gaming
+   - *Low-latency data exchange*
+      - Live chat apps, real-time gaming
 
 ## Webhook
 - **Concepts**
    - A method of using HTTP callbacks for asynchronous operations.
 - **Use cases**
-   - Event-driven operations
+   - Event-driven applications.
 
 ## Resources
 - [AltexSoft | Comparing API Architectural Styles: SOAP vs REST vs GraphQL vs RPC](https://www.altexsoft.com/blog/soap-vs-rest-vs-graphql-vs-rpc/)
