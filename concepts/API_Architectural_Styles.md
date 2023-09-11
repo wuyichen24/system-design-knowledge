@@ -201,14 +201,33 @@
    - 2015
 - **Concepts**
    - An open-source data query and manipulation language for APIs and a query runtime engine.
-   - Enables declarative data fetching where a client can specify exactly what data it needs from an API.
-      - One response can contains multiple resources from separate data sources.
+   - *Declarative data fetching*
+      - A client can specify exactly what data it needs.
+      - GraphQL server can fetch from separate data sources and present the data in a unified graph.
+   - *Schema*
+      - GraphQL APIs are defined by a schema that specifies the types of data that can be queried and the structure of those queries.
+   - *Subscriptions*
+      - Allows clients to receive updates when data changes on the server.
+   - *Batching*
+      - GraphQL allows clients to send multiple queries in a single request.
 - **Message**
    - *Format*
       - JSON
 - **Dependent protocols**
-   
-
+- **Pros**
+   - *Type schema*
+   - *No versioning needed*
+- **Cons**
+- **Use cases**
+   - *Mobile app*
+      - Mobile app can load all the needed data by one request.
+   - *Complex system*
+      - GraphQL server can provide aggregated data and hide the complexity of the system.
+   - *Graph-like data*
+      - Like social network, recommendation system, knowledge graphs, geospatial data, network topologies.
+   - *Chat apps and live dashboard*
+      - GraphQL can provide updates to clients when data is changed.   
+        
 ## Web socket
 ## Webhook
 
