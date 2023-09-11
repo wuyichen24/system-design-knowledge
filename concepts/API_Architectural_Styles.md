@@ -258,6 +258,8 @@
    - Real-time gaming
 
 ## Webhook
+- **Concepts**
+   - A method of augmenting or altering the behavior of a web page or web application with custom callbacks.
 
 ## Resources
 - [AltexSoft | Comparing API Architectural Styles: SOAP vs REST vs GraphQL vs RPC](https://www.altexsoft.com/blog/soap-vs-rest-vs-graphql-vs-rpc/)
