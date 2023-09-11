@@ -65,7 +65,10 @@
       - Allow execution to be suspended and resumed.
    - *Single thread*
       - Multiple coroutines can exist within the same thread and share the same execution context.
-
+   - *Asynchronous operations*
+      - Coroutines are often used to perform asynchronous operations.
+   - *Release resources and clean up when finish*
+      - When a coroutine is canceled or completes, it can automatically clean up resources and perform necessary cleanup actions.
      
 ## Comparison
 ### Process vs. Thread
