@@ -17,6 +17,15 @@ Accumulate system design knowledge (concepts, patterns, technology choices, etc.
 - [Service Discovery](concepts/Service_Discovery.md)
 - [Consistent Hashing](concepts/Consistent_Hashing.md)
 - [Metrics](concepts/Metrics.md)
+- [**API Architectural Styles**](concepts/API_Architectural_Styles.md)
+   - [SOAP](concepts/API_Architectural_Styles.md#soap)
+   - [REST](concepts/API_Architectural_Styles.md#rest)
+   - [RPC](concepts/API_Architectural_Styles.md#rpc)
+      - [gRPC](concepts/API_Architectural_Styles.md#grpc)
+      - [Avro RPC](concepts/API_Architectural_Styles.md#avro-rpc)
+   - [GraphQL](concepts/API_Architectural_Styles.md#graphql)
+   - [WebSocket](concepts/API_Architectural_Styles.md#websocket)
+   - [Webhook](concepts/API_Architectural_Styles.md#webhook)
 
 ## Components
 ### Database (DB)
