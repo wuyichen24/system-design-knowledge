@@ -173,7 +173,8 @@
    - HTTP/2
 - **Pros**
    - *High performance*
-      - Especially when exchanging large messages.
+      - Protocol buffers is a very efficient binary coding format.
+      - gRPC is built on top of HTTP/2.
    - *Support bidirectional streaming*
       - Client can send request data to server while server is sending the response data back.
    - *Strongly typed interfaces*
