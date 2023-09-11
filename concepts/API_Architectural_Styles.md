@@ -10,6 +10,9 @@
 - [**Webhook**](#webhook)
 
 ## SOAP
+
+<img width="454" alt="Screenshot 2023-09-10 at 10 19 01 PM" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/ab3e89d6-7239-4f43-8d7f-b582bcf0b632">
+
 - **History**
    - 1998
 - **Full name**
@@ -51,6 +54,9 @@
    - *Legacy system*
 
 ## REST
+
+<img width="453" alt="Screenshot 2023-09-10 at 10 19 11 PM" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/6af6ebb2-d327-4066-8fa0-27a7f80b4b07">
+
 - **History**
    - 2000
 - **Full name**
@@ -153,6 +159,9 @@
    - *Hard to debug*
 
 ## gRPC
+
+<img width="455" alt="Screenshot 2023-09-10 at 10 19 41 PM" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/cf16cb99-46a2-4d8a-a22e-d3a4e012ad3b">
+
 - **History**
    - 2016
 - **Concepts**
@@ -198,6 +207,9 @@
       - Client and server exchange schemas in the connection handshake and code generation is not required.
 
 ## GraphQL
+
+<img width="455" alt="Screenshot 2023-09-10 at 10 19 24 PM" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/02153c46-9c8d-42a6-a812-da07e80bc0dc">
+
 - **History**
    - 2015
 - **Concepts**
@@ -240,6 +252,9 @@
       - Like social network, recommendation system, knowledge graphs, geospatial data, network topologies.   
         
 ## WebSocket
+
+<img width="451" alt="Screenshot 2023-09-10 at 10 19 55 PM" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/1efbd56e-db97-4857-a8b6-4577e5460a2b">
+
 - **Concept**
    - Provides full-duplex communication over a single TCP connection.
    - A connection consists of 3 steps
@@ -258,6 +273,9 @@
       - Live chat apps, real-time gaming
 
 ## Webhook
+
+<img width="452" alt="Screenshot 2023-09-10 at 10 20 07 PM" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/df8f798e-01dc-4c75-a031-7b627e308b7a">
+
 - **Concepts**
    - A method of using HTTP callbacks for asynchronous operations.
 - **Use cases**
