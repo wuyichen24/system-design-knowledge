@@ -214,6 +214,7 @@
    - *Format*
       - JSON
 - **Dependent protocols**
+   - HTTP/1.1
 - **Pros**
    - *Type schema*
       - GraphQL can provide the data that a client needs.
@@ -243,4 +244,5 @@
 ## Webhook
 
 ## Resources
+- [AltexSoft | Comparing API Architectural Styles: SOAP vs REST vs GraphQL vs RPC](https://www.altexsoft.com/blog/soap-vs-rest-vs-graphql-vs-rpc/)
 - [AWS | What Is A RESTful API?](https://aws.amazon.com/what-is/restful-api/)
