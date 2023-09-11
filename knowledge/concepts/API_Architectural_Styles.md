@@ -115,7 +115,7 @@
       - REST is simple in theory, but difficult in practice*
       - REST has a lot of good practices which is not enforced by the protocols.
    - *No strongly typed interfaces*
-      - REST is not required to have a interface definition (IDL) and type definition of the information shared between client and server.
+      - REST is not required to have a service definition and type definition of the information shared between client and server.
    - *Text-based message*
       - Message is heavyweight.
       - Inefficient for transporting binary data.
@@ -155,6 +155,22 @@
    - *Hard to debug*
 
 ## gRPC
+- **Message**
+   - *Format*
+      - Protocol Buffers
+- **Pros**
+   - *Efficient and compact inter-process communication*
+      - Especially when exchanging large messages.
+   - *Support bidirectional streaming*
+      - Client can send request data to server while server is sending the response data back.
+   - *Platform-independent*
+      - Supported by all mainstream platforms.
+      - Client and server can use different platform.
+   - *Language-independent*
+      - Supported by all mainstream programming languages.
+      - Client and server can use different programming language.
+- **Cons**
+
 ## Avro RPC
 - **Pros**
    - *No need to generate code beforehand*
