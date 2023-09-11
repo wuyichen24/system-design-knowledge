@@ -6,8 +6,8 @@
 | JSON | Text | JavaScript Object Notation | Optional | <li>Lightweight<li>Simple<li>Human-readable<li>Widely supported<li>Can distinguish between number and string<li>Good support for Unicode character strings<li>Built-in support in web browsers | <li>Limited data types<li>Lack of schema<li>Verbose for large data<li>Not support binary strings | |
 | CSV | Text | Comma-Separated Values | None | <li>Simple<li>Human-readable<li>Widely supported | <li>No Schema<li>Data type ambiguity (Cannot distinguish number and string)<li>Vague (What if value contains comma or newline character) | |
 | TSV | Text | Tab-Separated Values | None | <li>Simple<li>Human-readable<li>Widely supported | <li>No Schema<li>Data type ambiguity (Cannot distinguish number and string)<li>Vague (What if value contains tab or newline character) | |
-| Protocol Buffers | Binary | | Required | <li>Efficiency (Compact data)<li>Strong typing<li>Backward compatibility | <li>Not human-readable<li>Need careful consideration for schema change | |
-| Thrift | Binary | | Required |
-| Avro | Binary | | Required |
+| Protocol Buffers | Binary | | Required | <li>Efficiency<li>Strong typing<li>Backward-compatible schema changes | <li>Not human-readable<li>Need careful consideration for schema change | |
+| Thrift | Binary | | Required | <li>Efficiency<li>Strong typing<li>Backward-compatible schema changes | <li>Not human-readable<li>Not widely adopted | |
+| Avro | Binary | | Required | <li>Efficiency<li>Supports schema evolution<li>Bulit-in data compression | <li>Not human-readable<li>Not widely adopted | |
 | BSON | Binary | | |
 | CBOR | Binary | | |
