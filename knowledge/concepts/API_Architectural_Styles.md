@@ -144,6 +144,7 @@
   | Thrift RPC | A RPC framework for high performance data transmition. | Thrift | Facebook |
   | Finagle | A RPC framework for the JVM, used to construct high-concurrency servers. | |
   | Twrip | | Protocol Buffers | Twitch |
+  | Cap'n Proto | | | |
 
 - **Pros**
    - *Language-independent*
@@ -152,8 +153,7 @@
    - *Tight coupling*
       - Leads to tight coupling between the client and server, making it challenging to evolve and update the system without breaking compatibility.
    - *Hard to change*
-      - Updating the service contract or interface of an RPC service can be challenging.
-   - **
+   - *Hard to debug*
 
 ## Resources
 - [AWS | What Is A RESTful API?](https://aws.amazon.com/what-is/restful-api/)
