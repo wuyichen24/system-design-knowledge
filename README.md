@@ -17,6 +17,7 @@ Accumulate system design knowledge (concepts, patterns, technology choices, etc.
 - [Service Discovery](concepts/Service_Discovery.md)
 - [Consistent Hashing](concepts/Consistent_Hashing.md)
 - [Metrics](concepts/Metrics.md)
+- [**Data Encoding Formats (XML,JSON,CSV,Protobuf..)**]()
 - [**API Architectural Styles**](concepts/API_Architectural_Styles.md)
    - [SOAP](concepts/API_Architectural_Styles.md#soap)
    - [REST](concepts/API_Architectural_Styles.md#rest)
