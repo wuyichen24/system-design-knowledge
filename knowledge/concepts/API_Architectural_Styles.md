@@ -163,7 +163,7 @@
    - *Format*
       - Protocol Buffers
 - **Pros**
-   - *Efficient and compact inter-process communication*
+   - *Efficient and compact inter-process communication (IPC)*
       - Especially when exchanging large messages.
    - *Support bidirectional streaming*
       - Client can send request data to server while server is sending the response data back.
