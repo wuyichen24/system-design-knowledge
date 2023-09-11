@@ -114,7 +114,7 @@
    - *Difficult in practice*
       - REST is simple in theory, but difficult in practice*
       - REST has a lot of good practices which is not enforced by the protocols.
-   - *No strongly typed interfaces*
+   - *Weakly typed interfaces*
       - REST is not required to have a service definition and type definition of the information shared between client and server.
    - *Text-based message*
       - Message is heavyweight.
@@ -155,6 +155,10 @@
    - *Hard to debug*
 
 ## gRPC
+- **History**
+   - 2016
+- **Concepts**
+   - A cross-platform open source high performance RPC framework created by Google.
 - **Message**
    - *Format*
       - Protocol Buffers
@@ -164,7 +168,7 @@
    - *Support bidirectional streaming*
       - Client can send request data to server while server is sending the response data back.
    - *Strongly typed interfaces*
-      - gRPC uses protocol buffers as the service definition to define the information shared between client and server.
+      - gRPC uses protocol buffers as the interface definition language to define how interface looks like.
    - *Built-in features*
       - Authentication
       - Encryption
@@ -175,7 +179,7 @@
    - *Language-independent*
       - Supported by all mainstream programming languages.
       - Client and server can use different programming language.
-      - Client and server only need to share the service definition file for generating stubs respectively.
+      - Client and server only need to share the interface definition file for generating stubs respectively.
 - **Cons**
 
 ## Avro RPC
