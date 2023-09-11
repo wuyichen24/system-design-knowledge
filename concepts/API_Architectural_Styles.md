@@ -193,7 +193,6 @@
       - Client and server only need to share the interface definition file for generating stubs respectively.
 - **Cons**
    - *Not for external*
-      - May not be suitable for external-facing services.
       - Limited web browser support. 
    - *Need to regenerate code*
       - When the interface definition changes hugely, we need to regenerate code for both client and server.
