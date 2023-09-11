@@ -29,25 +29,25 @@
    - HTTP
    - SMTP
 - **Pros**
+   - *Security*
+      - SOAP meets an enterprise-grade transaction quality. It provides privacy and integrity inside the transactions while allowing for encryption on the message level.
+   - *Error handling*
+      - SOAP provides a standardized way to handle errors and exceptions.
    - *Platform-independent*
       - Supported by all mainstream platforms.
    - *Language-independent*
       - Supported by all mainstream programming languages.
-   - *Error handling*
-      - SOAP provides a standardized way to handle errors and exceptions.
-   - *Security*
-      - SOAP meets an enterprise-grade transaction quality. It provides privacy and integrity inside the transactions while allowing for encryption on the message level.
 - **Cons**
-   - *Outdated*
    - *Only support XML*
    - *Message is heavyweight*
-   - *Need specialized knowledge*
+   - *Complex*
+      - Need specialized knowledge*
    - *Only support request/response style communication*
       - The client sends a request and needs to wait for a response.
       - Doesn't support streaming.
 - **Use cases**
-   - *Highly secured data transmission*
-      - Financial industry
+   - *Highly secured and reliable data transmission*
+      - Financial services and payment gateway.
    - *Legacy system*
 
 ## REST
@@ -183,6 +183,7 @@
 - **Cons**
    - *Not for external*
       - May not be suitable for external-facing services.
+      - Limited web browser support. 
    - *Need to regenerate code*
       - When the interface definition changes hugely, we need to regenerate code for both client and server.
    - *Small ecosystem*
@@ -217,7 +218,7 @@
    - HTTP/1.1
 - **Pros**
    - *Type schema*
-      - GraphQL can provide the data that a client needs.
+      - GraphQL can provide the data that a client needs (No more over-fetching and underfetching).
       - GraphQL can combine multiple resources from multiple data sources.
    - *Error handling*
       - GraphQL provides detailed error message.
@@ -228,7 +229,7 @@
       - Having too many nested fields in one request can lead to system overload.
    - *Caching*
       - As GraphQL isn’t reusing HTTP caching semantics.
-   - *Learning curve*
+   - *Steep learning curve*
       - Cost time to figure out GraphQL niche operations and SDL.
 - **Use cases**
    - *Mobile app*
