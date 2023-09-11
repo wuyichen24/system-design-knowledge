@@ -6,7 +6,7 @@
    - [gRPC](#grpc)
    - [Avro RPC](#avro-rpc)
 - GraphQL
-- Web socket
+- WebSocket
 - Webhook
 
 ## SOAP
@@ -190,7 +190,7 @@
    - *Legacy firewall might not support HTTP/2*
 - **Use cases**
    - Internal APIs
-   - Large data trasportation
+   - Large data transfer
 
 ## Avro RPC
 - **Pros**
@@ -237,11 +237,26 @@
    - *Complex system*
       - GraphQL server can provide aggregated data and hide the complexity of the system.
    - *Graph-like data*
-      - Like social network, recommendation system, knowledge graphs, geospatial data, network topologies.
-   - *Chat apps and live dashboard*
-      - GraphQL can provide updates to clients when data is changed.   
+      - Like social network, recommendation system, knowledge graphs, geospatial data, network topologies.   
         
-## Web socket
+## WebSocket
+- **Concept**
+   - A computer communications protocol, providing full-duplex communication channels over a single TCP connection.
+   - A connection consists of 3 steps
+      - Handshake
+      - Persistent connection
+      - Closure
+- **Pros**
+   - *Real-time data trasfer*
+      - Low latency
+   - *Bidirectional*
+      -  WebSocket provides full-duplex communication than half-duplex alternatives such as HTTP polling.
+   - *Persistent connection*
+- **Cons**
+- **Use cases**
+   - Live chat apps
+   - Real-time gaming
+
 ## Webhook
 
 ## Resources
