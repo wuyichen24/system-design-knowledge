@@ -176,7 +176,7 @@
       - Protocol buffers is a very efficient binary coding format.
       - gRPC is built on top of HTTP/2.
    - *Support bidirectional streaming*
-      - Client can send request data to server while server is sending the response data back.
+      - gRPC uses HTTP/2 streams.
    - *Strongly typed interfaces*
       - gRPC uses protocol buffers as the interface definition language to define how interface looks like.
    - *Built-in features*
