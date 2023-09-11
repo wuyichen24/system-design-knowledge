@@ -173,7 +173,7 @@
    - HTTP/2
 - **Pros**
    - *High performance*
-      - Protocol buffers is a very efficient binary coding format.
+      - Protocol buffers is a very efficient binary coding format (much faster than JSON).
       - gRPC is built on top of HTTP/2.
    - *Support bidirectional streaming*
       - gRPC uses HTTP/2 streams.
