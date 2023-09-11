@@ -82,7 +82,6 @@
       - JSON
       - XML
       - HTML
-      - Binary (file uploading)
    - *Structure*
       - URI (Uniform Resource Identifier): Identifies the resource being accessed or manipulated.
       - Method: Indicates the intended action to be performed on a resource.
