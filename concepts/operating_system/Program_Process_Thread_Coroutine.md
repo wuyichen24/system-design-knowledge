@@ -57,7 +57,16 @@
 
 ## Coroutine
 - **Concepts**
+   - A concurrent computational entity that is used for cooperative multitasking and asynchronous programming.
+- **Characteristics**
+   - *Cooperative multitasking*
+      - Coroutines are cooperatively scheduled. A coroutine voluntarily yields control to other coroutines.
+   - *Can be paused and resumed*
+      - Allow execution to be suspended and resumed.
+   - *Single thread*
+      - Multiple coroutines can exist within the same thread and share the same execution context.
 
+     
 ## Comparison
 ### Process vs. Thread
 | | Processes | Threads |
