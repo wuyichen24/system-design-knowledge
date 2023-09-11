@@ -163,12 +163,19 @@
       - Especially when exchanging large messages.
    - *Support bidirectional streaming*
       - Client can send request data to server while server is sending the response data back.
-   - *Platform-independent*
-      - Supported by all mainstream platforms.
-      - Client and server can use different platform.
+   - *Strongly typed interfaces*
+      - gRPC uses protocol buffers as the service definition to define the information shared between client and server.
+   - *Built-in features*
+      - Authentication
+      - Encryption
+      - Resiliency (deadlines and timeouts)
+      - Metadata exchange
+      - Load balancing
+      - Service discovery
    - *Language-independent*
       - Supported by all mainstream programming languages.
       - Client and server can use different programming language.
+      - Client and server only need to share the service definition file for generating stubs respectively.
 - **Cons**
 
 ## Avro RPC
