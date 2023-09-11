@@ -5,9 +5,9 @@
 - [**RPC**](#rpc)
    - [gRPC](#grpc)
    - [Avro RPC](#avro-rpc)
-- GraphQL
-- WebSocket
-- Webhook
+- [**GraphQL**](#graphql)
+- [**WebSocket**](#websocket)
+- [**Webhook**](#webhook)
 
 ## SOAP
 - **History**
