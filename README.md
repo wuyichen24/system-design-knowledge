@@ -22,7 +22,7 @@ Accumulate system design knowledge (concepts, patterns, technology choices, etc.
    - Leaky bucket (rate limiter)
    - Geohash (location based service)
    - Quadtree (location based service)
-- [**Data Encoding Formats (XML,JSON,CSV,Protobuf..)**]()
+- [**Data Encoding Formats (XML,JSON,CSV,Protobuf..)**](concepts/Data_Encoding_Formats.md)
 - [**API Architectural Styles**](concepts/API_Architectural_Styles.md)
    - [SOAP](concepts/API_Architectural_Styles.md#soap)
    - [REST](concepts/API_Architectural_Styles.md#rest)
