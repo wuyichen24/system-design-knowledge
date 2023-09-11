@@ -9,5 +9,5 @@
 | Protocol Buffers | Binary | | Required | <li>Efficiency<li>Strong typing<li>Backward-compatible schema changes | <li>Not human-readable<li>Need careful consideration for schema change | |
 | Thrift | Binary | | Required | <li>Efficiency<li>Strong typing<li>Backward-compatible schema changes | <li>Not human-readable<li>Not widely adopted | |
 | Avro | Binary | | Required | <li>Efficiency<li>Supports schema evolution<li>Bulit-in data compression | <li>Not human-readable<li>Not widely adopted | |
-| BSON | Binary | | |
-| CBOR | Binary | | |
+| BSON | Binary | Binary JSON, provides a binary representation of JSON-like documents | |
+| CBOR | Binary | Concise Binary Object Representation | |
