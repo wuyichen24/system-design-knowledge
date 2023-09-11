@@ -1,10 +1,9 @@
 # API Architectural Styles
 
-## Overview
-- SOAP
-- REST
-- RPC
-   - gRPC
+- [**SOAP**](#soap)
+- [**REST**](#rest)
+- [**RPC**](#rpc)
+   - [gRPC](#grpc)
 - GraphQL
 - Web socket
 - Webhook
