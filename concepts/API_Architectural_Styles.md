@@ -187,13 +187,28 @@
       - When the interface definition changes hugely, we need to regenerate code for both client and server.
    - *Small ecosystem*
    - *Legacy firewall might not support HTTP/2*
-
+- **Use cases**
+   - Internal APIs
+   - Large data trasportation
 
 ## Avro RPC
 - **Pros**
    - *No need to generate code beforehand*
       - Client and server exchange schemas in the connection handshake and code generation is not required.
+
 ## GraphQL
+- **History**
+   - 2015
+- **Concepts**
+   - An open-source data query and manipulation language for APIs and a query runtime engine.
+   - Enables declarative data fetching where a client can specify exactly what data it needs from an API.
+      - One response can contains multiple resources from separate data sources.
+- **Message**
+   - *Format*
+      - JSON
+- **Dependent protocols**
+   
+
 ## Web socket
 ## Webhook
 
