@@ -55,7 +55,8 @@
       - *Message queues/Channels*
          - Threads can use message queues or channels to send messages or data to each other within the same process.
 
-## Process vs. Thread
+## Comparison
+### Process vs. Thread
 | | Processes | Threads |
 |---|---|---|
 | Independency | Independent | Not independent |
