@@ -177,6 +177,7 @@
       - gRPC is built on top of HTTP/2.
    - *Support bidirectional streaming*
       - gRPC uses HTTP/2 streams.
+      - It allows multiple streams of messages over a single long-lived TCP connection.
    - *Strongly typed interfaces*
       - gRPC uses protocol buffers as the interface definition language to define how interface looks like.
    - *Built-in features*
