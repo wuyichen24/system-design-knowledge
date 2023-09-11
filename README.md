@@ -58,7 +58,19 @@ Accumulate system design knowledge (concepts, patterns, technology choices, etc.
    - [Denormalization (Materialized View)](components/database/Database_Techniques.md#denormalization-materialized-view)
 
 ### Message Queue (MQ)
-- [Message Queue (MQ)](components/Message_Queue.md)
+- [**Message Queue (MQ)**](components/Message_Queue.md)
+   - [Pros & Cons](components/Message_Queue.md#pros--cons)
+      - [Pros](components/Message_Queue.md#pros)
+      - [Cons](components/Message_Queue.md#cons)
+   - [Selection](components/Message_Queue.md#selection)
+      - [Factors](components/Message_Queue.md#factors)
+   - [Common problems and solutions](components/Message_Queue.md#common-problems-and-solutions)
+      - [How to guarantee message order](components/Message_Queue.md#how-to-guarantee-message-order)
+      - [How to handle duplicated message](components/Message_Queue.md#how-to-handle-duplicated-message)
+   - [When to use](components/Message_Queue.md#when-to-use)
+   - [Standards](components/Message_Queue.md#standards)
+      - [Protocols](components/Message_Queue.md#protocols)
+      - [APIs](components/Message_Queue.md#apis)
 
 ### Cache
 - [Cache](components/Cache.md)
