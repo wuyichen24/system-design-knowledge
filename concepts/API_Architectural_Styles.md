@@ -172,7 +172,7 @@
 - **Dependent protocols**
    - HTTP/2
 - **Pros**
-   - *Fast*
+   - *High performance*
       - Especially when exchanging large messages.
    - *Support bidirectional streaming*
       - Client can send request data to server while server is sending the response data back.
