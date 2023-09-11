@@ -216,8 +216,19 @@
 - **Dependent protocols**
 - **Pros**
    - *Type schema*
-   - *No versioning needed*
+      - GraphQL can provide the data that a client needs.
+      - GraphQL can combine multiple resources from multiple data sources.
+   - *Error handling*
+      - GraphQL provides detailed error message.
+   - *No versioning*
+      - No versioning needed for GraphQL
 - **Cons**
+   - *Performance*
+      - Having too many nested fields in one request can lead to system overload.
+   - *Caching*
+      - As GraphQL isn’t reusing HTTP caching semantics.
+   - *Learning curve*
+      - Cost time to figure out GraphQL niche operations and SDL.
 - **Use cases**
    - *Mobile app*
       - Mobile app can load all the needed data by one request.
