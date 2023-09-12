@@ -88,4 +88,6 @@
 ### Coroutine vs. Thread
 | | Coroutine | Thread |
 |---|---|---|
-| Multitasking | Cooperative multitasking: <li>The operating system never initiates a context switch.<li>A coroutine voluntarily yields control to other coroutines. | Preemptively multitasking: <li>The operating system never initiates a context switch |
+| Multitasking | Cooperative multitasking:<li>The operating system never initiates a context switch.<li>A coroutine voluntarily yields control to other coroutines. | Preemptively multitasking: <li>The operating system never initiates a context switch |
+| Parallelism | Do not provide:<li>Coroutines do not execute multiple tasks simultaneously. | Provide (but may not be true parallelism). |
+| Need synchronization primitives (mutexes, semaphores, etc.) | No need:<li>Switching between coroutines need not involve any system calls or any blocking calls | Need |
