@@ -31,7 +31,19 @@ Accumulate system design knowledge (concepts, patterns, technology choices, etc.
          - [Process vs. Thread](concepts/operating_system/Program_Process_Thread_Coroutine.md#process-vs-thread)
          - [Coroutine vs. Thread](concepts/operating_system/Program_Process_Thread_Coroutine.md#coroutine-vs-thread)
    - CPU scheduling algorithms
-   - Deadlocking
+   - Deadlock
+      - Banker algorithm to prevent it
+   - What is an interrupt. How does a processor handle an interrupt?
+   - Cache invalidation
+   - Semaphores and mutex
+      - Critical Section
+   - Multithreading
+   - scheduling, paging, segmentation, virtual memory, physical memory
+      - Demand Paging
+   - Difference between virtual addressing and translation lookaside buffer(TLB)
+   - Different types of Job Scheduling algorithms? What is starvation?
+   - What is memory leak? How to avoid it
+   - page replacement Algorithm LRU
 - [**Data Encoding Formats (XML,JSON,CSV,Protobuf..)**](concepts/Data_Encoding_Formats.md)
 - [**API Architectural Styles**](concepts/API_Architectural_Styles.md)
    - [SOAP](concepts/API_Architectural_Styles.md#soap)
@@ -66,7 +78,15 @@ Accumulate system design knowledge (concepts, patterns, technology choices, etc.
    - [Replication](components/database/Database_Techniques.md#replication)
    - [Partitioning](components/database/Database_Techniques.md#partitioning)
    - [Denormalization (Materialized View)](components/database/Database_Techniques.md#denormalization-materialized-view)
-
+- Todo
+   - Different type of Normalisation
+   - clustering and joins
+   - DDL, DML and DCL
+   - Different types of joins
+   - Types Of Keys
+   - view
+   - multilevel indexing
+   - Sparse indexing vs dense indexing
 ### Message Queue (MQ)
 - [**Message Queue (MQ)**](components/Message_Queue.md)
    - [Pros & Cons](components/Message_Queue.md#pros--cons)
