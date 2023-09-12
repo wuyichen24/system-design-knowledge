@@ -30,6 +30,8 @@ Accumulate system design knowledge (concepts, patterns, technology choices, etc.
       - [Comparison](concepts/operating_system/Program_Process_Thread_Coroutine.md#comparison)
          - [Process vs. Thread](concepts/operating_system/Program_Process_Thread_Coroutine.md#process-vs-thread)
          - [Coroutine vs. Thread](concepts/operating_system/Program_Process_Thread_Coroutine.md#coroutine-vs-thread)
+   - CPU scheduling algorithms
+   - Deadlocking
 - [**Data Encoding Formats (XML,JSON,CSV,Protobuf..)**](concepts/Data_Encoding_Formats.md)
 - [**API Architectural Styles**](concepts/API_Architectural_Styles.md)
    - [SOAP](concepts/API_Architectural_Styles.md#soap)
