@@ -71,6 +71,9 @@
       - When a coroutine is canceled or completes, it can automatically clean up resources and perform necessary cleanup actions.
 - **Terms**
    - *Subroutine*
+      - Subroutines are special cases of coroutines.
+      - An instance of a subroutine only returns once, and does not hold state between invocations.
+      - By contrast, a coroutine instance holds state, and varies between invocations
    - *Generators*
      
 ## Comparison
@@ -81,3 +84,8 @@
 | Memory | Not shared | Shared | 
 | Weight | Heavyweight | Lightweight |
 | Context switching | More expensive | Less expensive |
+
+### Coroutine vs. Thread
+| | Coroutine | Thread |
+|---|---|---|
+| Multitasking | Cooperative multitasking: <li>The operating system never initiates a context switch.<li>A coroutine voluntarily yields control to other coroutines. | Preemptively multitasking: <li>The operating system never initiates a context switch |
