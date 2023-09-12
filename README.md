@@ -41,9 +41,10 @@ Accumulate system design knowledge (concepts, patterns, technology choices, etc.
    - scheduling, paging, segmentation, virtual memory, physical memory
       - Demand Paging
    - Difference between virtual addressing and translation lookaside buffer(TLB)
-   - Different types of Job Scheduling algorithms? What is starvation?
+   - Different types of Job Scheduling algorithms? What is starvation? Aging?
    - What is memory leak? How to avoid it
    - page replacement Algorithm LRU
+   - fragmentation
 - [**Data Encoding Formats (XML,JSON,CSV,Protobuf..)**](concepts/Data_Encoding_Formats.md)
 - [**API Architectural Styles**](concepts/API_Architectural_Styles.md)
    - [SOAP](concepts/API_Architectural_Styles.md#soap)
