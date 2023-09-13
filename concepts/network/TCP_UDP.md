@@ -92,8 +92,16 @@
 ### Use cases
 - Real-time applications (Speed > Reliability)
    - Voice and video conferencing
-   - Online gaming
+   - Online gaming (consider using RUDP)
    - Streaming media
+
+### RUDP
+- **Full name**
+   - Reliable UDP
+- **Concept**
+   - It adds a reliable mechanism on top of UDP to provide much lower latency than TCP and guarantee accuracy.
+- **Use cases**
+   - Online gaming
 
 ## Comparison
 ![tcp_udp](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/c9357a6c-6255-4c6f-b986-c1b479152d4b)
