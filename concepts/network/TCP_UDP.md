@@ -4,7 +4,7 @@
 ### Full name
    - Transmission Control Protocol
 
-### Characteristics**
+### Characteristics
 - *Connection-oriented*
    - TCP establishes a connection between the sender and receiver before data transfer begins.
 - *Reliable*
@@ -57,10 +57,10 @@
         ![4-ways](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/818b664f-9761-4ee3-b75f-6aa2688fcf2f)
 
 ## UDP
-### Full name**
+### Full name
 - User Datagram Protocol
 
-### Characteristics**
+### Characteristics
 - *Connectionless*
    - UDP does not establish a connection before sending data.
 - *Less reliable*
