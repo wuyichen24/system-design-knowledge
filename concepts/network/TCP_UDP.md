@@ -3,12 +3,15 @@
 - [**TCP**](#tcp)
    - [Full name](#full-name)
    - [Characteristics](#characteristics)
+   - [Use cases](#use-cases)
    - [Connection](#connection)
       - Open (3-way handshake)
       - Close (4-way handshake)
 - [**UDP**](#udp)
    - [Full name](#full-name-1)
    - [Characteristics](#characteristics-1)
+   - [Use cases](#use-cases-1)
+   - [RUDP](#rudp)
 - [**Comparison**](#comparison)
 
 ## TCP
