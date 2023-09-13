@@ -19,6 +19,8 @@
 - **Limitations**
    - Each request to the same server required a separate TCP connection.
 
+  <img width="262" alt="Screenshot 2023-09-13 at 11 25 11 AM" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/32b6536e-1087-4a86-9c69-08e09766fe57">
+
 ### HTTP/1.1
 - **Transport protocol**
    - TCP
@@ -28,6 +30,8 @@
 - **Limitations**
    - *'Head-of-Line' (HOL) blocking*
       - When all parallel request slots in a browser are filled, forcing subsequent requests to wait until previous ones are complete.
+
+  <img width="279" alt="Screenshot 2023-09-13 at 11 25 34 AM" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/3657f2de-ba5e-47c8-8020-9559809d02b5">
 
 ### HTTP/2.0
 - **Transport protocol**
@@ -42,6 +46,8 @@
    - *HOL blocking at transport layer*
       - HTTP/2.0 eliminates HOL blocking at the application layer, but HOL blocking could still occur at the transport layer (TCP).
 
+  <img width="563" alt="Screenshot 2023-09-13 at 11 25 51 AM" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/4cad109b-aa51-47d7-a6fe-d201a3dbc5d5">
+
 ### HTTP/3.0
 - **Transport protocol**
    - QUIC (based on UDP)
@@ -52,6 +58,8 @@
    - *QUIC streams*
       - QUIC streams share the same QUIC connection, requiring no additional handshakes or slow starts to create new ones.
       - QUIC streams are delivered independently. It means that in most cases packet loss in one stream doesn't impact others.
+
+  <img width="553" alt="Screenshot 2023-09-13 at 11 26 15 AM" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/f7602994-4f00-4eb2-a86d-849e6f890410">
 
 ## Request and response
 ### Request
@@ -99,8 +107,6 @@
    - The client doesn't need to send requests frequently to check any new message is available or not.
 - Cons
    - The server need to maintain lots of open connections.
-
-### HTTP streaming
 
 ## References
 - https://stackoverflow.com/questions/12555043/my-understanding-of-http-polling-long-polling-http-streaming-and-websockets
