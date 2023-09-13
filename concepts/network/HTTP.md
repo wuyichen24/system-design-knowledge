@@ -12,6 +12,42 @@
 - *Can be stateful*
    - HTTP cookies allow the web server retain information or status (session) about each user for the duration of multiple requests.
 
+## Request and response
+### Request
+- **Structure**
+   - Method
+   - URL/Path
+   - Protocol version
+   - Header(s)
+   - Body
+- **Methods**
+  | Method | Description |
+  |----|----|
+  | GET | Retrieves data without making changes. |
+  | HEAD | Retrieves the metadata of data in the response headers without the response body. |
+  | POST | Submits data and ask the server to process. |
+  | PUT | Creates or updates data. |
+  | DELETE | Deletes data. |
+  | CONNECT | Asks proxy server to establish a TCP/IP tunnel to the origin server. |
+  | OPTIONS | Returns all the supported HTTP methods. |
+  | PATCH | Updates data partially. |
+        
+### Response
+- Structure
+   - Protocol version
+   - Status code
+   - Status message
+   - Header(s)
+   - Body
+- Status code
+  | Code | Type | Description |
+  |----|----|----|
+  | 1XX | Informational | The request was received, continuing process. |
+  | 2XX | Successful | The request was successfully received, understood, and accepted. |
+  | 3XX | Redirection | Further action needs to be taken in order to complete the request. |
+  | 4XX | Client error | The request contains bad syntax or cannot be fulfilled. |
+  | 5XX | Server error | The server failed to fulfill an apparently valid request. |
+
 ## Versions
 ### HTTP/1.0
 - **Transport protocol**
@@ -61,41 +97,6 @@
 
   <img width="553" alt="Screenshot 2023-09-13 at 11 26 15 AM" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/f7602994-4f00-4eb2-a86d-849e6f890410">
 
-## Request and response
-### Request
-- **Structure**
-   - Method
-   - URL/Path
-   - Protocol version
-   - Header(s)
-   - Body
-- **Methods**
-  | Method | Description |
-  |----|----|
-  | GET | Retrieves data without making changes. |
-  | HEAD | Retrieves the metadata of data in the response headers without the response body. |
-  | POST | Submits data and ask the server to process. |
-  | PUT | Creates or updates data. |
-  | DELETE | Deletes data. |
-  | CONNECT | Asks proxy server to establish a TCP/IP tunnel to the origin server. |
-  | OPTIONS | Returns all the supported HTTP methods. |
-  | PATCH | Updates data partially. |
-        
-### Response
-- Structure
-   - Protocol version
-   - Status code
-   - Status message
-   - Header(s)
-   - Body
-- Status code
-  | Code | Type | Description |
-  |----|----|----|
-  | 1XX | Informational | The request was received, continuing process. |
-  | 2XX | Successful | The request was successfully received, understood, and accepted. |
-  | 3XX | Redirection | Further action needs to be taken in order to complete the request. |
-  | 4XX | Client error | The request contains bad syntax or cannot be fulfilled. |
-  | 5XX | Server error | The server failed to fulfill an apparently valid request. |
 
 ## Techniques
 ### HTTP polling
