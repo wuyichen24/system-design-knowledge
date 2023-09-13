@@ -20,6 +20,34 @@
       - TCP includes error-checking mechanisms like checksums to detect and discard corrupted data.
    - *Bitstream-oriented*
       - With TCP, application layer data is segmented. The transport layer still ignores message boundaries.
+- **Connection**
+   - *Establish (The 3-way handshake)*
+      - Step 1
+         - Client:
+            - The client initiates a connection by sending a SYN segment, enters into the SYN-SENT state.
+            - It assigns a random number to the sequence number, known as the Initial Sequence Number (ISN).
+      - Step 2:
+         - Server:
+            - After receiving the SYN segment, the server assigns a random number to the sequence number and sets the acknowledgment number to `client_isn+1`
+            - The server sets both the SYN and ACK control bits to 1 and sends this segment back to the client, enters the SYN-RECEIVED state.
+      - Step 3:
+         - Client:
+            - After receiving the SYN+ACK segment, the client sends back an ACK segment and enter to the ESTABLISHED state.
+         - Server
+            - After receiving the ACK segment, the server enters the ESTABLISHED state too.
+   - *Close (The 4-way handshake)*
+      - Step 1
+         - Client: Initiates by sending a FIN segment to the server, transitioning into the FIN_WAIT_1 state.
+      - Step 2:
+         - Server: After receiving the FIN segment, the server responds with an ACK segment and enters the CLOSE_WAIT state.
+         - Client: After receiving the ACK segment, the client enters the FIN_WAIT_2 state.
+      - Step 3:
+         - Server: After the server finishes processing, the server sends a FIN segment and enters the LAST_ACK state.
+      - Step 4:
+         - Client:
+            - After receiving the FIN segment, the client sends an ACK segment and enters the TIME_WAIT state.
+            - After waiting for a 2MSL (Maximum Segment Lifetime) duration, the client enters to the CLOSED state too.
+         - Server: After receiving the ACK segment, the server enters to the CLOSED state.
 
 ## UDP
 - **Full name**
