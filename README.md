@@ -12,9 +12,12 @@ Accumulate system design knowledge (concepts, patterns, technology choices, etc.
 - [Consistency](concepts/Consistency.md)
 - [CAP Theorem](concepts/CAP_Theorem.md)
 - [Transaction](concepts/Transaction.md)
-- [Network](concepts/Network.md)
-- [Service Discovery](concepts/Service_Discovery.md)
-- [Metrics](concepts/Metrics.md)
+- **Network**
+   - [OSI model](concepts/network/OSI_Model.md)
+   - [TCP and UDP](concepts/network/TCP_UDP.md)
+   - [HTTP](concepts/network/HTTP.md)
+- **Microservice**
+   - [Service Discovery](concepts/Service_Discovery.md)
 - **Algorithms**
    - [Consistent Hashing](concepts/Consistent_Hashing.md)
    - Token bucket (rate limiter)
@@ -31,6 +34,8 @@ Accumulate system design knowledge (concepts, patterns, technology choices, etc.
    - [GraphQL](concepts/API_Architectural_Styles.md#graphql)
    - [WebSocket](concepts/API_Architectural_Styles.md#websocket)
    - [Webhook](concepts/API_Architectural_Styles.md#webhook)
+- **Basic knowledge**
+   - [Metrics](concepts/Metrics.md)
 
 ## Components
 ### Database (DB)
