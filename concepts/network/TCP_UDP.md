@@ -18,7 +18,8 @@
       - TCP provides flow control and congestion control mechanisms to prevent network congestion and ensure fair bandwidth usage.
    - *Error detection*
       - TCP includes error-checking mechanisms like checksums to detect and discard corrupted data.
-
+   - *Bitstream-oriented*
+      - 
 ## UDP
 - **Full name**
    - User Datagram Protocol
@@ -44,4 +45,4 @@
 | Number of receivers | 1 (P2P) | 1 or multiple (Multicast) | 
 | Congestion control | Yes | No |
 | Flow control | Yes | No |
-| Error detection | Robust | Robustless | 
+| Error detection | Robust | Not robustl | 
