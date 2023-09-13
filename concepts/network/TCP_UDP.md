@@ -33,6 +33,12 @@
 - *Bitstream-oriented*
    - With TCP, application layer data is segmented. The transport layer still ignores message boundaries.
 
+### Use cases
+- Applications where data integrity and reliability are crucial. (Reliability > Speed)
+   - Web browsing
+   - Email
+   - File transfers
+
 ### Connection
 - **Establish (The 3-way handshake)**
    - Step 1
@@ -82,6 +88,12 @@
    - UDP allows one servers to send data to one or multiple servers.
 - *Smaller header*
    - TCP has a smaller header (20 bytes).
+
+### Use cases
+- Real-time applications (Speed > Reliability)
+   - Voice and video conferencing
+   - Online gaming
+   - Streaming media
 
 ## Comparison
 ![tcp_udp](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/c9357a6c-6255-4c6f-b986-c1b479152d4b)
