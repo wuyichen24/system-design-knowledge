@@ -33,10 +33,10 @@
       - Step 3:
          - Client:
             - After receiving the SYN+ACK segment, the client sends back an ACK segment and enter to the ESTABLISHED state.
-         - Server
+         - Server:
             - After receiving the ACK segment, the server enters the ESTABLISHED state too.
 
-     ![3-ways](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/2f0329ab-25fe-40ca-8068-50373683997b)
+           ![3-ways](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/2f0329ab-25fe-40ca-8068-50373683997b)
 
    - *Close (The 4-way handshake)*
       - Step 1
@@ -51,6 +51,8 @@
             - After receiving the FIN segment, the client sends an ACK segment and enters the TIME_WAIT state.
             - After waiting for a 2MSL (Maximum Segment Lifetime) duration, the client enters to the CLOSED state too.
          - Server: After receiving the ACK segment, the server enters to the CLOSED state.
+
+           ![4-ways](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/818b664f-9761-4ee3-b75f-6aa2688fcf2f)
 
 ## UDP
 - **Full name**
