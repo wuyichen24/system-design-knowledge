@@ -1,5 +1,16 @@
 # TCP and UDP
 
+- [**TCP**](#tcp)
+   - [Full name](#full-name)
+   - [Characteristics](#characteristics)
+   - [Connection](#connection)
+      - Open (3-way handshake)
+      - Close (4-way handshake)
+- [**UDP**](#udp)
+   - [Full name](#full-name-1)
+   - [Characteristics](#characteristics-1)
+- [**Comparison**](#comparison)
+
 ## TCP
 ### Full name
    - Transmission Control Protocol
@@ -23,7 +34,7 @@
    - With TCP, application layer data is segmented. The transport layer still ignores message boundaries.
 
 ### Connection
-- **Open (The 3-way handshake)**
+- **Establish (The 3-way handshake)**
    - Step 1
       - Client:
          - The client initiates a connection by sending a SYN segment, enters into the SYN-SENT state.
