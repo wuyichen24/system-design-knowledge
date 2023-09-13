@@ -1,5 +1,8 @@
 # HTTP
 
+## Full name
+- HyperText Transfer Protocol
+
 ## Concepts
 - A request–response protocol in the client–server model.
 
@@ -9,15 +12,56 @@
 - *Can be stateful*
    - HTTP cookies allow the web server retain information or status (session) about each user for the duration of multiple requests.
 
+## Versions
+### HTTP/1.0
+- **Transport protocol**
+   - TCP
+- **Limitations**
+   - Each request to the same server required a separate TCP connection.
+
+### HTTP/1.1
+- **Transport protocol**
+   - TCP
+- **Features**
+   - *Persistent connection*
+      - A TCP connection could be left open for reuse.
+- **Limitations**
+   - *'Head-of-Line' (HOL) blocking*
+      - When all parallel request slots in a browser are filled, forcing subsequent requests to wait until previous ones are complete.
+
+### HTTP/2.0
+- **Transport protocol**
+   - TCP
+- **Features**
+   - *Multiplexing*
+      - Allows multiple requests and responses to be interleaved over a single connection.
+      - Eliminates HOL blocking at the application layer
+   - *HTTP streaming*
+      - Allows the multiplexing of different HTTP exchanges onto the same TCP connection, freeing us from the need to send each stream in order.
+- **Limitations**
+   - *HOL blocking at transport layer*
+      - HTTP/2.0 eliminates HOL blocking at the application layer, but HOL blocking could still occur at the transport layer (TCP).
+
+### HTTP/3.0
+- **Transport protocol**
+   - QUIC (based on UDP)
+- **Features**
+   - *Use QUIC*
+      - HTTP/3.0 is based UDP rather than TCP.
+      - Eliminates HOL blocking at both the application layer and transport layer.
+   - *QUIC streams*
+      - QUIC streams share the same QUIC connection, requiring no additional handshakes or slow starts to create new ones.
+      - QUIC streams are delivered independently. It means that in most cases packet loss in one stream doesn't impact others.
+
 ## Request and response
 ### Request
-- Structure
+- **Structure**
    - Method
    - URL/Path
    - Protocol version
    - Header(s)
    - Body
-- Methods
+- **Methods**
   | Method | Description |
   |----|----|
   | GET | Retrieves data without making changes. |
