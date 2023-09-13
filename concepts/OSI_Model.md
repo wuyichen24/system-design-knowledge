@@ -1,14 +1,4 @@
-# Network
-
-- [**OSI model**](#osi-model)
-- [**Common protocols**](#common-protocols)
-   - [Common transport layer (L4) protocols](#common-transport-layer-l4-protocols)
-      - [UDP](#udp)
-      - [TCP](#tcp)
-   - [Common application layer (L7) protocols](#common-application-layer-l7-protocols)
-      - [HTTP](#http)
-      - [RPC](#rpc)
-      - [WebSocket](#websocket)
+# OSI model
 
 ## OSI model
 | Number | Name | Protocol Data Unit | Decription | Common Protocols |
@@ -20,17 +10,6 @@
 | 3 | Network | Packet | Structuring and managing a multi-node network. | IP (IPv4, IPv6) |
 | 2 | Data Link | Frame | Reliable transmission of data frames between two nodes connected by a physical layer. | |
 | 1 | Physical | Bit, Symbol | Transmission and reception of raw bit streams over a physical medium. | |
-
-## Common protocols
-### Common transport layer (L4) protocols
-#### UDP
-- **Features**
-   - Connectionless
-   - Unreliable
-#### TCP
-- **Features**
-   - Connection-based
-   - Reliable
  
 ### Common application layer (L7) protocols
 #### HTTP
@@ -88,5 +67,4 @@
    - HTTP streaming
 
 ## References
-- https://en.wikipedia.org/wiki/Application_layer
 - https://stackoverflow.com/questions/12555043/my-understanding-of-http-polling-long-polling-http-streaming-and-websockets
