@@ -19,7 +19,8 @@
    - *Error detection*
       - TCP includes error-checking mechanisms like checksums to detect and discard corrupted data.
    - *Bitstream-oriented*
-      - 
+      - With TCP, application layer data is segmented. The transport layer still ignores message boundaries.
+
 ## UDP
 - **Full name**
    - User Datagram Protocol
