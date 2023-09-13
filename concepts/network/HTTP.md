@@ -44,7 +44,7 @@
   | 4XX | Client error | The request contains bad syntax or cannot be fulfilled. |
   | 5XX | Server error | The server failed to fulfill an apparently valid request. |
 
-## Techniques**
+## Techniques
 ### HTTP polling
 ### HTTP long polling
 - Concepts
