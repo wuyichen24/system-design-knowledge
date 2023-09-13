@@ -65,13 +65,4 @@
       - TCP has a smaller header (20 bytes).
 
 ## Comparison
-| | TCP | UPD |
-|----|----|----|
-| Connection | Connection-oriented | Connectionless |
-| Reliability | More reliable | Less reliable |
-| Delivery order | In order | Orderless |
-| Header size | Large (20 bytes) | Small (8 bytes) |
-| Number of receivers | 1 (P2P) | 1 or multiple (Multicast) | 
-| Congestion control | Yes | No |
-| Flow control | Yes | No |
-| Error detection | Robust | Not robustl | 
+![tcp_udp](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/c9357a6c-6255-4c6f-b986-c1b479152d4b)
