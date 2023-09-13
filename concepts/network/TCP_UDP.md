@@ -36,7 +36,7 @@
          - Server
             - After receiving the ACK segment, the server enters the ESTABLISHED state too.
 
-     ![3-ways](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/233b1181-da52-4cbd-aabc-dda31a932969)
+     ![3-ways](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/2f0329ab-25fe-40ca-8068-50373683997b)
 
    - *Close (The 4-way handshake)*
       - Step 1
