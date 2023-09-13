@@ -35,6 +35,9 @@
             - After receiving the SYN+ACK segment, the client sends back an ACK segment and enter to the ESTABLISHED state.
          - Server
             - After receiving the ACK segment, the server enters the ESTABLISHED state too.
+
+     ![3-ways](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/233b1181-da52-4cbd-aabc-dda31a932969)
+
    - *Close (The 4-way handshake)*
       - Step 1
          - Client: Initiates by sending a FIN segment to the server, transitioning into the FIN_WAIT_1 state.
