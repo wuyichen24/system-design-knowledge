@@ -23,7 +23,7 @@
    - With TCP, application layer data is segmented. The transport layer still ignores message boundaries.
 
 ### Connection
-- **Establish (The 3-way handshake)**
+- **Open (The 3-way handshake)**
    - Step 1
       - Client:
          - The client initiates a connection by sending a SYN segment, enters into the SYN-SENT state.
