@@ -11,7 +11,7 @@
 - **Batch**
    - A collection of messages.
 
-### Topic, partition, stream
+### Topic, partition
 - **Topic**
    - Messages in Kafka are categorized into topics.
    - One topic can have one or multiple partitions.
@@ -20,13 +20,24 @@
    - One partition can be only consumed by one consumer within a single consumer group.
    - One partition can be consumed by multiple consumers in different consumer group.
 
-### Producer, consumer
+### Consumer group
+- A group of consumers that consume the same topic.
+  
 ### Broker, cluster
+- **Broker**
+   - A single Kafka server.
+- **Cluster**
+   - A collection of brokers.
+- **Controller**
+   - A broker can be elected as a controller among a cluster.
+   - The controller is responsible for administrative operations, including assigning partitions to brokers and monitoring for broker failures.
+
 ### Retention
 
 ## Partition
 - **Concept**
+   - A partition is the smallest storage unit that holds a subset of messages owned by a topic.
 - **Characteristics**
-   - Each partition of the same topic can be hosted on a different server (A single topic can be scaled horizontally across multiple servers)
+   - Each partition of the same topic can be hosted on a different server.
    - One partition can be consumed by only one consumer from one consumer group.
    - One partition can be consumed by multiple consumers from different consumer groups.
