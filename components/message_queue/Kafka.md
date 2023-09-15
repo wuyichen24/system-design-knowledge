@@ -33,8 +33,6 @@
    - A broker can be elected as a controller among a cluster.
    - The controller is responsible for administrative operations, including assigning partitions to brokers and monitoring for broker failures.
 
-### Retention
-
 ## Partition
 - **Concept**
    - A partition is the smallest storage unit that holds a subset of messages owned by a topic.
@@ -42,3 +40,7 @@
    - Each partition of the same topic can be hosted on a different server.
    - One partition can be consumed by only one consumer from one consumer group.
    - One partition can be consumed by multiple consumers from different consumer groups.
+- **Implementation**
+   - Each partition is a single log file where records are written to it in an append-only fashion.
+- **Characteristics**
+   - 
