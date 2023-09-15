@@ -21,7 +21,8 @@
    - One partition can be consumed by multiple consumers in different consumer group.
 
 ### Consumer group
-- A group of consumers that consume the same topic.
+- **Consumer group**
+   - A group of consumers that consume the same topic.
   
 ### Broker, cluster
 - **Broker**
