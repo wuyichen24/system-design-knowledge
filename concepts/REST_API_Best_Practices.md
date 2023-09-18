@@ -26,3 +26,8 @@
   GET http://mysite.com/v1/users
   GET http://mysite.com/v2/users
   ```
+
+### Allow filtering, sorting, and pagination
+- **Concept**
+   - We should use filtering and pagination to reduce the size of the response.
+   - We should use sorting to provide the result in more meaningful order.
