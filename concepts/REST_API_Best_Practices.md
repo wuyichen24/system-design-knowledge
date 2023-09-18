@@ -17,6 +17,17 @@
      ```
 
 ### Name collections with plural nouns
+- **Concept**
+   - If your API returns a colleciton of entities, the resource name should use plural nouns
+- **Example**
+   - *Good* (return a list of users)
+     ```
+     GET http://mysite.com/users
+     ```
+   - *Bad* (return a list of users)
+     ```
+     GET http://mysite.com/user
+     ```
 
 ### Allow versioning
 - **Concept**
