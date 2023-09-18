@@ -1,6 +1,11 @@
 # REST API Best Practices
 
 ## Best practices
+### Use JSON as payload
+- **Concept**
+   - Use JSON as the format for request payload and response payload.
+   - If use JSON as the request payload and response payload, add the header `Content-Type` as `application/json`.
+
 ### Use nouns instead of verbs in URL
 - **Concept**
    - Shouldn't use verbs in the URL. Instead, we should use the nouns which represent the entity that the endpoint that we're retrieving or manipulating.
