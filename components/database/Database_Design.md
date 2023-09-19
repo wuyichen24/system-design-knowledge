@@ -51,14 +51,23 @@
 ### Normalization
 #### First Normal Form (1NF)
 - **Concept**
-   - Each column must have only one value, it cannot hold multiple values
+   - Each column must have only one value, it cannot hold multiple values.
 - **Example**
    - Violation (The `Department` column)
      | EmployeeID | EmployeeName | Department |
      |----|----|----|
-     | 001 | John | Sales,Finance |
-     | 002 | Mary | Sales,Finance,HR |
+     | 001 | John | **Sales,Finance** |
+     | 002 | Mary | **Sales,Finance,HR** |
 #### Second Normal Form (2NF)
+- **Concept**
+   - Satisfy 1NF.
+   - Each non-key column (a column that is not part of the primary key) should be functionally dependent on the entire primary key.
+- **Example**
+   - Violation (ProductName depends on the ProductID only, not the entire composite key)
+     | OrderID (PK) | ProductID (PK) | ProductName |
+     |----|----|----|
+     | 001 | 003 | Fork |
+     | 001 | 005 | Bowl |
 #### Third Normal Form (3NF)
 
 ### Denormalization
