@@ -70,6 +70,15 @@
       - 503 - Service Unavailable: The server is currently unable to handle the request due to temporary overloading or maintenance.
       - 504 - Gateway Timeout: The server, while acting as a gateway, did not receive a timely response from the upstream server.
 
+### Use proper method for operation
+- **Concept**
+   - Use proper HTTP method for different operations
+- **Common methods**
+   - GET: Retrieve data
+   - POST: Create data
+   - PUT: Update data
+   - DELETE: Remove data
+
 ### Allow versioning
 - **Concept**
    - We should have different versions of API if we're making any changes to them that may break clients.
