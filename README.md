@@ -59,6 +59,8 @@ Accumulate system design knowledge (concepts, patterns, technology choices, etc.
    - [Data structure](components/database/Database_Indexing.md#data-structure)
    - [Main categories](components/database/Database_Indexing.md#main-categories)
    - [Types](components/database/Database_Indexing.md#types)
+   - [Use cases](components/database/Database_Indexing.md#use-cases)
+   - [Best practices](components/database/Database_Indexing.md#best-practices)
 - [**Techniques**](components/database/Database_Techniques.md)
    - [Replication](components/database/Database_Techniques.md#replication)
    - [Partitioning](components/database/Database_Techniques.md#partitioning)
