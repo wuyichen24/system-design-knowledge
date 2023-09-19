@@ -36,6 +36,7 @@ Accumulate system design knowledge (concepts, patterns, technology choices, etc.
       - [WebSocket](concepts/api/API_Architectural_Styles.md#websocket)
       - [Webhook](concepts/api/API_Architectural_Styles.md#webhook)
    - [REST API Best Practices](concepts/api/REST_API_Best_Practices.md)
+   - [API Design Mindset](concepts/api/API_Design_Mindset.md)
 - **Basic knowledge**
    - [Metrics](concepts/Metrics.md)
 
