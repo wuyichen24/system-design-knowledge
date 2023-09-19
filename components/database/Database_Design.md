@@ -58,9 +58,10 @@
      |----|----|----|
      | 001 | John | **Sales,Finance** |
      | 002 | Mary | **Sales,Finance,HR** |
+
 #### Second Normal Form (2NF)
 - **Concept**
-   - Satisfy 1NF.
+   - Satisfies 1NF.
    - Each non-key column (a column that is not part of the primary key) should be functionally dependent on the entire primary key.
 - **Example**
    - Violation (ProductName depends on the ProductID only, not the entire composite key)
@@ -68,9 +69,10 @@
      |----|----|----|
      | 001 | 003 | **Fork** |
      | 001 | 005 | **Bowl** |
+
 #### Third Normal Form (3NF)
 - **Concept**
-   - Satisfy 2NF.
+   - Satisfies 2NF.
    - Non-key columns should not depend on other non-key columns.
 - **Example**
    - Violation (ManageName depends on EmployeeName)
@@ -78,6 +80,18 @@
      |----|----|----|
      | 001 | John | Alex |
      | 002 | Mary | Mike |
-### Denormalization
+
+#### Boyce-Codd Normal Form (BCNF)
+#### Fourth Normal Form (4NF)
+#### Fifth Normal Form (5NF) 
+### Denormalization (Materialized View)
+- **Concept**
+   - Introduces redundancy into a relational database schema to improve query performance or simplify data retrieval.
+   - Creates a redundant table to pre-join data from multiple tables
+- **Pros**
+   - *Improves read performance*
+   - *Simplifies queries*
+   - *Reduces complexity*
+- **Cons**
 
 ### Best practices
