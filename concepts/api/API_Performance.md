@@ -32,7 +32,21 @@
 - **Concepts**
    - Response time measures the time it takes for the API to process a request and send back a response.
    - It is often broken down into server processing time and network transfer time.
-- **Key metrics**
+- **Metrics**
    - Average response time
    - 90th or 95th percentile response time
    - Maximum response time
+
+### Throughput
+- **Concepts**
+   - Throughput measures the number of requests the API can handle per unit of time (e.g., requests per second or requests per minute). It indicates the API's capacity.
+- **Metrics**
+   - Requests Per Second (RPS)
+   - Requests Per Minute (RPM)
+
+### Concurrency
+- **Concepts**
+   - Concurrency measures the number of simultaneous requests the API can handle without degrading performance.
+- **Metrics**
+   - Concurrent connections
+   - Concurrent users
