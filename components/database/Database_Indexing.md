@@ -24,6 +24,7 @@
 - [**Use case**](#use-cases)
    - [Search](#search)
    - [SQL optimization](#sql-optimization)
+- [**Best practices**](#best-practices)
 
 ## Concepts
 - A data structure that speeds up data retrieval operations.
