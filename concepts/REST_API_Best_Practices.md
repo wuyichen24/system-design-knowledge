@@ -74,3 +74,16 @@
       - 502 - Bad Gateway: The server, while acting as a gateway, received an invalid response from the upstream server.
       - 503 - Service Unavailable: The server is currently unable to handle the request due to temporary overloading or maintenance.
       - 504 - Gateway Timeout: The server, while acting as a gateway, did not receive a timely response from the upstream server.
+
+### Use SSL for security
+- **Concepts**
+   - Use `https` rather than `http` in the URL.
+- **Example**
+   - *Good*
+     ```
+     GET https://mysite.com/v1/users
+     ```
+   - *Bad*
+     ```
+     GET http://mysite.com/v1/users
+     ```
