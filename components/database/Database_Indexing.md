@@ -21,7 +21,7 @@
    - [Spatial index](#spatial-index)
    - [Full-text index](#full-text-index)
    - [Hash index](#hash-index)
-- [**Use case**](#use-cases)
+- [**Use cases**](#use-cases)
    - [Search](#search)
    - [SQL optimization](#sql-optimization)
 - [**Best practices**](#best-practices)
