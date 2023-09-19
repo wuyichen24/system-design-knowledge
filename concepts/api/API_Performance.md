@@ -28,3 +28,11 @@
    - Asynchronous logging sends logs to a lock-free buffer first and immediately returns. The logs will be flushed to the disk periodically. This significantly reduces the I/O overhead.
 
 ## Metrics
+### Response Time (Latency)
+- **Concepts**
+   - Response time measures the time it takes for the API to process a request and send back a response.
+   - It is often broken down into server processing time and network transfer time.
+- **Key metrics**
+   - Average response time
+   - 90th or 95th percentile response time
+   - Maximum response time
