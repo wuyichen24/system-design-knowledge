@@ -16,4 +16,7 @@
 - **Load balancing and horizontal scaling**
    - Use load balancers to distribute incoming API requests across multiple server instances.
    - Add more API server instances to handle increased traffic. Implement auto-scaling to dynamically adjust server instances based on demand.
+- **Rate limiting**
+   - Implement rate limiting to restrict the number of requests from a single client within a given time frame. 
+
 ## Metrics
