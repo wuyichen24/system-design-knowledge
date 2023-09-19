@@ -192,3 +192,4 @@
 - [The Web API Checklist - 43 Things To Think About When Designing, Testing, and Releasing your API](https://mathieu.fenniak.net/the-api-checklist/)
 - [Microsoft Azure REST API Guidelines](https://github.com/microsoft/api-guidelines/blob/vNext/azure/Guidelines.md)
 - [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
+- [Google Cloud | 6 common mistakes to avoid in RESTful web API Design](https://cloud.google.com/blog/products/api-management/restful-web-api-design-best-practices)
