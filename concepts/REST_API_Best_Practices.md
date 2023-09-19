@@ -186,3 +186,7 @@
         GET http://api.example.com/v1/image
         Range: bytes=2500-4579
         ```
+
+## References
+- [Microsoft | RESTful web API design](https://learn.microsoft.com/en-us/azure/architecture/best-practices/api-design)
+- [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
