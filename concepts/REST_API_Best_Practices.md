@@ -23,13 +23,13 @@
 - **Examples**
    - *Good*
      ```
-     GET http://mysite.com/users
-     GET http://mysite.com/user/:id
+     GET http://api.example.com/users
+     GET http://api.example.com/user/:id
      ```
    - *Bad*
      ```
-     GET http://mysite.com/getUsers
-     GET http://mysite.com/getUser/:id
+     GET http://api.example.com/getUsers
+     GET http://api.example.com/getUser/:id
      ```
 
 ### Name collections with plural nouns
@@ -38,11 +38,11 @@
 - **Example**
    - *Good* (return a list of users)
      ```
-     GET http://mysite.com/users
+     GET http://api.example.com/users
      ```
    - *Bad* (return a list of users)
      ```
-     GET http://mysite.com/user
+     GET http://api.example.com/user
      ```
 
 ### Use proper status code for error handling
@@ -96,8 +96,8 @@
    - We should have different versions of API if we're making any changes to them that may break clients.
 - **Example**
   ```
-  GET http://mysite.com/v1/users
-  GET http://mysite.com/v2/users
+  GET http://api.example.com/v1/users
+  GET http://api.example.com/v2/users
   ```
 
 ### Allow filtering, sorting, and pagination
@@ -107,7 +107,7 @@
 - **Example**
    - *Filtering*
      ```
-     GET http://mysite.com/user?lastName=Smith&age=30
+     GET http://api.example.com/user?lastName=Smith&age=30
      ```
    - *Sorting*
      ```
@@ -116,7 +116,7 @@
    - Pagination
      ```
      https://api.example.com/articles?page=3&per_page=15
-     https://api.example.com//orders?limit=25&offset=50
+     https://api.example.com/orders?limit=25&offset=50
      ```
 
 ### Use SSL for security
@@ -131,3 +131,36 @@
      ```
      GET http://mysite.com/v1/users
      ```
+
+### Get smaller chunks for large binary resources
+- **Concept**
+   - Get smaller chunks of large binary resources (files or images) by `Range` header.
+- **How to do**
+   - *Step 1*: Use `HEAD` method to get the total size of the file
+      - Description
+         - A HEAD request is similar to a GET request, except that it only returns the HTTP headers that describe the resource, with an empty message body.
+      - Request
+        ```
+        HEAD http://api.example.com/v1/image
+        ```
+      - Response
+        ```
+        HTTP/1.1 200 OK
+
+        Accept-Ranges: bytes        // indicates that the corresponding GET operation supports partial results.
+        Content-Type: image/jpeg
+        Content-Length: 4580        // total image size
+        ```
+   - *Step 2*: Use `GET` method with `Range` header to get smaller chunks.
+      - Description
+         - Use `Range` header to specify which range of the file you want to get.
+      - Request 1 (get first 2500 bytes)
+        ```
+        GET http://api.example.com/v1/image
+        Range: bytes=0-2499
+        ```
+      - Request 2 (get rest bytes)
+        ```
+        GET http://api.example.com/v1/image
+        Range: bytes=2500-4579
+        ```
