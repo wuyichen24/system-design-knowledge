@@ -1,9 +1,12 @@
 # API Performance
 
 ## How to improve API performance
-- **Optimize database queries**
-   - Add indexes to tables.
-   - Process denormalization.
+- **Optimize database**
+   - *Optimize queries*
+      - Add indexes to tables.
+      - Process denormalization.
+   - *Optimize connection*
+      - Implement connection pooling to manage and reuse database connections efficiently, reducing overhead in opening and closing connections for each request.
 - **Caching**
    - Implement caching mechanisms to store frequently accessed data in memory.
 - **Reduce payload size**
