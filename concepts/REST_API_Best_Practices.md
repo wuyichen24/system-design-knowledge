@@ -5,6 +5,7 @@
    - [Use nouns instead of verbs in URL](#use-nouns-instead-of-verbs-in-url)
    - [Name collections with plural nouns](#name-collections-with-plural-nouns)
    - [Use proper status code for error handling](#use-proper-status-code-for-error-handling)
+   - [Use proper method for operation](#use-proper-method-for-operation)
    - [Allow versioning](#allow-versioning)
    - [Allow filtering, sorting, and pagination](#allow-filtering-sorting-and-pagination)
    - [Use SSL for security](#use-ssl-for-security)
