@@ -71,7 +71,6 @@ Accumulate system design knowledge (concepts, patterns, technology choices, etc.
       - [Denormalization (Materialized view)](components/database/Database_Design.md#denormalization-materialized-view)
       - [Best practices](components/database/Database_Design.md#best-practices)
 - Todo
-   - Different type of Normalisation
    - clustering and joins
    - DDL, DML and DCL
    - Different types of joins
