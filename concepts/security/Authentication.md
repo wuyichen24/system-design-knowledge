@@ -20,6 +20,10 @@
    - *Use session ID*
 - **Pros**
 - **Cons**
+   - *Vulnerable to session hijacking attacks*
+   - *Exposed to Cross-site request forgery (CSRF) attacks*
+   - *Difficult to scale to large numbers of users*
+   - *Less convenient to use in mobile native applications compared to web applications*
 ### Token-Based Authentication
 #### Basic Token Authentication
 #### JWT (JSON Web Token) Authentication 
