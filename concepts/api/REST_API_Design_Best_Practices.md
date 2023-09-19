@@ -1,4 +1,4 @@
-# REST API Best Practices
+# REST API Design Best Practices
 
 - [**Best practices**](#best-practices)
    - [Use JSON as payload](#use-json-as-payload)
