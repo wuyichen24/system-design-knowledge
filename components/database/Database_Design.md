@@ -21,6 +21,10 @@
 #### Step 5: Set up the table relationships 
 - **Concepts**
    - Look at each table and decide how the data in one table is related to the data in other tables. Add fields to tables or create new tables to clarify the relationships, as necessary.
+- **Types of relationship**
+   - *One-to-one*
+   - *One-to-many*
+   - *Many-to-many*
 
 #### Step 6: Add indexes to some columns
 - **Concepts**
