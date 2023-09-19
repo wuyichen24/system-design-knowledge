@@ -1,5 +1,15 @@
 # Database Design
 
+- [**Schema Design**](#schema-design)
+   - [Steps](#steps)
+      - [Step 1: Find and organize the information](#step-1-find-and-organize-the-information)
+      - [Step 2: Divide the information into tables](#step-2-divide-the-information-into-tables)
+      - [Step 3: Turn information items into columns](#step-3-turn-information-items-into-columns)
+      - [Step 4: Specify primary keys](#step-4-specify-primary-keys)
+      - [Step 5: Set up the table relationships](#step-5-set-up-the-table-relationships)
+      - [Step 6: Add indexes to some columns](#step-6-add-indexes-to-some-columns)
+   - [Best practices](#best-practices)
+
 ## Schema Design
 ### Steps
 #### Step 1: Find and organize the information
