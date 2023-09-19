@@ -38,6 +38,9 @@ Accumulate system design knowledge (concepts, patterns, technology choices, etc.
    - *API Design*
       - [REST API Design Best Practices](concepts/api/REST_API_Design_Best_Practices.md)
       - [API Design Mindset](concepts/api/API_Design_Mindset.md)
+   - [*API Performance*](concepts/api/API_Performance.md)
+      - [How to improve API performance](concepts/api/API_Performance.md#how-to-improve-api-performance)
+      - [Metrics](concepts/api/API_Performance.md#metrics)
 - **Security**
    - Authentication
    - Authorization
