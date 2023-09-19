@@ -87,11 +87,18 @@
 ### Denormalization (Materialized View)
 - **Concept**
    - Introduces redundancy into a relational database schema to improve query performance or simplify data retrieval.
-   - Creates a redundant table to pre-join data from multiple tables
+   - Creates a redundant table to pre-join data from multiple tables.
+ 
+     ![materialized-view-pattern-diagram](https://user-images.githubusercontent.com/8989447/154134405-95c792a7-ce84-4b8b-94a9-6dbdf145fb44.png)
+     
 - **Pros**
    - *Improves read performance*
    - *Simplifies queries*
    - *Reduces complexity*
 - **Cons**
+   - *Increases redundancy*
+   - *Increases storage usage*
+   - *Decreases write performance*
+   - *Increases maintenance complexity*
 
 ### Best practices
