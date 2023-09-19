@@ -93,6 +93,19 @@
 - **Concept**
    - We should use filtering and pagination to reduce the size of the response.
    - We should use sorting to provide the result in more meaningful order.
+- **Example**
+   - *Filtering*
+     ```
+     GET http://mysite.com/user?lastName=Smith&age=30
+     ```
+   - *Sorting*
+     ```
+     GET https://api.example.com/products?sort=price&order=desc
+     ```
+   - Pagination
+     ```
+     https://api.example.com/articles?page=3&per_page=15
+     ```
 
 ### Use SSL for security
 - **Concepts**
