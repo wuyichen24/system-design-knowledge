@@ -6,6 +6,7 @@
    - [Name collections with plural nouns](#name-collections-with-plural-nouns)
    - [Use proper status code for error handling](#use-proper-status-code-for-error-handling)
    - [Use proper method for operation](#use-proper-method-for-operation)
+   - [Use nesting in URL for nesting resources](#use-nesting-in-url-for-nesting-resources)
    - [Allow versioning](#allow-versioning)
    - [Allow filtering, sorting, and pagination](#allow-filtering-sorting-and-pagination)
    - [Use SSL for security](#use-ssl-for-security)
