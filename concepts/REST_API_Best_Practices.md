@@ -1,5 +1,14 @@
 # REST API Best Practices
 
+- [**Best practices**](#best-practices)
+   - [Use JSON as payload](#use-json-as-payload)
+   - [Use nouns instead of verbs in URL](#use-nouns-instead-of-verbs-in-url)
+   - [Name collections with plural nouns](#name-collections-with-plural-nouns)
+   - [Use proper status code for error handling](#use-proper-status-code-for-error-handling)
+   - [Allow versioning](#allow-versioning)
+   - [Allow filtering, sorting, and pagination](#allow-filtering-sorting-and-pagination)
+   - [Use SSL for security](#use-ssl-for-security)
+
 ## Best practices
 ### Use JSON as payload
 - **Concept**
@@ -34,20 +43,6 @@
      GET http://mysite.com/user
      ```
 
-### Allow versioning
-- **Concept**
-   - We should have different versions of API if we're making any changes to them that may break clients.
-- **Example**
-  ```
-  GET http://mysite.com/v1/users
-  GET http://mysite.com/v2/users
-  ```
-
-### Allow filtering, sorting, and pagination
-- **Concept**
-   - We should use filtering and pagination to reduce the size of the response.
-   - We should use sorting to provide the result in more meaningful order.
-
 ### Use proper status code for error handling
 - **Concept**
    - Return HTTP response codes that indicate what kind of error occurred.
@@ -74,6 +69,20 @@
       - 502 - Bad Gateway: The server, while acting as a gateway, received an invalid response from the upstream server.
       - 503 - Service Unavailable: The server is currently unable to handle the request due to temporary overloading or maintenance.
       - 504 - Gateway Timeout: The server, while acting as a gateway, did not receive a timely response from the upstream server.
+
+### Allow versioning
+- **Concept**
+   - We should have different versions of API if we're making any changes to them that may break clients.
+- **Example**
+  ```
+  GET http://mysite.com/v1/users
+  GET http://mysite.com/v2/users
+  ```
+
+### Allow filtering, sorting, and pagination
+- **Concept**
+   - We should use filtering and pagination to reduce the size of the response.
+   - We should use sorting to provide the result in more meaningful order.
 
 ### Use SSL for security
 - **Concepts**
