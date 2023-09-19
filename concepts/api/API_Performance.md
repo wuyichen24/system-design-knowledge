@@ -18,5 +18,13 @@
    - Add more API server instances to handle increased traffic. Implement auto-scaling to dynamically adjust server instances based on demand.
 - **Rate limiting**
    - Implement rate limiting to restrict the number of requests from a single client within a given time frame. 
+- **Asynchronous processing**
+   - Offload time-consuming or non-blocking tasks to background jobs or queues, freeing up API resources to handle more requests.
+   - Implement asynchronous APIs when appropriate, especially for long-running operations.
+- **Content Delivery Networks (CDNs)**
+   - Use CDNs to distribute and cache static assets like images, videos, and files.
+- **Asynchronous logging**
+   - Synchronous logging deals with the disk for every call and can slow down the system.
+   - Asynchronous logging sends logs to a lock-free buffer first and immediately returns. The logs will be flushed to the disk periodically. This significantly reduces the I/O overhead.
 
 ## Metrics
