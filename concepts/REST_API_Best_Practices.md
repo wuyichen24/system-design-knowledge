@@ -94,6 +94,11 @@
 ### Allow versioning
 - **Concept**
    - We should have different versions of API if we're making any changes to them that may break clients.
+- **Strategies**
+   - *URL versioning*
+   - *Query parameter versioning*
+   - *Header versioning*
+   - *Media type versioning*
 - **Example**
   ```
   GET http://api.example.com/v1/users
