@@ -10,6 +10,8 @@
    - [Allow versioning](#allow-versioning)
    - [Allow filtering, sorting, and pagination](#allow-filtering-sorting-and-pagination)
    - [Use SSL for security](#use-ssl-for-security)
+   - [Get smaller chunks for large binary resources](#get-smaller-chunks-for-large-binary-resources)
+- [**References**](#references)
 
 ## Best practices
 ### Use JSON as payload
