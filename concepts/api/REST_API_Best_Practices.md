@@ -97,7 +97,7 @@
 - **Concept**
    - We should have different versions of API if we're making any changes to them that may break clients.
 - **Strategies and examples**
-   - *URL versioning*
+   - *URL versioning* (Most common)
       - Add version number in URL.
         ```
         GET http://api.example.com/v1/users
