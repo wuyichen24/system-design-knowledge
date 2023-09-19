@@ -10,8 +10,8 @@
 - **How it works**
    - *Get session ID*
       - Client: Sends a request to access a protected resource on the server.
-      - Server: Responds with a login prompt.
-      - Client: Submits their username and password
+      - Server: Responds with a login prompt to the client.
+      - Client: Submits their username and password to the server.
       - Server:
          - Verifies the provided credentials against its user database or authentication service.
          - Generates a unique session ID and creates a corresponding session in the server-side storage.
