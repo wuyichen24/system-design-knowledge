@@ -94,7 +94,7 @@
 ### Allow versioning
 - **Concept**
    - We should have different versions of API if we're making any changes to them that may break clients.
-- **Strategies**
+- **Strategies and examples**
    - *URL versioning*
       - Add version number in URL.
         ```
@@ -119,11 +119,6 @@
         GET http://api.example.com/users
         Accept: application/example.v1+json
         ```
-- **Example**
-  ```
-  GET http://api.example.com/v1/users
-  GET http://api.example.com/v2/users
-  ```
 
 ### Allow filtering, sorting, and pagination
 - **Concept**
