@@ -75,10 +75,15 @@
 - **Concept**
    - Use proper HTTP method for different operations
 - **Common methods**
-   - GET: Retrieve data
-   - POST: Create data
-   - PUT: Update data
-   - DELETE: Remove data
+   - GET: Retrieve data.
+   - POST: Create data.
+   - PUT: Create or replace data.
+   - PATCH: Update data partially
+   - DELETE: Remove data.
+
+### Use nesting in URL for nesting resources
+- **Concept**
+   - 
 
 ### Allow versioning
 - **Concept**
@@ -105,6 +110,7 @@
    - Pagination
      ```
      https://api.example.com/articles?page=3&per_page=15
+     https://api.example.com//orders?limit=25&offset=50
      ```
 
 ### Use SSL for security
