@@ -83,7 +83,12 @@
 
 ### Use nesting in URL for nesting resources
 - **Concept**
-   - 
+   - If one resource is nested in another resource, it would better to reflect the resting relationship in URL
+- **Example**
+  ```
+  https://api.example.com/posts/123/comments
+  https://api.example.com/posts/123/comments/456
+  ```
 
 ### Allow versioning
 - **Concept**
