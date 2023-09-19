@@ -48,4 +48,19 @@
 - **Which column needs to be indexed**
    - See [Database Indexing - Best practices](Database_Indexing.md#best-practices)
 
+### Normalization
+#### First Normal Form (1NF)
+- **Concept**
+   - Each column must have only one value, it cannot hold multiple values
+- **Example**
+   - Violation (The `Department` column)
+     | EmployeeID | EmployeeName | Department |
+     |----|----|----|
+     | 001 | John | Sales,Finance |
+     | 002 | Mary | Sales,Finance,HR |
+#### Second Normal Form (2NF)
+#### Third Normal Form (3NF)
+
+### Denormalization
+
 ### Best practices
