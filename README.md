@@ -67,8 +67,8 @@ Accumulate system design knowledge (concepts, patterns, technology choices, etc.
 - [**Design**](components/database/Database_Design.md)
    - [Schema Design](components/database/Database_Design.md#schema-design)
       - [Steps](components/database/Database_Design.md#steps)
-      - [Normalization](#normalization)
-      - [Denormalization (Materialized view)](#denormalization-materialized-view)
+      - [Normalization](components/database/Database_Design.md#normalization)
+      - [Denormalization (Materialized view)](components/database/Database_Design.md#denormalization-materialized-view)
       - [Best practices](components/database/Database_Design.md#best-practices)
 - Todo
    - Different type of Normalisation
