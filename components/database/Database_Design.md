@@ -98,7 +98,7 @@
 - **Cons**
    - *Increases redundancy*
    - *Increases storage usage*
-   - *Decreases write performance*
+   - *Degrades write performance*
    - *Increases maintenance complexity*
 
 ### Best practices
