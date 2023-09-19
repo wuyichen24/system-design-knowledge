@@ -2,7 +2,6 @@
 
 - [**Replication**](#replication)
 - [**Partitioning**](#partitioning)
-- [**Denormalization (Materialized View)**](#denormalization-materialized-view)
 
 ## Replication
 | | Master-slave | Master-master |
@@ -25,7 +24,7 @@
 - **Cons and solutions**
    | Cons | Solution |
    |----|----|
-   | Join operation is complex. | De-normalize the database so that queries can be performed in a single table (See [Denormalization](#denormalization-materialized-view)) |
+   | Join operation is complex. | Denormalize the database so that queries can be performed in a single table (See [Denormalization](Database_Design.md#denormalization-materialized-view)) |
    | Rebalance is complex. | |
    | Introduce hot spots (celebrity problem). | Allocate a partition for each celebrity. Each partition might even require further partition. |
 - **Sharding**
