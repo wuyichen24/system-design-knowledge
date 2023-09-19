@@ -66,10 +66,18 @@
    - Violation (ProductName depends on the ProductID only, not the entire composite key)
      | OrderID (PK) | ProductID (PK) | ProductName |
      |----|----|----|
-     | 001 | 003 | Fork |
-     | 001 | 005 | Bowl |
+     | 001 | 003 | **Fork** |
+     | 001 | 005 | **Bowl** |
 #### Third Normal Form (3NF)
-
+- **Concept**
+   - Satisfy 2NF.
+   - Non-key columns should not depend on other non-key columns.
+- **Example**
+   - Violation (ManageName depends on EmployeeName)
+     | EmployeeID | EmployeeName | ManagerName |
+     |----|----|----|
+     | 001 | John | Alex |
+     | 002 | Mary | Mike |
 ### Denormalization
 
 ### Best practices
