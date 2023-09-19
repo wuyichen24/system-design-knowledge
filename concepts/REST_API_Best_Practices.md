@@ -96,9 +96,29 @@
    - We should have different versions of API if we're making any changes to them that may break clients.
 - **Strategies**
    - *URL versioning*
+      - Add version number in URL.
+        ```
+        GET http://api.example.com/v1/users
+        GET http://api.example.com/v2/users
+        ```
    - *Query parameter versioning*
+      - Add version number as a query parameter.
+        ```
+        GET http://api.example.com/users?version=1
+        GET http://api.example.com/users?version=2
+        ```
    - *Header versioning*
+      - Add version number in header.
+        ```
+        GET http://api.example.com/users
+        Custom-Header: api-version=1
+        ```
    - *Media type versioning*
+      - Add version number in media type.
+        ```
+        GET http://api.example.com/users
+        Accept: application/example.v1+json
+        ```
 - **Example**
   ```
   GET http://api.example.com/v1/users
