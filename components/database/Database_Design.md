@@ -92,7 +92,7 @@
 #### Boyce-Codd Normal Form (BCNF)
 #### Fourth Normal Form (4NF)
 #### Fifth Normal Form (5NF) 
-### Denormalization (Materialized View)
+### Denormalization (Materialized view)
 - **Concept**
    - Introduces redundancy into a relational database schema to improve query performance or simplify data retrieval.
    - Creates a redundant table to pre-join data from multiple tables.
