@@ -8,6 +8,14 @@
       - [Step 4: Specify primary keys](#step-4-specify-primary-keys)
       - [Step 5: Set up the table relationships](#step-5-set-up-the-table-relationships)
       - [Step 6: Add indexes to some columns](#step-6-add-indexes-to-some-columns)
+   - [Normalization](#normalization)
+      - [First Normal Form (1NF)](#first-normal-form-1nf)
+      - [Second Normal Form (2NF)](#second-normal-form-2nf)
+      - [Third Normal Form (3NF)](#third-normal-form-3nf)
+      - [Boyce-Codd Normal Form (BCNF)](#boyce-codd-normal-form-bcnf)
+      - [Fourth Normal Form (4NF)](#fourth-normal-form-4nf)
+      - [Fifth Normal Form (5NF)](#fifth-normal-form-5nf)
+   - [Denormalization (Materialized view)](#denormalization-materialized-view)
    - [Best practices](#best-practices)
 
 ## Schema Design
