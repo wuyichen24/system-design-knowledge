@@ -64,10 +64,11 @@ Accumulate system design knowledge (concepts, patterns, technology choices, etc.
 - [**Techniques**](components/database/Database_Techniques.md)
    - [Replication](components/database/Database_Techniques.md#replication)
    - [Partitioning](components/database/Database_Techniques.md#partitioning)
-   - [Denormalization (Materialized View)](components/database/Database_Techniques.md#denormalization-materialized-view)
 - [**Design**](components/database/Database_Design.md)
    - [Schema Design](components/database/Database_Design.md#schema-design)
       - [Steps](components/database/Database_Design.md#steps)
+      - [Normalization](#normalization)
+      - [Denormalization (Materialized view)](#denormalization-materialized-view)
       - [Best practices](components/database/Database_Design.md#best-practices)
 - Todo
    - Different type of Normalisation
