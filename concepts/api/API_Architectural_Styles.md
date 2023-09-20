@@ -127,7 +127,7 @@
       - The client sends a request and needs to wait for a response.
       - Doesn't support streaming.
    - *Single resource*
-      - Fetching multiple resources is challenging*
+      - Fetching multiple resources is challenging
 - **Use cases**
    - Public APIs
    - Simple resource-drive APIs
