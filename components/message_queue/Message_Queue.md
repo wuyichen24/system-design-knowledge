@@ -51,13 +51,17 @@
 | | RabbitMQ | Kafka |
 |----|----|----|
 | Protocol | AMQP | Binary protocol over TCP |
-| Message routing | Flexible routing rules | Single |
+| Message routing | Support multiple routing rules | Single |
 | Message consumption | push | pull |
 | Message ordering | Ordered at queue level | Ordered at partition level (Not topic level) |
 | Message deleteion | Delete on ACK | Delete on retention period expires |
 | Message delivery gurantees | <li>At-most-once<li>At-least-once | <li>At-most-once<li>At-least-once<li>Exactly-once (by idempotent producers, transactional consumers) |
+| Message persistence | Less | Strong (persisting messages to disk) |
 | Client API | <li>Java<li>Ruby<li>JavaScript<li>Go<li>C<li>Swift<li>Spring<li>Elixir<li>PHP<li>.NET | <li>Java<li>Ruby<li>Python<li>Node.js |
+| Federated queues | Yes | No |
 | Complexity | Less | More |
+| Throughput | 20K / sec | Millions / sec |
+| Scaling strategies | Mostly vertical scaling | Horizontal scaling |
 | Learning curve | Gentle | Steep |
 | Ecosystem | Smaller | Larger |
 
@@ -81,3 +85,4 @@ If there are duplicate messages in a message queue, how the receiver handles dup
 - Book: [Neha N.,Gwen S.,Todd P.(2017). Chapter 7. Building Data Pipelines, *Kafka: The Definitive Guide* (pp. 135-156). O'Reilly Media](https://www.oreilly.com/library/view/kafka-the-definitive/9781491936153/)
 - Book: [Martin K.(2017). Chapter 4 Encoding and Evolution, *Designing Data-Intensive Applications* (pp. 111-150). O'Reilly Media](https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/)
 - Web Article: [Asynchronous Messaging Primer | https://docs.microsoft.com/en-us/previous-versions/msp-n-p/dn589781(v=pandp.10)](https://docs.microsoft.com/en-us/previous-versions/msp-n-p/dn589781(v=pandp.10))
+- [CloudAMQP | Comparison: Apache Kafka VS RabbitMQ](https://www.cloudamqp.com/blog/apachekafka-vs-rabbitmq.html)
