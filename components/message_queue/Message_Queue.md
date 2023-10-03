@@ -17,7 +17,7 @@
 ## Pros & Cons
 ### Pros
 - **Fan-out**
-   - The producer simply drops the message on the queue, and the consumers process the message based on their needs at their own pace.
+   - The producer simply drops the message on the queue, and the multiple consumers process the message based on their needs at their own pace.
 - **Asynchronous**
    - A producer doesn’t wait for the message to be processed.
 - **Decoupling**
@@ -61,15 +61,6 @@ If there are duplicate messages in a message queue, how the receiver handles dup
 
 ## Use cases
 
-## Standards
-### Protocols
-- AMQP (Advanced Message Queuing Protocol)
-- STOMP (Streaming Text Oriented Messaging Protocol)
-- MQTT (Message Queuing Telemetry Transport)
-- XMPP (Extensible Messaging and Presence Protocol)
-
-### APIs
-- JMS (Java Message Service)
 
 ## References
 - Book: [Chris R.(2018). Chapter 3. Interprocess communication in a microservice architecture, *Microservices Patterns* (pp. 65-109). Manning Publications](https://www.manning.com/books/microservices-patterns)
