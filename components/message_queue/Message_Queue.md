@@ -16,12 +16,15 @@
 
 ## Pros & Cons
 ### Pros
+- **Fan-out**
+   - The producer simply drops the message on the queue, and the consumers process the message based on their needs at their own pace.
 - **Asynchronous**
-   - A sender doesn’t wait for the message to be delivered.
-- **Loose coupling**
-   - Senders are completely unaware of receivers (Don't have to know the IPs and ports of receivers).
-- **Message buffering**
-   - It can act as a buffer if the receiver is unavailable or overloaded.
+   - A producer doesn’t wait for the message to be processed.
+- **Decoupling**
+   - Producers are completely unaware of consumers (Don't have to know the IPs and ports of receivers).
+   - Producers or consumers can be modified and deployed independently.
+- **Buffering/Rate limiting**
+   - It can act as a buffer if the consumer is unavailable or overloaded.
 
 ### Cons
 - **Single point of failure**
@@ -29,7 +32,7 @@
 - **Increase complexity**
    - Increase system complexity and operational complexity.
 
-## Considerations
+## Selection
 ### Factors
 - **Supported programming languages**
 - **Message ordering**
@@ -56,8 +59,7 @@ If there are duplicate messages in a message queue, how the receiver handles dup
 - **Solution 2**: Track each message which has been processed into a data store and discard duplicates.
    - Add a unique identifier into each message.
 
-## When to use
-- When most requests need to take a long time to be processed, like video, image, or audio processing. A client doesn’t need to wait until the processing is finished.
+## Use cases
 
 ## Standards
 ### Protocols
