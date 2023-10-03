@@ -2,6 +2,14 @@
 
 - [**Replication**](#replication)
 - [**Partitioning**](#partitioning)
+- [**Sharding**](#sharding)
+   - [Strategies](#strategies)
+      - [By mod of key](#by-mod-of-key)
+      - [By key range](#by-key-range)
+      - [By hash of key](#by-key-range)
+      - [By consistent hashing](#by-consistent-hashing)
+      - [Directory based sharding](#directory-based-sharding)
+   - [How to query](#how-to-query)
 
 ## Replication
 | | Master-slave | Master-master |
