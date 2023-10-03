@@ -50,7 +50,7 @@
 - **Cons**
    - Certain access patterns can lead to hot spots (A partition with disproportionately high load).
            
-![116647540-09a4f380-a938-11eb-9621-eeeff91e442c](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/9d13e712-6fa9-4766-8f03-cf3e5eba7d54)
+![116647540-09a4f380-a938-11eb-9621-eeeff91e442c](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/9535478d-06fa-444b-b2a5-2647f04ad397)
         
 #### By hash of key
 - **Concept**
@@ -60,7 +60,7 @@
 - **Cons**
    - Lose the ability to do efficient range queries.
 
-![116647659-525cac80-a938-11eb-847f-c44bfec9f68a](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/6a4cf967-0438-4c14-ad31-4dcc8df82afe)
+![116647659-525cac80-a938-11eb-847f-c44bfec9f68a](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/c6c1c9e6-e394-4c9d-8bb4-ffa9ec0db15c)
 
 #### By consistent hashing
 - **Concept**
