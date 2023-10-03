@@ -36,6 +36,11 @@
 
 ## Sharding
 - **Strategies**
+   - *By mod of key*
+      - Concept
+         - Use the mod of key to decide which partition to store the data.
+      - Example
+         - If we want to separate data into 128 tables, we just get the mod of the key. If the mod of a key is 2, so store the record into the `table_002`.
    - *By key range*
       - Concept
          - Assign a range of keys to each partition.
@@ -46,7 +51,7 @@
            
     ![ddia_0602](https://user-images.githubusercontent.com/8989447/116647540-09a4f380-a938-11eb-9621-eeeff91e442c.png)
         
-   - *By hash key*
+   - *By hash of key*
       - Concept
          - Assign a range of hashes to each partition.
       - Pros
