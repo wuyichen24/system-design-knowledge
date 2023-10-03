@@ -16,8 +16,6 @@
 
 ## Pros & Cons
 ### Pros
-- **Fan-out**
-   - The producer simply drops the message on the queue, and the multiple consumers process the message based on their needs at their own pace.
 - **Asynchronous**
    - A producer doesn’t wait for the message to be processed.
 - **Decoupling**
@@ -25,6 +23,8 @@
    - Producers or consumers can be modified and deployed independently.
 - **Buffering/Rate limiting**
    - It can act as a buffer if the consumer is unavailable or overloaded.
+- **Fan-out**
+   - The producer simply drops the message on the queue, and the multiple consumers process the message based on their needs at their own pace.
 
 ### Cons
 - **Single point of failure**
