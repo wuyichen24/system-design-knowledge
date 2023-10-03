@@ -27,6 +27,11 @@
    | Join operation is complex. | Denormalize the database so that queries can be performed in a single table (See [Denormalization](Database_Design.md#denormalization-materialized-view)) |
    | Rebalance is complex. | |
    | Introduce hot spots (celebrity problem). | Allocate a partition for each celebrity. Each partition might even require further partition. |
+- **When to use**
+   - *When to split data into multiple databases*
+      - When the concurrency is high (because number of database connections is limited).
+   - *When to split data into multiple tables*
+      - When the data size is huge.
 - **Sharding**
    - Strategies
       - By key range
