@@ -30,6 +30,7 @@
 - **When to use**
    - *When to split data into multiple databases*
       - When the concurrency is high (because number of database connections is limited).
+      - When the data needs to be archived (create a new database for storing archived data).
    - *When to split data into multiple tables*
       - When the data size is huge.
 - **Sharding**
