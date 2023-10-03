@@ -34,7 +34,7 @@
 - Queries per second (QPS): The number of queries (requests) a server can be responded to.
 - Transactions per second (TPS): The number of transactions a server can handle.
 - Response time (RT): The time period between the client sends a request and the client receives the response.
-- Concurrency: 
+- Concurrency: The number of requests can be handle concurrently.
 
 ### QPS vs. TPS
 - **QPS**
