@@ -71,6 +71,7 @@ Accumulate system design knowledge (concepts, patterns, technology choices, etc.
 - [**Techniques**](components/database/Database_Techniques.md)
    - [Replication](components/database/Database_Techniques.md#replication)
    - [Partitioning](components/database/Database_Techniques.md#partitioning)
+   - [Sharding](components/database/Database_Techniques.md#sharding)
 - [**Design**](components/database/Database_Design.md)
    - [Schema Design](components/database/Database_Design.md#schema-design)
       - [Steps](components/database/Database_Design.md#steps)
