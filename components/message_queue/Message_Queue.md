@@ -57,6 +57,9 @@
 | Message deleteion | Delete on ACK | Delete on retention period expires |
 | Message delivery gurantees | <li>At-most-once<li>At-least-once | <li>At-most-once<li>At-least-once<li>Exactly-once (by idempotent producers, transactional consumers) |
 | Client API | <li>Java<li>Ruby<li>JavaScript<li>Go<li>C<li>Swift<li>Spring<li>Elixir<li>PHP<li>.NET | <li>Java<li>Ruby<li>Python<li>Node.js |
+| Complexity | Less | More |
+| Learning curve | Gentle | Steep |
+| Ecosystem | Smaller | Larger |
 
 ## Common problems and solutions
 ### How to guarantee message order
