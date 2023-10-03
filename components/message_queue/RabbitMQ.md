@@ -33,3 +33,13 @@
    - It is possible to connect to RabbitMQ with a given username and password. Every user can be assigned permissions such as rights to read, write and configure privileges within the instance. Users can also be assigned permissions for specific virtual hosts.
 - **Vhost/virtual host**
    - Provides a way to segregate applications using the same RabbitMQ instance. Different users can have different permissions to different vhost and queues and exchanges can be created, so they only exist in one vhost.
+
+## Exchange types
+- **Direct**
+   - The message is routed to the queues whose binding key exactly matches the routing key of the message.
+- **Fanout**
+   - A fanout exchange routes messages to all of the queues bound to it.
+- **Topic**
+   - The topic exchange does a wildcard match between the routing key and the routing pattern specified in the binding.
+- **Headers**
+   - Headers exchanges use the message header attributes for routing.
