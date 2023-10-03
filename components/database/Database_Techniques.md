@@ -46,9 +46,9 @@
    
            ![dss](https://user-images.githubusercontent.com/8989447/117697354-9d1fc500-b17f-11eb-895d-4164124c4b01.png)
 - **How to query after sharding**
-   - Query on the sharding key
+   - *Query on the sharding key*
       - Use the sharding key to locate the certain shard (table) easily.
-   - Query on the non-sharding columns
+   - *Query on the non-sharding columns*
       - Solution 1: Add the non-sharding column as part of the sharding key.
          - Example: For the `order` table, the sharding key is `orderID`. But if we frequently query the `order` table by `userID`, we could add `userID` as part of the sharding key. So the final sharding key will be `orderID + userID`.
       - Solution 2: Double-write (write the same data into 2 different shards): One shard can be queried by some non-sharding columns, another shard can be queried by some other non-sharding columns.
