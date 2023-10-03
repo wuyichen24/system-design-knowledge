@@ -44,3 +44,5 @@
 - **Examples**
    - One transaction can be one access to a web page. But during this transaction, the client can send 3 requests to the server.
    
+### Calculation
+- `QPS = Councurrency / RT`
