@@ -47,6 +47,12 @@
 - **Scalability**
 - **Latency**
 
+### Comparison
+| | RabbitMQ | Kafka |
+|----|----|----|
+| Protocol | AMQP | Binary protocol over TCP |
+| Client API | <li>Java<li>Ruby<li>JavaScript<li>Go<li>C<li>Swift<li>Spring<li>Elixir<li>PHP<li>.NET | <li>Java<li>Ruby<li>Python<li>Node.js |
+
 ## Common problems and solutions
 ### How to guarantee message order
 If a message queue cannot preserve the order of messages on its own, how to keep messages delivered in order (FIFO).
