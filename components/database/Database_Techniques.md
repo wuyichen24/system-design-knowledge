@@ -98,3 +98,6 @@
    - Solution 2: Double-write (write the same data into 2 different shards): One shard can be queried by some non-sharding columns, another shard can be queried by some other non-sharding columns.
       - Example: For the `order` table, the sharding key of one shard is "orderID + userID" (this can be queried by `orderID` and `userID`), the sharding key of another shard is "sellerID" (this can be queried by `sellerID`)
    - Solution 3: No sharding, create a better index with better hardward resources.
+
+## References
+- [51CTO 再有人问你什么是分库分表，直接把这篇文章发给他](https://www.51cto.com/article/709614.html)
