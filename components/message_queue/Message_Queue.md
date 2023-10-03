@@ -86,3 +86,4 @@ If there are duplicate messages in a message queue, how the receiver handles dup
 - Book: [Martin K.(2017). Chapter 4 Encoding and Evolution, *Designing Data-Intensive Applications* (pp. 111-150). O'Reilly Media](https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/)
 - Web Article: [Asynchronous Messaging Primer | https://docs.microsoft.com/en-us/previous-versions/msp-n-p/dn589781(v=pandp.10)](https://docs.microsoft.com/en-us/previous-versions/msp-n-p/dn589781(v=pandp.10))
 - [CloudAMQP | Comparison: Apache Kafka VS RabbitMQ](https://www.cloudamqp.com/blog/apachekafka-vs-rabbitmq.html)
+- [How to choose between Kafka and RabbitMQ](https://tarunbatra.com/blog/comparison/How-to-choose-between-Kafka-and-RabbitMQ/#:~:text=Both%20Kafka%20and%20RabbitMQ%20offer,the%20consumers%20is%20more%20complex.)
