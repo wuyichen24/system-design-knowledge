@@ -49,7 +49,7 @@
       - Cons
          - Certain access patterns can lead to hot spots (A partition with disproportionately high load).
            
-    ![ddia_0602](https://user-images.githubusercontent.com/8989447/116647540-09a4f380-a938-11eb-9621-eeeff91e442c.png)
+     ![ddia_0602](https://user-images.githubusercontent.com/8989447/116647540-09a4f380-a938-11eb-9621-eeeff91e442c.png)
         
    - *By hash of key*
       - Concept
@@ -58,7 +58,14 @@
          - Keys distributing is fair among the partitions.
       - Cons
          - Lose the ability to do efficient range queries.
-    ![ddia_0603](https://user-images.githubusercontent.com/8989447/116647659-525cac80-a938-11eb-847f-c44bfec9f68a.png)
+     ![ddia_0603](https://user-images.githubusercontent.com/8989447/116647659-525cac80-a938-11eb-847f-c44bfec9f68a.png)
+   - *By consistent hashing*
+      - Concept
+         - Consistent hashing is a distributed hashing scheme that operates independently of the number of servers or objects in a distributed hash table by assigning them a position on an abstract circle, or hash ring.
+      - Pros
+         - When adding or removing servers, the number of keys that need to be relocated is minimized.
+     ![conhash](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/ff7c85d1-3d84-43fd-8a3d-ea93c0c0094f)
+
    - *Directory based sharding*
       - Concepts
          - Place a lookup service in front of the sharded databases.
@@ -68,7 +75,7 @@
       - Pros
          - Loose coupling: Any partitioning scheme changes will encapsulated and will not impact on the application.
    
-    ![dss](https://user-images.githubusercontent.com/8989447/117697354-9d1fc500-b17f-11eb-895d-4164124c4b01.png)
+     ![dss](https://user-images.githubusercontent.com/8989447/117697354-9d1fc500-b17f-11eb-895d-4164124c4b01.png)
   
 - **How to query after sharding**
    - *Query on the sharding key*
