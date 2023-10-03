@@ -43,3 +43,6 @@
    - The topic exchange does a wildcard match between the routing key and the routing pattern specified in the binding.
 - **Headers**
    - Headers exchanges use the message header attributes for routing.
+
+## References
+- [Part 1: RabbitMQ for beginners - What is RabbitMQ?](https://www.cloudamqp.com/blog/part1-rabbitmq-for-beginners-what-is-rabbitmq.html)
