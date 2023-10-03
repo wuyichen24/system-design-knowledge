@@ -50,7 +50,7 @@
 - **Cons**
    - Certain access patterns can lead to hot spots (A partition with disproportionately high load).
            
-![ddia_0602](https://user-images.githubusercontent.com/8989447/116647540-09a4f380-a938-11eb-9621-eeeff91e442c.png)
+![116647540-09a4f380-a938-11eb-9621-eeeff91e442c](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/9d13e712-6fa9-4766-8f03-cf3e5eba7d54)
         
 #### By hash of key
 - **Concept**
@@ -60,14 +60,15 @@
 - **Cons**
    - Lose the ability to do efficient range queries.
 
-![ddia_0603](https://user-images.githubusercontent.com/8989447/116647659-525cac80-a938-11eb-847f-c44bfec9f68a.png)
+![116647659-525cac80-a938-11eb-847f-c44bfec9f68a](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/6a4cf967-0438-4c14-ad31-4dcc8df82afe)
 
 #### By consistent hashing
 - **Concept**
    - Consistent hashing is a distributed hashing scheme that operates independently of the number of servers or objects in a distributed hash table by assigning them a position on an abstract circle, or hash ring.
 - **Pros**
    - When adding or removing servers, the number of keys that need to be relocated is minimized.
-![conhash](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/ff7c85d1-3d84-43fd-8a3d-ea93c0c0094f)
+
+![conhash](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/95873824-0f64-493c-b10a-0e0ded80aad9)
 
 #### Directory based sharding
 - **Concepts**
