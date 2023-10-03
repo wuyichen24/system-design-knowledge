@@ -52,7 +52,7 @@
 |----|----|----|
 | Protocol | AMQP | Binary protocol over TCP |
 | Message routing | Flexible routing rules | Single |
-| Message delivery gurantees | <li>At-most-once<li>At-least-once | <li>At-most-once<li>At-least-once<li>Exactly-once |
+| Message delivery gurantees | <li>At-most-once<li>At-least-once | <li>At-most-once<li>At-least-once<li>Exactly-once (by idempotent producers, transactional consumers) |
 | Client API | <li>Java<li>Ruby<li>JavaScript<li>Go<li>C<li>Swift<li>Spring<li>Elixir<li>PHP<li>.NET | <li>Java<li>Ruby<li>Python<li>Node.js |
 
 ## Common problems and solutions
