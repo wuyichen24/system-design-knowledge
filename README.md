@@ -92,17 +92,8 @@ Accumulate system design knowledge (concepts, patterns, technology choices, etc.
 ### Message Queue (MQ)
 - [**Message Queue (MQ)**](components/message_queue/Message_Queue.md)
    - [Pros & Cons](components/message_queue/Message_Queue.md#pros--cons)
-      - [Pros](components/message_queue/Message_Queue.md#pros)
-      - [Cons](components/message_queue/Message_Queue.md#cons)
    - [Selection](components/message_queue/Message_Queue.md#selection)
-      - [Factors](components/message_queue/Message_Queue.md#factors)
    - [Common problems and solutions](components/message_queue/Message_Queue.md#common-problems-and-solutions)
-      - [How to guarantee message order](components/message_queue/Message_Queue.md#how-to-guarantee-message-order)
-      - [How to handle duplicated message](components/message_queue/Message_Queue.md#how-to-handle-duplicated-message)
-   - [When to use](components/message_queue/Message_Queue.md#when-to-use)
-   - [Standards](components/message_queue/Message_Queue.md#standards)
-      - [Protocols](components/message_queue/Message_Queue.md#protocols)
-      - [APIs](components/message_queue/Message_Queue.md#apis)
 
 ### Cache
 - [Cache](components/Cache.md)
