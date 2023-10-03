@@ -46,6 +46,9 @@ Accumulate system design knowledge (concepts, patterns, technology choices, etc.
    - Authorization
 - **Basic knowledge**
    - [Metrics](concepts/Metrics.md)
+      - [Storage](concepts/Metrics.md#storage)
+      - [Availability](concepts/Metrics.md#availability)
+      - [Performance](concepts/Metrics.md#performance)
 
 ## Components
 ### Database (DB)
