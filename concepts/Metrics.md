@@ -41,6 +41,6 @@
    - QPS is often associated with individual queries or requests
 - **TPS**
    - TPS typically measures the rate of complete transactions, which may involve multiple requests.
-- Examples
+- **Examples**
    - One transaction can be one access to a web page. But during this transaction, the client can send 3 requests to the server.
    
