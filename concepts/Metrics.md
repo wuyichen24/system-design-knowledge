@@ -1,5 +1,14 @@
 # Metrics
 
+- [**Storage**](#storage)
+   - [Units of measurement for data storage](#units-of-measurement-for-data-storage)
+- [**Availability**](#availability)
+   - [Mapping between availability percentage and service downtime](#mapping-between-availability-percentage-and-service-downtime)
+- [**Performance**](#performance)
+   - [Metrics](#metrics-1)
+   - [QPS vs. TPS](#qps-vs-tps)
+   - [Calculation](#calculation)
+
 ## Storage
 ### Units of measurement for data storage
 | Name | Abbreviation | Size (base 2) | Conversion |
