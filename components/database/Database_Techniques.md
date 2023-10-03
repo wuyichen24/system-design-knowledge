@@ -81,7 +81,7 @@
    
 ![dss](https://user-images.githubusercontent.com/8989447/117697354-9d1fc500-b17f-11eb-895d-4164124c4b01.png)
   
-### How to query after sharding**
+### How to query
 - **Query on the sharding key**
    - Use the sharding key to locate the certain shard (table) easily.
 - **Query on the non-sharding columns**
