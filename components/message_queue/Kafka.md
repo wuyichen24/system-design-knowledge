@@ -44,3 +44,9 @@
    - Each partition is a single log file where records are written to it in an append-only fashion.
 - **Characteristics**
    - Create topics with a large number of partitions so that more consumer can consume messages at the same time.
+
+## Common problems and solutions
+### Message loss
+- Which scenarios will have message loss
+
+### Message duplication
