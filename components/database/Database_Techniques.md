@@ -33,36 +33,38 @@
       - When the data needs to be archived (create a new database for storing archived data).
    - *When to split data into multiple tables* (分表)
       - When the data size is huge.
-- **Sharding**
-   - Strategies
-      - By key range
-         - Concept
-            - Assign a range of keys to each partition.
-         - Pros
-            - Range queries are easy.
-         - Cons
-            - Certain access patterns can lead to hot spots (A partition with disproportionately high load).
+
+## Sharding
+- **Strategies**
+   - *By key range*
+      - Concept
+         - Assign a range of keys to each partition.
+      - Pros
+         - Range queries are easy.
+      - Cons
+         - Certain access patterns can lead to hot spots (A partition with disproportionately high load).
            
-        ![ddia_0602](https://user-images.githubusercontent.com/8989447/116647540-09a4f380-a938-11eb-9621-eeeff91e442c.png)
+    ![ddia_0602](https://user-images.githubusercontent.com/8989447/116647540-09a4f380-a938-11eb-9621-eeeff91e442c.png)
         
-      - By hash of key
-         - Concept
-            - Assign a range of hashes to each partition.
-         - Pros
-            - Keys distributing is fair among the partitions.
-         - Cons
-            - Lose the ability to do efficient range queries.
-       ![ddia_0603](https://user-images.githubusercontent.com/8989447/116647659-525cac80-a938-11eb-847f-c44bfec9f68a.png)
-      - Directory based sharding
-         - Concepts
-            - Place a lookup service in front of the sharded databases.
-               - The lookup service knows the current partitioning scheme.
-               - The lookup service keeps a map of each entity and which database shard it is stored on.
-            - When we need to query the database, query the lookup service first to figure out which shard has the data we want.
-         - Pros
-            - Loose coupling: Any partitioning scheme changes will encapsulated and will not impact on the application.
+   - *By hash key*
+      - Concept
+         - Assign a range of hashes to each partition.
+      - Pros
+         - Keys distributing is fair among the partitions.
+      - Cons
+         - Lose the ability to do efficient range queries.
+    ![ddia_0603](https://user-images.githubusercontent.com/8989447/116647659-525cac80-a938-11eb-847f-c44bfec9f68a.png)
+   - *Directory based sharding*
+      - Concepts
+         - Place a lookup service in front of the sharded databases.
+            - The lookup service knows the current partitioning scheme.
+            - The lookup service keeps a map of each entity and which database shard it is stored on.
+         - When we need to query the database, query the lookup service first to figure out which shard has the data we want.
+      - Pros
+         - Loose coupling: Any partitioning scheme changes will encapsulated and will not impact on the application.
    
-              ![dss](https://user-images.githubusercontent.com/8989447/117697354-9d1fc500-b17f-11eb-895d-4164124c4b01.png)
+    ![dss](https://user-images.githubusercontent.com/8989447/117697354-9d1fc500-b17f-11eb-895d-4164124c4b01.png)
+  
 - **How to query after sharding**
    - *Query on the sharding key*
       - Use the sharding key to locate the certain shard (table) easily.
