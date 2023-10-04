@@ -52,6 +52,32 @@
 ### Message duplication
 
 ## Use cases
-- Log processing
-- Event sourcing
-- Streaming data
+- **Log processing**
+   - **Kafka**
+      - Collects log streams from each instance.
+   - **ElasticSearch**
+      - Consumes the logs from Kafka and indexes them for full-text search.
+   - **Kibana**
+      - Provides a search and visualization UI on top of ElasticSearch
+
+  ![log_processing](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/e113277e-139c-4039-9ce9-3d7fc49e2ade)
+  
+- **Data streaming**
+   - **Kafka**
+      - Collects clickstream data.
+   - **Flink**
+      - Aggregates clickstream data.
+   - **Data lake**
+      - Stores aggregated data for training machine learning models.
+
+  ![data_streaming copy](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/87ae0cb6-8aad-4bd4-8b6f-1b0f4401db06)
+
+- **System monitoring and alerting**
+
+  ![monitoring](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/cbe37ccc-0037-4a33-b903-185e38a652fb)
+
+- **Change data capture**
+   - Observes database transaction logs and streaming changes to Kafka.
+   - Downstream systems like search, caches, and replicas are updated from Kafka.
+
+  ![cdc](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/03712ab9-c19f-4342-9ad9-ad4bc9183bb6)
