@@ -94,6 +94,9 @@ Accumulate system design knowledge (concepts, patterns, technology choices, etc.
    - [Pros & Cons](components/message_queue/Message_Queue.md#pros--cons)
    - [Selection](components/message_queue/Message_Queue.md#selection)
    - [Common problems and solutions](components/message_queue/Message_Queue.md#common-problems-and-solutions)
+   - [Use cases](components/message_queue/Message_Queue.md#use-cases)
+- [**Kafka**](components/message_queue/Kafka.md)
+- [**RabbitMQ**](components/message_queue/RabbitMQ.md)
 
 ### Cache
 - [Cache](components/Cache.md)
