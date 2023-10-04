@@ -81,3 +81,11 @@
    - Downstream systems like search, caches, and replicas are updated from Kafka.
 
   ![cdc](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/227b2200-5477-4a63-8fec-0c3a290fbc33)
+
+- **Application migration**
+   - The legacy service consumes input from Kafka and write the result to LS topic.
+   - The new service consumes input from Kafka and write the result to NS topic.
+   - The reconciliation service compares LS topic and NS topic.
+   - If they are identical, it means the new service can safely replace the lagacy service.
+  
+  ![migration](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/605c900d-e794-4f97-ad0a-0aa8880d38eb)
