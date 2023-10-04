@@ -103,8 +103,10 @@
 ## Peformance
 ### Why is Kafka fast
 - Kafka achieves low latency message delivery through: 
-   - *Sequential I/O*: Kafka reads chunks of the log in an orderly fashion.
-   - *Zero Copy*: Kafka sends messages from the file (on disk) directly to the network channel without any intermediate buffers (like socket buffer).
+   - *Sequential I/O*
+      - Kafka reads chunks of the append-only log in an orderly fashion.
+   - *Zero Copy*
+      - Kafka sends messages from the file (on disk) directly to the network channel without any intermediate buffers (like socket buffer).
 
      ![kafka is fast](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/1d589fb7-6faf-4261-aef8-88306bb90b4f)
 
