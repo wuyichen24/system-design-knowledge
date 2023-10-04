@@ -55,6 +55,7 @@
 | Message consumption | push | pull |
 | Message ordering | Ordered at queue level | Ordered at partition level (Not topic level) |
 | Message deleteion | Delete on ACK | Delete on retention period expires |
+| Message deleyed delivery | Support | Not support |
 | Message delivery gurantees | <li>At-most-once<li>At-least-once | <li>At-most-once<li>At-least-once<li>Exactly-once (by idempotent producers, transactional consumers) |
 | Message persistence | Less | Strong (persisting messages to disk) |
 | Client API | <li>Java<li>Ruby<li>JavaScript<li>Go<li>C<li>Swift<li>Spring<li>Elixir<li>PHP<li>.NET | <li>Java<li>Ruby<li>Python<li>Node.js |
@@ -86,7 +87,7 @@ If there are duplicate messages in a message queue, how the receiver handles dup
    - Add a unique identifier into each message.
 
 ## Use cases
-
+- [Use cases for Kafka](Kafka.md#use-cases)
 
 ## References
 - Book: [Chris R.(2018). Chapter 3. Interprocess communication in a microservice architecture, *Microservices Patterns* (pp. 65-109). Manning Publications](https://www.manning.com/books/microservices-patterns)
