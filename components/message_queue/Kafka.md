@@ -89,3 +89,9 @@
    - If they are identical, it means the new service can safely replace the lagacy service.
   
   ![migration](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/605c900d-e794-4f97-ad0a-0aa8880d38eb)
+
+## Peformance
+### Why is Kafka fast
+- Kafka achieves low latency message delivery through: 
+   - *Sequential I/O*: Kafka reads chunks of the log in an orderly fashion.
+   - *Zero Copy*: Kafka sends messages from the file (on disk) directly to the network channel without any intermediate buffers (like socket buffer).
