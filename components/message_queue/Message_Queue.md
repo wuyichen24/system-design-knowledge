@@ -39,9 +39,12 @@
 - **Message retention/expiration**
    - The limited period of time the message will be retained in the queue before being discarded.
 - **Delivery guarantees**
-   - *At-least-once*: Every message from the source system will reach its destination, but sometimes retries will cause duplicates (delivery times >= 1).
-   - *Exactly-once*: Every message from the source system will reach the destination with no possibility for loss or duplication (delivery times = 1).
-   - *At-most-once*: Every message from the source system may reach the destination with no possibility for duplication (delivery times <= 1).
+  | | At-least-once | Exactly-once | At-most-once |
+  |----|----|----|----|
+  | Concept | Every message from the source system will reach its destination, but sometimes retries will cause duplicates | Every message from the source system will reach the destination with no possibility for loss or duplication | Every message from the source system may reach the destination with no possibility for duplication |
+  | Delivey times | >= 1 | = 1 | <= 1 |
+  | Use case | <ul><li>Data duplication is not a big issue<li>Deduplication is possible</ul> | <ul><li>Financial-related use cases (payment, trading, accounting, etc.)<li>Duplication is not acceptable<li>The downstream service or third party doesn’t support idempotency.</ul> | <ul><li>A small amount of data loss is acceptable (Monitoring metrics)</ul> |
+  
 - **Availability**
 - **Scalability**
 - **Latency**
