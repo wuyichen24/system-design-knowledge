@@ -5,13 +5,12 @@
    - [Cons](#cons)
 - [**Selection**](#selection)
    - [Factors](#factors)
+   - [Comparison](#comparison)
+   - [How to choose](#how-to-choose)
 - [**Common problems and solutions**](#common-problems-and-solutions)
    - [How to guarantee message order](components/Message_Queue.md#how-to-guarantee-message-order)
    - [How to handle duplicated message](#how-to-handle-duplicated-message)
-- [**When to use**](#when-to-use)
-- [**Standards**](#standards)
-   - [Protocols](#protocols)
-   - [APIs](#apis)
+- [**Use cases**](#use-cases)
 - [**References**](#references)
 
 ## Pros & Cons
