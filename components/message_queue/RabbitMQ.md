@@ -1,5 +1,10 @@
 # RabbitMQ
 
+- [**Message flow**](#message-flow)
+- [**Concepts**](#concepts)
+- [**Exchange types**](#exchange-types)
+- [**References**](#references)
+
 ## Message flow
 ![exchanges-bidings-routing-keys](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/733d4a95-7a70-4c6c-92ab-a2878aebd0ca)
 
