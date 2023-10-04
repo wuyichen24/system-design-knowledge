@@ -74,10 +74,10 @@
 
 - **System monitoring and alerting**
 
-  ![monitoring](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/cbe37ccc-0037-4a33-b903-185e38a652fb)
+  ![monitoring](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/616239e5-cdca-4678-bda2-9f3fefca2885)
 
 - **Change data capture**
    - Observes database transaction logs and streaming changes to Kafka.
    - Downstream systems like search, caches, and replicas are updated from Kafka.
 
-  ![cdc](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/03712ab9-c19f-4342-9ad9-ad4bc9183bb6)
+  ![cdc](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/227b2200-5477-4a63-8fec-0c3a290fbc33)
