@@ -50,3 +50,8 @@
 - Which scenarios will have message loss
 
 ### Message duplication
+
+## Use cases
+- Log processing
+- Event sourcing
+- Streaming data
