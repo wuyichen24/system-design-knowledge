@@ -65,6 +65,14 @@
 | Learning curve | Gentle | Steep |
 | Ecosystem | Smaller | Larger |
 
+### How to choose
+- Choose *RabbitMQ* if
+   - Multiple routing mechanisms
+   - Low complexity and flat learning curve
+- Choose *Kafka* if
+   - Higher throughput
+   - Persistence of messages
+
 ## Common problems and solutions
 ### How to guarantee message order
 If a message queue cannot preserve the order of messages on its own, how to keep messages delivered in order (FIFO).
