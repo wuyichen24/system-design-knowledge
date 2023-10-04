@@ -70,7 +70,7 @@
    - **Data lake**
       - Stores aggregated data for training machine learning models.
 
-  ![data_streaming copy](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/87ae0cb6-8aad-4bd4-8b6f-1b0f4401db06)
+  ![data_streaming copy](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/7f7e1d2d-87df-4e44-827b-9ade6f3bead0)
 
 - **System monitoring and alerting**
 
