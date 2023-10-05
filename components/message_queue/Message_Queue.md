@@ -92,6 +92,8 @@ If there are duplicate messages in a message queue, how the receiver handles dup
    - The receiver can process the same message multiple times without no additional effect.
 - **Solution 2**: Track each message which has been processed into a data store and discard duplicates.
    - Add a unique identifier into each message.
+   - Create a deduplication table on the consumer to record which message has been processed.
+   - Add an unique index on the message identifier column in the deduplication table (the table will reject to insert a record whose message identifier value already exists in the table). 
 
 ## Use cases
 - [Use cases for Kafka](Kafka.md#use-cases)
