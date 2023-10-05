@@ -73,6 +73,7 @@
 - Choose *RabbitMQ* if
    - Multiple routing mechanisms
    - Low complexity and flat learning curve
+   - Lightweight
 - Choose *Kafka* if
    - Higher throughput
    - Persistence of messages
