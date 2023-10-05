@@ -61,6 +61,7 @@
 | Message deleyed delivery | Support | Not support |
 | Message delivery gurantees | <li>At-most-once<li>At-least-once | <li>At-most-once<li>At-least-once<li>Exactly-once (by idempotent producers, transactional consumers) |
 | Message persistence | Less | Strong (persisting messages to disk) |
+| Message pileup pressure | Cannot handle very well | |
 | Client API | <li>Java<li>Ruby<li>JavaScript<li>Go<li>C<li>Swift<li>Spring<li>Elixir<li>PHP<li>.NET | <li>Java<li>Ruby<li>Python<li>Node.js |
 | Federated queues | Yes | No |
 | Complexity | Less | More |
@@ -74,9 +75,11 @@
    - Multiple routing mechanisms
    - Low complexity and flat learning curve
    - Lightweight
+   - For medium or smaller companies
 - Choose *Kafka* if
    - Higher throughput
    - Persistence of messages
+   - For large companies
 
 ## Common problems and solutions
 ### How to guarantee message order
