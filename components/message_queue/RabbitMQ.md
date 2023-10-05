@@ -54,14 +54,17 @@
 
 ![pubacks](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/0a5fb346-711f-4746-aeca-8307c6ad8da8)
 
-- Scenario 1: Message cannot be delivered from producer to RabbitMQ
+- **Scenario 1**: Message cannot be published from producer to RabbitMQ
    - Solutions
       - Set publisher confirms as `true`.
       - Implement publisher confirm callback function.
-- Scenario 2: Message cannot be routed to correct queue
+- **Scenario 2**: Message cannot be routed to correct queue
    - Solutions
       - Set mandatory as `true` (turn on the failure notification).
       - Implement return callback function.
+- **Scenario 3**: Meessage cannot be delivered from RabbitMQ to consumer.
+   - Solutions
+      - Set acknowledge mode as `manual` (Consumer needs to acknowledge manually after processing the message successfully).
 
 ### Message duplication
 
