@@ -86,11 +86,14 @@
 
   ![monitoring](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/616239e5-cdca-4678-bda2-9f3fefca2885)
 
-- **Change data capture**
+- **Change data capture (CDC)**
    - Observes database transaction logs and streaming changes to Kafka.
    - Downstream systems like search, caches, and replicas are updated from Kafka.
+   - Popular CDC solutions: Debezium.
 
   ![cdc](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/227b2200-5477-4a63-8fec-0c3a290fbc33)
+
+  ![cdc](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/185d84d6-131e-49f9-b67f-7f4e248b5894)
 
 - **Application migration**
    - The legacy service consumes input from Kafka and write the result to LS topic.
