@@ -49,5 +49,21 @@
 - **Headers**
    - Headers exchanges use the message header attributes for routing.
 
+## Common problems and solutions
+### Message loss
+
+![pubacks](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/0a5fb346-711f-4746-aeca-8307c6ad8da8)
+
+- Scenario 1: Message cannot be delivered from producer to RabbitMQ
+   - Solutions
+      - Set publisher confirms as `true`.
+      - Implement publisher confirm callback function.
+- Scenario 2: Message cannot be routed to correct queue
+   - Solutions
+      - Set mandatory as `true` (turn on the failure notification).
+      - Implement return callback function.
+
+### Message duplication
+
 ## References
 - [Part 1: RabbitMQ for beginners - What is RabbitMQ?](https://www.cloudamqp.com/blog/part1-rabbitmq-for-beginners-what-is-rabbitmq.html)
