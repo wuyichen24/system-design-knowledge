@@ -25,8 +25,8 @@
 ### Database
 | Name | Description |
 |----|----|
-| Aurora | High performance relational database engine. |
-| RDS | Set up, operate, and scale a relational database. |
+| Aurora | High performance AWS-developed relational database engine. |
+| RDS | Set up, operate, and scale a relational database (MySQL, PostgreSQL, Oracle, and Microsoft SQL Server). |
 | DynamoDB | NoSQL database. |
 | DocumentDB | Document database. |
 | Neptune | Graph database. |
