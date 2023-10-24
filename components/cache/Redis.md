@@ -73,4 +73,23 @@
 - **No persistence**
    - Persistence can be entirely disabled in Redis.
 
+## Use cases
+- **Distributed locks**
+
+  <img width="478" alt="Screen Shot 2023-10-24 at 3 14 33 PM" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/3ddd7406-db3d-4744-b830-c2812be82633">
+
+- **Sessions store**
+  
+  <img width="426" alt="Screen Shot 2023-10-24 at 3 13 12 PM" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/50415eda-1981-487c-a0b2-722345ae80d8">
+
+- **Rate limiter**
+
+  <img width="500" alt="Screen Shot 2023-10-24 at 3 15 12 PM" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/bbc51e03-6523-45d3-a762-6038008ff3cb">
+
+- **Ranking**
+
+  <img width="443" alt="Screen Shot 2023-10-24 at 3 16 13 PM" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/4611539a-3e21-403d-a7ca-86232cc86fbc">
+  
 ## Performance
+
+
