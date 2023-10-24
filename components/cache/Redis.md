@@ -9,12 +9,12 @@
 
 | Data structure | Concept | Use cases | Operations |
 |----|----|----|----|
-| String | String value for storing string and number (integer or float) | <li>Cache<li>Counter<li>Distributed locks<li>Sessions |
+| String | String value for storing string and number (integer or float) | <li>Cache<li>Counter<li>Distributed locks<li>Session store |
 | List | Ordered collection of strings | <li>Message queue |
 | Hash | Unordered hash table of key-value pairs | <li>Cache<li>Shopping carts |
 | Set | Unordered collection of unique strings | <li>Intersections<li>Union |
-| Sorted Set (Zset) | Score-ordered collection of unique strings | <li>Ranking | 
-| BitMap |
+| Sorted Set (Zset) | Score-ordered collection of unique strings | <li>Ranking (Leaderboard)<li>Sorting | 
+| BitMap | List of 1 and 0 | <li>Daily login status |
 | HyperLogLog |
 | Geo |
 | Stream |
@@ -57,7 +57,7 @@
 
 ### Sorted Set
 
-<img width="744" alt="Screen Shot 2023-10-24 at 2 58 44 PM" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/3288c6cb-da50-4618-8a27-a82b17cbd7e3">
+<img width="500" alt="Screen Shot 2023-10-24 at 2 58 44 PM" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/3288c6cb-da50-4618-8a27-a82b17cbd7e3">
 
 - **Concepts**
    - Score-ordered collection of unique strings
