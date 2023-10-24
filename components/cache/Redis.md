@@ -12,8 +12,8 @@
 | String | String value for storing string and number (integer or float) | <li>Cache<li>Counter<li>Distributed locks<li>Sessions |
 | List | Ordered collection of strings | <li>Message queue |
 | Hash | Unordered hash table of key-value pairs | <li>Cache<li>Shopping carts |
-| Set | Unordered collection of unique strings
-| Sorted Set |
+| Set | Unordered collection of unique strings | <li>Intersections<li>Union |
+| Sorted Set (Zset) | Score-ordered collection of unique strings | <li>Ranking | 
 | BitMap |
 | HyperLogLog |
 | Geo |
@@ -23,18 +23,18 @@
 
 <img width="500" alt="Screen Shot 2023-10-24 at 2 45 15 PM" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/6da7d16d-0015-4d34-be8b-2da6b980f8ea">
 
-- Concepts
+- **Concepts**
    - String value for storing string and number (integer or float).
-- Implementation
+- **Implementation**
    - SDS (Simple Dynamic Strings)
 
 ### List
 
 <img width="548" alt="Screen Shot 2023-10-24 at 2 47 50 PM" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/0e32899f-4676-4172-a3e9-28595a0412b7">
 
-- Concepts
+- **Concepts**
    - Ordered collection of strings.
-- Implementatio
+- **Implementation**
    - quicklist
    - listpack
 
@@ -42,10 +42,25 @@
 
 <img width="500" alt="Screen Shot 2023-10-24 at 2 45 23 PM" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/4e3ad5b6-70e4-4b92-8d18-b4b3d5f720ba">
 
-- Concepts
+- **Concepts**
    - Unordered hash table of key-value pairs
-- Implementation
+- **Implementation**
    - listpack
+
+### Set
+
+<img width="500" alt="Screen Shot 2023-10-24 at 2 53 43 PM" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/339f2bbc-733c-4886-b8e6-37510e859445">
+
+- **Concepts**
+   - Unordered collection of unique strings
+- **Implementation**
+
+### Sorted Set
+
+<img width="744" alt="Screen Shot 2023-10-24 at 2 58 44 PM" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/3288c6cb-da50-4618-8a27-a82b17cbd7e3">
+
+- **Concepts**
+   - Score-ordered collection of unique strings
 
 ## Data persistence options
 - **AOF (Append Only File)**
