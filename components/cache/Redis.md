@@ -2,23 +2,36 @@
 
 ## Concepts
 - **Architecture**
-   - In-memory key-value store
+   - In-memory key-value store.
 
 ## Data structures
 ### Summary
 
 | Data structure | Concept | Use cases | Operations |
 |----|----|----|----|
-| String | 
-| List |
-| Set |
+| String | String value for storing string and number (integer or float) | <li>Cache<li>Counter<li>Distributed locks<li>Sessions |
+| List | A list of strings | <li>Message queue |
 | Hash |
-| Zset |
+| Set |
+| Sorted Set |
 | BitMap |
 | HyperLogLog |
 | Geo |
 | Stream |
 
+## String
+- Concepts
+- Implementation
+   - SDS (Simple Dynamic Strings)
+
+## List
+- Concepts
+- Implementation
+   - Before Redis 7.0
+      - ZipList
+   - After Redis 7.0
+      - quicklist
+      - listpack
 
 
 ## Data persistence options
