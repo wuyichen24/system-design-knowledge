@@ -107,7 +107,8 @@ Accumulate system design knowledge (concepts, patterns, technology choices, etc.
 ### Domain Name System (DNS)
 - [Domain Name System (DNS)](components/Domain_Name_System.md)
 
-### Load Balancer (LB)
+### API Gateway, Load Balancer (LB)
+- [API Gateway](components/API_Gateway.md)
 - [Load Balancer (LB)](components/Load_Balancer.md)
 - [Proxy And Reverse Proxy](components/Proxy_And_Reverse_Proxy.md)
 
@@ -125,8 +126,7 @@ Accumulate system design knowledge (concepts, patterns, technology choices, etc.
    - [Three-Phase Commit (3PC)](patterns/transaction_patterns/Three_Phase_Commit.md)
    - [Saga](patterns/transaction_patterns/Saga.md)
    - [Try-Confirm/Cancel (TCC)](patterns/transaction_patterns/Try_Confirm_Cancel.md)
-- [**External API Patterns**](#external-api-patterns)
-   - [API Gateway](patterns/external_api_patterns/API_Gateway.md)
+- [**External API Patterns**](#external-api-patterns
    - [Backends for Frontends (BFF)](patterns/external_api_patterns/Backends_For_Frontends.md)
 - [**Resiliency Patterns**](#resiliency-patterns)
    - [Circuit Breaker](patterns/resiliency_patterns/Circuit_Breaker.md)
