@@ -89,7 +89,10 @@
 - **Ranking**
 
   <img width="443" alt="Screen Shot 2023-10-24 at 3 16 13 PM" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/4611539a-3e21-403d-a7ca-86232cc86fbc">
-  
+
+- **Message queue**
+  <img width="500" alt="Screen Shot 2023-10-24 at 3 16 13 PM" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/24122af9-fa96-4eab-8d8e-b7e491fa6f16">
+
 ## Performance
 
 
