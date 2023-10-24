@@ -30,8 +30,8 @@
 | Least-frequently used (LFU) | Discards the least often used items first. |
 
 ## Strategies
-- [**Cache-Aside**](https://github.com/wuyichen24/distributed-system-design-pattern/blob/master/patterns/cache_patterns/Cache_Aside.md)
-- [**Cache-As-SOR**](https://github.com/wuyichen24/distributed-system-design-pattern/blob/master/patterns/cache_patterns/Cache_As_Sor.md)
+- [**Cache-Aside**](../../patterns/cache_patterns/Cache_Aside.md)
+- [**Cache-As-SOR**](../../patterns/cache_patterns/Cache_As_Sor.md)
    - Read-Through
    - Write-Through
    - Write-Behind
