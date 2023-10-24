@@ -108,7 +108,7 @@ Accumulate system design knowledge (concepts, patterns, technology choices, etc.
 
 ### Load Balancer (LB)
 - [Load Balancer (LB)](components/Load_Balancer.md)
-- [Proxy_And_Reverse_Proxy.md](components/Proxy_And_Reverse_Proxy.md)
+- [Proxy And Reverse Proxy](components/Proxy_And_Reverse_Proxy.md)
 
 ### Content Delivery Network (CDN)
 - [Content Delivery Network (CDN)](components/Content_Delivery_Network.md)
