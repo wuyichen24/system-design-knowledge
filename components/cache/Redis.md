@@ -16,8 +16,8 @@
 | Sorted Set (Zset) | Score-ordered collection of unique strings | <li>Ranking (Leaderboard)<li>Sorting | 
 | BitMap | List of 1 and 0 | <li>Daily login status |
 | HyperLogLog |
-| Geo |
-| Stream |
+| Geospatial | | <li>Store and query coordinates |
+| Stream | Append only log | <li>Event sourcing<li>Sensor monitoring |
 
 ### String
 
