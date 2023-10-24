@@ -101,7 +101,7 @@ Accumulate system design knowledge (concepts, patterns, technology choices, etc.
 - [**RabbitMQ**](components/message_queue/RabbitMQ.md)
 
 ### Cache
-- [Cache](components/Cache.md)
+- [Cache](components/cache/Cache.md)
 
 ### Domain Name System (DNS)
 - [Domain Name System (DNS)](components/Domain_Name_System.md)
