@@ -28,7 +28,7 @@
       - It can be based on method (GET, POST, etc.), IP, port, header, or URL.
    - **API Composition/Aggregation**: Aggregates multiple individual requests into a single request.
 - **Cross-cutting functions**
-   - **Monitoring**
+   - **Monitoring, logging, analytics and billing**
       - Metrics collection: Collects metrics on API usage
       - Logging: Log requests.
    - **Security**
@@ -36,15 +36,13 @@
       - Authorization: Verifies that the client is authorized to perform that particular operation.
       - SSL termination: Decrypts the SSL-encrypted requests from clients and pass on unencrypted requests to the internal services.
       - Certificate management
-   - **Proxy**
+      - IP whitelisting and IP blacklisting
+   - **Protocol translation and service discovery**
       - Protocol translation: Translates external requests in one protocol to internal requests in another protocol.
-   - **Throttling**
+   - **Rate limiting and circuit breaking**
       - Rate limiting: Limits how many requests per second from either a specific client and/or from all clients.
-   - **Resiliency**: The mechanisms to detect failures and recover quickly from failures
-   - **Response Caching**: Caches responses to reduce the number of requests made to the internal services.
-   - **Filtering**: 
-      - IP whitelisting
-      - IP blacklisting
+      - Circuit breaking: The mechanisms to detect failures and recover quickly from failures
+   - **Caching**: Caches responses to reduce the number of requests made to the internal services.
 
 ### Solution Options
 - Use an API gateway or API management product.
