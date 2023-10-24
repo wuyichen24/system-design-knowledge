@@ -29,6 +29,9 @@
    - SDS (Simple Dynamic Strings)
 
 ### List
+
+<img width="548" alt="Screen Shot 2023-10-24 at 2 47 50 PM" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/0e32899f-4676-4172-a3e9-28595a0412b7">
+
 - Concepts
    - Ordered collection of strings.
 - Implementatio
