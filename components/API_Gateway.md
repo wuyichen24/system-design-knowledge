@@ -42,7 +42,8 @@
    - **Rate limiting and circuit breaking**
       - Rate limiting: Limits how many requests per second from either a specific client and/or from all clients.
       - Circuit breaking: The mechanisms to detect failures and recover quickly from failures
-   - **Caching**: Caches responses to reduce the number of requests made to the internal services.
+   - **Caching**
+      - Caches responses to reduce the number of requests made to the internal services.
 
 ### Solution Options
 - Use an API gateway or API management product.
