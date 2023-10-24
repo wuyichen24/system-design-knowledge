@@ -92,7 +92,7 @@
 
 - **Message queue**
 
-  <img width="500" alt="Screen Shot 2023-10-24 at 3 16 13 PM" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/24122af9-fa96-4eab-8d8e-b7e491fa6f16">
+  <img width="500" alt="6f31ddd1-38b6-45aa-9d16-2fe92f6600ba_1165x1449" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/24122af9-fa96-4eab-8d8e-b7e491fa6f16">
 
 ## Performance
 
