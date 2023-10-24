@@ -19,7 +19,7 @@
 ## Solution
 ### Concepts
 ![](../diagrams/png/api_gateway_small.png)
-- Implements a service that’s the single entry point into the backend services from external clients.
+- The single entry point into the backend services from external clients.
 - Offloads cross-cutting functionalities from individual services to the API gateway.
 
 ### Functions
