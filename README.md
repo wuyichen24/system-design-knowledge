@@ -102,6 +102,7 @@ Accumulate system design knowledge (concepts, patterns, technology choices, etc.
 
 ### Cache
 - [Cache](components/cache/Cache.md)
+- [Redis](components/cache/Redis.md)
 
 ### Domain Name System (DNS)
 - [Domain Name System (DNS)](components/Domain_Name_System.md)
