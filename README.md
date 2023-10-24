@@ -126,7 +126,7 @@ Accumulate system design knowledge (concepts, patterns, technology choices, etc.
    - [Three-Phase Commit (3PC)](patterns/transaction_patterns/Three_Phase_Commit.md)
    - [Saga](patterns/transaction_patterns/Saga.md)
    - [Try-Confirm/Cancel (TCC)](patterns/transaction_patterns/Try_Confirm_Cancel.md)
-- [**External API Patterns**](#external-api-patterns
+- [**External API Patterns**](#external-api-patterns)
    - [Backends for Frontends (BFF)](patterns/external_api_patterns/Backends_For_Frontends.md)
 - [**Resiliency Patterns**](#resiliency-patterns)
    - [Circuit Breaker](patterns/resiliency_patterns/Circuit_Breaker.md)
