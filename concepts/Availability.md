@@ -1,12 +1,23 @@
 # Availability
 
 ## How to achieve high availability
-- **Cold Standby**
-   - Use heartbeat or metrics/alerts to track failure. Provision new standby nodes when a failure occurs. 
-   - Only suitable for stateless services.
-- **Warm Standby**
-   - Keep two active systems but the secondary one does not take traffic unless the failure occurs.
-- **Hot Standby**
-   - Keep two active systems undertaking the same role. Data is mirrored in near real time, and both systems will have identical data.
-- **Active-active**
-   - Keep two active systems behind a load balancer. Both of them take in parallel. Data replication is bi-directional.
+- *Redundancy*
+   - Implement redundancy at various levels, including hardware, software, and data.
+   - Geographical redundancy: Deploy systems in multiple data centers or regions.
+   - Human and process redundancy: Cross-train staff to perform critical roles and tasks to avoid service disruptions due to the unavailability of specific individuals.
+- *Failover mechanisms*
+   - Set up automatic failover mechanisms that detect when a primary component fails and redirect traffic to a backup or standby.
+- *Load balancing*
+   - Deploy load balancers to distribute incoming requests evenly across multiple servers or instances.
+   - Load balancers can redirect traffic away from failed servers and improve resource utilization.
+- *Service isolation*
+   - Isolate critical services or components to prevent a failure in one area from affecting the entire system.
+- *Monitoring and alerting*
+   - Implement robust monitoring and alerting systems to detect anomalies, performance issues, and failures in real time.
+- *Regular backups*
+   - Create regular backups of critical data, configurations, and system images.
+- *Regular maintenance*
+   - Conduct regular maintenance activities, including software updates, patches, and hardware inspections.
+- *Disaster recovery planning*
+   - Develop a comprehensive disaster recovery plan that outlines procedures for handling different types of disasters or disruptions.
+   - Test disaster recovery plans periodically to ensure they are effective.
