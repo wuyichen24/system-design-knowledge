@@ -18,3 +18,9 @@
       - Models
    - *Performance*
       - Metrics
+- **API**
+   - *API architectural styles*
+      - SOAP, REST, gRPC, GraphQL, WebSocket, Webhook.
+      - Concept, Pros, Cons, Use cases
+   - *API design*
+      - REST API design best practices
