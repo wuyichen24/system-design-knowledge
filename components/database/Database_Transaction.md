@@ -1,4 +1,4 @@
-# Transaction
+# Database Transaction
 
 - [**Property sets**](#property-sets)
    - [ACID](#acid)
