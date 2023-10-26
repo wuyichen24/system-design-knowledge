@@ -1,7 +1,7 @@
 # Scalability
 
 - [**Concepts**](#concepts)
-- [**Types**](#types)
+- [**Types of scaling**](#types-of-scaling)
    - [Limitations for vertical scaling](#limitations-for-vertical-scaling)
 - [**How to achieve high scalability**](#how-to-achieve-high-scalability)
 
