@@ -1,8 +1,9 @@
 # Scalability
 
-- [Concepts](#concepts)
-- [Types](#types)
+- [**Concepts**](#concepts)
+- [**Types**](#types)
    - [Limitations for vertical scaling](#limitations-for-vertical-scaling)
+- [**How to achieve high scalability**](#how-to-achieve-high-scalability)
 
 ## Concepts
 - System can handle more load or increase performance by adding more resources.
