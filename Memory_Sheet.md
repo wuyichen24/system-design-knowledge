@@ -50,3 +50,9 @@
       - How to query
          - On sharding key
          - On non-sharding columns (3 solutions)
+- **Design**
+   - *Schema design*
+      - Steps
+      - Normalization
+         - 1NF, 2NF, 3NF
+      - Denormalization
