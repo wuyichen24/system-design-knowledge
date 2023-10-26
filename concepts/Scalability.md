@@ -2,7 +2,6 @@
 
 - [**Concepts**](#concepts)
 - [**Types of scaling**](#types-of-scaling)
-   - [Limitations for vertical scaling](#limitations-for-vertical-scaling)
 - [**How to achieve high scalability**](#how-to-achieve-high-scalability)
 
 ## Concepts
@@ -17,7 +16,7 @@
    - Vertical scaling doesn't have failover and redundancy.
    - The overall cost of vertical scaling is high.
 
-### Horizontal scaling (Scale out)**
+### Horizontal scaling (Scale out)
 - **Concepts**
    - Add more nodes into a system.
 - **Cons**
