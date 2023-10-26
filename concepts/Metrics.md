@@ -2,8 +2,6 @@
 
 - [**Storage**](#storage)
    - [Units of measurement for data storage](#units-of-measurement-for-data-storage)
-- [**Availability**](#availability)
-   - [Mapping between availability percentage and service downtime](#mapping-between-availability-percentage-and-service-downtime)
 - [**Performance**](#performance)
    - [Metrics](#metrics-1)
    - [QPS vs. TPS](#qps-vs-tps)
@@ -23,20 +21,6 @@
 | Exabyte | EB | 2<sup>60</sup> | 1 EB = 2<sup>10</sup> PB |
 | Zettabyte | ZB | 2<sup>70</sup> | 1 ZB = 2<sup>10</sup> EB |
 | Yottabyte | YB | 2<sup>80</sup> | 1 YB = 2<sup>10</sup> ZB |
-
-## Availability
-### Mapping between availability percentage and service downtime
-| Availability % | Number of nines | Downtime per year | Downtime per month | Downtime per week |
-|-----|-----|-----|-----|-----|
-| 90% | 1 nine | 36.5 days | 72 hours | 16.8 hours |
-| 99% | 2 nines | 3.65 days | 7.2 hours | 1.68 hours |
-| 99.5% | | 1.83 days | 3.6 hours | 50.4 minutes |
-| 99.9% | 3 nines | 8.76 hours | 43.8 minutes | 10.1 minutes |
-| 99.95% | | 4.38 hours | 21.56 minutes | 5.04 minutes |
-| 99.99% | 4 nines | 52.56 minutes | 4.32 minutes | 1.01 minutes |
-| 99.999% | 5 nines | 5.26 minutes | 25.9 seconds | 6.05 seconds |
-| 99.9999% | 6 nines | 31.5 seconds | 2.59 seconds | 0.605 seconds |
-| 99.99999% | 7 nines | 3.15 seconds | 0.259 seconds | 0.0605 seconds |
 
 ## Performance
 ### Metrics
