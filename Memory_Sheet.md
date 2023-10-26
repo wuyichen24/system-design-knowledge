@@ -21,6 +21,14 @@
 - **API**
    - *API architectural styles*
       - SOAP, REST, gRPC, GraphQL, WebSocket, Webhook.
-      - Concept, Pros, Cons, Use cases
+      - Concept, pros, cons, use cases.
    - *API design*
-      - REST API design best practices
+      - REST API design best practices.
+
+## Components
+### Database
+- **Types**
+   - Main types
+   - Subtypes for NoSQL
+   - Concepts, pros, cons, use case, examples.
+   - Choose database based on scalability, consistency, performance, data models.
