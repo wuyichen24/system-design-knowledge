@@ -47,7 +47,6 @@ Accumulate system design knowledge (concepts, patterns, technology choices, etc.
 - **Basic knowledge**
    - [Metrics](concepts/Metrics.md)
       - [Storage](concepts/Metrics.md#storage)
-      - [Availability](concepts/Metrics.md#availability)
       - [Performance](concepts/Metrics.md#performance)
 - **Cloud service**
    - [AWS](concepts/cloud_service/AWS.md)
