@@ -31,4 +31,4 @@
    - Main types
    - Subtypes for NoSQL
    - Concepts, pros, cons, use case, examples.
-   - Choose database based on scalability, consistency, performance, data models.
+   - Factors for choosing database.
