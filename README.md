@@ -6,12 +6,10 @@
 Accumulate system design knowledge (concepts, patterns, technology choices, etc.) from different resources (books, essays, web, etc.).
 
 ## Concepts
-
 - [Scalability](concepts/Scalability.md)
 - [Availability](concepts/Availability.md)
 - [Consistency](concepts/Consistency.md)
 - [CAP Theorem](concepts/CAP_Theorem.md)
-- [Transaction](concepts/Transaction.md)
 - **Network**
    - [OSI model](concepts/network/OSI_Model.md)
    - [TCP and UDP](concepts/network/TCP_UDP.md)
@@ -72,6 +70,10 @@ Accumulate system design knowledge (concepts, patterns, technology choices, etc.
    - [Types](components/database/Database_Indexing.md#types)
    - [Use cases](components/database/Database_Indexing.md#use-cases)
    - [Best practices](components/database/Database_Indexing.md#best-practices)
+- [**Transaction**](components/database/Database_Transaction.md)
+   - [Models](components/database/Database_Transaction.md#models)
+   - [Isolation**](components/database/Database_Transaction.md#isolation)
+   - [Distributed transactions](components/database/Database_Transaction.md#distributed-transactions)
 - [**Techniques**](components/database/Database_Techniques.md)
    - [Replication](components/database/Database_Techniques.md#replication)
    - [Partitioning](components/database/Database_Techniques.md#partitioning)
