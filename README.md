@@ -6,10 +6,12 @@
 Accumulate system design knowledge (concepts, patterns, technology choices, etc.) from different resources (books, essays, web, etc.).
 
 ## Concepts
-- [Scalability](concepts/Scalability.md)
-- [Availability](concepts/Availability.md)
-- [Consistency](concepts/Consistency.md)
-- [CAP Theorem](concepts/CAP_Theorem.md)
+- **Theory**
+   - [CAP Theorem](concepts/CAP_Theorem.md)
+- **Evaluation dimensions**
+   - [Scalability](concepts/Scalability.md)
+   - [Availability](concepts/Availability.md)
+   - [Consistency](concepts/Consistency.md)
 - **Network**
    - [OSI model](concepts/network/OSI_Model.md)
    - [TCP and UDP](concepts/network/TCP_UDP.md)
