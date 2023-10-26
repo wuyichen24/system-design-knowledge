@@ -56,3 +56,20 @@
       - Normalization
          - 1NF, 2NF, 3NF
       - Denormalization
+
+### Message queue
+- **Basics**
+   - Pros and cons
+   - Selections
+      - Factors
+      - Differences and use cases between RabbitMQ and Kafka
+   - Common problems and solutions
+      - How to guarantee message order? (1 solution)
+      - How to handle duplicated message? (2 solutions)
+   - Use cases (5)
+- **Kafka**
+   - Terminologies
+      - Topic, partitions, consumer groups
+   - Patitions
+      - Concepts, relationship between partions and consumer group.
+   - Why Kafka fast?      
