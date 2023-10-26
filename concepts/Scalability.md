@@ -8,7 +8,7 @@
 ## Concepts
 - System can handle more load or increase performance by adding more resources.
 
-## Types
+## Types of scaling
 - **Vertical scaling (Scale up)**
    - Add more resources (CPU, memory, etc.) into a single node.
 - **Horizontal scaling (Scale out)**
