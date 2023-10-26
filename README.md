@@ -74,7 +74,7 @@ Accumulate system design knowledge (concepts, patterns, technology choices, etc.
    - [Best practices](components/database/Database_Indexing.md#best-practices)
 - [**Transaction**](components/database/Database_Transaction.md)
    - [Models](components/database/Database_Transaction.md#models)
-   - [Isolation**](components/database/Database_Transaction.md#isolation)
+   - [Isolation](components/database/Database_Transaction.md#isolation)
    - [Distributed transactions](components/database/Database_Transaction.md#distributed-transactions)
 - [**Techniques**](components/database/Database_Techniques.md)
    - [Replication](components/database/Database_Techniques.md#replication)
