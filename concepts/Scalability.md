@@ -9,15 +9,20 @@
 - System can handle more load or increase performance by adding more resources.
 
 ## Types of scaling
-- **Vertical scaling (Scale up)**
+### Vertical scaling (Scale up)
+- **Concepts**
    - Add more resources (CPU, memory, etc.) into a single node.
-- **Horizontal scaling (Scale out)**
-   - Add more nodes into a system.
+- **Cons**
+   - Vertical scaling has a hard limit (It is impossible to add unlimited CPU and memory to a single server).
+   - Vertical scaling doesn't have failover and redundancy.
+   - The overall cost of vertical scaling is high.
 
-### Limitations for vertical scaling
-- Vertical scaling has a hard limit (It is impossible to add unlimited CPU and memory to a single server).
-- Vertical scaling doesn't have failover and redundancy.
-- The overall cost of vertical scaling is high.
+### Horizontal scaling (Scale out)**
+- **Concepts**
+   - Add more nodes into a system.
+- **Cons**
+   - Horizontal scaling can be extremely expensive.
+      - The cost of entire systems such as servers, but we must also take into account their regular maintenance costs .
 
 ## How to achieve high scalability
 - *Loose coupling*
