@@ -1,6 +1,6 @@
 # Availability
 
-## Solutions for enhancing availability
+## How to achieve high availability
 - **Cold Standby**
    - Use heartbeat or metrics/alerts to track failure. Provision new standby nodes when a failure occurs. 
    - Only suitable for stateless services.
