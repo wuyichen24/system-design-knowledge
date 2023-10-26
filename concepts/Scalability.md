@@ -18,7 +18,7 @@
 - Vertical scaling doesn't have failover and redundancy.
 - The overall cost of vertical scaling is high.
 
-## Solutions for enhancing scalability
+## How to achieve high scalability
 - **Loose coupling**
    - Decouple different components of the system so they can be scaled independently.
 
