@@ -7,7 +7,7 @@ graph TD;
   A --> B2[Outer Join];
   A --> B3[Cross Join];
   A --> B4[Self Join];
-  B2 --> C1[Left Join];
+  B2 --> C1["Left Join (Left Outer Join)"];
   B2 --> C2[Right Join];
   B2 --> C3[Full Join];
 ```
