@@ -14,8 +14,7 @@ graph LR;
 
 ## Inner Join
 ```mermaid
-venn
-
+vennDiagram
 ```
 
 ## Outer Join
