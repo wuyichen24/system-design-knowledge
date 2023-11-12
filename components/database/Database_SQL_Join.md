@@ -15,9 +15,9 @@ graph LR;
 ## Inner Join
 ```mermaid
 venn
-  A[Set A] 50
-  B[Set B] 50
-  A_B[Intersection A and B] 20
+  A[Set A] 50;
+  B[Set B] 50;
+  A_B[Intersection A and B] 20;
 ```
 
 ## Outer Join
