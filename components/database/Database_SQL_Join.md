@@ -16,6 +16,9 @@ graph LR;
 
 ## Inner Join
 - Venn diagram
+
+  <img width="167" alt="Screenshot 2023-11-12 at 10 43 14 AM" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/db735808-7234-438b-a402-9a2cb5383236">
+
 - SQL example
   ```
   SELECT * FROM TableA a
