@@ -26,11 +26,13 @@ graph LR;
   ON a.key = b.key
   ```
 - Result example
+
   **TableA**
   | Key | X |
   |----|----|
   | 1 | x1 |
   | 2 | x2 |
   | 3 | x3 |
+  
   **TableB**
 ## Outer Join
