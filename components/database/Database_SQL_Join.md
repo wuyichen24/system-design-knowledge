@@ -15,9 +15,7 @@ graph LR;
 ## Inner Join
 ```mermaid
 venn
-  A;
-  B;
-  A_B;
+
 ```
 
 ## Outer Join
