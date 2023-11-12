@@ -12,9 +12,15 @@ graph LR;
   B2 --> C3["Full Join (Full Outer Join)"];
 ```
 
+![0_rFMChX4SAmQ9RzF9](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/60eb4295-671b-497c-b46f-6826e0bbdf8f)
+
 ## Inner Join
-```mermaid
-vennDiagram
-```
+- Venn diagram
+- SQL example
+  ```
+  SELECT * FROM TableA a
+  INNER JOIN TableB b
+  ON a.key = b.key
+  ```
 
 ## Outer Join
