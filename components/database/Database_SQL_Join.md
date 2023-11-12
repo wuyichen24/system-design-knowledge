@@ -3,20 +3,13 @@
 ## Overview
 ```mermaid
 graph TD;
-  A[Root] --> B[Level 1];
-  A --> C[Level 1];
-  B --> D[Level 2];
-  B --> E[Level 2];
-  C --> F[Level 2];
-  C --> G[Level 2];
-  D --> H[Level 3];
-  D --> I[Level 3];
-  E --> J[Level 3];
-  E --> K[Level 3];
-  F --> L[Level 3];
-  F --> M[Level 3];
-  G --> N[Level 3];
-  G --> O[Level 3];
+  A[Join] --> B1[Inner Join];
+  A --> B2[Outer Join];
+  A --> B3[Cross Join];
+  A --> B4[Self Join];
+  B2 --> C1[Left Join (Left Outer Join)];
+  B2 --> C2[Right Join (Right Outer Join)];
+  B2 --> C3[Full Join (Full Outer Join)];
 ```
 
 ## Inner Join
