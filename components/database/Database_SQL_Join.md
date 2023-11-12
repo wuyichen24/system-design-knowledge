@@ -27,12 +27,6 @@ graph LR;
   ```
 - Result example
 
-  **TableA**
-  | Key | X |
-  |----|----|
-  | 1 | x1 |
-  | 2 | x2 |
-  | 3 | x3 |
-  
-  **TableB**
+  ![inner_join](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/bc3b8bf5-5b3c-4a70-8ce4-76f5f2a15e85)
+
 ## Outer Join
