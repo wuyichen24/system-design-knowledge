@@ -104,6 +104,8 @@ graph LR;
   ```
 - Result example
 
+  ![full_join](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/2027992b-f0a1-4d98-b266-a8b48c14ba8f)
+
 ### Full Join Excluding Inner Join
 - Venn diagram
   
@@ -117,4 +119,7 @@ graph LR;
   WHERE a.key IS NULL or b.key IS NULL;
   ```
 - Result example
+
+  ![full_join_exluding](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/b1b7a82a-636e-4c32-8342-3df55a789b2e)
+
   
