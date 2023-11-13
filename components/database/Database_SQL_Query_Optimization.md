@@ -37,7 +37,7 @@
      SELECT * from product p, order o where p.id = o.product_id;
      ```
    - Good
-     ```
+     ```sql
      SELECT * from product p
      INNER JOIN order o
      ON p.id = o.product_id;
