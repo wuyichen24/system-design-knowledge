@@ -43,7 +43,7 @@
      ON p.id = o.product_id;
      ```
 
-### 
+### Use join insteal of subquery
 
 ## LIMIT
 ### Use LIMIT if possible
