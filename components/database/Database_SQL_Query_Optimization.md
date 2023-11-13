@@ -12,7 +12,7 @@
      SELECT first_name, last_name, email, phone_number FROM employees;
      ```
    
-### Avoid using SELECT DISTINCT by adding more columns in SELECT
+### Avoid using unnecessary DISTINCT condition
 - **Reason**
    - DISTINCT groups together related rows and then removes duplicate rows.
    - DISTINCT will call GROUP BY, but GROUP BY operation is a costly operation.
@@ -21,9 +21,9 @@
      ```sql
      SELECT DISTINCT first_name FROM employees;
      ```
-   - Good
+   - Good (add more columns to SELECT)
      ```sql
-     SELECT first_name, last_name FROM employees;
+     SELECT first_name, last_name FROM employees;     
      ```
 
 ## JOIN
