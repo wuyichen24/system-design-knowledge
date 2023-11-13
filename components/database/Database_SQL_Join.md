@@ -62,6 +62,8 @@ graph LR;
   ```
 - Result example
 
+  ![left_join_excluding](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/10a8a681-7fb8-4e86-a850-171313a5751a)
+
 ### Right Join
 - Venn diagram
 
@@ -90,6 +92,8 @@ graph LR;
   WHERE a.key IS NULL;
   ```
 - Result example
+
+  ![right_join_exluding](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/26c57270-b4f6-42d9-b3a8-7df2d1ed6ce3)
 
 ### Full Join
 - Venn diagram
