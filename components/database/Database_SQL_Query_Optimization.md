@@ -64,3 +64,6 @@
      SELECT * FROM order
      WHERE product_id EXISTS (SELECT id FROM product);
      ```
+
+## References
+- [A Detailed Guide on SQL Query Optimization](https://www.analyticsvidhya.com/blog/2021/10/a-detailed-guide-on-sql-query-optimization/)
