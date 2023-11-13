@@ -31,3 +31,29 @@
 - Reason
    - Joining by where clause creates the CROSS join/ CARTESIAN product for merging tables.
    - CARTESIAN product of two tables takes a lot of time.
+- Example
+   - Bad
+     ```sql
+     SELECT * from product p, order o where p.id = o.product_id;
+     ```
+   - Good
+     ```
+     SELECT * from product p
+     INNER JOIN order o
+     ON p.id = o.product_id;
+     ```
+
+## LIMIT
+### Use LIMIT if possible
+- Reason
+   - LIMIT controls the number of rows to be displayed from the result set.
+   - The result set needs to display only those rows that are required.
+ 
+## IN, EXISTS
+### Use EXISTS rather than IN
+- Reason
+   - IN operator is more costly than EXISTS in terms of scans especially when the result of the subquery is a large dataset.
+- Example
+   - Bad
+     ```
+     ```
