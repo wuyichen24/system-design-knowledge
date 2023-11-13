@@ -43,7 +43,25 @@
      ON p.id = o.product_id;
      ```
 
-### Use join insteal of subquery
+### Use inner join insteal of subquery
+- **Reason**
+   - Subqueries execute all the queries and load all the data to perform the processing.
+   - JOINs allow RDBMS to construct an execution plan that is better for your query and can forecast what data should be loaded.
+- **Example**
+   - Bad
+     ```sql
+     SELECT * FROM products p
+     WHERE p.product_id =
+     (SELECT s.product_id FROM sales s
+     WHERE s.customer_id = 2468 AND s.quantity_sold = 12);
+     ```
+   - Good
+     ```sql
+     SELECT * FROM products p
+     INNER JOIN sales s
+     ON p.product_id = s.product_id
+     WHERE s.customer_id = 2468 AND s.quantity_sold = 12;
+     ```
 
 ## LIMIT
 ### Use LIMIT if possible
