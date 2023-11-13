@@ -11,3 +11,7 @@
      ```sql
      SELECT * FROM employees;
      ```
+### Avoid using SELECT DISTINCT
+- Reason
+   - DISTINCT groups together related rows and then removes duplicate rows.
+   - DISTINCT will call GROUP BY, but GROUP BY operation is a costly operation.
