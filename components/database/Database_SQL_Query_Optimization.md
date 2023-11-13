@@ -105,6 +105,29 @@
      AND customer_id !='2'
      GROUP BY customer_id;
      ```
-     
+
+## UNION
+### Use UNION ALL rather than UNION
+- Reason
+   - UNION removes duplicate records when merging the data.
+   - UNION ALL displays the data with duplicates.
+- Example
+   - Bad
+     ```sql
+     SELECT customer_id
+     FROM sales
+     UNION
+     SELECT customer_id
+     FROM customers;
+     ```
+   - Good
+     ```sql
+     SELECT customer_id
+     FROM sales
+     UNION ALL
+     SELECT customer_id
+     FROM customers;
+     ```
+    
 ## References
 - [A Detailed Guide on SQL Query Optimization](https://www.analyticsvidhya.com/blog/2021/10/a-detailed-guide-on-sql-query-optimization/)
