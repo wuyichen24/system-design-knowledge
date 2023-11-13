@@ -86,6 +86,8 @@ Accumulate system design knowledge (concepts, patterns, technology choices, etc.
       - [Normalization](components/database/Database_Design.md#normalization)
       - [Denormalization (Materialized view)](components/database/Database_Design.md#denormalization-materialized-view)
       - [Best practices](components/database/Database_Design.md#best-practices)
+- [**SQL**]()
+   - [Join](components/database/Database_SQL_Join.md)
 - Todo
    - clustering and joins
    - DDL, DML and DCL
