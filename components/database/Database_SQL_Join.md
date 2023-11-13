@@ -64,6 +64,9 @@ graph LR;
 
 ### Right Join
 - Venn diagram
+
+  <img width="162" alt="Screenshot 2023-11-12 at 7 07 27 PM" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/37df0edb-1394-463e-8a9d-7c5f7782ceb5">
+  
 - SQL example
   ```sql
   SELECT * FROM TableA a
@@ -76,6 +79,9 @@ graph LR;
 
 ### Right Join Excluding Inner Join
 - Venn diagram
+
+  <img width="162" alt="Screenshot 2023-11-12 at 7 08 02 PM" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/422debf3-0722-46f6-bc7c-af54b3ee194e">
+  
 - SQL example
   ```sql
   SELECT * FROM TableA a
@@ -87,6 +93,9 @@ graph LR;
 
 ### Full Join
 - Venn diagram
+
+  <img width="162" alt="Screenshot 2023-11-12 at 7 08 34 PM" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/08cae06d-6b85-48cf-8721-6d8fa715ed6b">
+  
 - SQL example
   ```sql
   SELECT * FROM TableA a
@@ -97,11 +106,15 @@ graph LR;
 
 ### Full Join Excluding Inner Join
 - Venn diagram
+  
+  <img width="163" alt="Screenshot 2023-11-12 at 7 09 20 PM" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/a9c6f49b-7d19-4721-9a4e-d6be982f1584">
+
 - SQL example
-- Result example
   ```sql
   SELECT * FROM TableA a
   FULL OUTER JOIN TableB b
   ON a.key = b.key
   WHERE a.key IS NULL or b.key IS NULL;
   ```
+- Result example
+  
