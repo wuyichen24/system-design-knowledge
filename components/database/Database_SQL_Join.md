@@ -23,7 +23,7 @@ graph LR;
   ```sql
   SELECT * FROM TableA a
   INNER JOIN TableB b
-  ON a.key = b.key
+  ON a.key = b.key;
   ```
 - Result example
 
@@ -39,8 +39,69 @@ graph LR;
   ```sql
   SELECT * FROM TableA a
   LEFT JOIN TableB b
-  ON a.key = b.key
+  ON a.key = b.key;
   ```
 - Result example
 
   ![left_join](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/d2c05ea8-b5f6-4df5-9d92-520479250f42)
+
+- Notes
+   - All the records from the left table will be included into the result, even if there is no matching on the right table.
+
+### Left Join Excluding Inner Join
+- Venn diagram
+
+  <img width="164" alt="Screenshot 2023-11-12 at 6 52 51 PM" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/d1554344-3420-454e-bfa2-b09a925f6385">
+  
+- SQL example
+  ```sql
+  SELECT * FROM TableA a
+  LEFT JOIN TableB b
+  ON a.key = b.key
+  WHERE b.key IS NULL;
+  ```
+- Result example
+
+### Right Join
+- Venn diagram
+- SQL example
+  ```sql
+  SELECT * FROM TableA a
+  RIGHT JOIN TableB b
+  ON a.key = b.key;
+  ```
+- Result example
+
+  ![right_join](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/22f48466-6138-4b5d-9820-0ca36c0c781c)
+
+### Right Join Excluding Inner Join
+- Venn diagram
+- SQL example
+  ```sql
+  SELECT * FROM TableA a
+  RIGHT JOIN TableB b
+  ON a.key = b.key
+  WHERE a.key IS NULL;
+  ```
+- Result example
+
+### Full Join
+- Venn diagram
+- SQL example
+  ```sql
+  SELECT * FROM TableA a
+  FULL OUTER JOIN TableB b
+  ON a.key = b.key;
+  ```
+- Result example
+
+### Full Join Excluding Inner Join
+- Venn diagram
+- SQL example
+- Result example
+  ```sql
+  SELECT * FROM TableA a
+  FULL OUTER JOIN TableB b
+  ON a.key = b.key
+  WHERE a.key IS NULL or b.key IS NULL;
+  ```
