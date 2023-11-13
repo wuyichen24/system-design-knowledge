@@ -43,6 +43,8 @@
      ON p.id = o.product_id;
      ```
 
+### 
+
 ## LIMIT
 ### Use LIMIT if possible
 - **Reason**
@@ -50,7 +52,7 @@
    - The result set needs to display only those rows that are required.
  
 ## IN, EXISTS
-### Use EXISTS rather than IN for large dataset
+### Use EXISTS rather than IN
 - **Reason**
    - IN operator is more costly than EXISTS in terms of scans especially when the result of the subquery is a large dataset.
 - **Example**
@@ -65,5 +67,26 @@
      WHERE product_id EXISTS (SELECT id FROM product);
      ```
 
+## GROUP BY
+### Use WHERE rather then HAVING
+- **Reason**
+   - Using WHERE before GROUP BY could narrow down the rows need to be grouped.
+- **Example**
+   - Bad
+     ```sql
+     SELECT customer_id,count(customer_id)
+     FROM sales
+     GROUP BY customer_id
+     HAVING customer_id != '16' AND customer_id != '2';
+     ```
+   - Good
+     ```sql
+     SELECT customer_id,count(customer_id)
+     FROM sales
+     WHERE customer_id != '16'
+     AND customer_id !='2'
+     GROUP BY customer_id;
+     ```
+     
 ## References
 - [A Detailed Guide on SQL Query Optimization](https://www.analyticsvidhya.com/blog/2021/10/a-detailed-guide-on-sql-query-optimization/)
