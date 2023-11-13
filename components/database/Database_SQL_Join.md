@@ -1,5 +1,17 @@
 # Database SQL - Join
 
+- [**Overview**](#overview)
+- [**Inner Join**](#inner-join)
+- [**Outer Join**](#outer-join)
+   - [*Left Join*](#left-join)
+      - [Left Join Excluding Inner Join](#left-join-excluding-inner-join)
+   - [*Right Join*](#right-join)
+      - [Right Join Excluding Inner Join](#right-join-excluding-inner-join)
+   - [*Full Join*](#full-join)
+      - [Full Join Excluding Inner Join](#full-join-excluding-inner-join)
+- [**Cross Join**](#cross-join)
+- [**Self Join**](#self-join)
+
 ## Overview
 ```mermaid
 graph LR;
