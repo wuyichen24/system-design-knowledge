@@ -226,7 +226,9 @@
       - Write-heavy: Use less indexes.
 - **Choose the right columns**
    - Create indexes on the columns are frequently used in WHERE clauses, ORDER BY clauses, JOIN conditions, or used for sorting and grouping data.
+   - Don't create indexes on the columns are frequently updated (e.g., UPDATE statement for those columns).
    - The column that narrows down the data most should be indexed first.
+   - Create indexes on the foreign keys where INSERT, UPDATE, and DELETE are concurrently performed. This allows UPDATES on the master table without shared locking on the weak entity.
 - **Use different types of indexes properly**
    - Composite index: Use when multiple columns are involved in WHERE clause.
    - Covering index: Use when querying a large table but only need to return a small subset of columns.
