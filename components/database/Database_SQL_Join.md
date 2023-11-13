@@ -130,3 +130,37 @@ graph LR;
   ![full_join_exluding](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/b1b7a82a-636e-4c32-8342-3df55a789b2e)
 
   
+## Cross Join
+- SQL example
+  ```sql
+  SELECT * FROM TableA a
+  CROSS JOIN TableB b;
+  ```
+- Result example
+
+  ![cross_join](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/b994df3a-2f18-455e-bc90-7de5491a6731)
+
+## Self Join
+- SQL example
+  ```sql
+  SELECT * FROM TableA a1
+  FULL OUTER JOIN TableA a2
+  ON a1.column1 = a2.column2;
+  ```
+- Result example
+   - Original table
+     | ID | Name | ManagerID |
+     |----|----|----|
+     | 456 | Robert | |
+     | 383 | Cook | 222 |
+     | 777 | Daniel | 222 |
+     | 123 | Smith | 456 |
+     | 222 | William | 456 |
+   - Result
+     | ID | Name | ManagerID | Manager |
+     |----|----|----|----|
+     | 456 | Robert | | |
+     | 383 | Cook | 222 | William |
+     | 777 | Daniel | 222 | William |
+     | 123 | Smith | 456 | Robert |
+     | 222 | William | 456 | Robert |
