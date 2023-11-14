@@ -1,5 +1,20 @@
 # Database SQL - Query Optimization
 
+- [**SELECT**](#select)
+   - [Select on specific columns rather than select *](#select-on-specific-columns-rather-than-select-)
+   - [Avoid using unnecessary DISTINCT condition](#avoid-using-unnecessary-distinct-condition)
+- [**JOIN**](#join)
+   - [Use inner join rather than joining by where clause](#use-inner-join-rather-than-joining-by-where-clause)
+   - [Use inner join insteal of subquery](#use-inner-join-insteal-of-subquery)
+- [**LIMIT**](#limit)
+   - [Use LIMIT if possible](#use-limit-if-possible)
+- [**IN, EXISTS**](#in-exists)
+   - [Use EXISTS rather than IN](#use-exists-rather-than-in)
+- [**GROUP BY**](#group-by)
+   - [Use WHERE rather then HAVING](#use-where-rather-then-having)
+- [**UNION**](#union)
+   - [Use UNION ALL rather than UNION](#use-union-all-rather-than-union)
+
 ## SELECT
 ### Select on specific columns rather than select *
 - **Example**
