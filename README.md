@@ -88,6 +88,7 @@ Accumulate system design knowledge (concepts, patterns, technology choices, etc.
       - [Best practices](components/database/Database_Design.md#best-practices)
 - [**SQL**]()
    - [Join](components/database/Database_SQL_Join.md)
+   - [Query Optimization](components/database/Database_SQL_Query_Optimization.md)
 - Todo
    - clustering and joins
    - DDL, DML and DCL
