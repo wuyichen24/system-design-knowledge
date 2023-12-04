@@ -1,5 +1,14 @@
 # Cache
 
+- [**Types**](#types)
+   - [Client-side caching](#client-side-caching)
+   - [Server-side caching](#server-side-caching)
+- [**Replacement Policies**](#replacement-policies)
+- [**Strategies**](#strategies)
+- [**Common Problems And Solutions**](#common-problems-and-solutions)
+- [**Related Concepts**](#related-concepts)
+- [**References**](#references)
+
 ## Types
 
 ![Cache](https://user-images.githubusercontent.com/8989447/118215761-6cfe4d80-b42f-11eb-9ac2-2e43553b36f1.png)
