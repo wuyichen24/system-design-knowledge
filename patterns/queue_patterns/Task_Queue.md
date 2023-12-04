@@ -7,8 +7,15 @@
 
 ![task_queue drawio](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/fc576274-6ab8-4e2d-8dee-9c8cd7b2bef7)
 
+- Clients add tasks into the task queue and create a new task status record.
+- Task queue holds tasks as a buffer.
+- Worker pulls a task from the task queue and update the corresponding task status record.
+- Once worker is done (either success or fail), update the corresponding taks status record.
+
 ### Implementation
-#### Structure
+- Choose message queue
+- Push vs. pull
+    - Worker pulling tasks from the task queue.
 
 
 ## Pros & Cons
