@@ -140,6 +140,8 @@ Accumulate system design knowledge (concepts, patterns, technology choices, etc.
    - [Fallback](patterns/resiliency_patterns/Fallback.md)
    - [Retry](patterns/resiliency_patterns/Retry.md)
    - [Timeout](patterns/resiliency_patterns/Timeout.md)
+- [**Queue Patterns**](#queue_patterns)
+   - [Task Queue](patterns/queue_patterns/Task_Queue.md)
 - [**Messaging Patterns**](#messaging-patterns)
    - [Claim Check](patterns/messaging_patterns/Claim_Check.md)
    - [Publishing Events Using Local Transactions](patterns/messaging_patterns/Publishing_Events_Using_Local_Transactions.md)
