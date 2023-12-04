@@ -35,3 +35,4 @@
 - tasq: A brokerless task queue for simple use cases.
 
 ## References
+- Web Article: [Task Queues | https://www.fullstackpython.com/task-queues.html](https://www.fullstackpython.com/task-queues.html)
