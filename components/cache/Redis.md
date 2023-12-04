@@ -1,5 +1,17 @@
 # Redis
 
+- [**Concepts**](#concepts)
+- [**Data structures**](#data-structures)
+   - [Summary](#summary)
+   - [String](#string)
+   - [List](#list)
+   - [Hash](#hash)
+   - [Set](#set)
+   - [Sorted Set](#sorted-set)
+- [**Data persistence options**](#data-persistence-options)
+- [**Use cases**](#use-cases)
+- [**Performance**](#performance)
+
 ## Concepts
 - **Architecture**
    - In-memory key-value store.
