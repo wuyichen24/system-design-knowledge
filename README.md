@@ -92,7 +92,6 @@ Accumulate system design knowledge (concepts, patterns, technology choices, etc.
 - Todo
    - clustering and joins
    - DDL, DML and DCL
-   - Different types of joins
    - Types Of Keys
    - view
    - multilevel indexing
