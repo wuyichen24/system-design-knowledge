@@ -57,6 +57,9 @@
 ## Strategies
 ### Read strategies
 #### Cache-aside
+
+<img width="700" alt="cache-aside" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/486969ab-4f25-4b01-a1b6-2d329cc8d666">
+
 - **Concept**
    - The application directly communicates with both the cache and storage systems.
    - Applications take the responsibility of maintaining data in the cache.
@@ -68,18 +71,34 @@
    - If the key is not found in the cache (cache miss),
        - The application retrieves the data from storage and return it.
        - The application stores the data into the cache for future reads.
-
-   <img width="700" alt="cache-aside" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/486969ab-4f25-4b01-a1b6-2d329cc8d666">
-
 - **Pros**
    - The system can tolerate cache failures, as it can still read from the storage.
    - The data model in the cache can differ from that in the storage, providing flexibility for a variety of use cases.
 - **Cons**
    - More complexity, because the application needs to manage both cache and storage.
-   - Ensuring data consistency between cache and storage is challenging.
+   - Ensuring data consistency between cache and storage is challenging (Consider using TTL).
    - Each cache miss causes a noticeable delay.
 
 #### Read-through
+
+<img width="700" alt="read-through" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/28edab21-53cf-4e28-8be7-d12a4ffd605b">
+
+- **Concept**
+   - The cache serves as an intermediary between the application and the storage system, handling all read requests.
+   - Read-through is particularly suitable for read-heavy workloads
+- **Steps**
+   - The application requests a key from the cache.
+   - If the key is found in the cache (cache hit)
+       - The data is returned to the application.
+   - If the key is not found in the cache (cache miss),
+       - The cache retrieves the data from storage and save it.
+       - The cache return the data to the application.
+- **Pros**
+   - Less complexity, because the application only need to access the cache.
+- **Cons**
+   - The cache will be a single point of failure.
+   - The cache and storage systems must share the same data model, limiting the flexibility in handling different use cases. 
+
 ### Write strategies
 - [**Cache-Aside**](../../patterns/cache_patterns/Cache_Aside.md)
 - [**Cache-As-SOR**](../../patterns/cache_patterns/Cache_As_Sor.md)
