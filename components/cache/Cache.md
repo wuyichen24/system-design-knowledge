@@ -24,11 +24,11 @@
 |----|----|----|
 | CDN caching | CDNs can cache some static resources (web page, media file, etc.). | |
 | Reverse proxy caching | Reverse proxy server can cache responses to clients. | | 
-| In-Process caching | An object cache built within the same memory as the application. | <li>Ehcache<li>Caffine<li>Google Guava Cache |
 | Database caching | Databases include some level of caching. | <li>Buffer cache<li>Result cache<li>Query cache<li>Metatdata cache<li>Session cache |
-| Application caching | Caches can be located between the application and the data storage. | <li>Redis<li>Memcached<li>Tair |
-| Page/Disk cache | A transparent cache for the pages originating from a secondary storage device (HDD or SSD). | |
+| Page/Disk caching | A transparent cache for the pages originating from a secondary storage device (HDD or SSD). | |
 | CPU caching | A hardware cache used by CPU to reduce the average cost to access data from the main memory. | <li>L1<li>L2<li>L3 |
+| In-Process caching | An object cache built within the same memory as the application. | <li>Ehcache<li>Caffine<li>Google Guava Cache |
+| Inter-process caching | Caches can be located between the application and the data storage. | <li>Redis<li>Memcached<li>Tair |
 
 ## Replacement Policies
 | Algorithm | Description |
