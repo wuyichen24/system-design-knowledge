@@ -72,7 +72,12 @@
    <img width="700" alt="cache-aside" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/486969ab-4f25-4b01-a1b6-2d329cc8d666">
 
 - **Pros**
+   - The system can tolerate cache failures, as it can still read from the storage.
+   - The data model in the cache can differ from that in the storage, providing flexibility for a variety of use cases.
 - **Cons**
+   - More complexity, because the application needs to manage both cache and storage.
+   - Ensuring data consistency between cache and storage is challenging.
+   - Each cache miss causes a noticeable delay.
 
 #### Read-through
 ### Write strategies
