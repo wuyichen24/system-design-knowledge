@@ -31,8 +31,8 @@
 ## Deployment
 | Type | Description | Examples | Diagram |
 |----|----|----|----|
-| In-Process caching | A cache is located within the application itself.<li>Limited capacity<li>No persistence | <li>Ehcache<li>Caffine<li>Google Guava Cache | ![in-process](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/b5e12ab0-de7f-48ac-9e52-c8120ff3e994) |
-| Inter-process caching | A cache is located in a separate process on the same machine. | <li>Redis<li>Memcached<li>Tair<li>RocksDB<br><br>(In standalone mode) | ![inter-process](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/ad0be29a-2d13-4f07-990f-25de9c9c025a) |
+| In-Process cache | A cache is located within the application itself.<li>Limited capacity<li>No persistence | <li>Ehcache<li>Caffine<li>Google Guava Cache | ![in-process](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/b5e12ab0-de7f-48ac-9e52-c8120ff3e994) |
+| Inter-process cache | A cache is located in a separate process on the same machine. | <li>Redis<li>Memcached<li>Tair<li>RocksDB<br><br>(In standalone mode) | ![inter-process](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/ad0be29a-2d13-4f07-990f-25de9c9c025a) |
 
 
 ## Replacement Policies
