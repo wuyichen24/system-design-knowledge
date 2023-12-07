@@ -27,6 +27,7 @@
 | In-Process caching | An object cache built within the same memory as the application. | <li>Ehcache<li>Caffine<li>Google Guava Cache |
 | Database caching | Databases include some level of caching. | |
 | Application caching | Caches can be located between the application and the data storage. | <li>Redis<li>Memcached<li>Tair |
+| CPU caching | A hardware cache used by CPU to reduce the average cost to access data from the main memory. | |
 
 ## Replacement Policies
 | Algorithm | Description |
