@@ -81,7 +81,7 @@
 
 #### Read-through
 
-<img width="700" alt="read-through" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/28edab21-53cf-4e28-8be7-d12a4ffd605b">
+<img width="500" alt="read-through" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/28edab21-53cf-4e28-8be7-d12a4ffd605b">
 
 - **Concept**
    - The cache serves as an intermediary between the application and the storage system, handling all read requests.
