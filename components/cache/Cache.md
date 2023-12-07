@@ -27,8 +27,13 @@
 | Database caching | Databases include some level of caching. | <li>Buffer cache<li>Result cache<li>Query cache<li>Metatdata cache<li>Session cache |
 | Page/Disk caching | A transparent cache for the pages originating from a secondary storage device (HDD or SSD). | |
 | CPU caching | A hardware cache used by CPU to reduce the average cost to access data from the main memory. | <li>L1<li>L2<li>L3 |
-| In-Process caching | A cache is located within the application itself.<li>Limited capacity<li>No persistence | <li>Ehcache<li>Caffine<li>Google Guava Cache |
-| Inter-process caching | A cache is located in a separate process on the local machine. | <li>Redis<li>Memcached<li>Tair |
+
+## Deployment
+| Type | Description | Examples | Diagram |
+|----|----|----|----|
+| In-Process caching | A cache is located within the application itself.<li>Limited capacity<li>No persistence | <li>Ehcache<li>Caffine<li>Google Guava Cache | ![in-process](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/b5e12ab0-de7f-48ac-9e52-c8120ff3e994) |
+| Inter-process caching | A cache is located in a separate process on the same machine. | <li>Redis<li>Memcached<li>Tair | ![inter-process](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/ad0be29a-2d13-4f07-990f-25de9c9c025a) |
+
 
 ## Replacement Policies
 | Algorithm | Description |
