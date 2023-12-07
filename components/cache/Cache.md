@@ -100,12 +100,29 @@
    - The cache and storage systems must share the same data model, limiting the flexibility in handling different use cases. 
 
 ### Write strategies
-- [**Cache-Aside**](../../patterns/cache_patterns/Cache_Aside.md)
-- [**Cache-As-SOR**](../../patterns/cache_patterns/Cache_As_Sor.md)
-   - Read-Through
-   - Write-Through
-   - Write-Behind
-   - Refresh-Ahead
+#### Write-around
+- **Concept**
+- **Steps**
+- **Pros**
+- **Cons**
+
+#### Write-through
+- **Concept**
+- **Steps**
+- **Pros**
+- **Cons**
+
+#### Write-back / Write-behind
+- **Concept**
+- **Steps**
+- **Pros**
+- **Cons**
+
+#### Refresh-ahead
+- **Concept**
+- **Steps**
+- **Pros**
+- **Cons**
 
 ## Common Problems And Solutions
 | Problem | Scenario | Cause | Solutions |
