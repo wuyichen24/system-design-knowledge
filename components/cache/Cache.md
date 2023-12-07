@@ -55,6 +55,24 @@
 | Time-to-live (TTL) | The application sets a lifetime for the cached data, and the data is removed or marked as invalid once the TTL expires. | <img width="176" alt="Screenshot 2023-12-07 at 2 09 04 PM" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/e69ebdf7-1494-413c-a229-f2ce43d761b5"> |
 
 ## Strategies
+### Read strategies
+#### Cache-aside
+- **Concept**
+   - The application directly communicates with both the cache and storage systems.
+   - Applications take the responsibility of maintaining data in the cache.
+   - The cache does not interact with database directly.
+- **Steps**
+   - The application requests a key from the cache.
+   - If the key is found in the cache (cache hit)
+       - The data is returned to the application.
+   - If the key is not found in the cache (cache miss),
+       - The application retrieves the data from storage and return it.
+       - The application stores the data into the cache for future reads.
+
+   <img width="700" alt="cache-aside" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/486969ab-4f25-4b01-a1b6-2d329cc8d666">
+
+#### Read-through
+### Write strategies
 - [**Cache-Aside**](../../patterns/cache_patterns/Cache_Aside.md)
 - [**Cache-As-SOR**](../../patterns/cache_patterns/Cache_As_Sor.md)
    - Read-Through
