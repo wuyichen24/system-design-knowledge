@@ -52,7 +52,7 @@
 |----|----|----|
 | Invalidation when modifying | Invalidate the data in cache when the application modifies the data in storage (widely used technique). | <img width="229" alt="Screenshot 2023-12-07 at 2 08 08 PM" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/9b7bb6b0-0a89-4839-a83c-f769ebc1ffc5"> |
 | Invalidation when reading | The application checks the validity of the data when it retrieves it from the cache. If the data is stale, it is read from the storage and written to the cache. | <img width="258" alt="Screenshot 2023-12-07 at 2 08 40 PM" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/5b7924cc-81c9-47b7-b74c-1b01e5d5303c"> |
-| Time-to-live (TTL) | The application sets a lifetime for the cached data, and the data is removed or marked as invalid once the TTL expires. | <img width="258" alt="Screenshot 2023-12-07 at 2 08 40 PM" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/a6c19a5e-9088-4896-b7c5-ad3febb51147"> |
+| Time-to-live (TTL) | The application sets a lifetime for the cached data, and the data is removed or marked as invalid once the TTL expires. | <img width="176" alt="Screenshot 2023-12-07 at 2 09 04 PM" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/e69ebdf7-1494-413c-a229-f2ce43d761b5"> |
 
 ## Strategies
 - [**Cache-Aside**](../../patterns/cache_patterns/Cache_Aside.md)
