@@ -71,6 +71,9 @@
 
    <img width="700" alt="cache-aside" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/486969ab-4f25-4b01-a1b6-2d329cc8d666">
 
+- **Pros**
+- **Cons**
+
 #### Read-through
 ### Write strategies
 - [**Cache-Aside**](../../patterns/cache_patterns/Cache_Aside.md)
