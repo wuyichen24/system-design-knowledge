@@ -28,7 +28,7 @@
 | Page/Disk caching | A transparent cache for the pages originating from a secondary storage device (HDD or SSD). | |
 | CPU caching | A hardware cache used by CPU to reduce the average cost to access data from the main memory. | <li>L1<li>L2<li>L3 |
 
-## Deployment
+### Deployment
 | Type | Description | Examples | Diagram |
 |----|----|----|----|
 | In-Process cache | A cache is located within the application itself.<li>Limited capacity<li>No persistence | <li>Ehcache<li>Caffine<li>Google Guava Cache | ![in-process](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/b5e12ab0-de7f-48ac-9e52-c8120ff3e994) |
@@ -36,6 +36,7 @@
 | Remove cache | A cache is deployed on a separate machine from the application, usually composed of multiple machines deployed together. | <li>Redis<li>Memcached <br><br>(Deployed on remote servers) | ![remote](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/9f324b85-44c4-4bdf-8588-e9a62d7449bf) |
 
 ## Replacement And Invalidation
+### Replacement
 | Algorithm | Description |
 |----|----|
 | Least recently used (LRU) | Discards the least recently used items first. | 
