@@ -11,7 +11,7 @@
 
 ## Types
 
-![Cache](https://user-images.githubusercontent.com/8989447/118215761-6cfe4d80-b42f-11eb-9ac2-2e43553b36f1.png)
+![cache drawio](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/76e17651-5d23-4a77-9e92-1a3b804b1fb4)
 
 ### Client-side caching
 | Type | Description |
