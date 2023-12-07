@@ -45,6 +45,7 @@
 | Last in first out (LIFO) | Like stack, the cache evicts the block added most recently first without any regard to how often or how many times it was accessed before. |
 | Random replacement (RR) | Randomly selects a candidate item and discards it to make space when necessary. |
 | Least-frequently used (LFU) | Discards the least often used items first. |
+| Allowlist policy | Data items in the allowlist will not be evicted from the cache (suitable for specific business scenarios with known hot keys). |
 
 ## Strategies
 - [**Cache-Aside**](../../patterns/cache_patterns/Cache_Aside.md)
