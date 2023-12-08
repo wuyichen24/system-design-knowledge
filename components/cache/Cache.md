@@ -59,7 +59,7 @@
 | | Read strategies | Write strategies | Diagram |
 |----|----|----|----|
 | Cache-aside | <li>Cache-aside | <li>Write-around | <img width="200" alt="cache-aside" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/503e4192-2042-4e40-8210-ec5e0f88d0e6"> |
-| Cache-as-SOR (inline cache) | <li>Read-through<li>Refresh-ahead | <li>Write-through<li>Write-back/Write-behind<li>Refresh-ahead | <img width="200" alt="cache-sor" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/006d692a-e878-493a-97d6-bcd0395941b9"> |
+| Cache-as-SOR (inline cache) | <li>Read-through<li>Refresh-ahead | <li>Write-through<li>Write-back/Write-behind<li>Refresh-ahead | <img width="70" alt="cache-sor" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/006d692a-e878-493a-97d6-bcd0395941b9"> |
 
 ### Read strategies
 #### Cache-aside
