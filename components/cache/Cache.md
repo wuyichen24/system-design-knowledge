@@ -134,6 +134,9 @@
    - If data is successfully written to the storage but not updated in the cache, the cached data becomes stale (Solution: The cache can first invalidate the key, then request to write the data to the storage).
 
 #### Write-back / Write-behind
+
+<img width="500" alt="write-back" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/899b8103-1441-4244-b9bf-ee9afc2d697d">
+
 - **Concept**
    - The cache serves as an intermediary between the application and the storage system, handling all write requests.
    - After application writes data to cache, cache **asynchronously** writes the same data to database (When satisfy a certain criteria).
@@ -141,7 +144,7 @@
    - The application writes data to the cache, and the data is persisted in the cache.
    - The cache periodically writes updated records to the storage system in batches.
 - **Pros**
-   - Write-back offers lower write latency compared to write-through, resulting in better performance for write operations.
+   - The strategy offers lower write latency compared to write-through, resulting in better performance for write operations.
    - The strategy reduces the overall number of writes to the storage system and provides resilience to storage failures.
 - **Cons**
    - There may be temporary data inconsistency between the cache and storage systems.
