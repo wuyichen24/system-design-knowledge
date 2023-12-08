@@ -135,7 +135,7 @@
 
 #### Write-back / Write-behind
 
-<img width="500" alt="write-back" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/899b8103-1441-4244-b9bf-ee9afc2d697d">
+  <img width="500" alt="write-back" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/899b8103-1441-4244-b9bf-ee9afc2d697d">
 
 - **Concept**
    - The cache serves as an intermediary between the application and the storage system, handling all write requests.
@@ -151,6 +151,9 @@
    - If the cache fails before writing data to the storage, the latest updated records may be lost (Solution: Cache system can persist write operations on the cache side. When the cache restarts, it can replay the unfinished operations to recover the cache and write data to the storage system).
 
 #### Refresh-ahead
+
+  <img width="50" alt="refresh-ahead" src="https://github.com/wuyichen24/system-design-knowledge/blob/master/diagrams/png/refresh_ahead_small.png">
+
 - **Concept**
    - Cache automatically and asynchronously reloads (refreshs) any recently accessed cache entry from database before its expiration.
 - **Steps**
