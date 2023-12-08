@@ -122,6 +122,7 @@
 
 - **Concept**
    - The cache serves as an intermediary between the application and the storage system, handling all write requests.
+   - After application writes data to cache, cache **synchronously** writes the same data to database.
 - **Steps**
    - The application writes to the cache endpoints.
    - The cache writes the data to the storage system.
@@ -134,9 +135,17 @@
 
 #### Write-back / Write-behind
 - **Concept**
+   - The cache serves as an intermediary between the application and the storage system, handling all write requests.
+   - After application writes data to cache, cache **asynchronously** writes the same data to database (When satisfy a certain criteria).
 - **Steps**
+   - The application writes data to the cache, and the data is persisted in the cache.
+   - The cache periodically writes updated records to the storage system in batches.
 - **Pros**
+   - Write-back offers lower write latency compared to write-through, resulting in better performance for write operations.
+   - The strategy reduces the overall number of writes to the storage system and provides resilience to storage failures.
 - **Cons**
+   - There may be temporary data inconsistency between the cache and storage systems.
+   - If the cache fails before writing data to the storage, the latest updated records may be lost (Solution: Cache system can persist write operations on the cache side. When the cache restarts, it can replay the unfinished operations to recover the cache and write data to the storage system).
 
 #### Refresh-ahead
 - **Concept**
