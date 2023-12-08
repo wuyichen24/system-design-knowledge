@@ -55,6 +55,12 @@
 | Time-to-live (TTL) | The application sets a lifetime for the cached data, and the data is removed or marked as invalid once the TTL expires. | <img width="176" alt="Screenshot 2023-12-07 at 2 09 04 PM" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/e69ebdf7-1494-413c-a229-f2ce43d761b5"> |
 
 ## Strategies
+### Overview
+| | Read strategies | Write strategies | Diagram |
+|----|----|----|----|
+| Cache-aside | <li>Cache-aside | <li>Write-around | |
+| Cache-as-SOR (inline cache) | <li>Read-through<li>Refresh-ahead | <li>Write-through<li>Write-back/Write-behind<li>Refresh-ahead | |
+
 ### Read strategies
 #### Cache-aside
 
@@ -161,6 +167,14 @@
    - Refresh-ahead offers reduced latency compared to read-through.
    - Refresh-ahead is especially useful if objects are being accessed by a large number of users.
 - **Cons**
+
+### Combinations
+- Cache-aside + Write-around (Common)
+- Read-through + Write-through (Common)
+   - Examples: DynamoDB Accelerator (DAX)
+- Read-through + Write-back (Common)
+- Read-through + Write-around
+- Cache-aside + Write-through
 
 ## Common Problems And Solutions
 | Problem | Scenario | Cause | Solutions |
