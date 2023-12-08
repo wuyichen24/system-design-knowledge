@@ -152,7 +152,7 @@
 
 #### Refresh-ahead
 
-  <img width="50" alt="refresh-ahead" src="https://github.com/wuyichen24/system-design-knowledge/blob/master/diagrams/png/refresh_ahead_small.png">
+  <img width="100" alt="refresh-ahead" src="https://github.com/wuyichen24/system-design-knowledge/blob/master/diagrams/png/refresh_ahead_small.png">
 
 - **Concept**
    - Cache automatically and asynchronously reloads (refreshs) any recently accessed cache entry from database before its expiration.
