@@ -58,8 +58,8 @@
 ### Overview
 | | Read strategies | Write strategies | Diagram |
 |----|----|----|----|
-| Cache-aside | <li>Cache-aside | <li>Write-around | |
-| Cache-as-SOR (inline cache) | <li>Read-through<li>Refresh-ahead | <li>Write-through<li>Write-back/Write-behind<li>Refresh-ahead | |
+| Cache-aside | <li>Cache-aside | <li>Write-around | ![cache-aside drawio](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/503e4192-2042-4e40-8210-ec5e0f88d0e6) |
+| Cache-as-SOR (inline cache) | <li>Read-through<li>Refresh-ahead | <li>Write-through<li>Write-back/Write-behind<li>Refresh-ahead | ![cache-sor drawio](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/006d692a-e878-493a-97d6-bcd0395941b9) |
 
 ### Read strategies
 #### Cache-aside
