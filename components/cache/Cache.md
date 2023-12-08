@@ -76,7 +76,7 @@
    - The data model in the cache can differ from that in the storage, providing flexibility for a variety of use cases.
 - **Cons**
    - More complexity, because the application needs to manage both cache and storage.
-   - Ensuring data consistency between cache and storage is challenging (Consider using TTL).
+   - Ensuring data consistency between cache and storage is challenging (Solution: TTL).
    - Each cache miss causes a noticeable delay.
 
 #### Read-through
@@ -110,17 +110,27 @@
    - The application writes data directly to the storage system.
    - The application invalids the data in cache.
 - **Pros**
-   - Simple
+   - Less complexity
    - The system can tolerate cache failures, as it can still write to the storage.
 - **Cons**
    - If data is written once and then read again, the storage system will be accessed twice, potentially causing performance issues.
    - When data is frequently updated and read, the storage system is accessed multiple times, rendering cache operations less effective.
 
 #### Write-through
+
+<img width="700" alt="write-through" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/c0566596-798e-4d65-8831-dd91108861a3">
+
 - **Concept**
+   - The cache serves as an intermediary between the application and the storage system, handling all write requests.
 - **Steps**
+   - The application writes to the cache endpoints.
+   - The cache writes the data to the storage system.
+   - The cache updates itself if the write operation is successful.
 - **Pros**
+   - Less complexity, because the application only need to access the cache.
 - **Cons**
+   - Introduces additional write latency, as the operation must be performed on both the cache and storage systems.
+   - If data is successfully written to the storage but not updated in the cache, the cached data becomes stale (Solution: The cache can first invalidate the key, then request to write the data to the storage).
 
 #### Write-back / Write-behind
 - **Concept**
