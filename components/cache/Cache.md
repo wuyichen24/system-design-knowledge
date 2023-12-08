@@ -101,10 +101,20 @@
 
 ### Write strategies
 #### Write-around
+
+<img width="500" alt="write-around" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/75de17cf-c71c-4f2e-af84-a8ab83e01ecc">
+
 - **Concept**
+   - The application writes data directly to the storage system, bypassing the cache.
 - **Steps**
+   - The application writes data directly to the storage system.
+   - The application invalids the data in cache.
 - **Pros**
+   - Simple
+   - The system can tolerate cache failures, as it can still write to the storage.
 - **Cons**
+   - If data is written once and then read again, the storage system will be accessed twice, potentially causing performance issues.
+   - When data is frequently updated and read, the storage system is accessed multiple times, rendering cache operations less effective.
 
 #### Write-through
 - **Concept**
