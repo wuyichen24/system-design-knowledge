@@ -118,7 +118,7 @@
 
 #### Write-through
 
-<img width="700" alt="write-through" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/c0566596-798e-4d65-8831-dd91108861a3">
+<img width="500" alt="write-through" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/c0566596-798e-4d65-8831-dd91108861a3">
 
 - **Concept**
    - The cache serves as an intermediary between the application and the storage system, handling all write requests.
