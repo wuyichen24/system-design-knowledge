@@ -58,7 +58,7 @@
 ### Read strategies
 #### Cache-aside
 
-<img width="700" alt="cache-aside" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/486969ab-4f25-4b01-a1b6-2d329cc8d666">
+  <img width="700" alt="cache-aside" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/486969ab-4f25-4b01-a1b6-2d329cc8d666">
 
 - **Concept**
    - The application directly communicates with both the cache and storage systems.
@@ -81,7 +81,7 @@
 
 #### Read-through
 
-<img width="500" alt="read-through" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/28edab21-53cf-4e28-8be7-d12a4ffd605b">
+  <img width="500" alt="read-through" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/28edab21-53cf-4e28-8be7-d12a4ffd605b">
 
 - **Concept**
    - The cache serves as an intermediary between the application and the storage system, handling all read requests.
@@ -102,7 +102,7 @@
 ### Write strategies
 #### Write-around
 
-<img width="300" alt="write-around" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/75de17cf-c71c-4f2e-af84-a8ab83e01ecc">
+  <img width="300" alt="write-around" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/75de17cf-c71c-4f2e-af84-a8ab83e01ecc">
 
 - **Concept**
    - The application writes data directly to the storage system, bypassing the cache.
@@ -118,7 +118,7 @@
 
 #### Write-through
 
-<img width="500" alt="write-through" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/c0566596-798e-4d65-8831-dd91108861a3">
+  <img width="500" alt="write-through" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/c0566596-798e-4d65-8831-dd91108861a3">
 
 - **Concept**
    - The cache serves as an intermediary between the application and the storage system, handling all write requests.
