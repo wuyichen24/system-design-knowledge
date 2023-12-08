@@ -102,7 +102,7 @@
 ### Write strategies
 #### Write-around
 
-<img width="500" alt="write-around" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/75de17cf-c71c-4f2e-af84-a8ab83e01ecc">
+<img width="300" alt="write-around" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/75de17cf-c71c-4f2e-af84-a8ab83e01ecc">
 
 - **Concept**
    - The application writes data directly to the storage system, bypassing the cache.
