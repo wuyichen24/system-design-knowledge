@@ -219,3 +219,5 @@
 - https://github.com/doocs/advanced-java/blob/main/docs/high-concurrency/redis-caching-avalanche-and-caching-penetration.md
 - https://github.com/dunwu/blog/blob/master/source/_posts/theory/cache.md
 - https://docs.oracle.com/cd/E15357_01/coh.360/e15723/cache_rtwtwbra.htm#COHDG198
+- https://xiaolincoding.com/redis/cluster/cache_problem.html
+- https://blog.bytebytego.com/p/a-crash-course-in-caching-final-part
