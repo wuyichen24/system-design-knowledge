@@ -190,6 +190,7 @@
 - Cache-aside + Write-through
 
 ## Common Problems And Solutions
+### Reliability problems
 | Problem | Scenario | Cause | Solutions |
 |---|---|---|---|
 | Cache avalanche | <li>Lots of cached data expire at the same time<li>The cache instance is down | Suddenly all queries hit the database and cause the database to crash down. | <li>Use distributed cache cluster (Redis cluster) to achieve high availability and high scalability.<li>Use circuit breaker and rate limiter to avoid the system crash down by high load.<li>Use the combination of in-process cache and distributed cache.<li>Use staggered expiration by combining a base time-to-live (TTL) value with a random delta so that they will not expire at the same time. |
