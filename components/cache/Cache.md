@@ -198,6 +198,12 @@
 | Cache penetration<br>[缓存穿透] | Lots of queries for the data which doesn't exist in the database. | For those queries, database doesn't have the data and cache doesn't have too. But those queries will eventually the hit the database. If the amount of the queries is very large, it would cause the database to crash down. | <li>Store a placeholder value in the cache to represent non-existent data (Set an appropriate TTL for these placeholder entries to prevent them from occupying cache space indefinitely).<li>Check Bloom filter before checking cache and database to see the data is existing or not. |
 | Cache breakdown<br>[缓存击穿] | A very hot data entry expires in the cache. | Suddenly lots of queries for that that very hot data entry will hit the database eventually and cause the database to crash down. | <li>Add a lock on that hot data entry and the lock only allows a very limited amount of queries to search the hot data entry from the database and update the cache. After releasing the lock, other queries can get that hot data entry from the cache directly.<li>Asynchronously and periodically update that hot data entry from database to cache.<li>Don't set the expiration time on that hot data entry. |
 
+### Traffic problem
+| Problem | Scenario | Cause | Solutions |
+|---|---|---|---|
+| Hot key problem | High traffic on a single key | Excessive traffic pressure on the cache node | <li>Distribute traffic pressure across the entire cache system.<li>Applications can store hot keys in a local cache, decreasing traffic to the remote cache system<li>If numerous hot keys exist, real-time monitoring can enable the cache system to expand quickly. |
+| Large key problem | The value size of a key is significantly large | Downgrade the performance by<li>Frequent access to large keys can consume significant network bandwidth.<li>Any partial update of a large key will result in the modification of the entire value.<li>If a large key becomes invalid or is evicted from the cache, reloading it from storage can be time-consuming. | <li>Compress large keys in cache to reduce data size.<li>Set a longer Time-To-Live (TTL) for large keys to minimize eviction or invalidation.<li>Divide large keys into multiple smaller ones.<li>Prevent the creation of large keys by modifying business requirements. |
+
 ## Related Concepts
 - **Distributed Cache**
    - A distributed cache may span multiple servers so that it can grow in size and in transactional capacity.
