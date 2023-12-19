@@ -49,7 +49,7 @@
 |----|----|----|----|
 | In-Process cache | A cache is located within the application itself.<li>Limited capacity<li>No persistence | <li>Ehcache<li>Caffine<li>Google Guava Cache | ![in-process](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/b5e12ab0-de7f-48ac-9e52-c8120ff3e994) |
 | Inter-process cache | A cache is located in a separate process on the same machine. | <li>Redis<li>Memcached<li>Tair<li>RocksDB<br><br>(In standalone mode) | ![inter-process](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/ad0be29a-2d13-4f07-990f-25de9c9c025a) |
-| Remove cache | A cache is deployed on a separate machine from the application, usually composed of multiple machines deployed together. | <li>Redis<li>Memcached <br><br>(Deployed on remote servers) | ![remote](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/9f324b85-44c4-4bdf-8588-e9a62d7449bf) |
+| Remote cache | A cache is deployed on a separate machine from the application, usually composed of multiple machines deployed together. | <li>Redis<li>Memcached <br><br>(Deployed on remote servers) | ![remote](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/9f324b85-44c4-4bdf-8588-e9a62d7449bf) |
 
 ## Replacement And Invalidation
 ### Replacement
