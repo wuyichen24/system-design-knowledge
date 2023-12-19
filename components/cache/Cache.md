@@ -206,6 +206,18 @@
 | Hot key problem | High traffic on a single key | Excessive traffic pressure on the cache node | <li>Distribute traffic pressure across the entire cache system.<li>Applications can store hot keys in a local cache, decreasing traffic to the remote cache system<li>If numerous hot keys exist, real-time monitoring can enable the cache system to expand quickly. |
 | Large key problem | The value size of a key is significantly large | Downgrade the performance by<li>Frequent access to large keys can consume significant network bandwidth.<li>Any partial update of a large key will result in the modification of the entire value.<li>If a large key becomes invalid or is evicted from the cache, reloading it from storage can be time-consuming. | <li>Compress large keys in cache to reduce data size.<li>Set a longer Time-To-Live (TTL) for large keys to minimize eviction or invalidation.<li>Divide large keys into multiple smaller ones.<li>Prevent the creation of large keys by modifying business requirements. |
 
+## Metrics
+| Name | Definition | Calculation | 
+|----|----|----|
+| Hit Ratio | The ratio of cache hits to the total number of requests. | (Cache Hits / Total Requests) * 100 |
+| Miss Ratio | The ratio of cache misses to the total number of requests. | (Cache Misses / Total Requests) * 100 |
+| Hit Rate | The rate at which cache hits occur per unit of time. | Cache Hits / Time |
+| Miss Rate | The rate at which cache misses occur per unit of time. | Cache Misses / Time |
+| Cache Fill Rate | The rate at which the cache is populated with new data. | New Data Added to Cache / Time |
+| Eviction Rate |  The rate at which items are removed or replaced in the cache to make room for new data. | Evicted Items / Time |
+| Latency Improvement | The reduction in response time or latency due to cache hits. | Latency without Cache - Latency with Cache | 
+| Cache Size Utilization | The percentage of the cache that is currently in use. | (Current Cache Size / Total Cache Size) * 100 |
+
 ## Related Concepts
 - **Distributed Cache**
    - A distributed cache may span multiple servers so that it can grow in size and in transactional capacity.
