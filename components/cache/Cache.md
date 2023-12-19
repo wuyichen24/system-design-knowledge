@@ -21,6 +21,7 @@
 - [**Common Problems And Solutions**](#common-problems-and-solutions)
    - [Reliability problems](#reliability-problems)
    - [Traffic problems](#traffic-problems)
+- [**Metrics**](#metrics)
 - [**Related Concepts**](#related-concepts)
 - [**References**](#references)
 
