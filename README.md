@@ -48,6 +48,7 @@ Accumulate system design knowledge (concepts, patterns, technology choices, etc.
    - [Metrics](concepts/Metrics.md)
       - [Storage](concepts/Metrics.md#storage)
       - [Performance](concepts/Metrics.md#performance)
+   - [Batch And Stream Processing](concepts/Batch_Stream_Processing.md)
 - **Cloud service**
    - [AWS](concepts/cloud_service/AWS.md)
 
