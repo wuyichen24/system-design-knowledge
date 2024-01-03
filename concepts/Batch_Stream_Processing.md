@@ -24,6 +24,8 @@
 
 ### Kappa
 - **Concepts**
+   - A system that combines the batch and streaming in one processing path.
+   - Handle both real-time data processing and continuous data reprocessing using a single stream processing engine.
 - **Diagram**
 
    ![figure-10-lambda-and-kappa-architectures-QONSAGXY](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/e8310c4a-5902-4be6-b9a5-d29cd97211c2)
