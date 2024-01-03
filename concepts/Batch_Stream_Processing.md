@@ -23,3 +23,7 @@
    ![figure-10-lambda-and-kappa-architectures-QONSAGXY](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/da62affc-548a-4e68-ac3a-6f55246118f4)
 
 ### Kappa
+- **Concepts**
+- **Diagram**
+
+   ![figure-10-lambda-and-kappa-architectures-QONSAGXY](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/e8310c4a-5902-4be6-b9a5-d29cd97211c2)
