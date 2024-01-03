@@ -12,4 +12,14 @@
 | Example | MapReduce | Flink |
 | Diagram | <img width="500" alt="Screenshot 2024-01-03 at 11 13 55 AM" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/07616a59-26a7-40ea-b42f-53f0d7dfc9cc"> | <img width="500" alt="Screenshot 2024-01-03 at 11 14 05 AM" src="https://github.com/wuyichen24/system-design-knowledge/assets/8989447/e4cd5c4a-1854-4584-bfab-803b6f19b50d"> |
 
+## Architecture patterns
+### Lambda
+- **Concepts**
+   - A system that contains two processing paths (batch and streaming) simultaneously.
+- **Cons**
+   - There are two codebases to maintain.
+- **Diagram**
+  
+   ![figure-10-lambda-and-kappa-architectures-QONSAGXY](https://github.com/wuyichen24/system-design-knowledge/assets/8989447/da62affc-548a-4e68-ac3a-6f55246118f4)
 
+### Kappa
