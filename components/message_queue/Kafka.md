@@ -33,6 +33,8 @@
 ### Consumer group
 - **Consumer group**
    - A group of consumers that consume the same topic.
+   - Each consumer group can only consume the same message from one topic only once.
+   - Different consumer groups can consume the same message from one topic.
   
 ### Broker, cluster
 - **Broker**
